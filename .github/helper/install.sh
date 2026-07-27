@@ -9,6 +9,7 @@ bench -v init frappe-bench --frappe-branch version-16 --skip-assets --python "$(
 cd ./frappe-bench || exit
 
 bench -v setup requirements
+bench pip install "setuptools<82"
 
 echo "Setting Up LMS App..."
 bench get-app --branch version-15 "https://github.com/frappe/payments"
