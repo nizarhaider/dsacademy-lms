@@ -67,3 +67,4 @@ jobs:
             apps_json=APPS_JSON
           build-args: |
             "FRAPPE_BRANCH=${{ env.FRAPPE_BRANCH }}"
+            "CACHE_BUST=${{ github.sha }}"
