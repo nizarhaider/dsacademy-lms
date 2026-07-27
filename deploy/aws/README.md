@@ -69,6 +69,20 @@ audio, and English and Sinhala video.
 
 ## Backup
 
+The live host runs `deploy/aws/backup-to-s3.sh` daily. It creates a compressed
+Frappe database and file backup, then syncs the backup directory to a private,
+encrypted S3 bucket through a bucket-scoped IAM user. S3 lifecycle rules delete
+objects after 30 days.
+
+Run an off-instance backup manually:
+
+```bash
+S3_BUCKET=dsacademy-lms-backups-744861799976-ap-south-1 \
+  bash ~/dsacademy-lms/deploy/aws/backup-to-s3.sh
+```
+
+Create only a local backup:
+
 ```bash
 docker compose --project-name dsacademy_lms \
   --file ~/dsacademy_lms-compose.yml exec backend \
