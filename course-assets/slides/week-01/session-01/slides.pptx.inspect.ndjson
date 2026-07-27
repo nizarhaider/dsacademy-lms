@@ -1,0 +1,143 @@
+{"kind":"deck","id":"pr/p8j6zo","name":"Deck"}
+{"kind":"layout","layoutId":"533414e0-8441-4f32-93bb-b04e410f1b53","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"1f59f48c-0090-49bd-b2e2-7e49cf61b103","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/iomwjk","slide":1,"title":"WEEK 01  ·  SESSION 1","textShapes":3}
+{"kind":"shape","id":"sh/nmdc7ud0","slide":1,"bbox":[0,0,18,720]}
+{"kind":"shape","id":"sh/8nmdgzul","slide":1,"bbox":[18,0,590,720]}
+{"kind":"textbox","id":"sh/yx4va5c3","slide":1,"text":"WEEK 01  ·  SESSION 1","textPreview":"WEEK 01  ·  SESSION 1","textChars":21,"textLines":1,"bbox":[70,80,410,28]}
+{"kind":"textbox","id":"sh/zydc3ado","slide":1,"text":"Python for Data Science I","textPreview":"Python for Data Science I","textChars":25,"textLines":1,"bbox":[70,156,474,188]}
+{"kind":"shape","id":"sh/0zmdcfu9","slide":1,"bbox":[70,370,74,6]}
+{"kind":"textbox","id":"sh/lkvu5kvu","slide":1,"text":"Write clear, testable Python and reason about data transformations.","textPreview":"Write clear, testable Python and reason about data transformations.","textChars":67,"textLines":1,"bbox":[70,408,466,112]}
+{"kind":"image","id":"im/83294b6x","slide":1,"name":"","alt":"Data pipeline from raw records to deployed AI application","bbox":[608,0,672,720]}
+{"kind":"image","id":"im/3ad8japk","slide":1,"name":"","alt":"DS Academy logo","bbox":[70,610,180,60]}
+{"kind":"notes","id":"nt/iomwjk","slide":1,"text":"Python becomes useful for data work when every transformation is explicit. We move from collections to small testable functions and treat error messages as evidence.\n\n[Sources]\n- DS Academy curriculum manifest: Week 1, session 1: Python for Data Science I\n[/Sources]"}
+{"kind":"slide","id":"sl/k08png","slide":2,"title":"WEEK 01  /  SESSION 01","textShapes":11}
+{"kind":"shape","id":"sh/ah4ju1wf","slide":2,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/x4v25wvq","slide":2,"text":"WEEK 01  /  SESSION 01","textPreview":"WEEK 01  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/w3m1wbel","slide":2,"text":"Learning outcomes","textPreview":"Learning outcomes","textChars":17,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/j6dk76dw","slide":2,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/i54jy1wb","slide":2,"bbox":[52,124,1178,2]}
+{"kind":"textbox","id":"sh/58f29gv2","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,164,84,58]}
+{"kind":"shape","id":"sh/k7m10beh","slide":2,"bbox":[163,190,84,4]}
+{"kind":"textbox","id":"sh/zat0vmds","slide":2,"text":"Use core Python types and control flow intentionally.","textPreview":"Use core Python types and control flow intentionally.","textChars":53,"textLines":1,"bbox":[276,161,850,72]}
+{"kind":"textbox","id":"sh/y9kjmhw7","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[66,314,84,58]}
+{"kind":"shape","id":"sh/4zitw36l","slide":2,"bbox":[163,340,84,4]}
+{"kind":"textbox","id":"sh/50rup876","slide":2,"text":"Write small functions with explicit inputs and outputs.","textPreview":"Write small functions with explicit inputs and outputs.","textChars":55,"textLines":1,"bbox":[276,311,850,72]}
+{"kind":"textbox","id":"sh/id0butov","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[66,464,84,58]}
+{"kind":"shape","id":"sh/3y9cnyp0","slide":2,"bbox":[163,490,84,4]}
+{"kind":"textbox","id":"sh/s3it0n6x","slide":2,"text":"Debug type, scope, and indexing errors.","textPreview":"Debug type, scope, and indexing errors.","textChars":39,"textLines":1,"bbox":[276,461,850,72]}
+{"kind":"textbox","id":"sh/d4but87i","slide":2,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/q10bydor","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/k08png","slide":2,"text":"By the end of this session, learners should be able to Use core Python types and control flow intentionally. Write small functions with explicit inputs and outputs. Debug type, scope, and indexing errors.\n\n[Sources]\n- DS Academy curriculum manifest: Learning outcomes for Python for Data Science I\n[/Sources]"}
+{"kind":"slide","id":"sl/7wpzn1","slide":3,"title":"WEEK 01  /  SESSION 01","textShapes":13}
+{"kind":"shape","id":"sh/lcru1wzq","slide":3,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/y90b61gf","slide":3,"text":"WEEK 01  /  SESSION 01","textPreview":"WEEK 01  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/za9cz6h0","slide":3,"text":"The concept system","textPreview":"The concept system","textChars":18,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/cnit4ry9","slide":3,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/xoruxwzu","slide":3,"bbox":[52,124,1178,2]}
+{"kind":"shape","id":"sh/algb2hg3","slide":3,"bbox":[76,182,500,170]}
+{"kind":"shape","id":"sh/bm9cvmho","slide":3,"bbox":[76,182,10,170]}
+{"kind":"textbox","id":"sh/wj2dgbyt","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[110,207,58,30]}
+{"kind":"textbox","id":"sh/hkbu9gzy","slide":3,"text":"data types","textPreview":"data types","textChars":10,"textLines":1,"bbox":[110,251,420,68]}
+{"kind":"shape","id":"sh/ds7mpora","slide":3,"bbox":[654,182,500,170]}
+{"kind":"shape","id":"sh/cry5wjap","slide":3,"bbox":[654,182,10,170]}
+{"kind":"textbox","id":"sh/bq54ne94","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[688,207,58,30]}
+{"kind":"textbox","id":"sh/q5wnu9sj","slide":3,"text":"control flow","textPreview":"control flow","textChars":12,"textLines":1,"bbox":[688,251,420,68]}
+{"kind":"shape","id":"sh/p4nml4by","slide":3,"bbox":[76,420,500,170]}
+{"kind":"shape","id":"sh/o3e5szad","slide":3,"bbox":[76,420,10,170]}
+{"kind":"textbox","id":"sh/3254jets","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[110,445,58,30]}
+{"kind":"textbox","id":"sh/21wnq9sn","slide":3,"text":"functions","textPreview":"functions","textChars":9,"textLines":1,"bbox":[110,489,420,68]}
+{"kind":"shape","id":"sh/90r6x8ri","slide":3,"bbox":[654,420,500,170]}
+{"kind":"shape","id":"sh/8zi543ax","slide":3,"bbox":[654,420,10,170]}
+{"kind":"textbox","id":"sh/sfqhgbm5","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[688,445,58,30]}
+{"kind":"textbox","id":"sh/tgjypg3q","slide":3,"text":"exceptions","textPreview":"exceptions","textChars":10,"textLines":1,"bbox":[688,489,420,68]}
+{"kind":"textbox","id":"sh/6d8fe14z","slide":3,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/7ehgn6lk","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/7wpzn1","slide":3,"text":"Use these four concepts as a system rather than isolated vocabulary: data types, control flow, functions, exceptions.\n\n[Sources]\n- DS Academy curriculum manifest: Core concepts for Python for Data Science I\n[/Sources]"}
+{"kind":"slide","id":"sl/jjxn3d","slide":4,"title":"FROM QUESTION TO EVIDENCE","textShapes":15}
+{"kind":"textbox","id":"sh/lormd47m","slide":4,"text":"FROM QUESTION TO EVIDENCE","textPreview":"FROM QUESTION TO EVIDENCE","textChars":25,"textLines":1,"bbox":[64,50,410,26]}
+{"kind":"textbox","id":"sh/yl0ni98v","slide":4,"text":"A repeatable reasoning loop","textPreview":"A repeatable reasoning loop","textChars":27,"textLines":1,"bbox":[64,92,720,62]}
+{"kind":"shape","id":"sh/zm94bepg","slide":4,"bbox":[64,260,236,168]}
+{"kind":"textbox","id":"sh/czy5gzqp","slide":4,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[86,282,50,28]}
+{"kind":"textbox","id":"sh/d0rm947a","slide":4,"text":"Define","textPreview":"Define","textChars":6,"textLines":1,"bbox":[86,340,190,50]}
+{"kind":"textbox","id":"sh/qxgnep8z","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[310,322,42,55]}
+{"kind":"shape","id":"sh/byp47up4","slide":4,"bbox":[358,260,236,168]}
+{"kind":"textbox","id":"sh/wv25sj69","slide":4,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[380,282,50,28]}
+{"kind":"textbox","id":"sh/hwb6lo7e","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[380,340,190,50]}
+{"kind":"textbox","id":"sh/xw3i5svy","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[604,322,42,55]}
+{"kind":"shape","id":"sh/wvuhc7ut","slide":4,"bbox":[652,260,236,168]}
+{"kind":"textbox","id":"sh/vul032d8","slide":4,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[674,282,50,28]}
+{"kind":"textbox","id":"sh/atczaxcn","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[674,340,190,50]}
+{"kind":"textbox","id":"sh/9s3i1sv2","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[898,322,42,55]}
+{"kind":"shape","id":"sh/8rah8nuh","slide":4,"bbox":[946,260,236,168]}
+{"kind":"textbox","id":"sh/n610zidw","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[968,282,50,28]}
+{"kind":"textbox","id":"sh/m5sz6dcb","slide":4,"text":"Communicate","textPreview":"Communicate","textChars":11,"textLines":1,"bbox":[968,340,190,50]}
+{"kind":"textbox","id":"sh/tonidcv6","slide":4,"text":"Build a reusable profiler for a list of transaction records.","textPreview":"Build a reusable profiler for a list of transaction records.","textChars":60,"textLines":1,"bbox":[64,514,1120,82]}
+{"kind":"textbox","id":"sh/sne1krul","slide":4,"text":"DS ACADEMY  ·  PRACTICAL REASONING","textPreview":"DS ACADEMY  ·  PRACTICAL REASONING","textChars":34,"textLines":1,"bbox":[64,665,400,18]}
+{"kind":"notes","id":"nt/jjxn3d","slide":4,"text":"Apply the session content through a four-stage reasoning loop: define the question, transform deliberately, validate assumptions, and communicate the evidence.\n\n[Sources]\n- DS Academy curriculum manifest: DS Academy teaching framework applied to Python for Data Science I\n[/Sources]"}
+{"kind":"slide","id":"sl/hgtjox","slide":5,"title":"WEEK 01  /  SESSION 01","textShapes":20}
+{"kind":"shape","id":"sh/m9ozip4j","slide":5,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/9wzidk3a","slide":5,"text":"WEEK 01  /  SESSION 01","textPreview":"WEEK 01  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/8v6hkfmp","slide":5,"text":"Guided lab","textPreview":"Guided lab","textChars":10,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/z6x07al8","slide":5,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/y5oze54n","slide":5,"bbox":[52,124,1178,2]}
+{"kind":"shape","id":"sh/l8fi9k3e","slide":5,"bbox":[70,170,510,420]}
+{"kind":"textbox","id":"sh/k76hgfmt","slide":5,"text":"LAB BRIEF","textPreview":"LAB BRIEF","textChars":9,"textLines":1,"bbox":[104,206,180,25]}
+{"kind":"textbox","id":"sh/b2d03alw","slide":5,"text":"Build a reusable profiler for a list of transaction records.","textPreview":"Build a reusable profiler for a list of transaction records.","textChars":60,"textLines":1,"bbox":[104,264,416,166]}
+{"kind":"textbox","id":"sh/a14za54r","slide":5,"text":"workbook  /  tests  /  evidence","textPreview":"workbook  /  tests  /  evidence","textChars":31,"textLines":1,"bbox":[104,522,380,26]}
+{"kind":"textbox","id":"sh/kfa9gnul","slide":5,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[646,174,42,28]}
+{"kind":"textbox","id":"sh/lgjq9svq","slide":5,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[710,171,160,32]}
+{"kind":"textbox","id":"sh/ytsredcf","slide":5,"text":"Define inputs, outputs, and success criteria.","textPreview":"Define inputs, outputs, and success criteria.","textChars":45,"textLines":1,"bbox":[710,208,450,48]}
+{"kind":"shape","id":"sh/ju187id0","slide":5,"bbox":[646,262,514,2]}
+{"kind":"textbox","id":"sh/wra9c3u9","slide":5,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[646,276,42,28]}
+{"kind":"textbox","id":"sh/xsjq58vu","slide":5,"text":"Build","textPreview":"Build","textChars":5,"textLines":1,"bbox":[710,273,160,32]}
+{"kind":"textbox","id":"sh/aps7atc3","slide":5,"text":"Implement the smallest correct workflow.","textPreview":"Implement the smallest correct workflow.","textChars":40,"textLines":1,"bbox":[710,310,450,48]}
+{"kind":"shape","id":"sh/bq183ydo","slide":5,"bbox":[646,364,514,2]}
+{"kind":"textbox","id":"sh/gnu9o7ud","slide":5,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[646,378,42,28]}
+{"kind":"textbox","id":"sh/honahcvy","slide":5,"text":"Verify","textPreview":"Verify","textChars":6,"textLines":1,"bbox":[710,375,160,32]}
+{"kind":"textbox","id":"sh/p4jq1sn2","slide":5,"text":"Test normal, boundary, and failure cases.","textPreview":"Test normal, boundary, and failure cases.","textChars":41,"textLines":1,"bbox":[710,412,450,48]}
+{"kind":"shape","id":"sh/43a9snmx","slide":5,"bbox":[646,466,514,2]}
+{"kind":"textbox","id":"sh/32h8z25c","slide":5,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[646,480,42,28]}
+{"kind":"textbox","id":"sh/218rqx4r","slide":5,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[710,477,160,32]}
+{"kind":"textbox","id":"sh/h0zqxsn6","slide":5,"text":"Record the evidence and remaining limits.","textPreview":"Record the evidence and remaining limits.","textChars":41,"textLines":1,"bbox":[710,514,450,48]}
+{"kind":"textbox","id":"sh/gfqponml","slide":5,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/feh8vi50","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/hgtjox","slide":5,"text":"Guide learners through the lab without completing the reasoning for them. Ask for an explicit frame, a minimal implementation, boundary tests, and an evidence note.\n\n[Sources]\n- DS Academy curriculum manifest: Guided lab for Python for Data Science I\n[/Sources]"}
+{"kind":"slide","id":"sl/9uv78w","slide":6,"title":"WEEK 01  /  SESSION 01","textShapes":13}
+{"kind":"shape","id":"sh/y58r2to3","slide":6,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/l8jqx8ne","slide":6,"text":"WEEK 01  /  SESSION 01","textPreview":"WEEK 01  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/k7q94369","slide":6,"text":"Portfolio deliverable","textPreview":"Portfolio deliverable","textChars":21,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/b2h8repc","slide":6,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/a18ry9or","slide":6,"bbox":[52,124,1178,2]}
+{"kind":"textbox","id":"sh/x4zqto7i","slide":6,"text":"A tested Python module and concise debugging log.","textPreview":"A tested Python module and concise debugging log.","textChars":49,"textLines":1,"bbox":[70,170,760,108]}
+{"kind":"textbox","id":"sh/w3q90j6x","slide":6,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[70,334,180,26]}
+{"kind":"shape","id":"sh/nex8nepg","slide":6,"bbox":[70,386,20,20]}
+{"kind":"textbox","id":"sh/mdo7u9ov","slide":6,"text":"Reproducible","textPreview":"Reproducible","textChars":12,"textLines":1,"bbox":[112,378,330,38]}
+{"kind":"shape","id":"sh/8ji1wryh","slide":6,"bbox":[70,451,20,20]}
+{"kind":"textbox","id":"sh/tkripwf2","slide":6,"text":"Tested","textPreview":"Tested","textChars":6,"textLines":1,"bbox":[112,443,330,38]}
+{"kind":"shape","id":"sh/6hgjuhgb","slide":6,"bbox":[70,516,20,20]}
+{"kind":"textbox","id":"sh/7ip0nmxw","slide":6,"text":"Decision-relevant","textPreview":"Decision-relevant","textChars":17,"textLines":1,"bbox":[112,508,330,38]}
+{"kind":"shape","id":"sh/kfy1s7y5","slide":6,"bbox":[864,168,330,426]}
+{"kind":"textbox","id":"sh/lg7ilcfq","slide":6,"text":"WEEKLY ASSESSMENT","textPreview":"WEEKLY ASSESSMENT","textChars":17,"textLines":1,"bbox":[900,206,250,25]}
+{"kind":"textbox","id":"sh/ydgjqhgf","slide":6,"text":"Transaction Quality Profiler","textPreview":"Transaction Quality Profiler","textChars":28,"textLines":1,"bbox":[900,260,250,86]}
+{"kind":"textbox","id":"sh/jep0jmx0","slide":6,"text":"Correctness 40%, clarity 25%, tests 20%, explanation 15%.","textPreview":"Correctness 40%, clarity 25%, tests 20%, explanation 15%.","textChars":57,"textLines":1,"bbox":[900,388,250,132]}
+{"kind":"textbox","id":"sh/4b214byp","slide":6,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/pcb2xgfa","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/9uv78w","slide":6,"text":"The deliverable is A tested Python module and concise debugging log. Use the weekly assessment rubric as a quality gate, not as an after-the-fact scoring checklist.\n\n[Sources]\n- DS Academy curriculum manifest: Portfolio deliverable and assessment rubric for week 1\n[/Sources]"}
+{"kind":"slide","id":"sl/fl7odb","slide":7,"title":"SESSION CHECKPOINT","textShapes":11}
+{"kind":"shape","id":"sh/wbu1czah","slide":7,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/val03utw","slide":7,"text":"SESSION CHECKPOINT","textPreview":"SESSION CHECKPOINT","textChars":18,"textLines":1,"bbox":[72,68,260,28]}
+{"kind":"textbox","id":"sh/a9cjapsb","slide":7,"text":"What should remain after the lesson?","textPreview":"What should remain after the lesson?","textChars":36,"textLines":1,"bbox":[72,116,920,66]}
+{"kind":"textbox","id":"sh/983i14bq","slide":7,"text":"CONCEPT","textPreview":"CONCEPT","textChars":7,"textLines":1,"bbox":[76,244,140,25]}
+{"kind":"textbox","id":"sh/87u18zal","slide":7,"text":"data types + control flow","textPreview":"data types + control flow","textChars":25,"textLines":1,"bbox":[242,237,880,68]}
+{"kind":"shape","id":"sh/n6l0zut0","slide":7,"bbox":[76,328,1068,2]}
+{"kind":"textbox","id":"sh/m5cz6psf","slide":7,"text":"PRACTICE","textPreview":"PRACTICE","textChars":8,"textLines":1,"bbox":[76,364,140,25]}
+{"kind":"textbox","id":"sh/t47idoba","slide":7,"text":"Build a reusable profiler for a list of transaction records.","textPreview":"Build a reusable profiler for a list of transaction records.","textChars":60,"textLines":1,"bbox":[242,357,880,68]}
+{"kind":"shape","id":"sh/s3e1kjap","slide":7,"bbox":[76,448,1068,2]}
+{"kind":"textbox","id":"sh/a947alor","slide":7,"text":"EVIDENCE","textPreview":"EVIDENCE","textChars":8,"textLines":1,"bbox":[76,484,140,25]}
+{"kind":"textbox","id":"sh/vax83q5c","slide":7,"text":"A tested Python module and concise debugging log.","textPreview":"A tested Python module and concise debugging log.","textChars":49,"textLines":1,"bbox":[242,477,880,68]}
+{"kind":"shape","id":"sh/wv6pcv6x","slide":7,"bbox":[76,568,1068,2]}
+{"kind":"textbox","id":"sh/xwfq50ni","slide":7,"text":"Narration available in English and","textPreview":"Narration available in English and","textChars":34,"textLines":1,"bbox":[76,628,305,28]}
+{"kind":"textbox","id":"sh/m54761ov","slide":7,"text":"සිංහල","textPreview":"සිංහල","textChars":5,"textLines":1,"bbox":[384,625,92,32]}
+{"kind":"textbox","id":"sh/n6d8z65g","slide":7,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1050,628,140,28]}
+{"kind":"notes","id":"nt/fl7odb","slide":7,"text":"Python becomes useful for data work when every transformation is explicit. We move from collections to small testable functions and treat error messages as evidence.\n\n[Sources]\n- DS Academy curriculum manifest: Session summary for Python for Data Science I\n[/Sources]"}

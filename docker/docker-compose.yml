@@ -1,32 +1,63 @@
-version: "3.7"
 name: lms
+
 services:
   mariadb:
-    image: mariadb:10.8
+    image: mariadb:11.8
     command:
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
       - --skip-character-set-client-handshake
-      - --skip-innodb-read-only-compressed # Temporary fix for MariaDB 10.6
     environment:
-      MYSQL_ROOT_PASSWORD: 123
+      MARIADB_AUTO_UPGRADE: 1
+      MYSQL_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:-123}
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 5s
+      interval: 5s
+      timeout: 5s
+      retries: 10
     volumes:
       - mariadb-data:/var/lib/mysql
 
   redis:
     image: redis:alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  bench-volume-init:
+    image: alpine:3.22
+    command: chown -R 1000:1000 /home/frappe/frappe-bench
+    user: root
+    volumes:
+      - frappe-bench:/home/frappe/frappe-bench
 
   frappe:
     image: frappe/bench:latest
-    command: bash /workspace/init.sh
+    command: bash /workspace/docker/init.sh
+    depends_on:
+      bench-volume-init:
+        condition: service_completed_successfully
+      mariadb:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
     environment:
-      - SHELL=/bin/bash
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-admin}
+      FRAPPE_BRANCH: ${FRAPPE_BRANCH:-version-16}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:-123}
+      SITE_NAME: ${SITE_NAME:-lms.localhost}
+      SHELL: /bin/bash
     working_dir: /home/frappe
     volumes:
-      - .:/workspace
+      - ..:/workspace
+      - frappe-bench:/home/frappe/frappe-bench
     ports:
-      - 8000:8000
-      - 9000:9000
+      - "${HTTP_PORT:-8000}:8000"
+      - "${SOCKETIO_PORT:-9000}:9000"
 
 volumes:
   mariadb-data:
+  frappe-bench:

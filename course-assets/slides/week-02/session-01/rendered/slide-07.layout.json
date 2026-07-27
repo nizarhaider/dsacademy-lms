@@ -1,0 +1,800 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ukcd1s",
+    "id": "ukcd1s",
+    "slide": 7,
+    "layoutId": "bf43f20e-82d2-4f05-9f1f-ccb5314d7a9f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "09d5e041-3d1e-41eb-92d9-163f4144dd16",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "bf43f20e-82d2-4f05-9f1f-ccb5314d7a9f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "09d5e041-3d1e-41eb-92d9-163f4144dd16",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "09d5e041-3d1e-41eb-92d9-163f4144dd16",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nedgfah4",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        16
+      ],
+      "geometry": "rect",
+      "fillColor": "#08A7C9",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ofmhofyp",
+      "id": "2",
+      "bbox": [
+        72,
+        68,
+        260,
+        28
+      ],
+      "geometry": "rect",
+      "text": "SESSION CHECKPOINT",
+      "textPreview": "SESSION CHECKPOINT",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SESSION CHECKPOINT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SESSION CHECKPOINT",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SESSION CHECKPOINT",
+              "fontSize": 13,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pgvyhkza",
+      "id": "3",
+      "bbox": [
+        72,
+        116,
+        920,
+        66
+      ],
+      "geometry": "rect",
+      "text": "What should remain after the lesson?",
+      "textPreview": "What should remain after the lesson?",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "fontSize": 38,
+        "typeface": "+mn-lt",
+        "color": "#172033",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "What should remain after the lesson?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "What should remain after the lesson?",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#172033",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "What should remain after the lesson?",
+              "fontSize": 38,
+              "color": "#172033",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ahozqpgv",
+      "id": "4",
+      "bbox": [
+        76,
+        244,
+        140,
+        25
+      ],
+      "geometry": "rect",
+      "text": "CONCEPT",
+      "textPreview": "CONCEPT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#08A7C9",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CONCEPT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CONCEPT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#08A7C9",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CONCEPT",
+              "fontSize": 12,
+              "color": "#08A7C9",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bix0juhg",
+      "id": "5",
+      "bbox": [
+        242,
+        237,
+        880,
+        68
+      ],
+      "geometry": "rect",
+      "text": "Git history + branching",
+      "textPreview": "Git history + branching",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#172033",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Git history + branching"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Git history + branching",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#172033",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Git history + branching",
+              "fontSize": 23,
+              "color": "#172033",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cj6hszy1",
+      "id": "6",
+      "bbox": [
+        76,
+        328,
+        1068,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#D7E2EC",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkfil4z6",
+      "id": "7",
+      "bbox": [
+        76,
+        364,
+        140,
+        25
+      ],
+      "geometry": "rect",
+      "text": "PRACTICE",
+      "textPreview": "PRACTICE",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#08A7C9",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PRACTICE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PRACTICE",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#08A7C9",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PRACTICE",
+              "fontSize": 12,
+              "color": "#08A7C9",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qlkze5gr",
+      "id": "8",
+      "bbox": [
+        242,
+        357,
+        880,
+        68
+      ],
+      "geometry": "rect",
+      "text": "Refactor the week-one notebook into an installable repository.",
+      "textPreview": "Refactor the week-one notebook into an installable repository.",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#172033",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Refactor the week-one notebook into an installable repository."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Refactor the week-one notebook into an installable repository.",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#172033",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Refactor the week-one notebook into an installable repository.",
+              "fontSize": 23,
+              "color": "#172033",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rmtg7qhw",
+      "id": "9",
+      "bbox": [
+        76,
+        448,
+        1068,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#D7E2EC",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3q5kfi98",
+      "id": "10",
+      "bbox": [
+        76,
+        484,
+        140,
+        25
+      ],
+      "geometry": "rect",
+      "text": "EVIDENCE",
+      "textPreview": "EVIDENCE",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#EF7768",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EVIDENCE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EVIDENCE",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#EF7768",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EVIDENCE",
+              "fontSize": 12,
+              "color": "#EF7768",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2pwjmdsn",
+      "id": "11",
+      "bbox": [
+        242,
+        477,
+        880,
+        68
+      ],
+      "geometry": "rect",
+      "text": "A repository with tests, a dependency lock, and meaningful commits.",
+      "textPreview": "A repository with tests, a dependency lock, and meaningful commits.",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#172033",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A repository with tests, a dependency lock, and meaningful commits."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A repository with tests, a dependency lock, and meaningful commits.",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#172033",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A repository with tests, a dependency lock, and meaningful commits.",
+              "fontSize": 23,
+              "color": "#172033",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ps72hsry",
+      "id": "12",
+      "bbox": [
+        76,
+        568,
+        1068,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#D7E2EC",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ore1onad",
+      "id": "13",
+      "bbox": [
+        76,
+        628,
+        305,
+        28
+      ],
+      "geometry": "rect",
+      "text": "Narration available in English and",
+      "textPreview": "Narration available in English and",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Narration available in English and"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Narration available in English and",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Narration available in English and",
+              "fontSize": 15,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fm5kbi9w",
+      "id": "14",
+      "bbox": [
+        384,
+        625,
+        92,
+        32
+      ],
+      "geometry": "rect",
+      "text": "සිංහල",
+      "textPreview": "සිංහල",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "සිංහල"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "සිංහල",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "සිංහල",
+              "fontSize": 16,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/elwjidsb",
+      "id": "15",
+      "bbox": [
+        1050,
+        628,
+        140,
+        28
+      ],
+      "geometry": "rect",
+      "text": "DS ACADEMY",
+      "textPreview": "DS ACADEMY",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#58657A",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DS ACADEMY"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DS ACADEMY",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#58657A",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DS ACADEMY",
+              "fontSize": 12,
+              "color": "#58657A",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

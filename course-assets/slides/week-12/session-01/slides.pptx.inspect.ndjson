@@ -1,0 +1,143 @@
+{"kind":"deck","id":"pr/riecki","name":"Deck"}
+{"kind":"layout","layoutId":"bec40ef8-93b3-4de6-a431-6cdc695769fe","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"ceb7f6e9-ed2c-47dd-a8a2-3a49c12a6d7b","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/220l2f","slide":1,"title":"WEEK 12  ·  SESSION 1","textShapes":3}
+{"kind":"shape","id":"sh/ed87mh8f","slide":1,"bbox":[0,0,18,720]}
+{"kind":"shape","id":"sh/1gzqhc76","slide":1,"bbox":[18,0,590,720]}
+{"kind":"textbox","id":"sh/ni18jmpw","slide":1,"text":"WEEK 12  ·  SESSION 1","textPreview":"WEEK 12  ·  SESSION 1","textChars":21,"textLines":1,"bbox":[70,80,410,28]}
+{"kind":"textbox","id":"sh/mh87qh8b","slide":1,"text":"Decision-Centred Data Storytelling","textPreview":"Decision-Centred Data Storytelling","textChars":34,"textLines":1,"bbox":[70,156,474,188]}
+{"kind":"shape","id":"sh/9kjqlw72","slide":1,"bbox":[70,370,74,6]}
+{"kind":"textbox","id":"sh/ojapsrqh","slide":1,"text":"Turn technical evidence into a defensible product decision and live demonstration.","textPreview":"Turn technical evidence into a defensible product decision and live demonstration.","textChars":82,"textLines":1,"bbox":[70,408,466,112]}
+{"kind":"image","id":"im/5kvapg3u","slide":1,"name":"","alt":"Data pipeline from raw records to deployed AI application","bbox":[608,0,672,720]}
+{"kind":"image","id":"im/6p0bm14v","slide":1,"name":"","alt":"DS Academy logo","bbox":[70,610,180,60]}
+{"kind":"notes","id":"nt/220l2f","slide":1,"text":"A data story is an argument for a decision supported by inspectable evidence. We identify audience and action first, remove irrelevant charts, and state uncertainty.\n\n[Sources]\n- DS Academy curriculum manifest: Week 12, session 1: Decision-Centred Data Storytelling\n[/Sources]"}
+{"kind":"slide","id":"sl/3zmg4d","slide":2,"title":"WEEK 12  /  SESSION 01","textShapes":11}
+{"kind":"shape","id":"sh/947ax4va","slide":2,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/mhgrmpcj","slide":2,"text":"WEEK 12  /  SESSION 01","textPreview":"WEEK 12  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/7ip8vud4","slide":2,"text":"Learning outcomes","textPreview":"Learning outcomes","textChars":17,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/kfe9kfud","slide":2,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/lgnqtkvy","slide":2,"bbox":[52,124,1178,2]}
+{"kind":"textbox","id":"sh/ydwri5cn","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,164,84,58]}
+{"kind":"shape","id":"sh/ze58rad8","slide":2,"bbox":[163,190,84,4]}
+{"kind":"textbox","id":"sh/4bi9wjux","slide":2,"text":"Structure narrative around audience, decision, and evidence.","textPreview":"Structure narrative around audience, decision, and evidence.","textChars":60,"textLines":1,"bbox":[276,161,850,72]}
+{"kind":"textbox","id":"sh/5cra5ovi","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[66,314,84,58]}
+{"kind":"shape","id":"sh/hgfq1gnq","slide":2,"bbox":[163,340,84,4]}
+{"kind":"textbox","id":"sh/wf698bm5","slide":2,"text":"Choose honest comparison charts.","textPreview":"Choose honest comparison charts.","textChars":32,"textLines":1,"bbox":[276,311,850,72]}
+{"kind":"textbox","id":"sh/vex8z650","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[66,464,84,58]}
+{"kind":"shape","id":"sh/udor6l4f","slide":2,"bbox":[163,490,84,4]}
+{"kind":"textbox","id":"sh/9cfqxgnu","slide":2,"text":"Communicate uncertainty clearly.","textPreview":"Communicate uncertainty clearly.","textChars":32,"textLines":1,"bbox":[276,461,850,72]}
+{"kind":"textbox","id":"sh/8b6p4bm9","slide":2,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/7ad8v65o","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/3zmg4d","slide":2,"text":"By the end of this session, learners should be able to Structure narrative around audience, decision, and evidence. Choose honest comparison charts. Communicate uncertainty clearly.\n\n[Sources]\n- DS Academy curriculum manifest: Learning outcomes for Decision-Centred Data Storytelling\n[/Sources]"}
+{"kind":"slide","id":"sl/bovns9","slide":3,"title":"WEEK 12  /  SESSION 01","textShapes":13}
+{"kind":"shape","id":"sh/3a9cjyls","slide":3,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/4vitc3mx","slide":3,"text":"WEEK 12  /  SESSION 01","textPreview":"WEEK 12  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/pwrul83i","slide":3,"text":"The concept system","textPreview":"The concept system","textChars":18,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/u5gbmt4v","slide":3,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/v6pcfylg","slide":3,"bbox":[52,124,1178,2]}
+{"kind":"shape","id":"sh/g7yto3m1","slide":3,"bbox":[76,182,500,170]}
+{"kind":"shape","id":"sh/h87uho3m","slide":3,"bbox":[76,182,10,170]}
+{"kind":"textbox","id":"sh/e1kvidkf","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[110,207,58,30]}
+{"kind":"textbox","id":"sh/z2tcrilk","slide":3,"text":"audience","textPreview":"audience","textChars":8,"textLines":1,"bbox":[110,251,420,68]}
+{"kind":"shape","id":"sh/fm1wvix8","slide":3,"bbox":[654,182,500,170]}
+{"kind":"shape","id":"sh/elsf2xgn","slide":3,"bbox":[654,182,10,170]}
+{"kind":"textbox","id":"sh/18jexsfy","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[688,207,58,30]}
+{"kind":"textbox","id":"sh/07ax4nyd","slide":3,"text":"narrative","textPreview":"narrative","textChars":9,"textLines":1,"bbox":[688,251,420,68]}
+{"kind":"shape","id":"sh/na1wz2x4","slide":3,"bbox":[76,420,500,170]}
+{"kind":"shape","id":"sh/29sf6xgj","slide":3,"bbox":[76,420,10,170]}
+{"kind":"textbox","id":"sh/9c3e1cfa","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[110,445,58,30]}
+{"kind":"textbox","id":"sh/obux87yp","slide":3,"text":"visual hierarchy","textPreview":"visual hierarchy","textChars":16,"textLines":1,"bbox":[110,489,420,68]}
+{"kind":"shape","id":"sh/belw32x0","slide":3,"bbox":[654,420,500,170]}
+{"kind":"shape","id":"sh/adcfahgv","slide":3,"bbox":[654,420,10,170]}
+{"kind":"textbox","id":"sh/69wz2l03","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[688,445,58,30]}
+{"kind":"textbox","id":"sh/7a50v6h8","slide":3,"text":"uncertainty","textPreview":"uncertainty","textChars":11,"textLines":1,"bbox":[688,489,420,68]}
+{"kind":"textbox","id":"sh/8byh4bit","slide":3,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/tc7ixgze","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/bovns9","slide":3,"text":"Use these four concepts as a system rather than isolated vocabulary: audience, narrative, visual hierarchy, uncertainty.\n\n[Sources]\n- DS Academy curriculum manifest: Core concepts for Decision-Centred Data Storytelling\n[/Sources]"}
+{"kind":"slide","id":"sl/m6jvmm","slide":4,"title":"FROM QUESTION TO EVIDENCE","textShapes":15}
+{"kind":"textbox","id":"sh/5k7m9gji","slide":4,"text":"FROM QUESTION TO EVIDENCE","textPreview":"FROM QUESTION TO EVIDENCE","textChars":25,"textLines":1,"bbox":[64,50,410,26]}
+{"kind":"textbox","id":"sh/yhg3elkr","slide":4,"text":"A repeatable reasoning loop","textPreview":"A repeatable reasoning loop","textChars":27,"textLines":1,"bbox":[64,92,720,62]}
+{"kind":"shape","id":"sh/jipk761c","slide":4,"bbox":[64,260,236,168]}
+{"kind":"textbox","id":"sh/wfelcb2l","slide":4,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[86,282,50,28]}
+{"kind":"textbox","id":"sh/xg725g36","slide":4,"text":"Define","textPreview":"Define","textChars":6,"textLines":1,"bbox":[86,340,190,50]}
+{"kind":"textbox","id":"sh/adw3a1kf","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[310,322,42,55]}
+{"kind":"shape","id":"sh/be5k36l0","slide":4,"bbox":[358,260,236,168]}
+{"kind":"textbox","id":"sh/gbilov25","slide":4,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[380,282,50,28]}
+{"kind":"textbox","id":"sh/hcrmh0ja","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[380,340,190,50]}
+{"kind":"textbox","id":"sh/lozm1wf2","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[604,322,42,55]}
+{"kind":"shape","id":"sh/kn6l8ryh","slide":4,"bbox":[652,260,236,168]}
+{"kind":"textbox","id":"sh/jmx4zmxw","slide":4,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[674,282,50,28]}
+{"kind":"textbox","id":"sh/ylo361gb","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[674,340,190,50]}
+{"kind":"textbox","id":"sh/x0fmxwfq","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[898,322,42,55]}
+{"kind":"shape","id":"sh/wz6l4ryl","slide":4,"bbox":[946,260,236,168]}
+{"kind":"textbox","id":"sh/byx4vmx0","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[968,282,50,28]}
+{"kind":"textbox","id":"sh/axo32hgf","slide":4,"text":"Communicate","textPreview":"Communicate","textChars":11,"textLines":1,"bbox":[968,340,190,50]}
+{"kind":"textbox","id":"sh/hwjm9gfa","slide":4,"text":"Rewrite a technical analysis as a five-minute stakeholder briefing.","textPreview":"Rewrite a technical analysis as a five-minute stakeholder briefing.","textChars":67,"textLines":1,"bbox":[64,514,1120,82]}
+{"kind":"textbox","id":"sh/gvq5gbep","slide":4,"text":"DS ACADEMY  ·  PRACTICAL REASONING","textPreview":"DS ACADEMY  ·  PRACTICAL REASONING","textChars":34,"textLines":1,"bbox":[64,665,400,18]}
+{"kind":"notes","id":"nt/m6jvmm","slide":4,"text":"Apply the session content through a four-stage reasoning loop: define the question, transform deliberately, validate assumptions, and communicate the evidence.\n\n[Sources]\n- DS Academy curriculum manifest: DS Academy teaching framework applied to Decision-Centred Data Storytelling\n[/Sources]"}
+{"kind":"slide","id":"sl/qk5vdz","slide":5,"title":"WEEK 12  /  SESSION 01","textShapes":20}
+{"kind":"shape","id":"sh/t83ap87i","slide":5,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/65crutor","slide":5,"text":"WEEK 12  /  SESSION 01","textPreview":"WEEK 12  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/r6l8nypc","slide":5,"text":"Guided lab","textPreview":"Guided lab","textChars":10,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/gbe9036t","slide":5,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/1cnat87e","slide":5,"bbox":[52,124,1178,2]}
+{"kind":"shape","id":"sh/e9cryto3","slide":5,"bbox":[70,170,510,420]}
+{"kind":"textbox","id":"sh/fa5sryp8","slide":5,"text":"LAB BRIEF","textPreview":"LAB BRIEF","textChars":9,"textLines":1,"bbox":[104,206,180,25]}
+{"kind":"textbox","id":"sh/oze94n65","slide":5,"text":"Rewrite a technical analysis as a five-minute stakeholder briefing.","textPreview":"Rewrite a technical analysis as a five-minute stakeholder briefing.","textChars":67,"textLines":1,"bbox":[104,264,416,166]}
+{"kind":"textbox","id":"sh/p0naxs7q","slide":5,"text":"workbook  /  tests  /  evidence","textPreview":"workbook  /  tests  /  evidence","textChars":31,"textLines":1,"bbox":[104,522,380,26]}
+{"kind":"textbox","id":"sh/hcnmpsfi","slide":5,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[646,174,42,28]}
+{"kind":"textbox","id":"sh/wbe5gnyx","slide":5,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[710,171,160,32]}
+{"kind":"textbox","id":"sh/va54nixc","slide":5,"text":"Define inputs, outputs, and success criteria.","textPreview":"Define inputs, outputs, and success criteria.","textChars":45,"textLines":1,"bbox":[710,208,450,48]}
+{"kind":"shape","id":"sh/u9wnedgr","slide":5,"bbox":[646,262,514,2]}
+{"kind":"textbox","id":"sh/5076tcfe","slide":5,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[646,276,42,28]}
+{"kind":"textbox","id":"sh/4ze5k7yt","slide":5,"text":"Build","textPreview":"Build","textChars":5,"textLines":1,"bbox":[710,273,160,32]}
+{"kind":"textbox","id":"sh/jy54r2x8","slide":5,"text":"Implement the smallest correct workflow.","textPreview":"Implement the smallest correct workflow.","textChars":40,"textLines":1,"bbox":[710,310,450,48]}
+{"kind":"shape","id":"sh/idwnixg3","slide":5,"bbox":[646,364,514,2]}
+{"kind":"textbox","id":"sh/l43mh8fa","slide":5,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[646,378,42,28]}
+{"kind":"textbox","id":"sh/k3u583yp","slide":5,"text":"Verify","textPreview":"Verify","textChars":6,"textLines":1,"bbox":[710,375,160,32]}
+{"kind":"textbox","id":"sh/cny5o36l","slide":5,"text":"Test normal, boundary, and failure cases.","textPreview":"Test normal, boundary, and failure cases.","textChars":41,"textLines":1,"bbox":[710,412,450,48]}
+{"kind":"shape","id":"sh/do7mx8n6","slide":5,"bbox":[646,466,514,2]}
+{"kind":"textbox","id":"sh/qlwnmdof","slide":5,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[646,480,42,28]}
+{"kind":"textbox","id":"sh/rmp4vy50","slide":5,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[710,477,160,32]}
+{"kind":"textbox","id":"sh/0ry5sn6h","slide":5,"text":"Record the evidence and remaining limits.","textPreview":"Record the evidence and remaining limits.","textChars":41,"textLines":1,"bbox":[710,514,450,48]}
+{"kind":"textbox","id":"sh/ls761sn2","slide":5,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/ypgnqdor","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/qk5vdz","slide":5,"text":"Guide learners through the lab without completing the reasoning for them. Ask for an explicit frame, a minimal implementation, boundary tests, and an evidence note.\n\n[Sources]\n- DS Academy curriculum manifest: Guided lab for Decision-Centred Data Storytelling\n[/Sources]"}
+{"kind":"slide","id":"sl/omqztc","slide":6,"title":"WEEK 12  /  SESSION 01","textShapes":13}
+{"kind":"shape","id":"sh/svi1oji5","slide":6,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/rupkfe1k","slide":6,"text":"WEEK 12  /  SESSION 01","textPreview":"WEEK 12  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/qtgjm90z","slide":6,"text":"Portfolio deliverable","textPreview":"Portfolio deliverable","textChars":21,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/5s7id4je","slide":6,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/4ry1kjit","slide":6,"bbox":[52,124,1178,2]}
+{"kind":"textbox","id":"sh/3qp0be18","slide":6,"text":"A concise decision deck and evidence appendix.","textPreview":"A concise decision deck and evidence appendix.","textChars":46,"textLines":1,"bbox":[70,170,760,108]}
+{"kind":"textbox","id":"sh/ipgji9kn","slide":6,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[70,334,180,26]}
+{"kind":"shape","id":"sh/ho7i94ji","slide":6,"bbox":[70,386,20,20]}
+{"kind":"textbox","id":"sh/gne1gz2x","slide":6,"text":"Reproducible","textPreview":"Reproducible","textChars":12,"textLines":1,"bbox":[112,378,330,38]}
+{"kind":"shape","id":"sh/6dk3ih4n","slide":6,"bbox":[70,451,20,20]}
+{"kind":"textbox","id":"sh/ret4bml8","slide":6,"text":"Tested","textPreview":"Tested","textChars":6,"textLines":1,"bbox":[112,443,330,38]}
+{"kind":"shape","id":"sh/sfmlkrmt","slide":6,"bbox":[70,516,20,20]}
+{"kind":"textbox","id":"sh/tgvmdw3e","slide":6,"text":"Decision-relevant","textPreview":"Decision-relevant","textChars":17,"textLines":1,"bbox":[112,508,330,38]}
+{"kind":"shape","id":"sh/i9k3eh4r","slide":6,"bbox":[864,168,330,426]}
+{"kind":"textbox","id":"sh/jat47mlc","slide":6,"text":"WEEKLY ASSESSMENT","textPreview":"WEEKLY ASSESSMENT","textChars":17,"textLines":1,"bbox":[900,206,250,25]}
+{"kind":"textbox","id":"sh/4b2lgrmx","slide":6,"text":"Production-Minded Capstone","textPreview":"Production-Minded Capstone","textChars":26,"textLines":1,"bbox":[900,260,250,86]}
+{"kind":"textbox","id":"sh/5cbm9w3i","slide":6,"text":"Problem 20%, evaluation 20%, engineering 20%, usability 15%, communication 15%, responsibility 10%.","textPreview":"Problem 20%, evaluation 20%, engineering 20%, usability 15%, communication 15%, responsibility 10%.","textChars":99,"textLines":1,"bbox":[900,388,250,132]}
+{"kind":"textbox","id":"sh/ul03ax4v","slide":6,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/vm9432l0","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/omqztc","slide":6,"text":"The deliverable is A concise decision deck and evidence appendix. Use the weekly assessment rubric as a quality gate, not as an after-the-fact scoring checklist.\n\n[Sources]\n- DS Academy curriculum manifest: Portfolio deliverable and assessment rubric for week 12\n[/Sources]"}
+{"kind":"slide","id":"sl/kgusm2","slide":7,"title":"SESSION CHECKPOINT","textShapes":11}
+{"kind":"shape","id":"sh/lkn6lo7a","slide":7,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/yhc7q9oj","slide":7,"text":"SESSION CHECKPOINT","textPreview":"SESSION CHECKPOINT","textChars":18,"textLines":1,"bbox":[72,68,260,28]}
+{"kind":"textbox","id":"sh/zi5ojep4","slide":7,"text":"What should remain after the lesson?","textPreview":"What should remain after the lesson?","textChars":36,"textLines":1,"bbox":[72,116,920,66]}
+{"kind":"textbox","id":"sh/87epw36l","slide":7,"text":"CONCEPT","textPreview":"CONCEPT","textChars":7,"textLines":1,"bbox":[76,244,140,25]}
+{"kind":"textbox","id":"sh/t8n6p876","slide":7,"text":"audience + narrative","textPreview":"audience + narrative","textChars":20,"textLines":1,"bbox":[242,237,880,68]}
+{"kind":"shape","id":"sh/mlw7utov","slide":7,"bbox":[76,328,1068,2]}
+{"kind":"textbox","id":"sh/7m5onyp0","slide":7,"text":"PRACTICE","textPreview":"PRACTICE","textChars":8,"textLines":1,"bbox":[76,364,140,25]}
+{"kind":"textbox","id":"sh/gbyp036x","slide":7,"text":"Rewrite a technical analysis as a five-minute stakeholder briefing.","textPreview":"Rewrite a technical analysis as a five-minute stakeholder briefing.","textChars":67,"textLines":1,"bbox":[242,357,880,68]}
+{"kind":"shape","id":"sh/hc7qt8ni","slide":7,"bbox":[76,448,1068,2]}
+{"kind":"textbox","id":"sh/hw36xk7q","slide":7,"text":"EVIDENCE","textPreview":"EVIDENCE","textChars":8,"textLines":1,"bbox":[76,484,140,25]}
+{"kind":"textbox","id":"sh/gvup4f65","slide":7,"text":"A concise decision deck and evidence appendix.","textPreview":"A concise decision deck and evidence appendix.","textChars":46,"textLines":1,"bbox":[242,477,880,68]}
+{"kind":"shape","id":"sh/vulovap0","slide":7,"bbox":[76,568,1068,2]}
+{"kind":"textbox","id":"sh/utc725of","slide":7,"text":"Narration available in English and","textPreview":"Narration available in English and","textChars":34,"textLines":1,"bbox":[76,628,305,28]}
+{"kind":"textbox","id":"sh/5knq1k72","slide":7,"text":"සිංහල","textPreview":"සිංහල","textChars":5,"textLines":1,"bbox":[384,625,92,32]}
+{"kind":"textbox","id":"sh/4jep8z6h","slide":7,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1050,628,140,28]}
+{"kind":"notes","id":"nt/kgusm2","slide":7,"text":"A data story is an argument for a decision supported by inspectable evidence. We identify audience and action first, remove irrelevant charts, and state uncertainty.\n\n[Sources]\n- DS Academy curriculum manifest: Session summary for Decision-Centred Data Storytelling\n[/Sources]"}

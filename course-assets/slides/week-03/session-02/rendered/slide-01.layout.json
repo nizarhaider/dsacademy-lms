@@ -1,0 +1,343 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/30zoxx",
+    "id": "30zoxx",
+    "slide": 1,
+    "layoutId": "9bea74ec-d258-4aea-a6b3-cb47e722cc4c",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "8c32ac29-1383-4b8b-b680-fcba464f4e37",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "9bea74ec-d258-4aea-a6b3-cb47e722cc4c",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "8c32ac29-1383-4b8b-b680-fcba464f4e37",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "8c32ac29-1383-4b8b-b680-fcba464f4e37",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ax8bmp8r",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        18,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#08A7C9",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkzuh4ri",
+      "id": "2",
+      "bbox": [
+        18,
+        0,
+        590,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/1g3mx8rq",
+      "id": "3",
+      "bbox": [
+        608,
+        0,
+        672,
+        720
+      ],
+      "alt": "Data pipeline from raw records to deployed AI application",
+      "contentType": "image/png",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "1773e14e-7ded-4d9d-a56a-b3c245b4f6e8",
+        "contentType": "image/png",
+        "byteLength": 1660213
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nuxsba9g",
+      "id": "4",
+      "bbox": [
+        70,
+        80,
+        410,
+        28
+      ],
+      "geometry": "rect",
+      "text": "WEEK 03  ·  SESSION 2",
+      "textPreview": "WEEK 03  ·  SESSION 2",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WEEK 03  ·  SESSION 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WEEK 03  ·  SESSION 2",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WEEK 03  ·  SESSION 2",
+              "fontSize": 14,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2tobip8v",
+      "id": "5",
+      "bbox": [
+        70,
+        156,
+        474,
+        188
+      ],
+      "geometry": "rect",
+      "text": "Exploratory Data Analysis",
+      "textPreview": "Exploratory Data Analysis",
+      "resolvedFontSize": 49,
+      "resolvedTextStyle": {
+        "fontSize": 49,
+        "typeface": "+mn-lt",
+        "color": "#172033",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Exploratory Data"
+          },
+          {
+            "index": 2,
+            "text": "Analysis"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Exploratory Data Analysis",
+          "resolvedTextStyle": {
+            "fontSize": 49,
+            "color": "#172033",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Exploratory Data Analysis",
+              "fontSize": 49,
+              "color": "#172033",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwzudkr6",
+      "id": "6",
+      "bbox": [
+        70,
+        370,
+        74,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#EF7768",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ovqtkfql",
+      "id": "7",
+      "bbox": [
+        70,
+        408,
+        466,
+        112
+      ],
+      "geometry": "rect",
+      "text": "Create a defensible path from messy observations to analytical evidence.",
+      "textPreview": "Create a defensible path from messy observations to analytical evidence.",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#58657A",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Create a defensible path from messy"
+          },
+          {
+            "index": 2,
+            "text": "observations to analytical evidence."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Create a defensible path from messy observations to analytical evidence.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#58657A"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Create a defensible path from messy observations to analytical evidence.",
+              "fontSize": 21,
+              "color": "#58657A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/alwnax8n",
+      "id": "8",
+      "bbox": [
+        70,
+        610,
+        180,
+        60
+      ],
+      "alt": "DS Academy logo",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "d54474b1-affb-4359-a869-fb44c685999d",
+        "contentType": "image/png",
+        "byteLength": 8855
+      }
+    }
+  ],
+  "composeRuns": []
+}

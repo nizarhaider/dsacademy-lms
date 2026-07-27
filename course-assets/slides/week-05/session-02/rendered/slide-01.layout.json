@@ -1,0 +1,347 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/gzrud7",
+    "id": "gzrud7",
+    "slide": 1,
+    "layoutId": "f8a7a92f-f451-4c3d-be85-5b0be28f54f0",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "3fcc23d4-315c-40ca-b6f8-d28274119007",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "f8a7a92f-f451-4c3d-be85-5b0be28f54f0",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "3fcc23d4-315c-40ca-b6f8-d28274119007",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "3fcc23d4-315c-40ca-b6f8-d28274119007",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xsfips3e",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        18,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#08A7C9",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/apojed4n",
+      "id": "2",
+      "bbox": [
+        18,
+        0,
+        590,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/2l0zql8f",
+      "id": "3",
+      "bbox": [
+        608,
+        0,
+        672,
+        720
+      ],
+      "alt": "Data pipeline from raw records to deployed AI application",
+      "contentType": "image/png",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "ee509140-5a9b-4f9e-9498-d452b16f3e79",
+        "contentType": "image/png",
+        "byteLength": 1660213
+      }
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8nm1cnmx",
+      "id": "4",
+      "bbox": [
+        70,
+        80,
+        410,
+        28
+      ],
+      "geometry": "rect",
+      "text": "WEEK 05  ·  SESSION 2",
+      "textPreview": "WEEK 05  ·  SESSION 2",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WEEK 05  ·  SESSION 2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WEEK 05  ·  SESSION 2",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WEEK 05  ·  SESSION 2",
+              "fontSize": 14,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9ofils3i",
+      "id": "5",
+      "bbox": [
+        70,
+        156,
+        474,
+        188
+      ],
+      "geometry": "rect",
+      "text": "Regularized and Nonlinear Regression",
+      "textPreview": "Regularized and Nonlinear Regression",
+      "resolvedFontSize": 49,
+      "resolvedTextStyle": {
+        "fontSize": 49,
+        "typeface": "+mn-lt",
+        "color": "#172033",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Regularized and"
+          },
+          {
+            "index": 2,
+            "text": "Nonlinear"
+          },
+          {
+            "index": 3,
+            "text": "Regression"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Regularized and Nonlinear Regression",
+          "resolvedTextStyle": {
+            "fontSize": 49,
+            "color": "#172033",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Regularized and Nonlinear Regression",
+              "fontSize": 49,
+              "color": "#172033",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ml4jad4r",
+      "id": "6",
+      "bbox": [
+        70,
+        370,
+        74,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#EF7768",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nmd0jilc",
+      "id": "7",
+      "bbox": [
+        70,
+        408,
+        466,
+        112
+      ],
+      "geometry": "rect",
+      "text": "Estimate continuous outcomes with interpretable baselines and robust evaluation.",
+      "textPreview": "Estimate continuous outcomes with interpretable baselines and robust evaluation.",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "fontSize": 21,
+        "typeface": "+mn-lt",
+        "color": "#58657A",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Estimate continuous outcomes with"
+          },
+          {
+            "index": 2,
+            "text": "interpretable baselines and robust evaluation."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Estimate continuous outcomes with interpretable baselines and robust evaluation.",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "color": "#58657A"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Estimate continuous outcomes with interpretable baselines and robust evaluation.",
+              "fontSize": 21,
+              "color": "#58657A"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/twrydw7i",
+      "id": "8",
+      "bbox": [
+        70,
+        610,
+        180,
+        60
+      ],
+      "alt": "DS Academy logo",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "bfe0e4c3-9048-4300-ad32-3be2b9aad54d",
+        "contentType": "image/png",
+        "byteLength": 8855
+      }
+    }
+  ],
+  "composeRuns": []
+}

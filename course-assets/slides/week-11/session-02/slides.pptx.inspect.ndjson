@@ -1,0 +1,143 @@
+{"kind":"deck","id":"pr/t7u674","name":"Deck"}
+{"kind":"layout","layoutId":"9c71559e-436b-40f3-b387-0439be971e22","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"4ddaeedf-af94-4096-b4b3-40ac76311323","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/77mjvv","slide":1,"title":"WEEK 11  ·  SESSION 2","textShapes":3}
+{"kind":"shape","id":"sh/9wzmlc7q","slide":1,"bbox":[0,0,18,720]}
+{"kind":"shape","id":"sh/mt8nahof","slide":1,"bbox":[18,0,590,720]}
+{"kind":"textbox","id":"sh/kr658769","slide":1,"text":"WEEK 11  ·  SESSION 2","textPreview":"WEEK 11  ·  SESSION 2","textChars":21,"textLines":1,"bbox":[70,80,410,28]}
+{"kind":"textbox","id":"sh/lszmhc7u","slide":1,"text":"Experiments, Versioning and Monitoring","textPreview":"Experiments, Versioning and Monitoring","textChars":38,"textLines":1,"bbox":[70,156,474,188]}
+{"kind":"shape","id":"sh/ypon6xo3","slide":1,"bbox":[70,370,74,6]}
+{"kind":"textbox","id":"sh/zqx4f2po","slide":1,"text":"Automate reliable releases and make model behavior observable.","textPreview":"Automate reliable releases and make model behavior observable.","textChars":62,"textLines":1,"bbox":[70,408,466,112]}
+{"kind":"image","id":"im/6hkjupkf","slide":1,"name":"","alt":"Data pipeline from raw records to deployed AI application","bbox":[608,0,672,720]}
+{"kind":"image","id":"im/pcf2xoje","slide":1,"name":"","alt":"DS Academy logo","bbox":[70,610,180,60]}
+{"kind":"notes","id":"nt/77mjvv","slide":1,"text":"MLOps is disciplined change management for data and models. Every artifact links to evidence, promotion has an owner, and rollback does not require rebuilding the past.\n\n[Sources]\n- DS Academy curriculum manifest: Week 11, session 2: Experiments, Versioning and Monitoring\n[/Sources]"}
+{"kind":"slide","id":"sl/p3e6yv","slide":2,"title":"WEEK 11  /  SESSION 02","textShapes":11}
+{"kind":"shape","id":"sh/9gny50zm","slide":2,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/mdwzulgv","slide":2,"text":"WEEK 11  /  SESSION 02","textPreview":"WEEK 11  /  SESSION 02","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/ne5g3qhg","slide":2,"text":"Learning outcomes","textPreview":"Learning outcomes","textChars":17,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/0behsbyp","slide":2,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/1cny1gza","slide":2,"bbox":[52,124,1178,2]}
+{"kind":"textbox","id":"sh/e9czqlgz","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,164,84,58]}
+{"kind":"shape","id":"sh/zalgz6h4","slide":2,"bbox":[163,190,84,4]}
+{"kind":"textbox","id":"sh/cnuhobyt","slide":2,"text":"Track code, data, parameters, metrics, and artifacts.","textPreview":"Track code, data, parameters, metrics, and artifacts.","textChars":53,"textLines":1,"bbox":[276,161,850,72]}
+{"kind":"textbox","id":"sh/do3yxgze","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[66,314,84,58]}
+{"kind":"shape","id":"sh/tsz6pozm","slide":2,"bbox":[163,340,84,4]}
+{"kind":"textbox","id":"sh/s7qpwji1","slide":2,"text":"Define promotion and rollback criteria.","textPreview":"Define promotion and rollback criteria.","textChars":39,"textLines":1,"bbox":[276,311,850,72]}
+{"kind":"textbox","id":"sh/r6honehg","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[66,464,84,58]}
+{"kind":"shape","id":"sh/6587u90v","slide":2,"bbox":[163,490,84,4]}
+{"kind":"textbox","id":"sh/54z6l4ja","slide":2,"text":"Design monitoring around model risks.","textPreview":"Design monitoring around model risks.","textChars":37,"textLines":1,"bbox":[276,461,850,72]}
+{"kind":"textbox","id":"sh/43qpszip","slide":2,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/j2xoje1k","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/p3e6yv","slide":2,"text":"By the end of this session, learners should be able to Track code, data, parameters, metrics, and artifacts. Define promotion and rollback criteria. Design monitoring around model risks.\n\n[Sources]\n- DS Academy curriculum manifest: Learning outcomes for Experiments, Versioning and Monitoring\n[/Sources]"}
+{"kind":"slide","id":"sl/kjfsv8","slide":3,"title":"WEEK 11  /  SESSION 02","textShapes":13}
+{"kind":"shape","id":"sh/6h4rylwb","slide":3,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/t4vqt0fm","slide":3,"text":"WEEK 11  /  SESSION 02","textPreview":"WEEK 11  /  SESSION 02","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/s3m90ve1","slide":3,"text":"The concept system","textPreview":"The concept system","textChars":18,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/jed8nqxk","slide":3,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/yd47ulwz","slide":3,"bbox":[52,124,1178,2]}
+{"kind":"shape","id":"sh/lgvqpgfq","slide":3,"bbox":[76,182,500,170]}
+{"kind":"shape","id":"sh/kfmpwve5","slide":3,"bbox":[76,182,10,170]}
+{"kind":"textbox","id":"sh/bat8j6xo","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[110,207,58,30]}
+{"kind":"textbox","id":"sh/a9k7q1g3","slide":3,"text":"experiment tracking","textPreview":"experiment tracking","textChars":19,"textLines":1,"bbox":[110,251,420,68]}
+{"kind":"shape","id":"sh/87qt0v2h","slide":3,"bbox":[654,182,500,170]}
+{"kind":"shape","id":"sh/98zu90j2","slide":3,"bbox":[654,182,10,170]}
+{"kind":"textbox","id":"sh/ml8by5kb","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[688,207,58,30]}
+{"kind":"textbox","id":"sh/n6hc7q1w","slide":3,"text":"model registry","textPreview":"model registry","textChars":14,"textLines":1,"bbox":[688,251,420,68]}
+{"kind":"shape","id":"sh/0jqtwv2l","slide":3,"bbox":[76,420,500,170]}
+{"kind":"shape","id":"sh/lkzu50j6","slide":3,"bbox":[76,420,10,170]}
+{"kind":"textbox","id":"sh/yhobulkf","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[110,445,58,30]}
+{"kind":"textbox","id":"sh/zihc3q10","slide":3,"text":"promotion","textPreview":"promotion","textChars":9,"textLines":1,"bbox":[110,489,420,68]}
+{"kind":"shape","id":"sh/kfat8f2p","slide":3,"bbox":[654,420,500,170]}
+{"kind":"shape","id":"sh/5gjuhkja","slide":3,"bbox":[654,420,10,170]}
+{"kind":"textbox","id":"sh/dwzulkbe","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[688,445,58,30]}
+{"kind":"textbox","id":"sh/sv6tsfut","slide":3,"text":"observability","textPreview":"observability","textChars":13,"textLines":1,"bbox":[688,489,420,68]}
+{"kind":"textbox","id":"sh/ruxcjat8","slide":3,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/qtobq5c3","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/kjfsv8","slide":3,"text":"Use these four concepts as a system rather than isolated vocabulary: experiment tracking, model registry, promotion, observability.\n\n[Sources]\n- DS Academy curriculum manifest: Core concepts for Experiments, Versioning and Monitoring\n[/Sources]"}
+{"kind":"slide","id":"sl/5a83mw","slide":4,"title":"FROM QUESTION TO EVIDENCE","textShapes":15}
+{"kind":"textbox","id":"sh/be5gzuts","slide":4,"text":"FROM QUESTION TO EVIDENCE","textPreview":"FROM QUESTION TO EVIDENCE","textChars":25,"textLines":1,"bbox":[64,50,410,26]}
+{"kind":"textbox","id":"sh/cfexszad","slide":4,"text":"A repeatable reasoning loop","textPreview":"A repeatable reasoning loop","textChars":27,"textLines":1,"bbox":[64,92,720,62]}
+{"kind":"shape","id":"sh/xgny14by","slide":4,"bbox":[64,260,236,168]}
+{"kind":"textbox","id":"sh/2pcfmpcv","slide":4,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[86,282,50,28]}
+{"kind":"textbox","id":"sh/nalgvutg","slide":4,"text":"Define","textPreview":"Define","textChars":6,"textLines":1,"bbox":[86,340,190,50]}
+{"kind":"textbox","id":"sh/obuxoza1","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[310,322,42,55]}
+{"kind":"shape","id":"sh/pc3yx4bm","slide":4,"bbox":[358,260,236,168]}
+{"kind":"textbox","id":"sh/mlgzytsf","slide":4,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[380,282,50,28]}
+{"kind":"textbox","id":"sh/76pg7et0","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[380,340,190,50]}
+{"kind":"textbox","id":"sh/j25sbe9g","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[604,322,42,55]}
+{"kind":"shape","id":"sh/i1wr298v","slide":4,"bbox":[652,260,236,168]}
+{"kind":"textbox","id":"sh/5onador6","slide":4,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[674,282,50,28]}
+{"kind":"textbox","id":"sh/k3e94jql","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[674,340,190,50]}
+{"kind":"textbox","id":"sh/7q5sfy9c","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[898,322,42,55]}
+{"kind":"shape","id":"sh/6pwr6t8r","slide":4,"bbox":[946,260,236,168]}
+{"kind":"textbox","id":"sh/ts7ahori","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[968,282,50,28]}
+{"kind":"textbox","id":"sh/sre98jqx","slide":4,"text":"Communicate","textPreview":"Communicate","textChars":11,"textLines":1,"bbox":[968,340,190,50]}
+{"kind":"textbox","id":"sh/fupsjy98","slide":4,"text":"Create an experiment lineage and staged release checklist.","textPreview":"Create an experiment lineage and staged release checklist.","textChars":58,"textLines":1,"bbox":[64,514,1120,82]}
+{"kind":"textbox","id":"sh/utgrat83","slide":4,"text":"DS ACADEMY  ·  PRACTICAL REASONING","textPreview":"DS ACADEMY  ·  PRACTICAL REASONING","textChars":34,"textLines":1,"bbox":[64,665,400,18]}
+{"kind":"notes","id":"nt/5a83mw","slide":4,"text":"Apply the session content through a four-stage reasoning loop: define the question, transform deliberately, validate assumptions, and communicate the evidence.\n\n[Sources]\n- DS Academy curriculum manifest: DS Academy teaching framework applied to Experiments, Versioning and Monitoring\n[/Sources]"}
+{"kind":"slide","id":"sl/3awq4f","slide":5,"title":"WEEK 11  /  SESSION 02","textShapes":20}
+{"kind":"shape","id":"sh/4rqpgv2h","slide":5,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/3qho7q1c","slide":5,"text":"WEEK 11  /  SESSION 02","textPreview":"WEEK 11  /  SESSION 02","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/ipo7elkr","slide":5,"text":"Guided lab","textPreview":"Guided lab","textChars":10,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/hof65gj6","slide":5,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/wn6pcb2l","slide":5,"bbox":[52,124,1178,2]}
+{"kind":"shape","id":"sh/vmxo3610","slide":5,"bbox":[70,170,510,420]}
+{"kind":"textbox","id":"sh/ulo7a1kf","slide":5,"text":"LAB BRIEF","textPreview":"LAB BRIEF","textChars":9,"textLines":1,"bbox":[104,206,180,25]}
+{"kind":"textbox","id":"sh/1kjqh0ja","slide":5,"text":"Create an experiment lineage and staged release checklist.","textPreview":"Create an experiment lineage and staged release checklist.","textChars":58,"textLines":1,"bbox":[104,264,416,166]}
+{"kind":"textbox","id":"sh/0japof2p","slide":5,"text":"workbook  /  tests  /  evidence","textPreview":"workbook  /  tests  /  evidence","textChars":31,"textLines":1,"bbox":[104,522,380,26]}
+{"kind":"textbox","id":"sh/axcb21cb","slide":5,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[646,174,42,28]}
+{"kind":"textbox","id":"sh/vylsv6tg","slide":5,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[710,171,160,32]}
+{"kind":"textbox","id":"sh/wzut4ba1","slide":5,"text":"Define inputs, outputs, and success criteria.","textPreview":"Define inputs, outputs, and success criteria.","textChars":45,"textLines":1,"bbox":[710,208,450,48]}
+{"kind":"shape","id":"sh/h03axgbm","slide":5,"bbox":[646,262,514,2]}
+{"kind":"textbox","id":"sh/m9sby1cz","slide":5,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[646,276,42,28]}
+{"kind":"textbox","id":"sh/na1sr6tk","slide":5,"text":"Build","textPreview":"Build","textChars":5,"textLines":1,"bbox":[710,273,160,32]}
+{"kind":"textbox","id":"sh/8but0ru5","slide":5,"text":"Implement the smallest correct workflow.","textPreview":"Implement the smallest correct workflow.","textChars":40,"textLines":1,"bbox":[710,310,450,48]}
+{"kind":"shape","id":"sh/9c3atwbq","slide":5,"bbox":[646,364,514,2]}
+{"kind":"textbox","id":"sh/65wbals3","slide":5,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[646,378,42,28]}
+{"kind":"textbox","id":"sh/r65s3qto","slide":5,"text":"Verify","textPreview":"Verify","textChars":6,"textLines":1,"bbox":[710,375,160,32]}
+{"kind":"textbox","id":"sh/3ax8vi90","slide":5,"text":"Test normal, boundary, and failure cases.","textPreview":"Test normal, boundary, and failure cases.","textChars":41,"textLines":1,"bbox":[710,412,450,48]}
+{"kind":"shape","id":"sh/29o7mdsv","slide":5,"bbox":[646,466,514,2]}
+{"kind":"textbox","id":"sh/pczqxsr6","slide":5,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[646,480,42,28]}
+{"kind":"textbox","id":"sh/ob6ponal","slide":5,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[710,477,160,32]}
+{"kind":"textbox","id":"sh/beh8z29c","slide":5,"text":"Record the evidence and remaining limits.","textPreview":"Record the evidence and remaining limits.","textChars":41,"textLines":1,"bbox":[710,514,450,48]}
+{"kind":"textbox","id":"sh/qd87qxsr","slide":5,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/dgzq1sri","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/3awq4f","slide":5,"text":"Guide learners through the lab without completing the reasoning for them. Ask for an explicit frame, a minimal implementation, boundary tests, and an evidence note.\n\n[Sources]\n- DS Academy curriculum manifest: Guided lab for Experiments, Versioning and Monitoring\n[/Sources]"}
+{"kind":"slide","id":"sl/3j6ddc","slide":6,"title":"WEEK 11  /  SESSION 02","textShapes":13}
+{"kind":"shape","id":"sh/w3u5wnql","slide":6,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/v2l4ni90","slide":6,"text":"WEEK 11  /  SESSION 02","textPreview":"WEEK 11  /  SESSION 02","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/a1cnud8f","slide":6,"text":"Portfolio deliverable","textPreview":"Portfolio deliverable","textChars":21,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/903ml8ru","slide":6,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/8zalsnqp","slide":6,"bbox":[52,124,1178,2]}
+{"kind":"textbox","id":"sh/ny14ji94","slide":6,"text":"A model release record, rollback plan, and alert specification.","textPreview":"A model release record, rollback plan, and alert specification.","textChars":63,"textLines":1,"bbox":[70,170,760,108]}
+{"kind":"textbox","id":"sh/mxs3qd8j","slide":6,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[70,334,180,26]}
+{"kind":"shape","id":"sh/lwjmh8ry","slide":6,"bbox":[70,386,20,20]}
+{"kind":"textbox","id":"sh/0valo3qd","slide":6,"text":"Reproducible","textPreview":"Reproducible","textChars":12,"textLines":1,"bbox":[112,378,330,38]}
+{"kind":"shape","id":"sh/exg7ah0z","slide":6,"bbox":[70,451,20,20]}
+{"kind":"textbox","id":"sh/zypo3m1k","slide":6,"text":"Tested","textPreview":"Tested","textChars":6,"textLines":1,"bbox":[112,443,330,38]}
+{"kind":"shape","id":"sh/0jypcrip","slide":6,"bbox":[70,516,20,20]}
+{"kind":"textbox","id":"sh/1k765wja","slide":6,"text":"Decision-relevant","textPreview":"Decision-relevant","textChars":17,"textLines":1,"bbox":[112,508,330,38]}
+{"kind":"shape","id":"sh/qtw76xkn","slide":6,"bbox":[864,168,330,426]}
+{"kind":"textbox","id":"sh/ru5oz218","slide":6,"text":"WEEKLY ASSESSMENT","textPreview":"WEEKLY ASSESSMENT","textChars":17,"textLines":1,"bbox":[900,206,250,25]}
+{"kind":"textbox","id":"sh/cvep87it","slide":6,"text":"Releasable ML System","textPreview":"Releasable ML System","textChars":20,"textLines":1,"bbox":[900,260,250,86]}
+{"kind":"textbox","id":"sh/dw761cje","slide":6,"text":"Reproducibility 25%, CI 20%, architecture 20%, lineage 20%, operations 15%.","textPreview":"Reproducibility 25%, CI 20%, architecture 20%, lineage 20%, operations 15%.","textChars":75,"textLines":1,"bbox":[900,388,250,132]}
+{"kind":"textbox","id":"sh/2pw72xkr","slide":6,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/3q5ov21c","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/3j6ddc","slide":6,"text":"The deliverable is A model release record, rollback plan, and alert specification. Use the weekly assessment rubric as a quality gate, not as an after-the-fact scoring checklist.\n\n[Sources]\n- DS Academy curriculum manifest: Portfolio deliverable and assessment rubric for week 11\n[/Sources]"}
+{"kind":"slide","id":"sl/9vg7i6","slide":7,"title":"SESSION CHECKPOINT","textShapes":11}
+{"kind":"shape","id":"sh/0vulwr6h","slide":7,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/ful4nmpc","slide":7,"text":"SESSION CHECKPOINT","textPreview":"SESSION CHECKPOINT","textChars":18,"textLines":1,"bbox":[72,68,260,28]}
+{"kind":"textbox","id":"sh/etc3uhor","slide":7,"text":"What should remain after the lesson?","textPreview":"What should remain after the lesson?","textChars":36,"textLines":1,"bbox":[72,116,920,66]}
+{"kind":"textbox","id":"sh/pknmtgne","slide":7,"text":"CONCEPT","textPreview":"CONCEPT","textChars":7,"textLines":1,"bbox":[76,244,140,25]}
+{"kind":"textbox","id":"sh/oju50b6t","slide":7,"text":"experiment tracking + model registry","textPreview":"experiment tracking + model registry","textChars":36,"textLines":1,"bbox":[242,237,880,68]}
+{"kind":"shape","id":"sh/nil4r658","slide":7,"bbox":[76,328,1068,2]}
+{"kind":"textbox","id":"sh/2hc3y1on","slide":7,"text":"PRACTICE","textPreview":"PRACTICE","textChars":8,"textLines":1,"bbox":[76,364,140,25]}
+{"kind":"textbox","id":"sh/5ojmhc7u","slide":7,"text":"Create an experiment lineage and staged release checklist.","textPreview":"Create an experiment lineage and staged release checklist.","textChars":58,"textLines":1,"bbox":[242,357,880,68]}
+{"kind":"shape","id":"sh/4nalo769","slide":7,"bbox":[76,448,1068,2]}
+{"kind":"textbox","id":"sh/atkbexcn","slide":7,"text":"EVIDENCE","textPreview":"EVIDENCE","textChars":8,"textLines":1,"bbox":[76,484,140,25]}
+{"kind":"textbox","id":"sh/vutc72t8","slide":7,"text":"A model release record, rollback plan, and alert specification.","textPreview":"A model release record, rollback plan, and alert specification.","textChars":63,"textLines":1,"bbox":[242,477,880,68]}
+{"kind":"shape","id":"sh/wv2tg7ut","slide":7,"bbox":[76,568,1068,2]}
+{"kind":"textbox","id":"sh/xwbu9cbe","slide":7,"text":"Narration available in English and","textPreview":"Narration available in English and","textChars":34,"textLines":1,"bbox":[76,628,305,28]}
+{"kind":"textbox","id":"sh/ixkbihcz","slide":7,"text":"සිංහල","textPreview":"සිංහල","textChars":5,"textLines":1,"bbox":[384,625,92,32]}
+{"kind":"textbox","id":"sh/jytcbmt4","slide":7,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1050,628,140,28]}
+{"kind":"notes","id":"nt/9vg7i6","slide":7,"text":"MLOps is disciplined change management for data and models. Every artifact links to evidence, promotion has an owner, and rollback does not require rebuilding the past.\n\n[Sources]\n- DS Academy curriculum manifest: Session summary for Experiments, Versioning and Monitoring\n[/Sources]"}

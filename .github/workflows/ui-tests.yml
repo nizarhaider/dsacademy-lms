@@ -27,12 +27,17 @@ jobs:
 
     services:
       mariadb:
-        image: mariadb:10.8
+        image: mariadb:11.8
         env:
           MARIADB_ROOT_PASSWORD: 123
         ports:
           - 3306:3306
-        options: --health-cmd="mysqladmin ping" --health-interval=5s --health-timeout=2s --health-retries=3
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-start-period=5s
+          --health-interval=5s
+          --health-timeout=5s
+          --health-retries=10
 
     steps:
       - name: Clone

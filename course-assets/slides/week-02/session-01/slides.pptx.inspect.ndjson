@@ -1,0 +1,143 @@
+{"kind":"deck","id":"pr/9ldl2w","name":"Deck"}
+{"kind":"layout","layoutId":"09d5e041-3d1e-41eb-92d9-163f4144dd16","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"bf43f20e-82d2-4f05-9f1f-ccb5314d7a9f","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/jpb8rn","slide":1,"title":"WEEK 02  ·  SESSION 1","textShapes":3}
+{"kind":"shape","id":"sh/a9ofml0r","slide":1,"bbox":[0,0,18,720]}
+{"kind":"shape","id":"sh/xwzyh0ji","slide":1,"bbox":[18,0,590,720]}
+{"kind":"textbox","id":"sh/jyhgjq1o","slide":1,"text":"WEEK 02  ·  SESSION 1","textPreview":"WEEK 02  ·  SESSION 1","textChars":21,"textLines":1,"bbox":[70,80,410,28]}
+{"kind":"textbox","id":"sh/ix8zql03","slide":1,"text":"Git and Reproducible Project Structure","textPreview":"Git and Reproducible Project Structure","textChars":38,"textLines":1,"bbox":[70,156,474,188]}
+{"kind":"shape","id":"sh/50zyl0je","slide":1,"bbox":[70,370,74,6]}
+{"kind":"textbox","id":"sh/kzqhsvit","slide":1,"text":"Turn notebooks into maintainable projects that obtain and expose data.","textPreview":"Turn notebooks into maintainable projects that obtain and expose data.","textChars":70,"textLines":1,"bbox":[70,408,466,112]}
+{"kind":"image","id":"im/d0rihw72","slide":1,"name":"","alt":"Data pipeline from raw records to deployed AI application","bbox":[608,0,672,720]}
+{"kind":"image","id":"im/m5kjuloz","slide":1,"name":"","alt":"DS Academy logo","bbox":[70,610,180,60]}
+{"kind":"notes","id":"nt/jpb8rn","slide":1,"text":"Reproducibility means rebuilding a result from code, data, and declared configuration. Git commits preserve decisions, while environments and project boundaries preserve execution.\n\n[Sources]\n- DS Academy curriculum manifest: Week 2, session 1: Git and Reproducible Project Structure\n[/Sources]"}
+{"kind":"slide","id":"sl/z1n3i8","slide":2,"title":"WEEK 02  /  SESSION 01","textShapes":11}
+{"kind":"shape","id":"sh/ni9cvadw","slide":2,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/oj2t4feh","slide":2,"text":"WEEK 02  /  SESSION 01","textPreview":"WEEK 02  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/pkbuxkv2","slide":2,"text":"Learning outcomes","textPreview":"Learning outcomes","textChars":17,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/a5kb6pwn","slide":2,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/b6tczud8","slide":2,"bbox":[52,124,1178,2]}
+{"kind":"textbox","id":"sh/c72t8zed","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,164,84,58]}
+{"kind":"shape","id":"sh/x8bu14vy","slide":2,"bbox":[163,190,84,4]}
+{"kind":"textbox","id":"sh/y9kba9wj","slide":2,"text":"Use focused commits and branches.","textPreview":"Use focused commits and branches.","textChars":33,"textLines":1,"bbox":[276,161,850,72]}
+{"kind":"textbox","id":"sh/zadc3ud4","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[66,314,84,58]}
+{"kind":"shape","id":"sh/32l4zm9g","slide":2,"bbox":[163,340,84,4]}
+{"kind":"textbox","id":"sh/i1c3qh8v","slide":2,"text":"Separate source, tests, data, notebooks, and configuration.","textPreview":"Separate source, tests, data, notebooks, and configuration.","textChars":59,"textLines":1,"bbox":[276,311,850,72]}
+{"kind":"textbox","id":"sh/5onm1wr6","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[66,464,84,58]}
+{"kind":"shape","id":"sh/43ulsrql","slide":2,"bbox":[163,490,84,4]}
+{"kind":"textbox","id":"sh/vyl4vm94","slide":2,"text":"Recreate an environment from declared dependencies.","textPreview":"Recreate an environment from declared dependencies.","textChars":51,"textLines":1,"bbox":[276,461,850,72]}
+{"kind":"textbox","id":"sh/uxc3mh8j","slide":2,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/h03mxcra","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/z1n3i8","slide":2,"text":"By the end of this session, learners should be able to Use focused commits and branches. Separate source, tests, data, notebooks, and configuration. Recreate an environment from declared dependencies.\n\n[Sources]\n- DS Academy curriculum manifest: Learning outcomes for Git and Reproducible Project Structure\n[/Sources]"}
+{"kind":"slide","id":"sl/90jm0l","slide":3,"title":"WEEK 02  /  SESSION 01","textShapes":13}
+{"kind":"shape","id":"sh/md0fydg7","slide":3,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/9gbyt8zy","slide":3,"text":"WEEK 02  /  SESSION 01","textPreview":"WEEK 02  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/8f2x03yd","slide":3,"text":"The concept system","textPreview":"The concept system","textChars":18,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/v2tgviho","slide":3,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/u1kf2dgj","slide":3,"bbox":[52,124,1178,2]}
+{"kind":"shape","id":"sh/h4byxszu","slide":3,"bbox":[76,182,500,170]}
+{"kind":"shape","id":"sh/w32x4ny9","slide":3,"bbox":[76,182,10,170]}
+{"kind":"textbox","id":"sh/b6pwjehk","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[110,207,58,30]}
+{"kind":"textbox","id":"sh/a5gfqtgz","slide":3,"text":"Git history","textPreview":"Git history","textChars":11,"textLines":1,"bbox":[110,251,420,68]}
+{"kind":"shape","id":"sh/wjm983ql","slide":3,"bbox":[654,182,500,170]}
+{"kind":"shape","id":"sh/xkvah8r6","slide":3,"bbox":[654,182,10,170]}
+{"kind":"textbox","id":"sh/ah4r6t8f","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[688,207,58,30]}
+{"kind":"textbox","id":"sh/vidsfy90","slide":3,"text":"branching","textPreview":"branching","textChars":9,"textLines":1,"bbox":[688,251,420,68]}
+{"kind":"shape","id":"sh/kn69c3qx","slide":3,"bbox":[76,420,500,170]}
+{"kind":"shape","id":"sh/58fal8r2","slide":3,"bbox":[76,420,10,170]}
+{"kind":"textbox","id":"sh/ilorat8r","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[110,445,58,30]}
+{"kind":"textbox","id":"sh/jmxsjy9c","slide":3,"text":"project layout","textPreview":"project layout","textChars":14,"textLines":1,"bbox":[110,489,420,68]}
+{"kind":"shape","id":"sh/0r290jqd","slide":3,"bbox":[654,420,500,170]}
+{"kind":"shape","id":"sh/lcbq9ory","slide":3,"bbox":[654,420,10,170]}
+{"kind":"textbox","id":"sh/1836d0jm","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[688,445,58,30]}
+{"kind":"textbox","id":"sh/g7up4v2h","slide":3,"text":"environments","textPreview":"environments","textChars":12,"textLines":1,"bbox":[688,489,420,68]}
+{"kind":"textbox","id":"sh/f6loba1w","slide":3,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/e5c725kb","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/90jm0l","slide":3,"text":"Use these four concepts as a system rather than isolated vocabulary: Git history, branching, project layout, environments.\n\n[Sources]\n- DS Academy curriculum manifest: Core concepts for Git and Reproducible Project Structure\n[/Sources]"}
+{"kind":"slide","id":"sl/oli6wy","slide":4,"title":"FROM QUESTION TO EVIDENCE","textShapes":15}
+{"kind":"textbox","id":"sh/u1wne5g7","slide":4,"text":"FROM QUESTION TO EVIDENCE","textPreview":"FROM QUESTION TO EVIDENCE","textChars":25,"textLines":1,"bbox":[64,50,410,26]}
+{"kind":"textbox","id":"sh/h4n6p0zy","slide":4,"text":"A repeatable reasoning loop","textPreview":"A repeatable reasoning loop","textChars":27,"textLines":1,"bbox":[64,92,720,62]}
+{"kind":"shape","id":"sh/w3e5gfyd","slide":4,"bbox":[64,260,236,168]}
+{"kind":"textbox","id":"sh/nylojqhw","slide":4,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[86,282,50,28]}
+{"kind":"textbox","id":"sh/mxcnalgb","slide":4,"text":"Define","textPreview":"Define","textChars":6,"textLines":1,"bbox":[86,340,190,50]}
+{"kind":"textbox","id":"sh/90n6l0z2","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[310,322,42,55]}
+{"kind":"shape","id":"sh/8zu5cvyh","slide":4,"bbox":[358,260,236,168]}
+{"kind":"textbox","id":"sh/zalofqhk","slide":4,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[380,282,50,28]}
+{"kind":"textbox","id":"sh/y9cn6lgf","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[380,340,190,50]}
+{"kind":"textbox","id":"sh/g3atkrup","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[604,322,42,55]}
+{"kind":"shape","id":"sh/h4jatwva","slide":4,"bbox":[652,260,236,168]}
+{"kind":"textbox","id":"sh/u1sbihcz","slide":4,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[674,282,50,28]}
+{"kind":"textbox","id":"sh/v21srmd4","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[674,340,190,50]}
+{"kind":"textbox","id":"sh/8zatg7ut","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[898,322,42,55]}
+{"kind":"shape","id":"sh/t0japcve","slide":4,"bbox":[946,260,236,168]}
+{"kind":"textbox","id":"sh/6x8behcn","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[968,282,50,28]}
+{"kind":"textbox","id":"sh/7yhsnmd8","slide":4,"text":"Communicate","textPreview":"Communicate","textChars":11,"textLines":1,"bbox":[968,340,190,50]}
+{"kind":"textbox","id":"sh/svutsbux","slide":4,"text":"Refactor the week-one notebook into an installable repository.","textPreview":"Refactor the week-one notebook into an installable repository.","textChars":62,"textLines":1,"bbox":[64,514,1120,82]}
+{"kind":"textbox","id":"sh/dw3u1gbi","slide":4,"text":"DS ACADEMY  ·  PRACTICAL REASONING","textPreview":"DS ACADEMY  ·  PRACTICAL REASONING","textChars":34,"textLines":1,"bbox":[64,665,400,18]}
+{"kind":"notes","id":"nt/oli6wy","slide":4,"text":"Apply the session content through a four-stage reasoning loop: define the question, transform deliberately, validate assumptions, and communicate the evidence.\n\n[Sources]\n- DS Academy curriculum manifest: DS Academy teaching framework applied to Git and Reproducible Project Structure\n[/Sources]"}
+{"kind":"slide","id":"sl/sw916g","slide":5,"title":"WEEK 02  /  SESSION 01","textShapes":20}
+{"kind":"shape","id":"sh/reh03eto","slide":5,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/cfqhwjat","slide":5,"text":"WEEK 02  /  SESSION 01","textPreview":"WEEK 02  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/dgzi5obe","slide":5,"text":"Guided lab","textPreview":"Guided lab","textChars":10,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/e18zytsz","slide":5,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/z2h07ytk","slide":5,"bbox":[52,124,1178,2]}
+{"kind":"shape","id":"sh/03qh03a5","slide":5,"bbox":[70,170,510,420]}
+{"kind":"textbox","id":"sh/14ji9obq","slide":5,"text":"LAB BRIEF","textPreview":"LAB BRIEF","textChars":9,"textLines":1,"bbox":[104,206,180,25]}
+{"kind":"textbox","id":"sh/m5sz2tsb","slide":5,"text":"Refactor the week-one notebook into an installable repository.","textPreview":"Refactor the week-one notebook into an installable repository.","textChars":62,"textLines":1,"bbox":[104,264,416,166]}
+{"kind":"textbox","id":"sh/n610bytw","slide":5,"text":"workbook  /  tests  /  evidence","textPreview":"workbook  /  tests  /  evidence","textChars":31,"textLines":1,"bbox":[104,522,380,26]}
+{"kind":"textbox","id":"sh/re5wji9o","slide":5,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[646,174,42,28]}
+{"kind":"textbox","id":"sh/6dwvads3","slide":5,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[710,171,160,32]}
+{"kind":"textbox","id":"sh/t0nelsre","slide":5,"text":"Define inputs, outputs, and success criteria.","textPreview":"Define inputs, outputs, and success criteria.","textChars":45,"textLines":1,"bbox":[710,208,450,48]}
+{"kind":"shape","id":"sh/sfedcnqt","slide":5,"bbox":[646,262,514,2]}
+{"kind":"textbox","id":"sh/ja5wfi9c","slide":5,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[646,276,42,28]}
+{"kind":"textbox","id":"sh/i9cv6dsr","slide":5,"text":"Build","textPreview":"Build","textChars":5,"textLines":1,"bbox":[710,273,160,32]}
+{"kind":"textbox","id":"sh/5cneh8ri","slide":5,"text":"Implement the smallest correct workflow.","textPreview":"Implement the smallest correct workflow.","textChars":40,"textLines":1,"bbox":[710,310,450,48]}
+{"kind":"shape","id":"sh/4bed8nax","slide":5,"bbox":[646,364,514,2]}
+{"kind":"textbox","id":"sh/36pwr29w","slide":5,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[646,378,42,28]}
+{"kind":"textbox","id":"sh/25gvix8b","slide":5,"text":"Verify","textPreview":"Verify","textChars":6,"textLines":1,"bbox":[710,375,160,32]}
+{"kind":"textbox","id":"sh/y1kzq1sj","slide":5,"text":"Test normal, boundary, and failure cases.","textPreview":"Test normal, boundary, and failure cases.","textChars":41,"textLines":1,"bbox":[710,412,450,48]}
+{"kind":"shape","id":"sh/z2tgj6t4","slide":5,"bbox":[646,466,514,2]}
+{"kind":"textbox","id":"sh/k32hsba9","slide":5,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[646,480,42,28]}
+{"kind":"textbox","id":"sh/l4bylgbu","slide":5,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[710,477,160,32]}
+{"kind":"textbox","id":"sh/mpkzulsf","slide":5,"text":"Record the evidence and remaining limits.","textPreview":"Record the evidence and remaining limits.","textChars":41,"textLines":1,"bbox":[710,514,450,48]}
+{"kind":"textbox","id":"sh/7qtgnqt0","slide":5,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/8r2hwval","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/sw916g","slide":5,"text":"Guide learners through the lab without completing the reasoning for them. Ask for an explicit frame, a minimal implementation, boundary tests, and an evidence note.\n\n[Sources]\n- DS Academy curriculum manifest: Guided lab for Git and Reproducible Project Structure\n[/Sources]"}
+{"kind":"slide","id":"sl/fy0exr","slide":6,"title":"WEEK 02  /  SESSION 01","textShapes":13}
+{"kind":"shape","id":"sh/y5grq9cr","slide":6,"bbox":[0,0,12,720]}
+{"kind":"textbox","id":"sh/ls7alobi","slide":6,"text":"WEEK 02  /  SESSION 01","textPreview":"WEEK 02  /  SESSION 01","textChars":22,"textLines":1,"bbox":[52,28,340,24]}
+{"kind":"textbox","id":"sh/k7ytsjux","slide":6,"text":"Portfolio deliverable","textPreview":"Portfolio deliverable","textChars":21,"textLines":1,"bbox":[52,57,920,56]}
+{"kind":"textbox","id":"sh/b25sfut0","slide":6,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1085,34,145,24]}
+{"kind":"shape","id":"sh/a1wrmpcv","slide":6,"bbox":[52,124,1178,2]}
+{"kind":"textbox","id":"sh/x47ah4b6","slide":6,"text":"A repository with tests, a dependency lock, and meaningful commits.","textPreview":"A repository with tests, a dependency lock, and meaningful commits.","textChars":67,"textLines":1,"bbox":[70,170,760,108]}
+{"kind":"textbox","id":"sh/w3e9ozul","slide":6,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[70,334,180,26]}
+{"kind":"shape","id":"sh/vy9srytk","slide":6,"bbox":[70,386,20,20]}
+{"kind":"textbox","id":"sh/ux0bytcz","slide":6,"text":"Reproducible","textPreview":"Reproducible","textChars":12,"textLines":1,"bbox":[112,378,330,38]}
+{"kind":"shape","id":"sh/kj2h4z2t","slide":6,"bbox":[70,451,20,20]}
+{"kind":"textbox","id":"sh/l4bid43e","slide":6,"text":"Tested","textPreview":"Tested","textChars":6,"textLines":1,"bbox":[112,443,330,38]}
+{"kind":"shape","id":"sh/yh0z2pk3","slide":6,"bbox":[70,516,20,20]}
+{"kind":"textbox","id":"sh/zit0bulo","slide":6,"text":"Decision-relevant","textPreview":"Decision-relevant","textChars":17,"textLines":1,"bbox":[112,508,330,38]}
+{"kind":"shape","id":"sh/cfih0f2x","slide":6,"bbox":[864,168,330,426]}
+{"kind":"textbox","id":"sh/xgri9k3i","slide":6,"text":"WEEKLY ASSESSMENT","textPreview":"WEEKLY ASSESSMENT","textChars":17,"textLines":1,"bbox":[900,206,250,25]}
+{"kind":"textbox","id":"sh/ad0zy54r","slide":6,"text":"Public Data Explorer","textPreview":"Public Data Explorer","textChars":20,"textLines":1,"bbox":[900,260,250,86]}
+{"kind":"textbox","id":"sh/be907alc","slide":6,"text":"Reliability 30%, architecture 25%, interface 20%, documentation 15%, Git practice 10%.","textPreview":"Reliability 30%, architecture 25%, interface 20%, documentation 15%, Git practice 10%.","textChars":86,"textLines":1,"bbox":[900,388,250,132]}
+{"kind":"textbox","id":"sh/obihwfm1","slide":6,"text":"End-to-End Data Science & AI","textPreview":"End-to-End Data Science & AI","textChars":28,"textLines":1,"bbox":[52,680,360,18]}
+{"kind":"textbox","id":"sh/pcry5k36","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1184,680,46,18]}
+{"kind":"notes","id":"nt/fy0exr","slide":6,"text":"The deliverable is A repository with tests, a dependency lock, and meaningful commits. Use the weekly assessment rubric as a quality gate, not as an after-the-fact scoring checklist.\n\n[Sources]\n- DS Academy curriculum manifest: Portfolio deliverable and assessment rubric for week 2\n[/Sources]"}
+{"kind":"slide","id":"sl/ukcd1s","slide":7,"title":"SESSION CHECKPOINT","textShapes":11}
+{"kind":"shape","id":"sh/nedgfah4","slide":7,"bbox":[0,0,1280,16]}
+{"kind":"textbox","id":"sh/ofmhofyp","slide":7,"text":"SESSION CHECKPOINT","textPreview":"SESSION CHECKPOINT","textChars":18,"textLines":1,"bbox":[72,68,260,28]}
+{"kind":"textbox","id":"sh/pgvyhkza","slide":7,"text":"What should remain after the lesson?","textPreview":"What should remain after the lesson?","textChars":36,"textLines":1,"bbox":[72,116,920,66]}
+{"kind":"textbox","id":"sh/ahozqpgv","slide":7,"text":"CONCEPT","textPreview":"CONCEPT","textChars":7,"textLines":1,"bbox":[76,244,140,25]}
+{"kind":"textbox","id":"sh/bix0juhg","slide":7,"text":"Git history + branching","textPreview":"Git history + branching","textChars":23,"textLines":1,"bbox":[242,237,880,68]}
+{"kind":"shape","id":"sh/cj6hszy1","slide":7,"bbox":[76,328,1068,2]}
+{"kind":"textbox","id":"sh/xkfil4z6","slide":7,"text":"PRACTICE","textPreview":"PRACTICE","textChars":8,"textLines":1,"bbox":[76,364,140,25]}
+{"kind":"textbox","id":"sh/qlkze5gr","slide":7,"text":"Refactor the week-one notebook into an installable repository.","textPreview":"Refactor the week-one notebook into an installable repository.","textChars":62,"textLines":1,"bbox":[242,357,880,68]}
+{"kind":"shape","id":"sh/rmtg7qhw","slide":7,"bbox":[76,448,1068,2]}
+{"kind":"textbox","id":"sh/3q5kfi98","slide":7,"text":"EVIDENCE","textPreview":"EVIDENCE","textChars":8,"textLines":1,"bbox":[76,484,140,25]}
+{"kind":"textbox","id":"sh/2pwjmdsn","slide":7,"text":"A repository with tests, a dependency lock, and meaningful commits.","textPreview":"A repository with tests, a dependency lock, and meaningful commits.","textChars":67,"textLines":1,"bbox":[242,477,880,68]}
+{"kind":"shape","id":"sh/ps72hsry","slide":7,"bbox":[76,568,1068,2]}
+{"kind":"textbox","id":"sh/ore1onad","slide":7,"text":"Narration available in English and","textPreview":"Narration available in English and","textChars":34,"textLines":1,"bbox":[76,628,305,28]}
+{"kind":"textbox","id":"sh/fm5kbi9w","slide":7,"text":"සිංහල","textPreview":"සිංහල","textChars":5,"textLines":1,"bbox":[384,625,92,32]}
+{"kind":"textbox","id":"sh/elwjidsb","slide":7,"text":"DS ACADEMY","textPreview":"DS ACADEMY","textChars":10,"textLines":1,"bbox":[1050,628,140,28]}
+{"kind":"notes","id":"nt/ukcd1s","slide":7,"text":"Reproducibility means rebuilding a result from code, data, and declared configuration. Git commits preserve decisions, while environments and project boundaries preserve execution.\n\n[Sources]\n- DS Academy curriculum manifest: Session summary for Git and Reproducible Project Structure\n[/Sources]"}
