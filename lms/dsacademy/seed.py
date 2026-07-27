@@ -97,6 +97,8 @@ def configure_branding():
 	settings.app_logo = settings.banner_image
 	settings.favicon = ensure_file("dsacademy-mark.png", "images/dsacademy/mark.png")
 	settings.save(ignore_permissions=True)
+	# The LMS home is a client-side route, so Website Settings validation cannot resolve it.
+	frappe.db.set_single_value("Website Settings", "home_page", "lms")
 
 
 def ensure_file(file_name, relative_path):
