@@ -6,6 +6,9 @@ on:
       - main
     tags:
       - "*"
+concurrency:
+  group: container-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   build:
     name: Build
@@ -19,13 +22,10 @@ jobs:
       - name: Checkout Entire Repository
         uses: actions/checkout@v4
 
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
         with:
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
         with:
@@ -51,7 +51,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           context: builds
           file: builds/images/layered/Containerfile
           cache-from: type=gha
