@@ -17,6 +17,7 @@ check_media() {
 	printf 'ok %s\n' "${path}"
 }
 
+check_page "/"
 check_page "/api/method/ping"
 check_page "/lms"
 check_page "/lms/courses/end-to-end-data-science-ai"

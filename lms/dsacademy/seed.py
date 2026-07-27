@@ -87,6 +87,7 @@ def get_seed_counts():
 def configure_branding():
 	settings = frappe.get_single("Website Settings")
 	settings.app_name = "DS Academy"
+	settings.home_page = "lms"
 	settings.banner_image = ensure_file(
 		"dsacademy-logo-light.png", "images/dsacademy/logo-light.png"
 	)

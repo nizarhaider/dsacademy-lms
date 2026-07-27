@@ -48,6 +48,9 @@ docker compose --project-name "${PROJECT_NAME}" --file "${COMPOSE_FILE}" \
 	bench --site "${SITE_NAME}" execute lms.dsacademy.seed.seed_all
 docker compose --project-name "${PROJECT_NAME}" --file "${COMPOSE_FILE}" \
 	exec --no-TTY backend \
+	bench --site "${SITE_NAME}" scheduler enable
+docker compose --project-name "${PROJECT_NAME}" --file "${COMPOSE_FILE}" \
+	exec --no-TTY backend \
 	bench --site "${SITE_NAME}" clear-cache
 
 printf 'DS Academy LMS is available at https://%s/lms\n' "${SITE_NAME}"
