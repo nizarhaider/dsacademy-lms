@@ -12,6 +12,11 @@ from lms.lms.doctype.lms_course.lms_course import update_course_statistics
 
 ASSET_URL = "/assets/lms"
 MEDIA_ROOT = Path(frappe.get_app_path("lms", "public", "course-media"))
+MEDIA_VERSION = "20260728-beginner-ai-18-week-v1"
+LEGACY_COURSE_TITLES = (
+	"End-to-End Data Science & AI",
+	"Production AI Engineering Bootcamp",
+)
 
 
 def seed_all():
@@ -23,24 +28,36 @@ def seed_all():
 	instructor = upsert_instructor()
 	course = upsert_course(instructor)
 
+	chapter_names = []
 	for week_number, week_data in enumerate(WEEKS, start=1):
 		chapter = upsert_chapter(course, week_number, week_data)
+		chapter_names.append(chapter.name)
+		lesson_names = []
 		for session_number, session_data in enumerate(week_data["sessions"], start=1):
-			upsert_session_lesson(
+			lesson = upsert_session_lesson(
 				course,
 				chapter,
 				week_number,
 				session_number,
 				session_data,
 			)
-		upsert_assessment_lesson(course, chapter, week_number, week_data)
+			lesson_names.append(lesson.name)
+		assessment = upsert_assessment_lesson(
+			course, chapter, week_number, week_data
+		)
+		lesson_names.append(assessment.name)
+		chapter.set("lessons", [{"lesson": name} for name in lesson_names])
+		chapter.save(ignore_permissions=True)
+
+	course.set("chapters", [{"chapter": name} for name in chapter_names])
+	course.save(ignore_permissions=True)
 
 	update_course_statistics()
 	frappe.db.commit()
 	return {
 		"course": course.name,
 		"chapters": len(WEEKS),
-		"lessons": len(WEEKS) * 3,
+		"lessons": sum(len(item["sessions"]) + 1 for item in WEEKS),
 		"quizzes": len(WEEKS),
 		"assignments": len(WEEKS),
 	}
@@ -151,12 +168,12 @@ def configure_lms():
 			"enforce_assignment_completion": 1,
 			"lesson_dwell_time": 30,
 			"meta_description": (
-				"Practical English and Sinhala learning in data science, "
-				"machine learning, generative AI, and MLOps."
+				"Practical English AI engineering training in local models, "
+				"RAG, agents, evaluation, MLOps, and production deployment."
 			),
 			"meta_keywords": (
-				"data science Sri Lanka, machine learning course, AI course, "
-				"Python, Sinhala data science"
+				"AI engineering Sri Lanka, LLM course, RAG course, AI agents, "
+				"LangGraph, MCP, MLOps, Python"
 			),
 			"meta_image": f"{ASSET_URL}/images/dsacademy/course-cover.png",
 			"contact_us_email": "nizarhaider@gmail.com",
@@ -191,6 +208,11 @@ def upsert_instructor():
 
 def upsert_course(instructor):
 	name = frappe.db.exists("LMS Course", {"title": COURSE["title"]})
+	if not name:
+		for legacy_title in LEGACY_COURSE_TITLES:
+			name = frappe.db.exists("LMS Course", {"title": legacy_title})
+			if name:
+				break
 	course = frappe.get_doc("LMS Course", name) if name else frappe.new_doc("LMS Course")
 	course.update(
 		{
@@ -215,7 +237,7 @@ def upsert_course(instructor):
 
 
 def ensure_category():
-	category = "Data Science & AI"
+	category = "AI Engineering"
 	if not frappe.db.exists("LMS Category", category):
 		frappe.get_doc({"doctype": "LMS Category", "category": category}).insert(
 			ignore_permissions=True
@@ -224,7 +246,7 @@ def ensure_category():
 
 
 def upsert_chapter(course, week_number, week_data):
-	title = f"Week {week_number:02d} · {week_data['title']}"
+	title = f"Module {week_number:02d} · {week_data['title']}"
 	name = frappe.db.exists("Course Chapter", {"course": course.name, "title": title})
 	chapter = (
 		frappe.get_doc("Course Chapter", name)
@@ -276,17 +298,17 @@ def upsert_session_lesson(
 def upsert_assessment_lesson(course, chapter, week_number, week_data):
 	quiz = upsert_quiz(course, week_number, week_data)
 	assignment = upsert_assignment(course, week_number, week_data)
-	title = "3. Weekly Assessment & Portfolio Task"
+	title = f"{len(week_data['sessions']) + 1}. Module Assessment & Portfolio Project"
 	content = {
 		"time": 0,
 		"blocks": [
 			{
-				"id": f"week-{week_number:02d}-quiz",
+				"id": f"module-{week_number:02d}-quiz",
 				"type": "quiz",
 				"data": {"quiz": quiz.name},
 			},
 			{
-				"id": f"week-{week_number:02d}-assignment",
+				"id": f"module-{week_number:02d}-assignment",
 				"type": "assignment",
 				"data": {"assignment": assignment.name},
 			},
@@ -317,7 +339,7 @@ def upsert_assessment_lesson(course, chapter, week_number, week_data):
 
 
 def upsert_quiz(course, week_number, week_data):
-	title = f"Week {week_number:02d} Knowledge Check"
+	title = f"Module {week_number:02d} Knowledge Check"
 	name = frappe.db.exists("LMS Quiz", {"title": title})
 	quiz = frappe.get_doc("LMS Quiz", name) if name else frappe.new_doc("LMS Quiz")
 	question_rows = []
@@ -362,7 +384,7 @@ def upsert_quiz(course, week_number, week_data):
 
 def upsert_assignment(course, week_number, week_data):
 	assignment_title, question, rubric = week_data["assignment"]
-	title = f"Week {week_number:02d}: {assignment_title}"
+	title = f"Module {week_number:02d}: {assignment_title}"
 	name = frappe.db.exists("LMS Assignment", {"title": title})
 	assignment = (
 		frappe.get_doc("LMS Assignment", name)
@@ -385,7 +407,7 @@ def upsert_assignment(course, week_number, week_data):
 
 
 def render_lesson_body(week_number, session_number, session_data):
-	slug = f"week-{week_number:02d}/session-{session_number:02d}"
+	slug = f"module-{week_number:02d}/lesson-{session_number:02d}"
 	lines = [
 		f"# {session_data['title']}",
 		"",
@@ -407,21 +429,13 @@ def render_lesson_body(week_number, session_number, session_data):
 		"",
 		"## Narrated explanation",
 		"",
-		"**English**",
-		"",
 		session_data["narration_en"],
-		"",
-		"**සිංහල**",
-		"",
-		session_data["narration_si"],
 	]
 
 	for label, relative_path, macro in [
-		("English audio", f"{slug}/narration-en.mp3", "Audio"),
-		("සිංහල හඬ", f"{slug}/narration-si.mp3", "Audio"),
-		("Session slides", f"{slug}/slides.pdf", "PDF"),
-		("English lesson video", f"{slug}/lesson-en.mp4", "Video"),
-		("සිංහල පාඩම් වීඩියෝව", f"{slug}/lesson-si.mp4", "Video"),
+		("Lesson audio", f"{slug}/narration-en.mp3", "Audio"),
+		("Lesson slides", f"{slug}/slides.pdf", "PDF"),
+		("Lesson video", f"{slug}/lesson-en.mp4", "Video"),
 	]:
 		if (MEDIA_ROOT / relative_path).exists():
 			lines.extend(
@@ -429,7 +443,7 @@ def render_lesson_body(week_number, session_number, session_data):
 					"",
 					f"### {label}",
 					"",
-					f'{{{{ {macro}("{ASSET_URL}/course-media/{relative_path}") }}}}',
+					f'{{{{ {macro}("{ASSET_URL}/course-media/{relative_path}?v={MEDIA_VERSION}") }}}}',
 				]
 			)
 	powerpoint_path = f"{slug}/slides.pptx"
@@ -437,7 +451,15 @@ def render_lesson_body(week_number, session_number, session_data):
 		lines.extend(
 			[
 				"",
-				f"[Download the editable PowerPoint deck]({ASSET_URL}/course-media/{powerpoint_path})",
+				f"[Download the editable PowerPoint deck]({ASSET_URL}/course-media/{powerpoint_path}?v={MEDIA_VERSION})",
+			]
+		)
+	guided_notebook_path = f"{slug}/guided-lab.ipynb"
+	if (MEDIA_ROOT / guided_notebook_path).exists():
+		lines.extend(
+			[
+				"",
+				f"[Download the guided notebook]({ASSET_URL}/course-media/{guided_notebook_path}?v={MEDIA_VERSION})",
 			]
 		)
 	return "\n".join(lines)

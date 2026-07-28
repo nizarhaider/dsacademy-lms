@@ -7,16 +7,25 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 PUBLIC_ROOT = ROOT.parents[1] / "lms" / "public" / "course-media"
+GUIDED_NOTEBOOK_ROOT = ROOT.parent / "notebooks" / "guided"
+WEEK_COUNT = 18
 
 
 def publish_deck(deck_dir):
 	destination = PUBLIC_ROOT / deck_dir.parent.name / deck_dir.name
 	destination.mkdir(parents=True, exist_ok=True)
 	shutil.copy2(deck_dir / "slides.pptx", destination / "slides.pptx")
+	week_number = int(deck_dir.parent.name.removeprefix("module-"))
+	guided_notebook = GUIDED_NOTEBOOK_ROOT / f"week-{week_number:02d}.ipynb"
+	if not guided_notebook.exists():
+		raise RuntimeError(f"Missing guided notebook: {guided_notebook}")
+	shutil.copy2(guided_notebook, destination / "guided-lab.ipynb")
 
 	image_paths = sorted((deck_dir / "rendered").glob("slide-*.png"))
-	if len(image_paths) != 7:
-		raise RuntimeError(f"Expected seven slide renders in {deck_dir}")
+	if not 10 <= len(image_paths) <= 12:
+		raise RuntimeError(
+			f"Expected 10–12 slide renders in {deck_dir}; found {len(image_paths)}"
+		)
 	images = [Image.open(path).convert("RGB") for path in image_paths]
 	try:
 		first, *remaining = images
@@ -33,8 +42,13 @@ def publish_deck(deck_dir):
 
 
 def main():
-	decks = sorted(ROOT.glob("week-*/session-*"))
+	decks = [
+		ROOT / f"module-{week_number:02d}" / "lesson-01"
+		for week_number in range(1, WEEK_COUNT + 1)
+	]
 	for deck in decks:
+		if not deck.is_dir():
+			raise RuntimeError(f"Missing approved curriculum deck: {deck}")
 		publish_deck(deck)
 		print(deck.relative_to(ROOT))
 	print(f"Published {len(decks)} decks to {PUBLIC_ROOT}.")

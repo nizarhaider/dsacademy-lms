@@ -8,35 +8,57 @@ const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(SCRIPT_DIR, "../..");
 const PYTHON = process.env.PYTHON || "python3";
 const COVER = path.join(REPO, "lms/public/images/dsacademy/course-cover.png");
-const LOGO = path.join(REPO, "lms/public/images/dsacademy/logo-light.png");
+const LOGO_LIGHT = path.join(REPO, "lms/public/images/dsacademy/logo-light.png");
+const LOGO_DARK = path.join(REPO, "lms/public/images/dsacademy/logo-dark.png");
 const OUTPUT_ROOT = path.join(REPO, "course-assets/slides");
 
 const C = {
-  ink: "#172033",
-  muted: "#58657A",
-  soft: "#EDF4FA",
-  line: "#D7E2EC",
+  ink: "#0B1220",
+  graphite: "#243244",
+  muted: "#607086",
+  mist: "#EEF4F7",
+  line: "#CAD6DF",
   blue: "#176BDB",
-  cyan: "#08A7C9",
-  coral: "#EF7768",
+  cyan: "#00A8C8",
+  lime: "#A8D95B",
+  coral: "#F06B5F",
   white: "#FFFFFF",
-  dark: "#12253C",
+  navy: "#0E263E",
+  ice: "#DFF5FA",
 };
 
 const FONT = "Aptos";
+const MONO = "Aptos Mono";
 const PAGE = { width: 1280, height: 720 };
 const args = process.argv.slice(2);
-const requestedWeek = Number(args[args.indexOf("--week") + 1] || 0);
-const requestedSession = Number(args[args.indexOf("--session") + 1] || 0);
+function requestedNumber(...flags) {
+  for (const flag of flags) {
+    const index = args.indexOf(flag);
+    if (index >= 0) return Number(args[index + 1] || 0);
+  }
+  return 0;
+}
+const requestedWeek = requestedNumber("--module", "--week");
+const requestedSession = requestedNumber("--lesson", "--session");
 
 const curriculum = JSON.parse(
   execFileSync(
     PYTHON,
     [
       "-c",
-      "import json; from lms.dsacademy.curriculum import COURSE,WEEKS; print(json.dumps({'course':COURSE,'weeks':WEEKS}, ensure_ascii=False))",
+      [
+        "import json",
+        "from lms.dsacademy.curriculum import COURSE, WEEKS",
+        "from lms.dsacademy.deck_content import build_slide_outline",
+        "payload={'course': COURSE, 'weeks': []}",
+        "for wi, week in enumerate(WEEKS, 1):",
+        "  item=dict(week)",
+        "  item['sessions']=[dict(session, deck=build_slide_outline(wi, si, week, session)) for si, session in enumerate(week['sessions'], 1)]",
+        "  payload['weeks'].append(item)",
+        "print(json.dumps(payload, ensure_ascii=False))",
+      ].join("\n"),
     ],
-    { cwd: REPO, encoding: "utf8" },
+    { cwd: REPO, encoding: "utf8", maxBuffer: 16 * 1024 * 1024 },
   ),
 );
 
@@ -62,9 +84,9 @@ function addText(slide, text, position, style = {}) {
   return shape;
 }
 
-function addRect(slide, position, fill, line = "none", radius = "rect") {
+function addRect(slide, position, fill, line = "none", geometry = "rect") {
   return slide.shapes.add({
-    geometry: radius,
+    geometry,
     position,
     fill,
     line: { style: "solid", fill: line, width: line === "none" ? 0 : 1 },
@@ -75,338 +97,902 @@ function addRule(slide, left, top, width, color = C.line, height = 2) {
   return addRect(slide, { left, top, width, height }, color);
 }
 
-function addHeader(slide, weekNumber, sessionNumber, title) {
-  addRect(slide, { left: 0, top: 0, width: 12, height: 720 }, C.cyan);
+function addImage(slide, blob, alt, position, fit = "cover") {
+  return slide.images.add({
+    blob,
+    contentType: "image/png",
+    alt,
+    fit,
+    position,
+  });
+}
+
+function setNotes(
+  slide,
+  narration,
+  weekNumber,
+  sessionNumber,
+  pageNumber,
+  title,
+  sources = [],
+) {
+  const sourceLines = sources.length
+    ? sources.map((source) => `- ${source}`).join("\n")
+    : `- DS Academy teaching outline, module ${weekNumber}, lesson ${sessionNumber}, slide ${pageNumber}: ${title}`;
+  slide.speakerNotes.textFrame.setText(
+    `${narration}\n\n[Sources]\n${sourceLines}\n[/Sources]`,
+  );
+}
+
+function addChrome(slide, context, pageNumber, inverse = false) {
+  const color = inverse ? "#B7CAD9" : C.muted;
   addText(
     slide,
-    `WEEK ${String(weekNumber).padStart(2, "0")}  /  SESSION ${String(sessionNumber).padStart(2, "0")}`,
-    { left: 52, top: 28, width: 340, height: 24 },
-    { fontSize: 12, bold: true, color: C.blue },
+    `M${String(context.weekNumber).padStart(2, "0")} / L${String(context.sessionNumber).padStart(2, "0")}`,
+    { left: 54, top: 28, width: 110, height: 22 },
+    { fontSize: 11, bold: true, color: inverse ? C.cyan : C.blue },
   );
+  addText(
+    slide,
+    context.session.deck[0].title,
+    { left: 176, top: 28, width: 650, height: 22 },
+    { fontSize: 11, color },
+  );
+  addText(
+    slide,
+    `DS ACADEMY   ${String(pageNumber).padStart(2, "0")}`,
+    { left: 1002, top: 28, width: 224, height: 22 },
+    { fontSize: 11, bold: true, color, horizontalAlignment: "right" },
+  );
+}
+
+function addSlideTitle(slide, title, inverse = false, eyebrow = "") {
+  if (eyebrow) {
+    addText(
+      slide,
+      eyebrow.toUpperCase(),
+      { left: 62, top: 78, width: 560, height: 22 },
+      { fontSize: 12, bold: true, color: inverse ? C.cyan : C.blue },
+    );
+  }
   addText(
     slide,
     title,
-    { left: 52, top: 57, width: 920, height: 56 },
-    { fontSize: 34, bold: true, color: C.ink },
-  );
-  addText(
-    slide,
-    "DS ACADEMY",
-    { left: 1085, top: 34, width: 145, height: 24 },
-    { fontSize: 12, bold: true, color: C.muted, horizontalAlignment: "right" },
-  );
-  addRule(slide, 52, 124, 1178);
-}
-
-function addFooter(slide, pageNumber) {
-  addText(
-    slide,
-    "End-to-End Data Science & AI",
-    { left: 52, top: 680, width: 360, height: 18 },
-    { fontSize: 10, color: C.muted },
-  );
-  addText(
-    slide,
-    String(pageNumber).padStart(2, "0"),
-    { left: 1184, top: 680, width: 46, height: 18 },
-    { fontSize: 10, bold: true, color: C.blue, horizontalAlignment: "right" },
+    { left: 62, top: eyebrow ? 108 : 80, width: 1110, height: 62 },
+    { fontSize: 38, bold: true, color: inverse ? C.white : C.ink },
   );
 }
 
-function setNotes(slide, narration, sourceDetail) {
-  slide.speakerNotes.textFrame.setText(
-    `${narration}\n\n[Sources]\n- DS Academy curriculum manifest: ${sourceDetail}\n[/Sources]`,
-  );
-  slide.speakerNotes.setVisible(true);
-}
-
-async function addTitleSlide(presentation, weekNumber, sessionNumber, weekData, sessionData) {
-  const slide = presentation.slides.add();
-  slide.background.fill = C.white;
-  addRect(slide, { left: 0, top: 0, width: 18, height: 720 }, C.cyan);
-  addRect(slide, { left: 18, top: 0, width: 590, height: 720 }, C.white);
-  slide.images.add({
-    blob: await bytes(COVER),
-    contentType: "image/png",
-    alt: "Data pipeline from raw records to deployed AI application",
-    fit: "cover",
-    position: { left: 608, top: 0, width: 672, height: 720 },
-  });
-  addText(
-    slide,
-    `WEEK ${String(weekNumber).padStart(2, "0")}  ·  SESSION ${sessionNumber}`,
-    { left: 70, top: 80, width: 410, height: 28 },
-    { fontSize: 14, bold: true, color: C.blue },
-  );
-  addText(
-    slide,
-    sessionData.title,
-    { left: 70, top: 156, width: 474, height: 188 },
-    { fontSize: 49, bold: true, color: C.ink },
-  );
-  addRule(slide, 70, 370, 74, C.coral, 6);
-  addText(
-    slide,
-    weekData.focus,
-    { left: 70, top: 408, width: 466, height: 112 },
-    { fontSize: 21, color: C.muted },
-  );
-  slide.images.add({
-    blob: await bytes(LOGO),
-    contentType: "image/png",
-    alt: "DS Academy logo",
-    fit: "contain",
-    position: { left: 70, top: 610, width: 180, height: 60 },
-  });
+function addNotesFor(slide, item, context, pageNumber) {
   setNotes(
     slide,
-    sessionData.narration_en,
-    `Week ${weekNumber}, session ${sessionNumber}: ${sessionData.title}`,
+    item.narration,
+    context.weekNumber,
+    context.sessionNumber,
+    pageNumber,
+    item.title,
+    item.sources || [],
   );
 }
 
-function addOutcomesSlide(presentation, weekNumber, sessionNumber, sessionData) {
+async function buildCover(presentation, item, context, pageNumber, assets) {
   const slide = presentation.slides.add();
-  slide.background.fill = C.white;
-  addHeader(slide, weekNumber, sessionNumber, "Learning outcomes");
-  sessionData.outcomes.forEach((outcome, index) => {
-    const top = 164 + index * 150;
-    addText(
-      slide,
-      String(index + 1).padStart(2, "0"),
-      { left: 66, top, width: 84, height: 58 },
-      { fontSize: 36, bold: true, color: index === 1 ? C.cyan : C.blue },
-    );
-    addRule(slide, 163, top + 26, 84, index === 2 ? C.coral : C.line, 4);
-    addText(
-      slide,
-      outcome,
-      { left: 276, top: top - 3, width: 850, height: 72 },
-      { fontSize: 25, bold: true, color: C.ink },
-    );
-  });
-  addFooter(slide, 2);
-  setNotes(slide, `By the end of this session, learners should be able to ${sessionData.outcomes.join(" ")}`, `Learning outcomes for ${sessionData.title}`);
-}
-
-function addConceptsSlide(presentation, weekNumber, sessionNumber, sessionData) {
-  const slide = presentation.slides.add();
-  slide.background.fill = C.white;
-  addHeader(slide, weekNumber, sessionNumber, "The concept system");
-  const positions = [
-    { left: 76, top: 182 },
-    { left: 654, top: 182 },
-    { left: 76, top: 420 },
-    { left: 654, top: 420 },
-  ];
-  sessionData.concepts.forEach((concept, index) => {
-    const p = positions[index];
-    addRect(
-      slide,
-      { left: p.left, top: p.top, width: 500, height: 170 },
-      index % 2 === 0 ? C.soft : C.white,
-      index % 2 === 0 ? "none" : C.line,
-      "roundRect",
-    );
-    addRect(
-      slide,
-      { left: p.left, top: p.top, width: 10, height: 170 },
-      index === 3 ? C.coral : index === 1 ? C.cyan : C.blue,
-    );
-    addText(
-      slide,
-      String(index + 1).padStart(2, "0"),
-      { left: p.left + 34, top: p.top + 25, width: 58, height: 30 },
-      { fontSize: 14, bold: true, color: C.muted },
-    );
-    addText(
-      slide,
-      concept,
-      { left: p.left + 34, top: p.top + 69, width: 420, height: 68 },
-      { fontSize: 27, bold: true, color: C.ink },
-    );
-  });
-  addFooter(slide, 3);
-  setNotes(slide, `Use these four concepts as a system rather than isolated vocabulary: ${sessionData.concepts.join(", ")}.`, `Core concepts for ${sessionData.title}`);
-}
-
-function addFlowSlide(presentation, weekNumber, sessionNumber, sessionData) {
-  const slide = presentation.slides.add();
-  slide.background.fill = C.dark;
+  slide.background.fill = C.navy;
+  addRect(slide, { left: 0, top: 0, width: 1280, height: 12 }, C.cyan);
+  addImage(
+    slide,
+    assets.cover,
+    "Data science workflow from raw data to a deployed decision system",
+    { left: 724, top: 0, width: 556, height: 720 },
+    "cover",
+  );
+  addRect(slide, { left: 692, top: 0, width: 32, height: 720 }, C.cyan);
   addText(
     slide,
-    "FROM QUESTION TO EVIDENCE",
-    { left: 64, top: 50, width: 410, height: 26 },
+    `MODULE ${String(context.weekNumber).padStart(2, "0")}  /  LESSON ${String(context.sessionNumber).padStart(2, "0")}`,
+    { left: 70, top: 70, width: 430, height: 26 },
     { fontSize: 13, bold: true, color: C.cyan },
   );
   addText(
     slide,
-    "A repeatable reasoning loop",
-    { left: 64, top: 92, width: 720, height: 62 },
-    { fontSize: 38, bold: true, color: C.white },
+    item.title,
+    { left: 70, top: 148, width: 548, height: 250 },
+    { fontSize: 52, bold: true, color: C.white },
   );
-  const labels = ["Define", "Transform", "Validate", "Communicate"];
-  labels.forEach((label, index) => {
-    const left = 64 + index * 294;
-    addRect(
-      slide,
-      { left, top: 260, width: 236, height: 168 },
-      index === 0 ? C.blue : index === 1 ? C.cyan : index === 2 ? C.white : C.coral,
-      "none",
-      "roundRect",
-    );
+  addRule(slide, 70, 430, 96, C.coral, 6);
+  addText(
+    slide,
+    item.subtitle,
+    { left: 70, top: 472, width: 530, height: 102 },
+    { fontSize: 22, color: "#D5E2EC" },
+  );
+  addImage(
+    slide,
+    assets.logoDark,
+    "DS Academy",
+    { left: 70, top: 620, width: 182, height: 52 },
+    "contain",
+  );
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildStatement(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.white;
+  addChrome(slide, context, pageNumber);
+  addText(
+    slide,
+    "WHY THIS MATTERS",
+    { left: 64, top: 94, width: 300, height: 25 },
+    { fontSize: 12, bold: true, color: C.blue },
+  );
+  addRule(slide, 64, 146, 110, C.coral, 6);
+  addText(
+    slide,
+    item.title,
+    { left: 64, top: 178, width: 1020, height: 72 },
+    { fontSize: 40, bold: true, color: C.ink },
+  );
+  addText(
+    slide,
+    item.body,
+    { left: 64, top: 274, width: 1020, height: 62 },
+    { fontSize: 27, bold: true, color: C.blue },
+  );
+  (item.items || []).forEach((outcome, index) => {
+    const top = 374 + index * 72;
     addText(
       slide,
       String(index + 1).padStart(2, "0"),
-      { left: left + 22, top: 282, width: 50, height: 28 },
-      { fontSize: 13, bold: true, color: index === 2 ? C.muted : C.white },
+      { left: 66, top, width: 56, height: 30 },
+      { fontSize: 13, bold: true, color: index === 2 ? C.coral : C.cyan },
     );
     addText(
       slide,
-      label,
-      { left: left + 22, top: 340, width: 190, height: 50 },
-      { fontSize: 25, bold: true, color: index === 2 ? C.ink : C.white },
+      outcome,
+      { left: 144, top: top - 6, width: 900, height: 52 },
+      { fontSize: 21, bold: true, color: C.ink },
     );
-    if (index < labels.length - 1) {
+  });
+  addRect(slide, { left: 1146, top: 128, width: 64, height: 476 }, C.ice);
+  addRect(slide, { left: 1166, top: 220, width: 24, height: 210 }, C.cyan);
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildOutcomes(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.white;
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Session contract");
+  item.items.forEach((outcome, index) => {
+    const top = 190 + index * 150;
+    addText(
+      slide,
+      String(index + 1).padStart(2, "0"),
+      { left: 66, top, width: 100, height: 76 },
+      { fontSize: 45, bold: true, color: index === 1 ? C.cyan : C.blue },
+    );
+    addRule(slide, 184, top + 33, 94, index === 2 ? C.coral : C.line, 4);
+    addText(
+      slide,
+      outcome,
+      { left: 310, top: top - 2, width: 820, height: 82 },
+      { fontSize: 27, bold: true, color: C.ink },
+    );
+  });
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildMap(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.navy;
+  addChrome(slide, context, pageNumber, true);
+  addSlideTitle(slide, item.title, true, "Four connected ideas");
+  const colors = [C.blue, C.cyan, C.white, C.coral];
+  item.items.forEach((concept, index) => {
+    const left = 64 + index * 296;
+    addText(
+      slide,
+      String(index + 1).padStart(2, "0"),
+      { left, top: 232, width: 70, height: 30 },
+      { fontSize: 13, bold: true, color: colors[index] },
+    );
+    addRule(slide, left, 282, 220, colors[index], 5);
+    addText(
+      slide,
+      concept,
+      { left, top: 312, width: 230, height: 126 },
+      {
+        fontSize: concept.length > 24 ? 23 : 28,
+        bold: true,
+        color: C.white,
+      },
+    );
+    if (index < item.items.length - 1) {
       addText(
         slide,
         "→",
-        { left: left + 246, top: 322, width: 42, height: 55 },
-        { fontSize: 30, bold: true, color: C.white, horizontalAlignment: "center" },
+        { left: left + 232, top: 324, width: 42, height: 52 },
+        { fontSize: 31, bold: true, color: "#8BA2B6", horizontalAlignment: "center" },
       );
     }
   });
   addText(
     slide,
-    sessionData.lab,
-    { left: 64, top: 514, width: 1120, height: 82 },
-    { fontSize: 22, color: C.white, horizontalAlignment: "center" },
+    item.body,
+    { left: 64, top: 540, width: 1100, height: 58 },
+    { fontSize: 21, color: "#C9D8E4" },
   );
-  addText(
-    slide,
-    "DS ACADEMY  ·  PRACTICAL REASONING",
-    { left: 64, top: 665, width: 400, height: 18 },
-    { fontSize: 10, bold: true, color: "#AFC4D9" },
-  );
-  setNotes(slide, `Apply the session content through a four-stage reasoning loop: define the question, transform deliberately, validate assumptions, and communicate the evidence.`, `DS Academy teaching framework applied to ${sessionData.title}`);
+  addNotesFor(slide, item, context, pageNumber);
 }
 
-function addLabSlide(presentation, weekNumber, sessionNumber, sessionData) {
+function buildConcept(presentation, item, context, pageNumber) {
+  const index = item.index || 1;
+  const inverse = item.inverse || false;
   const slide = presentation.slides.add();
-  slide.background.fill = C.white;
-  addHeader(slide, weekNumber, sessionNumber, "Guided lab");
-  addRect(slide, { left: 70, top: 170, width: 510, height: 420 }, C.dark, "none", "roundRect");
+  slide.background.fill = inverse ? C.navy : C.white;
+  addChrome(slide, context, pageNumber, inverse);
   addText(
     slide,
-    "LAB BRIEF",
-    { left: 104, top: 206, width: 180, height: 25 },
+    "CORE CONCEPT",
+    { left: 64, top: 100, width: 220, height: 24 },
+    { fontSize: 12, bold: true, color: inverse ? C.cyan : C.blue },
+  );
+  addText(
+    slide,
+    item.title,
+    { left: 64, top: 150, width: 1080, height: 72 },
+    { fontSize: 40, bold: true, color: inverse ? C.white : C.ink },
+  );
+  addRule(slide, 64, 246, 112, C.cyan, 6);
+  addText(
+    slide,
+    item.body,
+    { left: 64, top: 282, width: 1110, height: 80 },
+    { fontSize: 21, color: inverse ? "#D6E2EB" : C.graphite },
+  );
+  (item.items || []).forEach((detail, itemIndex) => {
+    const column = itemIndex % 2;
+    const row = Math.floor(itemIndex / 2);
+    const left = 64 + column * 574;
+    const top = 382 + row * 122;
+    addRect(
+      slide,
+      { left, top, width: 540, height: 102 },
+      inverse ? "#183B59" : C.mist,
+    );
+    addText(
+      slide,
+      detail,
+      { left: left + 20, top: top + 13, width: 500, height: 78 },
+      { fontSize: 16, bold: true, color: inverse ? C.white : C.ink },
+    );
+  });
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildApplication(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.white;
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Apply the concept");
+  const sections = [
+    ["PURPOSE", item.body, C.blue],
+    ["IN PRACTICE", item.lab, C.cyan],
+    ["WATCH FOR", item.risk, C.coral],
+  ];
+  sections.forEach(([label, detail, color], index) => {
+    const top = 190 + index * 146;
+    addText(
+      slide,
+      label,
+      { left: 66, top: top + 5, width: 180, height: 24 },
+      { fontSize: 12, bold: true, color },
+    );
+    addRule(slide, 66, top + 44, 160, color, 4);
+    addText(
+      slide,
+      detail,
+      { left: 292, top, width: 850, height: 94 },
+      { fontSize: index === 1 ? 22 : 25, bold: index !== 1, color: C.ink },
+    );
+  });
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildProcess(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.navy;
+  addChrome(slide, context, pageNumber, true);
+  addSlideTitle(slide, item.title, true, "Reasoning sequence");
+  const verbs = ["Frame", "Transform", "Validate", "Explain"];
+  item.items.forEach((concept, index) => {
+    const left = 62 + index * 296;
+    addText(
+      slide,
+      verbs[index],
+      { left, top: 230, width: 220, height: 40 },
+      { fontSize: 27, bold: true, color: index === 3 ? C.coral : C.cyan },
+    );
+    addText(
+      slide,
+      concept,
+      { left, top: 300, width: 230, height: 68 },
+      { fontSize: 20, bold: true, color: C.white },
+    );
+    addRule(slide, left, 394, 230, index === 3 ? C.coral : "#46627B", 4);
+    addText(
+      slide,
+      String(index + 1),
+      { left, top: 428, width: 70, height: 52 },
+      { fontSize: 35, bold: true, color: "#7892A8" },
+    );
+  });
+  addText(
+    slide,
+    item.body,
+    { left: 62, top: 560, width: 1110, height: 55 },
+    { fontSize: 20, color: "#D1DEE8" },
+  );
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildExampleSetup(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.white;
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Worked example");
+  addText(
+    slide,
+    item.body,
+    { left: 66, top: 180, width: 1090, height: 128 },
+    { fontSize: 31, bold: true, color: C.ink },
+  );
+  item.items.forEach((label, index) => {
+    const left = 66 + index * 384;
+    addText(
+      slide,
+      String(index + 1).padStart(2, "0"),
+      { left, top: 400, width: 70, height: 36 },
+      { fontSize: 16, bold: true, color: index === 2 ? C.coral : C.blue },
+    );
+    addRule(slide, left, 454, 316, index === 2 ? C.coral : C.cyan, 5);
+    addText(
+      slide,
+      label,
+      { left, top: 488, width: 320, height: 72 },
+      { fontSize: 25, bold: true, color: C.ink },
+    );
+  });
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildCode(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.mist;
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Worked example");
+  addRect(slide, { left: 58, top: 170, width: 824, height: 458 }, C.ink);
+  addRect(slide, { left: 58, top: 170, width: 824, height: 34 }, C.graphite);
+  [C.coral, "#F2C94C", C.lime].forEach((color, index) => {
+    addRect(slide, { left: 76 + index * 25, top: 181, width: 12, height: 12 }, color, "none", "ellipse");
+  });
+  addText(
+    slide,
+    item.code,
+    { left: 82, top: 226, width: 760, height: 364 },
+    { fontFamily: MONO, fontSize: 17, color: "#E8F1F7" },
+  );
+  addText(
+    slide,
+    "DESIGN RULE",
+    { left: 934, top: 214, width: 220, height: 24 },
+    { fontSize: 12, bold: true, color: C.blue },
+  );
+  addRule(slide, 934, 260, 84, C.coral, 5);
+  addText(
+    slide,
+    item.body,
+    { left: 934, top: 302, width: 270, height: 190 },
+    { fontSize: 25, bold: true, color: C.ink },
+  );
+  addText(
+    slide,
+    "Read it. Run it. Break it. Explain it.",
+    { left: 934, top: 548, width: 270, height: 62 },
+    { fontSize: 17, color: C.muted },
+  );
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildCodeOutput(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.mist;
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Run it and inspect the result");
+
+  addRect(slide, { left: 54, top: 170, width: 684, height: 408 }, C.ink);
+  addRect(slide, { left: 54, top: 170, width: 684, height: 32 }, C.graphite);
+  [C.coral, "#F2C94C", C.lime].forEach((color, index) => {
+    addRect(slide, { left: 72 + index * 24, top: 180, width: 11, height: 11 }, color, "none", "ellipse");
+  });
+  addText(
+    slide,
+    item.code,
+    { left: 76, top: 220, width: 642, height: 336 },
+    { fontFamily: MONO, fontSize: 15, color: "#E8F1F7" },
+  );
+
+  addRect(slide, { left: 770, top: 170, width: 454, height: 408 }, C.white, C.line);
+  addText(
+    slide,
+    "OUTPUT",
+    { left: 796, top: 194, width: 120, height: 22 },
+    { fontSize: 12, bold: true, color: C.blue },
+  );
+  addText(
+    slide,
+    item.output,
+    { left: 796, top: 234, width: 398, height: 312 },
+    { fontFamily: MONO, fontSize: 14, color: C.ink },
+  );
+
+  addRect(slide, { left: 54, top: 602, width: 1170, height: 62 }, C.ice);
+  addText(
+    slide,
+    item.takeaway,
+    { left: 76, top: 618, width: 1128, height: 34 },
+    { fontSize: 20, bold: true, color: C.ink },
+  );
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildDataset(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.white;
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Inspect the evidence");
+  addText(
+    slide,
+    item.subtitle,
+    { left: 64, top: 158, width: 1080, height: 44 },
+    { fontSize: 19, color: C.muted },
+  );
+
+  const values = [item.headers, ...item.rows];
+  const table = slide.tables.add({
+    rows: values.length,
+    columns: item.headers.length,
+    left: 64,
+    top: 228,
+    width: 1152,
+    height: 300,
+    columnWidths:
+      item.headers.length === 5
+        ? [350, 290, 130, 190, 192]
+        : [300, 240, 300, 312],
+    values,
+  });
+  const header = table.cells.block({
+    row: 0,
+    column: 0,
+    rowCount: 1,
+    columnCount: item.headers.length,
+  });
+  header.fill = C.navy;
+  header.textStyle.bold = true;
+  header.textStyle.color = C.white;
+  header.textStyle.fontSize = 14;
+  const body = table.cells.block({
+    row: 1,
+    column: 0,
+    rowCount: item.rows.length,
+    columnCount: item.headers.length,
+  });
+  body.textStyle.fontSize = 14;
+  body.textStyle.color = C.ink;
+
+  addRect(slide, { left: 64, top: 560, width: 1152, height: 74 }, C.ice);
+  addText(
+    slide,
+    item.callout,
+    { left: 88, top: 580, width: 1104, height: 38 },
+    { fontSize: 21, bold: true, color: C.ink },
+  );
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildChart(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.white;
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Evidence and interpretation");
+
+  slide.charts.add(item.chartType, {
+    position: { left: 58, top: 176, width: 820, height: 440 },
+    categories: item.categories,
+    series: item.series.map((series, index) => ({
+      ...series,
+      fill: index === 0 ? C.blue : C.coral,
+    })),
+    hasLegend: item.series.length > 1,
+    legend: { position: "bottom" },
+    barOptions: {
+      direction: "column",
+      grouping: "clustered",
+      gapWidth: 48,
+    },
+    dataLabels: { showValue: true, position: "outEnd" },
+    yAxis: {
+      majorGridlines: { style: "solid", fill: C.line, width: 1 },
+    },
+  });
+
+  addRect(slide, { left: 922, top: 190, width: 302, height: 410 }, C.navy);
+  addText(
+    slide,
+    "READ THE CHART",
+    { left: 950, top: 222, width: 240, height: 24 },
+    { fontSize: 12, bold: true, color: C.cyan },
+  );
+  addRule(slide, 950, 270, 76, C.coral, 5);
+  addText(
+    slide,
+    item.insight,
+    { left: 950, top: 306, width: 244, height: 240 },
+    { fontSize: 23, bold: true, color: C.white },
+  );
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildSources(presentation, item, context, pageNumber, assets) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.navy;
+  addChrome(slide, context, pageNumber, true);
+  addSlideTitle(slide, item.title, true, "Lesson synthesis");
+  item.items.forEach((detail, index) => {
+    const top = 194 + index * 78;
+    addText(
+      slide,
+      String(index + 1).padStart(2, "0"),
+      { left: 66, top, width: 56, height: 30 },
+      { fontSize: 13, bold: true, color: index === 3 ? C.coral : C.cyan },
+    );
+    addText(
+      slide,
+      detail,
+      { left: 142, top: top - 5, width: 580, height: 48 },
+      { fontSize: 23, bold: true, color: C.white },
+    );
+  });
+  addText(
+    slide,
+    "OPEN SOURCES",
+    { left: 790, top: 190, width: 260, height: 24 },
+    { fontSize: 12, bold: true, color: C.coral },
+  );
+  addText(
+    slide,
+    item.source_labels.join("\n\n"),
+    { left: 790, top: 238, width: 414, height: 290 },
+    { fontSize: 13, color: "#D3E1EB" },
+  );
+  addImage(
+    slide,
+    assets.logoDark,
+    "DS Academy",
+    { left: 1010, top: 620, width: 180, height: 48 },
+    "contain",
+  );
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildVerify(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.white;
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Worked example");
+  item.items.forEach((detail, index) => {
+    const top = 200 + index * 144;
+    addRect(
+      slide,
+      { left: 68, top, width: 66, height: 66 },
+      index === 2 ? C.coral : index === 1 ? C.cyan : C.blue,
+    );
+    addText(
+      slide,
+      String(index + 1),
+      { left: 68, top: top + 12, width: 66, height: 38 },
+      { fontSize: 24, bold: true, color: C.white, horizontalAlignment: "center" },
+    );
+    addText(
+      slide,
+      detail,
+      { left: 182, top: top - 2, width: 900, height: 74 },
+      { fontSize: 27, bold: true, color: C.ink },
+    );
+    addRule(slide, 182, top + 94, 910);
+  });
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildPitfalls(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = "#FFF8F6";
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Risk review");
+  addRect(slide, { left: 0, top: 0, width: 16, height: 720 }, C.coral);
+  item.items.forEach((detail, index) => {
+    const top = 196 + index * 148;
+    addText(
+      slide,
+      `0${index + 1}`,
+      { left: 74, top, width: 78, height: 42 },
+      { fontSize: 18, bold: true, color: C.coral },
+    );
+    addText(
+      slide,
+      detail,
+      { left: 190, top: top - 8, width: 930, height: 92 },
+      { fontSize: 25, bold: true, color: C.ink },
+    );
+    addRule(slide, 74, top + 105, 1048, "#E7C9C4");
+  });
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildChecklist(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.white;
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Quality gate");
+  item.items.forEach((detail, index) => {
+    const top = 182 + index * 112;
+    addRect(slide, { left: 72, top: top + 3, width: 34, height: 34 }, C.white, C.cyan);
+    addText(
+      slide,
+      "✓",
+      { left: 73, top: top + 1, width: 32, height: 30 },
+      { fontSize: 20, bold: true, color: C.cyan, horizontalAlignment: "center" },
+    );
+    addText(
+      slide,
+      detail,
+      { left: 146, top: top - 4, width: 970, height: 68 },
+      { fontSize: 20, bold: true, color: C.ink },
+    );
+    addRule(slide, 146, top + 76, 970);
+  });
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildLab(presentation, item, context, pageNumber) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.navy;
+  addChrome(slide, context, pageNumber, true);
+  addText(
+    slide,
+    "GUIDED LAB",
+    { left: 64, top: 92, width: 220, height: 24 },
     { fontSize: 12, bold: true, color: C.cyan },
   );
   addText(
     slide,
-    sessionData.lab,
-    { left: 104, top: 264, width: 416, height: 166 },
-    { fontSize: 27, bold: true, color: C.white },
+    item.body,
+    { left: 64, top: 154, width: 1100, height: 154 },
+    { fontSize: 37, bold: true, color: C.white },
   );
-  addText(
-    slide,
-    "workbook  /  tests  /  evidence",
-    { left: 104, top: 522, width: 380, height: 26 },
-    { fontSize: 13, color: "#AFC4D9" },
-  );
-  const steps = [
-    ["01", "Frame", "Define inputs, outputs, and success criteria."],
-    ["02", "Build", "Implement the smallest correct workflow."],
-    ["03", "Verify", "Test normal, boundary, and failure cases."],
-    ["04", "Explain", "Record the evidence and remaining limits."],
-  ];
-  steps.forEach(([number, title, detail], index) => {
-    const top = 174 + index * 102;
-    addText(slide, number, { left: 646, top, width: 42, height: 28 }, { fontSize: 13, bold: true, color: index === 3 ? C.coral : C.blue });
-    addText(slide, title, { left: 710, top: top - 3, width: 160, height: 32 }, { fontSize: 21, bold: true, color: C.ink });
-    addText(slide, detail, { left: 710, top: top + 34, width: 450, height: 48 }, { fontSize: 16, color: C.muted });
-    if (index < 3) addRule(slide, 646, top + 88, 514);
+  item.items.forEach((label, index) => {
+    const left = 64 + index * 290;
+    addText(
+      slide,
+      String(index + 1).padStart(2, "0"),
+      { left, top: 410, width: 62, height: 28 },
+      { fontSize: 13, bold: true, color: index === 3 ? C.coral : C.cyan },
+    );
+    addRule(slide, left, 462, 214, index === 3 ? C.coral : "#4A657D", 5);
+    addText(
+      slide,
+      label,
+      { left, top: 500, width: 220, height: 52 },
+      { fontSize: 26, bold: true, color: C.white },
+    );
   });
-  addFooter(slide, 5);
-  setNotes(slide, `Guide learners through the lab without completing the reasoning for them. Ask for an explicit frame, a minimal implementation, boundary tests, and an evidence note.`, `Guided lab for ${sessionData.title}`);
+  addNotesFor(slide, item, context, pageNumber);
 }
 
-function addDeliverableSlide(presentation, weekNumber, sessionNumber, sessionData, weekData) {
+function buildPortfolio(presentation, item, context, pageNumber) {
   const slide = presentation.slides.add();
   slide.background.fill = C.white;
-  addHeader(slide, weekNumber, sessionNumber, "Portfolio deliverable");
+  addChrome(slide, context, pageNumber);
   addText(
     slide,
-    sessionData.deliverable,
-    { left: 70, top: 170, width: 760, height: 108 },
-    { fontSize: 31, bold: true, color: C.ink },
-  );
-  addText(
-    slide,
-    "QUALITY GATE",
-    { left: 70, top: 334, width: 180, height: 26 },
+    "PORTFOLIO EVIDENCE",
+    { left: 66, top: 96, width: 300, height: 25 },
     { fontSize: 12, bold: true, color: C.blue },
   );
-  const gates = ["Reproducible", "Tested", "Decision-relevant"];
-  gates.forEach((gate, index) => {
-    addRect(slide, { left: 70, top: 386 + index * 65, width: 20, height: 20 }, index === 2 ? C.coral : C.cyan, "none", "roundRect");
-    addText(slide, gate, { left: 112, top: 378 + index * 65, width: 330, height: 38 }, { fontSize: 20, bold: true, color: C.ink });
+  addText(
+    slide,
+    item.body,
+    { left: 66, top: 164, width: 1040, height: 200 },
+    { fontSize: 39, bold: true, color: C.ink },
+  );
+  addRule(slide, 66, 400, 1100, C.coral, 6);
+  item.items.forEach((label, index) => {
+    const left = 66 + index * 366;
+    addText(
+      slide,
+      label,
+      { left, top: 474, width: 300, height: 54 },
+      { fontSize: 25, bold: true, color: index === 2 ? C.coral : C.blue },
+    );
+    addText(
+      slide,
+      ["Can be rebuilt", "Has boundary tests", "Supports a decision"][index],
+      { left, top: 544, width: 300, height: 46 },
+      { fontSize: 17, color: C.muted },
+    );
   });
-  addRect(slide, { left: 864, top: 168, width: 330, height: 426 }, C.soft, "none", "roundRect");
-  addText(slide, "WEEKLY ASSESSMENT", { left: 900, top: 206, width: 250, height: 25 }, { fontSize: 12, bold: true, color: C.blue });
-  addText(slide, weekData.assignment[0], { left: 900, top: 260, width: 250, height: 86 }, { fontSize: 25, bold: true, color: C.ink });
-  addText(slide, weekData.assignment[2], { left: 900, top: 388, width: 250, height: 132 }, { fontSize: 16, color: C.muted });
-  addFooter(slide, 6);
-  setNotes(slide, `The deliverable is ${sessionData.deliverable} Use the weekly assessment rubric as a quality gate, not as an after-the-fact scoring checklist.`, `Portfolio deliverable and assessment rubric for week ${weekNumber}`);
+  addNotesFor(slide, item, context, pageNumber);
 }
 
-function addSummarySlide(presentation, weekNumber, sessionNumber, sessionData) {
+function buildQuiz(presentation, item, context, pageNumber) {
   const slide = presentation.slides.add();
-  slide.background.fill = C.white;
-  addRect(slide, { left: 0, top: 0, width: 1280, height: 16 }, C.cyan);
-  addText(slide, "SESSION CHECKPOINT", { left: 72, top: 68, width: 260, height: 28 }, { fontSize: 13, bold: true, color: C.blue });
-  addText(slide, "What should remain after the lesson?", { left: 72, top: 116, width: 920, height: 66 }, { fontSize: 38, bold: true, color: C.ink });
-  const summaries = [
-    ["CONCEPT", sessionData.concepts.slice(0, 2).join(" + ")],
-    ["PRACTICE", sessionData.lab],
-    ["EVIDENCE", sessionData.deliverable],
-  ];
-  summaries.forEach(([label, detail], index) => {
-    const top = 244 + index * 120;
-    addText(slide, label, { left: 76, top, width: 140, height: 25 }, { fontSize: 12, bold: true, color: index === 2 ? C.coral : C.cyan });
-    addText(slide, detail, { left: 242, top: top - 7, width: 880, height: 68 }, { fontSize: 23, bold: true, color: C.ink });
-    addRule(slide, 76, top + 84, 1068);
+  slide.background.fill = C.ice;
+  addChrome(slide, context, pageNumber);
+  addSlideTitle(slide, item.title, false, "Pause and answer");
+  item.items.forEach((question, index) => {
+    const top = 190 + index * 148;
+    addText(
+      slide,
+      `Q${index + 1}`,
+      { left: 70, top, width: 70, height: 42 },
+      { fontSize: 18, bold: true, color: index === 2 ? C.coral : C.blue },
+    );
+    addText(
+      slide,
+      question,
+      { left: 172, top: top - 8, width: 920, height: 82 },
+      { fontSize: 27, bold: true, color: C.ink },
+    );
+    addRule(slide, 70, top + 104, 1020, "#B8DCE4");
   });
-  addText(slide, "Narration available in English and", { left: 76, top: 628, width: 305, height: 28 }, { fontSize: 15, bold: true, color: C.blue });
-  addText(slide, "සිංහල", { left: 384, top: 625, width: 92, height: 32 }, { fontFamily: "Sinhala Sangam MN", fontSize: 16, bold: true, color: C.blue });
-  addText(slide, "DS ACADEMY", { left: 1050, top: 628, width: 140, height: 28 }, { fontSize: 12, bold: true, color: C.muted, horizontalAlignment: "right" });
-  setNotes(slide, sessionData.narration_en, `Session summary for ${sessionData.title}`);
+  addNotesFor(slide, item, context, pageNumber);
 }
 
-async function generateDeck(weekData, weekNumber, sessionData, sessionNumber) {
+function buildSummary(presentation, item, context, pageNumber, assets) {
+  const slide = presentation.slides.add();
+  slide.background.fill = C.navy;
+  addChrome(slide, context, pageNumber, true);
+  addText(
+    slide,
+    "SESSION SYNTHESIS",
+    { left: 64, top: 88, width: 300, height: 25 },
+    { fontSize: 12, bold: true, color: C.cyan },
+  );
+  addText(
+    slide,
+    "Keep the system, not isolated definitions.",
+    { left: 64, top: 136, width: 1040, height: 72 },
+    { fontSize: 40, bold: true, color: C.white },
+  );
+  item.items.forEach((concept, index) => {
+    const top = 266 + index * 86;
+    addText(
+      slide,
+      String(index + 1).padStart(2, "0"),
+      { left: 66, top, width: 60, height: 30 },
+      { fontSize: 13, bold: true, color: index === 3 ? C.coral : C.cyan },
+    );
+    addText(
+      slide,
+      concept,
+      { left: 148, top: top - 5, width: 520, height: 58 },
+      { fontSize: 20, bold: true, color: C.white },
+    );
+  });
+  addText(
+    slide,
+    "NEXT EVIDENCE",
+    { left: 760, top: 286, width: 250, height: 24 },
+    { fontSize: 12, bold: true, color: C.coral },
+  );
+  addText(
+    slide,
+    item.body,
+    { left: 760, top: 336, width: 430, height: 178 },
+    { fontSize: 26, bold: true, color: C.white },
+  );
+  addImage(
+    slide,
+    assets.logoDark,
+    "DS Academy",
+    { left: 1010, top: 620, width: 180, height: 48 },
+    "contain",
+  );
+  addNotesFor(slide, item, context, pageNumber);
+}
+
+function buildSlide(presentation, item, context, pageNumber, assets) {
+  switch (item.kind) {
+    case "cover":
+      return buildCover(presentation, item, context, pageNumber, assets);
+    case "statement":
+      return buildStatement(presentation, item, context, pageNumber);
+    case "outcomes":
+      return buildOutcomes(presentation, item, context, pageNumber);
+    case "map":
+      return buildMap(presentation, item, context, pageNumber);
+    case "concept":
+      return buildConcept(presentation, item, context, pageNumber);
+    case "application":
+      return buildApplication(presentation, item, context, pageNumber);
+    case "process":
+      return buildProcess(presentation, item, context, pageNumber);
+    case "example_setup":
+      return buildExampleSetup(presentation, item, context, pageNumber);
+    case "code":
+      return buildCode(presentation, item, context, pageNumber);
+    case "code_output":
+      return buildCodeOutput(presentation, item, context, pageNumber);
+    case "dataset":
+      return buildDataset(presentation, item, context, pageNumber);
+    case "chart":
+      return buildChart(presentation, item, context, pageNumber);
+    case "verify":
+      return buildVerify(presentation, item, context, pageNumber);
+    case "pitfalls":
+      return buildPitfalls(presentation, item, context, pageNumber);
+    case "checklist":
+      return buildChecklist(presentation, item, context, pageNumber);
+    case "lab":
+      return buildLab(presentation, item, context, pageNumber);
+    case "portfolio":
+      return buildPortfolio(presentation, item, context, pageNumber);
+    case "quiz":
+      return buildQuiz(presentation, item, context, pageNumber);
+    case "summary":
+      return buildSummary(presentation, item, context, pageNumber, assets);
+    case "sources":
+      return buildSources(presentation, item, context, pageNumber, assets);
+    default:
+      throw new Error(`Unsupported slide kind: ${item.kind}`);
+  }
+}
+
+async function generateDeck(week, weekNumber, session, sessionNumber, assets) {
+  if (session.deck.length < 10 || session.deck.length > 12) {
+    throw new Error(
+      `Expected 10–12 slides for ${session.title}; found ${session.deck.length}`,
+    );
+  }
   const presentation = Presentation.create({ slideSize: PAGE });
-  await addTitleSlide(presentation, weekNumber, sessionNumber, weekData, sessionData);
-  addOutcomesSlide(presentation, weekNumber, sessionNumber, sessionData);
-  addConceptsSlide(presentation, weekNumber, sessionNumber, sessionData);
-  addFlowSlide(presentation, weekNumber, sessionNumber, sessionData);
-  addLabSlide(presentation, weekNumber, sessionNumber, sessionData);
-  addDeliverableSlide(presentation, weekNumber, sessionNumber, sessionData, weekData);
-  addSummarySlide(presentation, weekNumber, sessionNumber, sessionData);
+  const context = { week, weekNumber, session, sessionNumber };
+  for (const [index, item] of session.deck.entries()) {
+    await buildSlide(presentation, item, context, index + 1, assets);
+  }
 
   const outputDir = path.join(
     OUTPUT_ROOT,
-    `week-${String(weekNumber).padStart(2, "0")}`,
-    `session-${String(sessionNumber).padStart(2, "0")}`,
+    `module-${String(weekNumber).padStart(2, "0")}`,
+    `lesson-${String(sessionNumber).padStart(2, "0")}`,
   );
   const renderDir = path.join(outputDir, "rendered");
+  await fs.rm(renderDir, { recursive: true, force: true });
   await fs.mkdir(renderDir, { recursive: true });
 
   for (const [index, slide] of presentation.slides.items.entries()) {
     const stem = `slide-${String(index + 1).padStart(2, "0")}`;
     const png = await presentation.export({ slide, format: "png", scale: 1 });
-    await fs.writeFile(path.join(renderDir, `${stem}.png`), new Uint8Array(await png.arrayBuffer()));
+    await fs.writeFile(
+      path.join(renderDir, `${stem}.png`),
+      new Uint8Array(await png.arrayBuffer()),
+    );
     const layout = await slide.export({ format: "layout" });
-    await fs.writeFile(path.join(renderDir, `${stem}.layout.json`), await layout.text());
+    await fs.writeFile(
+      path.join(renderDir, `${stem}.layout.json`),
+      await layout.text(),
+    );
   }
 
   const pptx = await PresentationFile.exportPptx(presentation);
@@ -414,18 +1000,25 @@ async function generateDeck(weekData, weekNumber, sessionData, sessionNumber) {
   return outputDir;
 }
 
-for (const [weekIndex, weekData] of curriculum.weeks.entries()) {
+const assets = {
+  cover: await bytes(COVER),
+  logoLight: await bytes(LOGO_LIGHT),
+  logoDark: await bytes(LOGO_DARK),
+};
+
+for (const [weekIndex, week] of curriculum.weeks.entries()) {
   const weekNumber = weekIndex + 1;
   if (requestedWeek && weekNumber !== requestedWeek) continue;
-  for (const [sessionIndex, sessionData] of weekData.sessions.entries()) {
+  for (const [sessionIndex, session] of week.sessions.entries()) {
     const sessionNumber = sessionIndex + 1;
     if (requestedSession && sessionNumber !== requestedSession) continue;
-    const output = await generateDeck(weekData, weekNumber, sessionData, sessionNumber);
+    const output = await generateDeck(
+      week,
+      weekNumber,
+      session,
+      sessionNumber,
+      assets,
+    );
     console.log(output);
   }
 }
-
-execFileSync(PYTHON, [path.join(SCRIPT_DIR, "montage.py")], {
-  cwd: REPO,
-  stdio: "inherit",
-});
