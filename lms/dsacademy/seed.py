@@ -49,6 +49,7 @@ def seed_all():
 		chapter.set("lessons", [{"lesson": name} for name in lesson_names])
 		chapter.save(ignore_permissions=True)
 
+	course.reload()
 	course.set("chapters", [{"chapter": name} for name in chapter_names])
 	course.save(ignore_permissions=True)
 
