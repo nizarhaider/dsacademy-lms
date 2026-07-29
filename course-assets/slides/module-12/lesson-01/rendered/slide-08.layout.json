@@ -1,0 +1,1269 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/qdhswq",
+    "id": "qdhswq",
+    "slide": 8,
+    "layoutId": "0ba633d0-c0c6-473b-9330-0ad3154187d7",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "d2239e6e-e806-48f4-91a7-04d42dddc739",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#0E263E",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "0ba633d0-c0c6-473b-9330-0ad3154187d7",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "d2239e6e-e806-48f4-91a7-04d42dddc739",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "d2239e6e-e806-48f4-91a7-04d42dddc739",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mxcrqdor",
+      "id": "1",
+      "bbox": [
+        54,
+        28,
+        110,
+        22
+      ],
+      "geometry": "rect",
+      "text": "M12 / L01",
+      "textPreview": "M12 / L01",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#00A8C8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "M12 / L01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "M12 / L01",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#00A8C8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "M12 / L01",
+              "fontSize": 11,
+              "color": "#00A8C8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/90nq1872",
+      "id": "2",
+      "bbox": [
+        176,
+        28,
+        650,
+        22
+      ],
+      "geometry": "rect",
+      "text": "A Language Model Predicts the Next Token",
+      "textPreview": "A Language Model Predicts the Next Token",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#B7CAD9",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A Language Model Predicts the Next Token"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A Language Model Predicts the Next Token",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#B7CAD9"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A Language Model Predicts the Next Token",
+              "fontSize": 11,
+              "color": "#B7CAD9"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8zu9s36h",
+      "id": "3",
+      "bbox": [
+        1002,
+        28,
+        224,
+        22
+      ],
+      "geometry": "rect",
+      "text": "DS ACADEMY   08",
+      "textPreview": "DS ACADEMY   08",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#B7CAD9",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DS ACADEMY   08"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DS ACADEMY   08",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#B7CAD9",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DS ACADEMY   08",
+              "fontSize": 11,
+              "color": "#B7CAD9",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vm583ip8",
+      "id": "4",
+      "bbox": [
+        62,
+        78,
+        560,
+        22
+      ],
+      "geometry": "rect",
+      "text": "REASONING SEQUENCE",
+      "textPreview": "REASONING SEQUENCE",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#00A8C8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "REASONING SEQUENCE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "REASONING SEQUENCE",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#00A8C8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "REASONING SEQUENCE",
+              "fontSize": 12,
+              "color": "#00A8C8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a1wrudon",
+      "id": "5",
+      "bbox": [
+        62,
+        108,
+        1110,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Base and Instruction Models Have Different Training Goals",
+      "textPreview": "Base and Instruction Models Have Different Training Goals",
+      "resolvedFontSize": 35,
+      "resolvedTextStyle": {
+        "fontSize": 35,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Base and Instruction Models Have Different Training Goals"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Base and Instruction Models Have Different Training Goals",
+          "resolvedTextStyle": {
+            "fontSize": 35,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Base and Instruction Models Have Different Training Goals",
+              "fontSize": 35,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xonq5s7e",
+      "id": "6",
+      "bbox": [
+        62,
+        230,
+        220,
+        40
+      ],
+      "geometry": "rect",
+      "text": "Frame",
+      "textPreview": "Frame",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#00A8C8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Frame"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Frame",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#00A8C8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Frame",
+              "fontSize": 27,
+              "color": "#00A8C8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wne9wn6t",
+      "id": "7",
+      "bbox": [
+        62,
+        294,
+        230,
+        88
+      ],
+      "geometry": "rect",
+      "text": "A base model is pretrained mainly to continue token sequences.",
+      "textPreview": "A base model is pretrained mainly to continue token sequences.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A base model is"
+          },
+          {
+            "index": 2,
+            "text": "pretrained mainly to"
+          },
+          {
+            "index": 3,
+            "text": "continue token"
+          },
+          {
+            "index": 4,
+            "text": "sequences."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A base model is pretrained mainly to continue token sequences.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A base model is pretrained mainly to continue token sequences.",
+              "fontSize": 17,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bq18rep4",
+      "id": "8",
+      "bbox": [
+        62,
+        394,
+        230,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#46627B",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q5s7i98j",
+      "id": "9",
+      "bbox": [
+        62,
+        428,
+        70,
+        52
+      ],
+      "geometry": "rect",
+      "text": "1",
+      "textPreview": "1",
+      "resolvedFontSize": 35,
+      "resolvedTextStyle": {
+        "fontSize": 35,
+        "typeface": "+mn-lt",
+        "color": "#7892A8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1",
+          "resolvedTextStyle": {
+            "fontSize": 35,
+            "color": "#7892A8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1",
+              "fontSize": 35,
+              "color": "#7892A8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7yl8fi9",
+      "id": "10",
+      "bbox": [
+        358,
+        230,
+        220,
+        40
+      ],
+      "geometry": "rect",
+      "text": "Transform",
+      "textPreview": "Transform",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#00A8C8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Transform"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Transform",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#00A8C8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Transform",
+              "fontSize": 27,
+              "color": "#00A8C8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h872hkzu",
+      "id": "11",
+      "bbox": [
+        358,
+        294,
+        230,
+        88
+      ],
+      "geometry": "rect",
+      "text": "Instruction models usually expect a model-specific chat template containing role and control tokens.",
+      "textPreview": "Instruction models usually expect a model-specific chat template containing role and control tokens.",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Instruction models usually"
+          },
+          {
+            "index": 2,
+            "text": "expect a model-specific chat"
+          },
+          {
+            "index": 3,
+            "text": "template containing role and"
+          },
+          {
+            "index": 4,
+            "text": "control tokens."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Instruction models usually expect a model-specific chat template containing role and control tokens.",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Instruction models usually expect a model-specific chat template containing role and control tokens.",
+              "fontSize": 15,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u5g36503",
+      "id": "12",
+      "bbox": [
+        358,
+        394,
+        230,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#46627B",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/v6pkfaho",
+      "id": "13",
+      "bbox": [
+        358,
+        428,
+        70,
+        52
+      ],
+      "geometry": "rect",
+      "text": "2",
+      "textPreview": "2",
+      "resolvedFontSize": 35,
+      "resolvedTextStyle": {
+        "fontSize": 35,
+        "typeface": "+mn-lt",
+        "color": "#7892A8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2",
+          "resolvedTextStyle": {
+            "fontSize": 35,
+            "color": "#7892A8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2",
+              "fontSize": 35,
+              "color": "#7892A8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4bilczil",
+      "id": "14",
+      "bbox": [
+        654,
+        230,
+        220,
+        40
+      ],
+      "geometry": "rect",
+      "text": "Validate",
+      "textPreview": "Validate",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#00A8C8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Validate"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Validate",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#00A8C8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Validate",
+              "fontSize": 27,
+              "color": "#00A8C8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5cr2lkzq",
+      "id": "15",
+      "bbox": [
+        654,
+        294,
+        230,
+        88
+      ],
+      "geometry": "rect",
+      "text": "Sending plain text to an instruction model or chat-formatted text to a base model changes behaviour.",
+      "textPreview": "Sending plain text to an instruction model or chat-formatted text to a base model changes behaviour.",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Sending plain text to an"
+          },
+          {
+            "index": 2,
+            "text": "instruction model or"
+          },
+          {
+            "index": 3,
+            "text": "chat-formatted text to a base"
+          },
+          {
+            "index": 4,
+            "text": "model changes behaviour."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Sending plain text to an instruction model or chat-formatted text to a base model changes behaviour.",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Sending plain text to an instruction model or chat-formatted text to a base model changes behaviour.",
+              "fontSize": 15,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9g3ap0f",
+      "id": "16",
+      "bbox": [
+        654,
+        394,
+        230,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#46627B",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ja9kjuh0",
+      "id": "17",
+      "bbox": [
+        654,
+        428,
+        70,
+        52
+      ],
+      "geometry": "rect",
+      "text": "3",
+      "textPreview": "3",
+      "resolvedFontSize": 35,
+      "resolvedTextStyle": {
+        "fontSize": 35,
+        "typeface": "+mn-lt",
+        "color": "#7892A8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3",
+          "resolvedTextStyle": {
+            "fontSize": 35,
+            "color": "#7892A8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3",
+              "fontSize": 35,
+              "color": "#7892A8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kfel0vi1",
+      "id": "18",
+      "bbox": [
+        950,
+        230,
+        220,
+        40
+      ],
+      "geometry": "rect",
+      "text": "Explain",
+      "textPreview": "Explain",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "fontSize": 27,
+        "typeface": "+mn-lt",
+        "color": "#F06B5F",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Explain"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Explain",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "color": "#F06B5F",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Explain",
+              "fontSize": 27,
+              "color": "#F06B5F",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lgn290zm",
+      "id": "19",
+      "bbox": [
+        950,
+        294,
+        230,
+        88
+      ],
+      "geometry": "rect",
+      "text": "Neither model type guarantees truth, safety, or task correctness.",
+      "textPreview": "Neither model type guarantees truth, safety, or task correctness.",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Neither model type"
+          },
+          {
+            "index": 2,
+            "text": "guarantees truth, safety,"
+          },
+          {
+            "index": 3,
+            "text": "or task correctness."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Neither model type guarantees truth, safety, or task correctness.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Neither model type guarantees truth, safety, or task correctness.",
+              "fontSize": 17,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1cfidwba",
+      "id": "20",
+      "bbox": [
+        950,
+        394,
+        230,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#F06B5F",
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0b614ra5",
+      "id": "21",
+      "bbox": [
+        950,
+        428,
+        70,
+        52
+      ],
+      "geometry": "rect",
+      "text": "4",
+      "textPreview": "4",
+      "resolvedFontSize": 35,
+      "resolvedTextStyle": {
+        "fontSize": 35,
+        "typeface": "+mn-lt",
+        "color": "#7892A8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4",
+          "resolvedTextStyle": {
+            "fontSize": 35,
+            "color": "#7892A8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4",
+              "fontSize": 35,
+              "color": "#7892A8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zax0bmtk",
+      "id": "22",
+      "bbox": [
+        62,
+        544,
+        1110,
+        84
+      ],
+      "geometry": "rect",
+      "text": "Prompt to a base model: Question: What is 2+2? Answer: may continue a learned document pattern. An instruction model receives structured messages such as user request and assistant turn, then generates the assistant response.",
+      "textPreview": "Prompt to a base model: Question: What is 2+2? Answer: may continue a learned document pattern. An instruction model receives structured ...",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#D1DEE8",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Prompt to a base model: Question: What is 2+2? Answer: may continue a learned document pattern. An instruction model receives structured messages"
+          },
+          {
+            "index": 2,
+            "text": "such as user request and assistant turn, then generates the assistant response."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Prompt to a base model: Question: What is 2+2? Answer: may continue a learned document pattern. An instruction model receives structured messages such as user request and assistant turn, then generates the assistant response.",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#D1DEE8"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Prompt to a base model: Question: What is 2+2? Answer: may continue a learned document pattern. An instruction model receives structured messages such as user request and assistant turn, then generates the assistant response.",
+              "fontSize": 16,
+              "color": "#D1DEE8"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

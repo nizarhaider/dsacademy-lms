@@ -1,0 +1,237 @@
+{"kind":"deck","id":"pr/sqw523","name":"Deck"}
+{"kind":"layout","layoutId":"c5f91086-6dc1-491b-bf07-cba7d4a83c4d","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"3aa1b09b-5f57-4383-a61a-e44c6d9c65e4","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/r5gfkt","slide":1,"title":"MODULE 17  /  LESSON 01","textShapes":3}
+{"kind":"shape","id":"sh/juhkz61w","slide":1,"bbox":[0,0,1280,12]}
+{"kind":"shape","id":"sh/lwz21gjm","slide":1,"bbox":[692,0,32,720]}
+{"kind":"textbox","id":"sh/apoj2h0z","slide":1,"text":"MODULE 17  /  LESSON 01","textPreview":"MODULE 17  /  LESSON 01","textChars":23,"textLines":1,"bbox":[70,70,430,26]}
+{"kind":"textbox","id":"sh/bqx0vm1k","slide":1,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[70,148,548,250]}
+{"kind":"shape","id":"sh/wr614ri5","slide":1,"bbox":[70,430,96,6]}
+{"kind":"textbox","id":"sh/xsfixwjq","slide":1,"text":"A workflow follows declared steps and branches.","textPreview":"A workflow follows declared steps and branches.","textChars":47,"textLines":1,"bbox":[70,472,530,102]}
+{"kind":"image","id":"im/1gb69sba","slide":1,"name":"","alt":"Data science workflow from raw data to a deployed decision system","bbox":[724,0,556,720]}
+{"kind":"image","id":"im/3mpofytw","slide":1,"name":"","alt":"DS Academy","bbox":[70,620,182,52]}
+{"kind":"notes","id":"nt/r5gfkt","slide":1,"text":"A **workflow** follows declared steps and branches.\n\nAn **agent** uses a model to choose among allowed actions based on state and observations.\n\nUse deterministic code when the next step is known. Grant model choice only where it adds value, such as choosing which read-only search tool can answer an unfamiliar question.\n\nMore autonomy increases evaluation, permission, cost, and stopping requirements.\n\n[Worked Example]\nInvoice processing:\n\n`validate -> extract -> human review -> save`\n\nThese steps are known, so a workflow is appropriate.\n\nResearch assistant:\n\nThe model may choose policy search or product search based on the question, within a bounded tool set.\n\n[Visual Brief]\nA fixed workflow and a bounded agent loop appear side by side with increasing autonomy and risk.\n\n[Instructor Notes]\nChallenge every proposed agent: which choice cannot be written as a clear rule?\n\n[Notebook Connection]\nThe LangGraph quickstart shows both a workflow and a tool-using agent.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/overview\n- https://github.com/curiousily/AI-Bootcamp/blob/master/29.langgraph-quickstart.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/zb9my7","slide":2,"title":"M17 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/476x832p","slide":2,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/36xwzy14","slide":2,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/25of6tkj","slide":2,"text":"DS ACADEMY   02","textPreview":"DS ACADEMY   02","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/dczy58j6","slide":2,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/cbqxc32l","slide":2,"text":"State, Nodes, and Edges Define a Graph","textPreview":"State, Nodes, and Edges Define a Graph","textChars":38,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/rahg3y1g","slide":2,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/q98fatkv","slide":2,"text":"State is the typed record describing the current run. A node is a function that reads state and returns state updates. An edge determines which node runs next.","textPreview":"State is the typed record describing the current run. A node is a function that reads state and returns state updates. An edge determines...","textChars":159,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/tgvet432","slide":2,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/sfmx0j2h","slide":2,"text":"State is the typed record describing the current run.","textPreview":"State is the typed record describing the current run.","textChars":53,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/610729w3","slide":2,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/rm9obexo","slide":2,"text":"A node is a function that reads state and returns state updates.","textPreview":"A node is a function that reads state and returns state updates.","textChars":64,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/snip4ze9","slide":2,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/dorqd4fu","slide":2,"text":"An edge determines which node runs next.","textPreview":"An edge determines which node runs next.","textChars":40,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/ep0769wz","slide":2,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/fq98fexk","slide":2,"text":"START represents graph input and END represents termination.","textPreview":"START represents graph input and END represents termination.","textChars":60,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/0r2p8je5","slide":2,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/1sbqhofq","slide":2,"text":"Store raw, reusable data in state rather than only formatted prose.","textPreview":"Store raw, reusable data in state rather than only formatted prose.","textChars":67,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/2tk7atwb","slide":2,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/nut8jyxw","slide":2,"text":"Every field should have an owner and meaning.","textPreview":"Every field should have an owner and meaning.","textChars":45,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/zb9my7","slide":2,"text":"**State** is the typed record describing the current run.\n\nA **node** is a function that reads state and returns state updates.\n\nAn **edge** determines which node runs next.\n\n`START` represents graph input and `END` represents termination.\n\nStore raw, reusable data in state rather than only formatted prose. Every field should have an owner and meaning.\n\n[Worked Example]\nState:\n\n```text\nquestion, retrieved_docs, draft, approved, attempts\n```\n\nNode `retrieve` adds documents. Node `draft` adds an answer. An edge routes to review if approval is required.\n\n[Visual Brief]\nA state record moves through nodes; each node highlights only the fields it reads and updates.\n\n[Instructor Notes]\nExplain that state is application memory for the run, not hidden model memory.\n\n[Notebook Connection]\nThe notebook defines state before adding nodes and edges.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/graph-api\n- https://docs.langchain.com/oss/python/langgraph/thinking-in-langgraph\n[/Sources]"}
+{"kind":"slide","id":"sl/6g0ylr","slide":3,"title":"M17 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/cnm5svap","slide":3,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/bmtozq94","slide":3,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/qlknqlsj","slide":3,"text":"DS ACADEMY   03","textPreview":"DS ACADEMY   03","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/lcv650r6","slide":3,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/0bmpwvql","slide":3,"text":"A Node Should Perform One Inspectable Job","textPreview":"A Node Should Perform One Inspectable Job","textChars":41,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/zado3q90","slide":3,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/y94nul8f","slide":3,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/9gf690r2","slide":3,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/8f6p0fqx","slide":3,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/m54bit0j","slide":3,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/n6dcbyh4","slide":3,"text":"def retrieve_policy(state: State):\n    docs = retriever.invoke(state[\"question\"])\n    return {\"documents\": docs}","textPreview":"def retrieve_policy(state: State): |     docs = retriever.invoke(state[\"question\"]) |     return {\"documents\": docs}","textChars":112,"textLines":3,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/o7mtk3ip","slide":3,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/98fud8za","slide":3,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/a9obmt0v","slide":3,"text":"A state update containing documents while preserving other state fields.","textPreview":"A state update containing documents while preserving other state fields.","textChars":72,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/buxcfyh0","slide":3,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/wv6to3il","slide":3,"text":"It does not generate an answer.","textPreview":"It does not generate an answer.","textChars":31,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/6g0ylr","slide":3,"text":"A good node has:\n\n- declared state inputs;\n- one responsibility;\n- typed outputs;\n- bounded external calls;\n- visible errors;\n- trace span;\n- retry policy only when appropriate.\n\nSmall nodes make failures and approvals easier to locate. Do not place retrieval, generation, tool execution, and database write inside one opaque node.\n\n[Worked Example]\nNode `retrieve_policy`:\n\nInput: question and user authorization  \nAction: authorized retrieval  \nOutput: ranked documents and retrieval metadata  \nFailure: denied, timeout, or no evidence\n\nIt does not generate an answer.\n\n[Visual Brief]\nOne oversized node is decomposed into validate, retrieve, draft, review, and publish nodes.\n\n[Instructor Notes]\nAsk what evidence proves each node succeeded.\n\n[Notebook Connection]\nLearners inspect each quickstart node as a state transformation.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/thinking-in-langgraph\n- https://github.com/curiousily/AI-Bootcamp/blob/master/29.langgraph-quickstart.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/f3a9w2","slide":4,"title":"M17 / L01","textShapes":15}
+{"kind":"textbox","id":"sh/2do76xsb","slide":4,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/pgz6hsr2","slide":4,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/4fqp8nah","slide":4,"text":"DS ACADEMY   04","textPreview":"DS ACADEMY   04","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/faxobit0","slide":4,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/u9o72dsf","slide":4,"text":"Edges Make Routing Explicit","textPreview":"Edges Make Routing Explicit","textChars":27,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/hcf6dsbq","slide":4,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/gb6p4nal","slide":4,"text":"A fixed edge always routes to the same node.","textPreview":"A fixed edge always routes to the same node.","textChars":44,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/z618n294","slide":4,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/e587ehsj","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/0vuhc3ed","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/1w3i58fy","slide":4,"text":"A conditional edge inspects state and chooses from declared destinations.","textPreview":"A conditional edge inspects state and chooses from declared destinations.","textChars":73,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/etszadwn","slide":4,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/zul03yx8","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/c7ah83eh","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/dsji18f2","slide":4,"text":"Routing functions should return only allowed routes and should be tested independently.","textPreview":"Routing functions should return only allowed routes and should be tested independently.","textChars":87,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/q5sz6twb","slide":4,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/r610zyxw","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/43ah4jel","slide":4,"text":"After retrieval: All three outcomes are explicit terminal or next states.","textPreview":"After retrieval: All three outcomes are explicit terminal or next states.","textChars":73,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/f3a9w2","slide":4,"text":"A fixed edge always routes to the same node.\n\nA **conditional edge** inspects state and chooses from declared destinations.\n\nRouting functions should return only allowed routes and should be tested independently. Important policy decisions, such as whether a user can write data, should be deterministic code rather than model preference.\n\n[Worked Example]\nAfter retrieval:\n\n- documents found -> `draft_answer`\n- no documents -> `insufficient_evidence`\n- authorization denied -> `denied`\n\nAll three outcomes are explicit terminal or next states.\n\n[Visual Brief]\nA retrieval node branches into draft, insufficient, and denied paths with labelled conditions.\n\n[Instructor Notes]\nSeparate a model classification used as evidence from the code that enforces permissions.\n\n[Notebook Connection]\nThe quickstart workflow adds conditional edges after node results.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/use-graph-api\n- https://docs.langchain.com/oss/python/langgraph/graph-api\n[/Sources]"}
+{"kind":"slide","id":"sl/irn9t4","slide":5,"title":"M17 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/4na5gzmd","slide":5,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/jm147u5s","slide":5,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/ilsnep47","slide":5,"text":"DS ACADEMY   05","textPreview":"DS ACADEMY   05","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/hkjm5knm","slide":5,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/wja5cfm1","slide":5,"text":"Tools Turn Model Choices into Proposed Actions","textPreview":"Tools Turn Model Choices into Proposed Actions","textChars":46,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/vi143a5g","slide":5,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/uh8na54b","slide":5,"text":"An agent model may propose: The application: Tool results are untrusted external data and may contain errors or injection text.","textPreview":"An agent model may propose: The application: Tool results are untrusted external data and may contain errors or injection text.","textChars":127,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/1g36h436","slide":5,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/gfu5ojml","slide":5,"text":"tool name;","textPreview":"tool name;","textChars":10,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/uhonq1kz","slide":5,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/vix4z61k","slide":5,"text":"structured arguments;","textPreview":"structured arguments;","textChars":21,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/wj65sb25","slide":5,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/h4fm1gjq","slide":5,"text":"reason reflected in its current messages.","textPreview":"reason reflected in its current messages.","textChars":41,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/md4nm1k3","slide":5,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/7ed4v6lo","slide":5,"text":"parses arguments;","textPreview":"parses arguments;","textChars":17,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/8f65ob29","slide":5,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/9gfmxg3e","slide":5,"text":"authorizes the tool and scope;","textPreview":"authorizes the tool and scope;","textChars":30,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/q98ny5k7","slide":5,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/raho7q1s","slide":5,"text":"applies time and resource limits;","textPreview":"applies time and resource limits;","textChars":33,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/irn9t4","slide":5,"text":"An agent model may propose:\n\n- tool name;\n- structured arguments;\n- reason reflected in its current messages.\n\nThe application:\n\n1. parses arguments;\n2. authorizes the tool and scope;\n3. applies time and resource limits;\n4. executes;\n5. records the observation in state;\n6. routes to the next decision.\n\nTool results are untrusted external data and may contain errors or injection text.\n\n[Worked Example]\nAgent proposes `search_policy(query=\"refund annual plan\")`.\n\nApplication checks that search is read-only and tenant-filtered, then stores returned chunks and provenance. It rejects a proposed `delete_policy` because that tool is not in the allowed set.\n\n[Visual Brief]\nModel proposal passes through schema, authorization, execution, and observation stages before re-entering state.\n\n[Instructor Notes]\nRepeat that tool schemas describe valid shape but do not grant permission.\n\n[Notebook Connection]\nThe agent quickstart alternates a model node with a tool node.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/agentic-rag\n- https://modelcontextprotocol.io/docs/concepts/tools\n[/Sources]"}
+{"kind":"slide","id":"sl/gktgxg","slide":6,"title":"M17 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/8jyh4n69","slide":6,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/7ip0vi5o","slide":6,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/mhgz2xo3","slide":6,"text":"DS ACADEMY   06","textPreview":"DS ACADEMY   06","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/hori1cnq","slide":6,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/wni18765","slide":6,"text":"The Agent Loop Is Action, Observation, and Decision","textPreview":"The Agent Loop Is Action, Observation, and Decision","textChars":51,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/vm90z250","slide":6,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/ul0z6xof","slide":6,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/5cbi5cn2","slide":6,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/4bi1c76h","slide":6,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/69kzi5cf","slide":6,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/7atgrat0","slide":6,"text":"def should_continue(state):\n    last = state[\"messages\"][-1]\n    return \"tools\" if last.tool_calls else END","textPreview":"def should_continue(state): |     last = state[\"messages\"][-1] |     return \"tools\" if last.tool_calls else END","textChars":107,"textLines":3,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/sb2hkful","slide":6,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/tcbytkbq","slide":6,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/ud4zmpcb","slide":6,"text":"The graph routes to tools only when the latest model output proposes a call.","textPreview":"The graph routes to tools only when the latest model output proposes a call.","textChars":76,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/fedgvutw","slide":6,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/gfmhozuh","slide":6,"text":"Total tool calls 2, model decisions 3.","textPreview":"Total tool calls 2, model decisions 3.","textChars":38,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/gktgxg","slide":6,"text":"A tool-using agent loop:\n\n1. inspect goal and current state;\n2. choose an allowed action or finish;\n3. execute through application controls;\n4. receive an observation;\n5. update state;\n6. choose again.\n\nThe observation may resolve the question, reveal missing information, or produce an error.\n\nEvery loop needs an explicit route to `END`.\n\n[Worked Example]\nStep 1: search policy -> no matching chunk  \nStep 2: search product documentation -> supporting chunk found  \nStep 3: answer with citation -> finish\n\nTotal tool calls `2`, model decisions `3`.\n\n[Visual Brief]\nA bounded loop connects model decision, tool execution, observation, and finish.\n\n[Instructor Notes]\nAsk what state proves the task is complete. Do not rely on token exhaustion.\n\n[Notebook Connection]\nLearners trace every loop iteration in the LangGraph agent example.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/use-graph-api\n- https://github.com/curiousily/AI-Bootcamp/blob/master/29.langgraph-quickstart.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/dyrz5b","slide":7,"title":"M17 / L01","textShapes":11}
+{"kind":"textbox","id":"sh/mx43618z","slide":7,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/tkvmhgrq","slide":7,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/8jml8bq5","slide":7,"text":"DS ACADEMY   07","textPreview":"DS ACADEMY   07","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/zut4b69o","slide":7,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/ytk32183","slide":7,"text":"Checkpoints Make State Durable","textPreview":"Checkpoints Make State Durable","textChars":30,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/lwbmdgre","slide":7,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/kv2l4bq9","slide":7,"text":"A checkpoint is a saved snapshot of graph state at an execution boundary. Checkpoints support: A thread ID identifies which persisted state to load. Access to checkpoints must be authorized because state may contain sensitive data.","textPreview":"A checkpoint is a saved snapshot of graph state at an execution boundary. Checkpoints support: A thread ID identifies which persisted sta...","textChars":231,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/bqt47m9c","slide":7,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/apk3yh8r","slide":7,"text":"recovery after failure;","textPreview":"recovery after failure;","textChars":23,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/8by10rmd","slide":7,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/9c729w3i","slide":7,"text":"multi-turn memory;","textPreview":"multi-turn memory;","textChars":18,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/m9wjyh47","slide":7,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/7apk7mls","slide":7,"text":"human approval pauses;","textPreview":"human approval pauses;","textChars":22,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/k7e1w7m1","slide":7,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/l8n25c3m","slide":7,"text":"replay and debugging;","textPreview":"replay and debugging;","textChars":21,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/ylwjuh4v","slide":7,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/zm5k3mlg","slide":7,"text":"resuming long-running work.","textPreview":"resuming long-running work.","textChars":27,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"notes","id":"nt/dyrz5b","slide":7,"text":"A **checkpoint** is a saved snapshot of graph state at an execution boundary.\n\nCheckpoints support:\n\n- recovery after failure;\n- multi-turn memory;\n- human approval pauses;\n- replay and debugging;\n- resuming long-running work.\n\nA **thread ID** identifies which persisted state to load. Access to checkpoints must be authorized because state may contain sensitive data.\n\n[Worked Example]\nGraph completes retrieve and draft, then pauses for approval.\n\nCheckpoint stores question, documents, draft, and status. The process can restart and resume from that state instead of rerunning retrieval and generation.\n\n[Visual Brief]\nGraph steps leave checkpoint markers. A restart resumes from the latest successful marker.\n\n[Instructor Notes]\nExplain retention, encryption, and tenant isolation for persisted state.\n\n[Notebook Connection]\nLearners add an in-memory checkpointer for the lab and document production storage requirements.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/persistence\n- https://docs.langchain.com/oss/python/langgraph/overview\n[/Sources]"}
+{"kind":"slide","id":"sl/2x2pw2","slide":8,"title":"M17 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/1oz2p8vm","slide":8,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/elojetwv","slide":8,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/fmxknydg","slide":8,"text":"DS ACADEMY   08","textPreview":"DS ACADEMY   08","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/obq1k3ud","slide":8,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/pcz2t8vi","slide":8,"text":"Retries Must Be Node-Specific and Resume-Safe","textPreview":"Retries Must Be Node-Specific and Resume-Safe","textChars":45,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/2p8jidc7","slide":8,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/nqhkrids","slide":8,"text":"read-only search is often retryable;","textPreview":"read-only search is often retryable;","textChars":36,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/cfalonu9","slide":8,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/xgj2xsvu","slide":8,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/9gzuloz6","slide":8,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/8fqds3il","slide":8,"text":"charging a card or sending an email may duplicate side effects;","textPreview":"charging a card or sending an email may duplicate side effects;","textChars":63,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/nehcjyh0","slide":8,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/md8vqt0f","slide":8,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/h4jep8z2","slide":8,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/wjqdw3yh","slide":8,"text":"model calls may produce different outputs on retry;","textPreview":"model calls may produce different outputs on retry;","textChars":51,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/vihwnyhw","slide":8,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/uh8vut0r","slide":8,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/d8fud4zy","slide":8,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/cn6dkjid","slide":8,"text":"validation failures need correction, not blind retry.","textPreview":"validation failures need correction, not blind retry.","textChars":53,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/4rad0jq9","slide":8,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/psje9o7u","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/2p8vy983","slide":8,"text":"Search times out: retry up to 3 attempts. Email send times out after the server may have accepted it: check an idempotency key or delivery status before retrying.","textPreview":"Search times out: retry up to 3 attempts. Email send times out after the server may have accepted it: check an idempotency key or deliver...","textChars":162,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/2x2pw2","slide":8,"text":"Retry only a node whose operation can safely be repeated.\n\n**Idempotent** means repeating the same operation has the same intended effect as running it once.\n\n- read-only search is often retryable;\n- charging a card or sending an email may duplicate side effects;\n- model calls may produce different outputs on retry;\n- validation failures need correction, not blind retry.\n\nRecord attempts and cap them.\n\n[Worked Example]\nSearch times out: retry up to `3` attempts.  \nEmail send times out after the server may have accepted it: check an idempotency key or delivery status before retrying.\n\n[Visual Brief]\nRead-only search has a retry loop; write action has an idempotency and confirmation gate.\n\n[Instructor Notes]\nAsk what observable state distinguishes “failed before action” from “response lost after action.”\n\n[Notebook Connection]\nThe lab simulates a transient search failure and confirms attempt count.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/fault-tolerance\n- https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/retry-backoff.html\n[/Sources]"}
+{"kind":"slide","id":"sl/h64xzz","slide":9,"title":"M17 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/g7yhg72p","slide":9,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/v6p072l4","slide":9,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/u5wzexkj","slide":9,"text":"DS ACADEMY   09","textPreview":"DS ACADEMY   09","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/t4ny5c3y","slide":9,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/83ehc72t","slide":9,"text":"Human Approval Is a State Transition","textPreview":"Human Approval Is a State Transition","textChars":36,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/725g32l8","slide":9,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/61wzaxkn","slide":9,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/d0rihw3i","slide":9,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/szihor2x","slide":9,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/6hc7ixcj","slide":9,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/7i58b2d4","slide":9,"text":"decision = interrupt({\n    \"draft\": state[\"draft\"],\n    \"recipients\": state[\"recipients\"],\n})","textPreview":"decision = interrupt({ |     \"draft\": state[\"draft\"], |     \"recipients\": state[\"recipients\"], | })","textChars":93,"textLines":4,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/83epk7up","slide":9,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/t4nqdcva","slide":9,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/ydc7exwn","slide":9,"text":"The graph pauses with JSON-serializable review data until resumed.","textPreview":"The graph pauses with JSON-serializable review data until resumed.","textChars":66,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/jel872d8","slide":9,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/kfupgnud","slide":9,"text":"Agent drafts an email and proposed recipients. The graph pauses. Reviewer removes one recipient and approves the edited draft. Only then may the send node execute.","textPreview":"Agent drafts an email and proposed recipients. The graph pauses. Reviewer removes one recipient and approves the edited draft. Only then ...","textChars":163,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/h64xzz","slide":9,"text":"Use human approval before high-impact or uncertain actions.\n\nThe graph should:\n\n1. prepare a proposal;\n2. persist state;\n3. interrupt;\n4. show evidence and proposed action;\n5. accept approve, reject, or edited input;\n6. validate human input;\n7. resume from the checkpoint;\n8. record reviewer and decision.\n\nApproval must occur before the side effect.\n\n[Worked Example]\nAgent drafts an email and proposed recipients. The graph pauses. Reviewer removes one recipient and approves the edited draft. Only then may the send node execute.\n\n[Visual Brief]\nA workflow stops at a human-review gate and resumes along approved, edited, or rejected paths.\n\n[Instructor Notes]\nExplain why side effects before an interrupt can be repeated on resume.\n\n[Notebook Connection]\nLearners add one approval interrupt to a write-capable mock action.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/interrupts\n- https://docs.langchain.com/oss/python/langgraph/thinking-in-langgraph\n[/Sources]"}
+{"kind":"slide","id":"sl/z0ehrg","slide":10,"title":"M17 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/ixwrq1kb","slide":10,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/507q1wj2","slide":10,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/4zy9sb2h","slide":10,"text":"DS ACADEMY   10","textPreview":"DS ACADEMY   10","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/r2ps361s","slide":10,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/q1gru1k7","slide":10,"text":"Stopping Conditions Bound Time, Cost, and Risk","textPreview":"Stopping Conditions Bound Time, Cost, and Risk","textChars":46,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/d47a5gjy","slide":10,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/s3y9wb2d","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/76l8rmlo","slide":10,"text":"maximum graph steps;","textPreview":"maximum graph steps;","textChars":20,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/65crihk3","slide":10,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/krqt0fi5","slide":10,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/lczatkjq","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/yp8by50z","slide":10,"text":"maximum attempts per node;","textPreview":"maximum attempts per node;","textChars":26,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/zqhsra1k","slide":10,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/8fqt4zi1","slide":10,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/9gjaxkjm","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/md8b2p0v","slide":10,"text":"maximum tool calls;","textPreview":"maximum tool calls;","textChars":19,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/7ehsvu1g","slide":10,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/oj69sv2x","slide":10,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/pkfal0ji","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/5g7qpwb6","slide":10,"text":"wall-clock timeout;","textPreview":"wall-clock timeout;","textChars":19,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/4fypwrul","slide":10,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/z0ehrg","slide":10,"text":"Set:\n\n- maximum graph steps;\n- maximum attempts per node;\n- maximum tool calls;\n- wall-clock timeout;\n- token and cost budget;\n- allowed tool set;\n- argument and result-size limits;\n- terminal conditions for success, denial, insufficient evidence, and failure.\n\nAn agent must be able to stop without producing a successful answer.\n\n[Worked Example]\nLimits:\n\n`max_steps=8`, `max_tool_calls=3`, `budget=$0.05`, `timeout=30s`\n\nAfter three searches with no supporting evidence, route to `insufficient_evidence` rather than search indefinitely.\n\n[Visual Brief]\nThe agent loop is surrounded by step, call, time, token, cost, and permission limits.\n\n[Instructor Notes]\nTreat recursion limits as a final guard, not the only meaningful stopping rule.\n\n[Notebook Connection]\nThe lab tests successful, insufficient, denied, timeout, and budget-exhausted endings.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/use-graph-api#create-and-control-loops\n- https://docs.langchain.com/oss/python/langgraph/graph-api\n[/Sources]"}
+{"kind":"slide","id":"sl/2mff94","slide":11,"title":"M17 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/y5s361sr","slide":11,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/ls32hgri","slide":11,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/k7ul8bax","slide":11,"text":"DS ACADEMY   11","textPreview":"DS ACADEMY   11","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/b21kbm90","slide":11,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/a1s32hsv","slide":11,"text":"A Minimal LangGraph Is Explicit Python","textPreview":"A Minimal LangGraph Is Explicit Python","textChars":38,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/x4j2dwr6","slide":11,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/c3al4ral","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/nyhk7m94","slide":11,"text":"define typed state;","textPreview":"define typed state;","textChars":19,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/2x8jyhsj","slide":11,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/g3q5wjax","slide":11,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/h4z6pori","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/u1onutsr","slide":11,"text":"implement small node functions;","textPreview":"implement small node functions;","textChars":31,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/v2xone9c","slide":11,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/8f65sjal","slide":11,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/t0f6lor6","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/6donq9sv","slide":11,"text":"add nodes;","textPreview":"add nodes;","textChars":10,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/7ex4je9g","slide":11,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/sva543q5","slide":11,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/dwj6x8rq","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/1sf6h8ju","slide":11,"text":"add fixed and conditional edges;","textPreview":"add fixed and conditional edges;","textChars":32,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/0r65o3i9","slide":11,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/2mff94","slide":11,"text":"Build order:\n\n1. define typed state;\n2. implement small node functions;\n3. add nodes;\n4. add fixed and conditional edges;\n5. compile with runtime controls;\n6. invoke with initial state and configuration;\n7. inspect final state and trace.\n\nCompilation checks graph structure. It does not prove node logic or safety.\n\n[Worked Example]\n`START -> retrieve -> route`\n\n- documents -> answer -> END\n- no documents -> insufficient -> END\n\nThere is no loop because one retrieval is enough for this workflow.\n\n[Visual Brief]\nThe code lines map directly to a small graph diagram and typed state updates.\n\n[Instructor Notes]\nHave learners draw the graph before writing builder calls.\n\n[Notebook Connection]\nThis prepares learners to read the quickstart workflow and agent graphs.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/graph-api\n- https://github.com/curiousily/AI-Bootcamp/blob/master/29.langgraph-quickstart.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/ojo7px","slide":12,"title":"M17 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/76hof2d8","slide":12,"text":"M17 / L01","textPreview":"M17 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/s7q587et","slide":12,"text":"Use a Workflow When the Steps Are Known","textPreview":"Use a Workflow When the Steps Are Known","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/t8z6hcve","slide":12,"text":"DS ACADEMY   12","textPreview":"DS ACADEMY   12","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/yhon2xwr","slide":12,"text":"GUIDED LAB","textPreview":"GUIDED LAB","textChars":10,"textLines":1,"bbox":[64,92,220,24]}
+{"kind":"textbox","id":"sh/jihob2xc","slide":12,"text":"Guided Lab: Build a Bounded Research Workflow","textPreview":"Guided Lab: Build a Bounded Research Workflow","textChars":45,"textLines":1,"bbox":[64,154,1100,154]}
+{"kind":"textbox","id":"sh/k3q547eh","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,410,62,28]}
+{"kind":"shape","id":"sh/54z6dcf2","slide":12,"bbox":[64,462,214,5]}
+{"kind":"textbox","id":"sh/adonydwf","slide":12,"text":"typed state","textPreview":"typed state","textChars":11,"textLines":1,"bbox":[64,500,220,52]}
+{"kind":"textbox","id":"sh/bexo7ix0","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[354,410,62,28]}
+{"kind":"shape","id":"sh/ze1kny5k","slide":12,"bbox":[354,462,214,5]}
+{"kind":"textbox","id":"sh/edsjetoz","slide":12,"text":"validate, route, retrieve, answer, and finish nodes","textPreview":"validate, route, retrieve, answer, and finish nodes","textChars":51,"textLines":1,"bbox":[354,500,220,52]}
+{"kind":"textbox","id":"sh/1gj2p8na","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[644,410,62,28]}
+{"kind":"shape","id":"sh/0falg365","slide":12,"bbox":[644,462,214,5]}
+{"kind":"textbox","id":"sh/ni1kry5g","slide":12,"text":"one deterministic route","textPreview":"one deterministic route","textChars":23,"textLines":1,"bbox":[644,500,220,52]}
+{"kind":"textbox","id":"sh/mhs3idov","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[934,410,62,28]}
+{"kind":"shape","id":"sh/9432t8nm","slide":12,"bbox":[934,462,214,5]}
+{"kind":"textbox","id":"sh/8jalk361","slide":12,"text":"one model-selected read-only tool","textPreview":"one model-selected read-only tool","textChars":33,"textLines":1,"bbox":[934,500,220,52]}
+{"kind":"notes","id":"nt/ojo7px","slide":12,"text":"Build a policy-research graph with:\n\n1. typed state;\n2. validate, route, retrieve, answer, and finish nodes;\n3. one deterministic route;\n4. one model-selected read-only tool;\n5. argument validation and authorization;\n6. observations stored with provenance;\n7. checkpoint persistence;\n8. bounded retries for transient search failure;\n9. human approval before a mock publish action;\n10. maximum steps, calls, time, and cost;\n11. complete tracing;\n12. tests for success, insufficient evidence, denial, timeout, and rejected approval.\n\n[Worked Example]\nTrace:\n\n`validate -> retrieve -> answer -> review -> rejected -> END`\n\nThe final status is `rejected`; no publish side effect occurs.\n\n[Visual Brief]\nThe final graph diagram labels state, branches, tool loop, checkpoint, approval, and terminal statuses.\n\n[Instructor Notes]\nRequire failure-path demonstrations before accepting the success path.\n\n[Notebook Connection]\nComplete `29.langgraph-quickstart.ipynb`; use `18.langgraph-basics.ipynb` only as an optional secondary exercise.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/29.langgraph-quickstart.ipynb\n- https://github.com/curiousily/AI-Bootcamp/blob/master/18.langgraph-basics.ipynb\n[/Sources]"}

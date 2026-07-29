@@ -1,0 +1,233 @@
+{"kind":"deck","id":"pr/hle2u4","name":"Deck"}
+{"kind":"layout","layoutId":"920a860a-187c-4b10-ba59-6eebe9ab4e6e","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"34fe63a6-ab33-4b7e-a50a-739f310f278b","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/39r1p8","slide":1,"title":"MODULE 18  /  LESSON 01","textShapes":3}
+{"kind":"shape","id":"sh/h8fihc7u","slide":1,"bbox":[0,0,1280,12]}
+{"kind":"shape","id":"sh/v6x0f2po","slide":1,"bbox":[692,0,32,720]}
+{"kind":"textbox","id":"sh/4bq1c76l","slide":1,"text":"MODULE 18  /  LESSON 01","textPreview":"MODULE 18  /  LESSON 01","textChars":23,"textLines":1,"bbox":[70,70,430,26]}
+{"kind":"textbox","id":"sh/5czilc7q","slide":1,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[70,148,548,250]}
+{"kind":"shape","id":"sh/i9ojahof","slide":1,"bbox":[70,430,96,6]}
+{"kind":"textbox","id":"sh/3ah0jmp0","slide":1,"text":"A requirement is a testable statement of needed behaviour or constraint.","textPreview":"A requirement is a testable statement of needed behaviour or constraint.","textChars":72,"textLines":1,"bbox":[70,472,530,102]}
+{"kind":"image","id":"im/r6tcn2h0","slide":1,"name":"","alt":"Data science workflow from raw data to a deployed decision system","bbox":[724,0,556,720]}
+{"kind":"image","id":"im/90vuxczy","slide":1,"name":"","alt":"DS Academy","bbox":[70,620,182,52]}
+{"kind":"notes","id":"nt/39r1p8","slide":1,"text":"A **requirement** is a testable statement of needed behaviour or constraint.\n\nDefine:\n\n- user and decision;\n- input and expected output;\n- quality threshold;\n- unsupported and denied behaviour;\n- latency target;\n- cost limit;\n- privacy and security constraints;\n- deployment environment;\n- owner and success measure.\n\nChoose a narrow problem whose evidence and failures can be demonstrated.\n\n[Worked Example]\nNeed: `Support staff must answer policy questions using the current approved handbook.`\n\nAcceptance:\n\n- citation-supported answer or insufficient evidence;\n- no cross-tenant sources;\n- p95 latency under `3s`;\n- estimated cost under `$0.02` per request;\n- zero unsupported critical claims in the reviewed test set.\n\n[Visual Brief]\nA user need expands into quality, safety, latency, cost, and operational acceptance criteria.\n\n[Instructor Notes]\nReject “build an AI chatbot” as a requirement. Ask what user decision improves and how it will be measured.\n\n[Notebook Connection]\nThe selected capstone notebook supplies technical patterns, not the project requirements.\n\n[Sources]\n- https://www.nist.gov/itl/ai-risk-management-framework\n- https://docs.langchain.com/langsmith/evaluation-concepts\n[/Sources]"}
+{"kind":"slide","id":"sl/wpq04g","slide":2,"title":"M18 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/f2h0zyh4","slide":2,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/g3q1s3yp","slide":2,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/h4zi18za","slide":2,"text":"DS ACADEMY   02","textPreview":"DS ACADEMY   02","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/6xojmtgn","slide":2,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/7yx0vyh8","slide":2,"text":"Architecture Assigns Responsibilities to Components","textPreview":"Architecture Assigns Responsibilities to Components","textChars":51,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/szq1o3yt","slide":2,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/t0zix8ze","slide":2,"text":"An architecture identifies components, responsibilities, interfaces, and constraints. A capstone may include: Use the fewest components that satisfy requirements. Every additional service adds failure and cost.","textPreview":"An architecture identifies components, responsibilities, interfaces, and constraints. A capstone may include: Use the fewest components t...","textChars":210,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/i9ozitgr","slide":2,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/jax0rehc","slide":2,"text":"web or API client;","textPreview":"web or API client;","textChars":18,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/3m1srm5k","slide":2,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/2lsryhof","slide":2,"text":"request validation;","textPreview":"request validation;","textChars":19,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/po3atwnq","slide":2,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/4na90r65","slide":2,"text":"workflow state;","textPreview":"workflow state;","textChars":15,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/rqlsvm5w","slide":2,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/qpcr21ob","slide":2,"text":"retrieval and vector store;","textPreview":"retrieval and vector store;","textChars":27,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/ds3axwn2","slide":2,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/crut4r6h","slide":2,"text":"model provider;","textPreview":"model provider;","textChars":15,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/7uhsj25c","slide":2,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/6t8rqxo7","slide":2,"text":"structured output;","textPreview":"structured output;","textChars":18,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/wpq04g","slide":2,"text":"An **architecture** identifies components, responsibilities, interfaces, and constraints.\n\nA capstone may include:\n\n- web or API client;\n- request validation;\n- workflow state;\n- retrieval and vector store;\n- model provider;\n- structured output;\n- authorized tools;\n- database;\n- observability;\n- deployment infrastructure.\n\nUse the fewest components that satisfy requirements. Every additional service adds failure and cost.\n\n[Worked Example]\nPolicy assistant:\n\n`Client -> FastAPI -> LangGraph workflow -> retriever -> model -> validated answer`\n\nDocuments enter through a separate ingestion job. The online API cannot modify source policies.\n\n[Visual Brief]\nAn architecture diagram separates offline ingestion, online request flow, storage, and observability.\n\n[Instructor Notes]\nAsk who owns every datum and which component may modify it.\n\n[Notebook Connection]\nLearners adapt only notebook components needed by the selected architecture.\n\n[Sources]\n- https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html\n- https://docs.langchain.com/oss/python/langgraph/overview\n[/Sources]"}
+{"kind":"slide","id":"sl/h5gfa5","slide":3,"title":"M18 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/q1c7294n","slide":3,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/d4nqxo3y","slide":3,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/c3ep4jmt","slide":3,"text":"DS ACADEMY   03","textPreview":"DS ACADEMY   03","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/3elorelw","slide":3,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/2dc7y94b","slide":3,"text":"Data Flow Reveals Trust Boundaries","textPreview":"Data Flow Reveals Trust Boundaries","textChars":34,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/p036to32","slide":3,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/ofup0jmh","slide":3,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/nap83ylg","slide":3,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/m9g7at4v","slide":3,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/8j2hcvml","slide":3,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/9kbyl0n6","slide":3,"text":"[User] --untrusted question--> [API validation]\n[Retriever] --authorized chunks--> [Model]\n[Model] --untrusted draft--> [Output validation]","textPreview":"[User] --untrusted question--> [API validation] | [Retriever] --authorized chunks--> [Model] | [Model] --untrusted draft--> [Output valid...","textChars":139,"textLines":3,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/mxkzal4v","slide":3,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/7itgjq5g","slide":3,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/kvih8bmp","slide":3,"text":"Every boundary has an owner and required check.","textPreview":"Every boundary has an owner and required check.","textChars":47,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/lwryhgna","slide":3,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/yt0z6l4j","slide":3,"text":"Policy documents are approved internally, but their extracted text may contain parser errors. User question is untrusted. Model output is untrusted. Final response is released only after schema, citation, and authorization checks.","textPreview":"Policy documents are approved internally, but their extracted text may contain parser errors. User question is untrusted. Model output is...","textChars":230,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/h5gfa5","slide":3,"text":"A **data-flow diagram** shows:\n\n- data sources;\n- movement between components;\n- transformations;\n- storage;\n- external providers;\n- trust boundaries;\n- authentication and authorization points;\n- sensitive fields;\n- retention and deletion.\n\nUntrusted user input, retrieved documents, model output, and tool results all require validation at their boundaries.\n\n[Worked Example]\nPolicy documents are approved internally, but their extracted text may contain parser errors. User question is untrusted. Model output is untrusted. Final response is released only after schema, citation, and authorization checks.\n\n[Visual Brief]\nData arrows cross labelled public, application, provider, and storage trust zones.\n\n[Instructor Notes]\nMake learners identify secrets and personal data before discussing frameworks.\n\n[Notebook Connection]\nTool and RAG notebook code is placed only inside approved trust boundaries.\n\n[Sources]\n- https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html\n- https://www.nist.gov/itl/ai-risk-management-framework\n[/Sources]"}
+{"kind":"slide","id":"sl/g1kylu","slide":4,"title":"M18 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/v6p4b61o","slide":4,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/w7y54bi9","slide":4,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/h87mdgju","slide":4,"text":"DS ACADEMY   04","textPreview":"DS ACADEMY   04","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/itgn6l0f","slide":4,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/jup4fq10","slide":4,"text":"Select Models from Evaluation Evidence","textPreview":"Select Models from Evaluation Evidence","textChars":38,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/4vy58bil","slide":4,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/5w76hgj6","slide":4,"text":"baseline;","textPreview":"baseline;","textChars":9,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/6x0nal0r","slide":4,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/ry9ojq1w","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/nyxorq5s","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/2donilo7","slide":4,"text":"at least two suitable candidates;","textPreview":"at least two suitable candidates;","textChars":33,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/p0f6t0ny","slide":4,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/oz65kv6d","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/fad4n65w","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/e94ne1ob","slide":4,"text":"quality on the same test cases;","textPreview":"quality on the same test cases;","textChars":31,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/1cf6pgnm","slide":4,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/0bm5gb6h","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/z6hoza50","slide":4,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/y58nq54f","slide":4,"text":"structured-output and tool capability;","textPreview":"structured-output and tool capability;","textChars":38,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/u1sri98n","slide":4,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/v218rep8","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/wnu9kj6t","slide":4,"text":"Candidate A: groundedness 0.97, p95 4.5s, cost $0.03 Candidate B: groundedness 0.95, p95 2.2s, cost $0.01 If minimum groundedness is 0.95, p95 maximum 3s, and cost maximum $0.02, only B passes all constraints.","textPreview":"Candidate A: groundedness 0.97, p95 4.5s, cost $0.03 Candidate B: groundedness 0.95, p95 2.2s, cost $0.01 If minimum groundedness is 0.95...","textChars":209,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/g1kylu","slide":4,"text":"Model selection should compare:\n\n- baseline;\n- at least two suitable candidates;\n- quality on the same test cases;\n- structured-output and tool capability;\n- latency and token use;\n- cost;\n- data policy;\n- deployment fit.\n\nRecord exact model identifiers and configuration. A larger model is not automatically the correct production choice.\n\n[Worked Example]\nCandidate A: groundedness `0.97`, p95 `4.5s`, cost `$0.03`  \nCandidate B: groundedness `0.95`, p95 `2.2s`, cost `$0.01`\n\nIf minimum groundedness is `0.95`, p95 maximum `3s`, and cost maximum `$0.02`, only B passes all constraints.\n\n[Visual Brief]\nA requirements gate filters model experiment rows; the selected model is traceable to evidence.\n\n[Instructor Notes]\nKeep current vendor and price decisions in configuration and reports, not permanent slide claims.\n\n[Notebook Connection]\nProvider comparison from Week 14 becomes a capstone selection report.\n\n[Sources]\n- https://docs.langchain.com/langsmith/evaluation\n- https://docs.litellm.ai/\n[/Sources]"}
+{"kind":"slide","id":"sl/8efpp5","slide":5,"title":"M18 / L01","textShapes":10}
+{"kind":"textbox","id":"sh/gr2tsbud","slide":5,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/fqtcz6ds","slide":5,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/epkbq1w7","slide":5,"text":"DS ACADEMY   05","textPreview":"DS ACADEMY   05","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/tobuxwvm","slide":5,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/sn2tobe1","slide":5,"text":"Use Structured Output, RAG, and Tools Only When Needed","textPreview":"Use Structured Output, RAG, and Tools Only When Needed","textChars":54,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/rmtcv6dw","slide":5,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/6l0bm1wb","slide":5,"text":"Use structured output when downstream code needs fields and types. Use RAG when answers require current, private, or cited evidence. Use tools when the system must retrieve live data or perform a bounded operation.","textPreview":"Use structured output when downstream code needs fields and types. Use RAG when answers require current, private, or cited evidence. Use ...","textChars":214,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/5kratwvq","slide":5,"bbox":[64,390,540,96]}
+{"kind":"textbox","id":"sh/4jitkre5","slide":5,"text":"structured output: answer, status, citation IDs;","textPreview":"structured output: answer, status, citation IDs;","textChars":48,"textLines":1,"bbox":[82,400,504,76]}
+{"kind":"shape","id":"sh/6dgjqp0r","slide":5,"bbox":[638,390,540,96]}
+{"kind":"textbox","id":"sh/rep0juhc","slide":5,"text":"RAG: approved handbook;","textPreview":"RAG: approved handbook;","textChars":23,"textLines":1,"bbox":[656,400,504,76]}
+{"kind":"shape","id":"sh/sfy1szix","slide":5,"bbox":[64,506,540,96]}
+{"kind":"textbox","id":"sh/tg72lkzi","slide":5,"text":"tool: read-only ticket lookup only if ticket context is required;","textPreview":"tool: read-only ticket lookup only if ticket context is required;","textChars":65,"textLines":1,"bbox":[82,516,504,76]}
+{"kind":"shape","id":"sh/ipwjm50v","slide":5,"bbox":[638,506,540,96]}
+{"kind":"textbox","id":"sh/jq50fa10","slide":5,"text":"no write-capable agent because the requirement is answer support.","textPreview":"no write-capable agent because the requirement is answer support.","textChars":65,"textLines":1,"bbox":[656,516,504,76]}
+{"kind":"notes","id":"nt/8efpp5","slide":5,"text":"Use **structured output** when downstream code needs fields and types.\n\nUse **RAG** when answers require current, private, or cited evidence.\n\nUse **tools** when the system must retrieve live data or perform a bounded operation.\n\nUse a **workflow** when steps are known. Use agent choice only when deciding among allowed actions adds measurable value.\n\nEach capability needs its own validation and evaluation.\n\n[Worked Example]\nPolicy assistant:\n\n- structured output: answer, status, citation IDs;\n- RAG: approved handbook;\n- tool: read-only ticket lookup only if ticket context is required;\n- no write-capable agent because the requirement is answer support.\n\n[Visual Brief]\nRequirements connect to optional capability blocks; unused blocks remain outside the architecture.\n\n[Instructor Notes]\nChallenge decorative agent or tool additions that lack an acceptance criterion.\n\n[Notebook Connection]\nLearners select one primary capstone notebook and use others only for justified components.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langchain/overview\n- https://docs.langchain.com/oss/python/langgraph/overview\n[/Sources]"}
+{"kind":"slide","id":"sl/zjcsir","slide":6,"title":"M18 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/903mxw3a","slide":6,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/mxcn21kj","slide":6,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/nyl4v6l4","slide":6,"text":"DS ACADEMY   06","textPreview":"DS ACADEMY   06","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/0vu50r2t","slide":6,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/lw3mtw3y","slide":6,"text":"Workflow State Makes Behaviour Inspectable","textPreview":"Workflow State Makes Behaviour Inspectable","textChars":42,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/ytsnyhkn","slide":6,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/zu14rml8","slide":6,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/4re5cv2x","slide":6,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/5sn65gji","slide":6,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/dcb2l0ja","slide":6,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/cb2lsv2p","slide":6,"text":"class CapstoneState(TypedDict):\n    request_id: str\n    evidence: list[Document]\n    attempts: int\n    cost: float\n    status: str","textPreview":"class CapstoneState(TypedDict): |     request_id: str |     evidence: list[Document] |     attempts: int |     cost: float |     status: str","textChars":130,"textLines":6,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/ratkja14","slide":6,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/q9k3q5kj","slide":6,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/p8b2h0jy","slide":6,"text":"A state record sufficient to explain every route and final outcome.","textPreview":"A state record sufficient to explain every route and final outcome.","textChars":67,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/4721ov2d","slide":6,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/3mtkfq1s","slide":6,"text":"validate -> retrieve","textPreview":"validate -> retrieve","textChars":20,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/zjcsir","slide":6,"text":"Capstone state should track:\n\n- request and user context;\n- validated inputs;\n- retrieved evidence;\n- model outputs;\n- tool proposals and observations;\n- attempts, tokens, latency, and cost;\n- approvals;\n- current status;\n- final result and errors.\n\nDeclare terminal statuses such as `supported`, `insufficient`, `denied`, `rejected`, `timeout`, and `failed`.\n\n[Worked Example]\nRoute:\n\n`validate -> retrieve`\n\n- denied -> END\n- no evidence -> insufficient -> END\n- evidence -> generate -> verify\n- unsupported draft -> one bounded repair\n- supported -> END\n\n[Visual Brief]\nA state-machine diagram labels branches, limits, retries, and terminal states.\n\n[Instructor Notes]\nRequire explicit non-success endings rather than converting every failure into prose.\n\n[Notebook Connection]\nThe LangGraph quickstart provides the graph-building mechanics.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langgraph/graph-api\n- https://docs.langchain.com/oss/python/langgraph/thinking-in-langgraph\n[/Sources]"}
+{"kind":"slide","id":"sl/gliriq","slide":7,"title":"M18 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/obu90nex","slide":7,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/3a18ridc","slide":7,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/29srydwr","slide":7,"text":"DS ACADEMY   07","textPreview":"DS ACADEMY   07","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/18jqp8vm","slide":7,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/g7a9w3e1","slide":7,"text":"The API Contract Includes Failure Responses","textPreview":"The API Contract Includes Failure Responses","textChars":43,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/f618nydg","slide":7,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/e5srudwv","slide":7,"text":"Define: Clients must distinguish supported answer, insufficient evidence, denied access, invalid input, and unavailable service.","textPreview":"Define: Clients must distinguish supported answer, insufficient evidence, denied access, invalid input, and unavailable service.","textChars":128,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/l4na1cvq","slide":7,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/03e987e5","slide":7,"text":"request schema;","textPreview":"request schema;","textChars":15,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/y94v6xwj","slide":7,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/jaxwfid4","slide":7,"text":"response schema;","textPreview":"response schema;","textChars":16,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/kb6d8nep","slide":7,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/lcfehsvu","slide":7,"text":"authentication;","textPreview":"authentication;","textChars":15,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/a54v2dw7","slide":7,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/b6dcbixs","slide":7,"text":"authorization;","textPreview":"authorization;","textChars":14,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/w7md4ned","slide":7,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/x8vedsfy","slide":7,"text":"status codes;","textPreview":"status codes;","textChars":13,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/u18vehwr","slide":7,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/f2hwn2dc","slide":7,"text":"idempotency where actions occur;","textPreview":"idempotency where actions occur;","textChars":32,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/gliriq","slide":7,"text":"Define:\n\n- request schema;\n- response schema;\n- authentication;\n- authorization;\n- status codes;\n- idempotency where actions occur;\n- request-size and rate limits;\n- health checks;\n- model and corpus versions.\n\nClients must distinguish supported answer, insufficient evidence, denied access, invalid input, and unavailable service.\n\n[Worked Example]\n`200` supported answer  \n`200` typed insufficient-evidence response when the request is valid but evidence is absent  \n`403` denied authorization  \n`422` invalid request  \n`503` provider unavailable\n\nThe contract documents which body accompanies each status.\n\n[Visual Brief]\nOne endpoint branches into documented success, insufficient, denied, invalid, and unavailable responses.\n\n[Instructor Notes]\nEnsure health checks do not call expensive model paths on every probe.\n\n[Notebook Connection]\nWeek 11 deployment patterns wrap the final workflow.\n\n[Sources]\n- https://fastapi.tiangolo.com/tutorial/\n- https://fastapi.tiangolo.com/tutorial/response-status-code/\n[/Sources]"}
+{"kind":"slide","id":"sl/z202e3","slide":8,"title":"M18 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/8v6dkf6h","slide":8,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/7uxcrapw","slide":8,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/mtovi5ob","slide":8,"text":"DS ACADEMY   08","textPreview":"DS ACADEMY   08","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/lsfup07q","slide":8,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/kr6dgv65","slide":8,"text":"Evaluation Covers Components and User Outcomes","textPreview":"Evaluation Covers Components and User Outcomes","textChars":46,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/z6xcnqp0","slide":8,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/y5ovelof","slide":8,"text":"request validation;","textPreview":"request validation;","textChars":19,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/d4vulg7u","slide":8,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/c3mdcv69","slide":8,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/65wn2dk3","slide":8,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/r65obylo","slide":8,"text":"retrieval precision and recall;","textPreview":"retrieval precision and recall;","textChars":31,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/s7e54329","slide":8,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/t8n6d83u","slide":8,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/i1cnytk7","slide":8,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/j2547ylc","slide":8,"text":"groundedness and citation support;","textPreview":"groundedness and citation support;","textChars":34,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/43e5032x","slide":8,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/54n6983i","slide":8,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/udcnutkv","slide":8,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/vyl43elg","slide":8,"text":"structured-output validity;","textPreview":"structured-output validity;","textChars":27,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/z6hcfqxw","slide":8,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/y5obmlwb","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/lszuh0f2","slide":8,"text":"Release thresholds:","textPreview":"Release thresholds:","textChars":19,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/z202e3","slide":8,"text":"Evaluate:\n\n- request validation;\n- retrieval precision and recall;\n- groundedness and citation support;\n- structured-output validity;\n- tool selection and arguments;\n- workflow path and stopping;\n- latency and cost;\n- security and access isolation;\n- user task success.\n\nUse a versioned dataset containing normal, difficult, unsupported, denied, and failure cases.\n\n[Worked Example]\nRelease thresholds:\n\n- schema validity `100%`;\n- citation IDs valid `100%`;\n- groundedness at least `95%`;\n- cross-tenant retrieval failures `0`;\n- p95 latency under `3s`;\n- p95 cost under `$0.02`.\n\n[Visual Brief]\nAn evaluation matrix maps components to datasets, metrics, thresholds, and owners.\n\n[Instructor Notes]\nRequire failed examples and not only aggregate scores.\n\n[Notebook Connection]\nWeek 16's evaluation harness becomes the capstone release gate.\n\n[Sources]\n- https://docs.langchain.com/langsmith/evaluation-concepts\n- https://docs.langchain.com/langsmith/evaluate-rag-tutorial\n[/Sources]"}
+{"kind":"slide","id":"sl/vh7bai","slide":9,"title":"M18 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/5kfm1o3u","slide":9,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/ix4nq94j","slide":9,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/jyd4zelo","slide":9,"text":"DS ACADEMY   09","textPreview":"DS ACADEMY   09","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/sn65wj2l","slide":9,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/tof65o36","slide":9,"text":"Observability Connects a Result to Its Causes","textPreview":"Observability Connects a Result to Its Causes","textChars":45,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/6lonu9kf","slide":9,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/7mxo3el0","slide":9,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/grq5032h","slide":9,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/hsz69832","slide":9,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/h4fqxgfy","slide":9,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/g3mp4bed","slide":9,"text":"trace.set_attributes({\n    \"model_version\": MODEL_VERSION,\n    \"corpus_version\": CORPUS_VERSION,\n    \"final_status\": state[\"status\"],\n})","textPreview":"trace.set_attributes({ |     \"model_version\": MODEL_VERSION, |     \"corpus_version\": CORPUS_VERSION, |     \"final_status\": state[\"status\"...","textChars":136,"textLines":5,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/v2d8v6xs","slide":9,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/u14721w7","slide":9,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/5sfq1gfu","slide":9,"text":"A trace that can reproduce the component path behind one result.","textPreview":"A trace that can reproduce the component path behind one result.","textChars":64,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/476psvep","slide":9,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/36x8zqx4","slide":9,"text":"Total 1,805ms; generation owns most latency.","textPreview":"Total 1,805ms; generation owns most latency.","textChars":44,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/vh7bai","slide":9,"text":"For each request, record:\n\n- request and trace ID;\n- code, model, prompt, schema, and corpus versions;\n- graph path and node timings;\n- retrieved chunk IDs and ranks;\n- tool calls and outcomes;\n- validation results;\n- input/output tokens and cost;\n- final status and error category.\n\nMonitor availability, latency, errors, cost, retrieval drift, and delayed model-quality signals.\n\n[Worked Example]\nLatency trace:\n\nvalidation `5ms`  \nretrieval `120ms`  \ngeneration `1,600ms`  \nverification `80ms`\n\nTotal `1,805ms`; generation owns most latency.\n\n[Visual Brief]\nA trace waterfall links versions, evidence, tools, validation, result, and monitoring dashboards.\n\n[Instructor Notes]\nDefine redaction and retention before logging prompts or document content.\n\n[Notebook Connection]\nTracing from Week 14 covers every graph node and external call.\n\n[Sources]\n- https://docs.langchain.com/langsmith/observability\n- https://opentelemetry.io/docs/concepts/\n[/Sources]"}
+{"kind":"slide","id":"sl/si0xyu","slide":10,"title":"M18 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/orud072l","slide":10,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/3qlcr2lg","slide":10,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/2psvyxkv","slide":10,"text":"DS ACADEMY   10","textPreview":"DS ACADEMY   10","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/h4jups3a","slide":10,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/g3adwnmp","slide":10,"text":"Security and Cost Are Release Requirements","textPreview":"Security and Cost Are Release Requirements","textChars":42,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/f21cnil4","slide":10,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/u1svux4j","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/lkne1w3e","slide":10,"text":"scoped identities and secrets;","textPreview":"scoped identities and secrets;","textChars":30,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/0zed8r2t","slide":10,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/ul0rix4j","slide":10,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/fm9sr254","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/gnitk7mp","slide":10,"text":"tenant-aware retrieval;","textPreview":"tenant-aware retrieval;","textChars":23,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/horatcna","slide":10,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/6hgrex47","slide":10,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/7ipsn25s","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/sji9gnmd","slide":10,"text":"input and output validation;","textPreview":"input and output validation;","textChars":28,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/tkrapsny","slide":10,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/qdkbqh4r","slide":10,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/betszm5c","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/nylorelo","slide":10,"text":"tool allowlists and argument checks;","textPreview":"tool allowlists and argument checks;","textChars":36,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/mxc7i9k3","slide":10,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/si0xyu","slide":10,"text":"Security controls:\n\n- scoped identities and secrets;\n- tenant-aware retrieval;\n- input and output validation;\n- tool allowlists and argument checks;\n- human approval for high impact;\n- dependency scanning;\n- patching and rollback;\n- log redaction.\n\nCost controls:\n\n- token and tool-call budgets;\n- rate limits;\n- smallest suitable infrastructure;\n- budget alerts;\n- resource tags and cleanup;\n- per-request and daily caps.\n\n[Worked Example]\nAttack: document contains tool instructions requesting data export.\n\nControls:\n\n- retrieved text remains untrusted;\n- export tool absent from allowlist;\n- model has no credentials;\n- authorization denies cross-tenant data;\n- trace records denial.\n\n[Visual Brief]\nThreats meet preventive, detective, and response controls beside cost budget gates.\n\n[Instructor Notes]\nRequire demonstration of one real blocked path and one budget-exhausted path.\n\n[Notebook Connection]\nThe capstone integrates Week 11 deployment controls and Week 17 agent limits.\n\n[Sources]\n- https://genai.owasp.org/llm-top-10/\n- https://docs.aws.amazon.com/hands-on/latest/control-your-costs-free-tier-budgets/control-your-costs-free-tier-budgets.html\n[/Sources]"}
+{"kind":"slide","id":"sl/qskmw5","slide":11,"title":"M18 / L01","textShapes":11}
+{"kind":"textbox","id":"sh/apsb6tsn","slide":11,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/xsju1ore","slide":11,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/wrat8jat","slide":11,"text":"DS ACADEMY   11","textPreview":"DS ACADEMY   11","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/nmhsvetc","slide":11,"text":"RISK REVIEW","textPreview":"RISK REVIEW","textChars":11,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/ml8b29sr","slide":11,"text":"Release Includes Rollback and Failure Demonstrations","textPreview":"Release Includes Rollback and Failure Demonstrations","textChars":52,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/9ozaxob2","slide":11,"bbox":[0,0,16,720]}
+{"kind":"textbox","id":"sh/8nqt4jah","slide":11,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[74,196,78,42]}
+{"kind":"textbox","id":"sh/zihsrut0","slide":11,"text":"malformed request;","textPreview":"malformed request;","textChars":18,"textLines":1,"bbox":[190,188,930,92]}
+{"kind":"shape","id":"sh/yhoby9sf","slide":11,"bbox":[74,301,1048,2]}
+{"kind":"textbox","id":"sh/cvad4bqt","slide":11,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[74,344,78,42]}
+{"kind":"textbox","id":"sh/dwjudgre","slide":11,"text":"unsupported question;","textPreview":"unsupported question;","textChars":21,"textLines":1,"bbox":[190,336,930,92]}
+{"kind":"shape","id":"sh/q98v2l83","slide":11,"bbox":[74,449,1048,2]}
+{"kind":"textbox","id":"sh/bahcb698","slide":11,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[74,492,78,42]}
+{"kind":"textbox","id":"sh/o7qd0bqx","slide":11,"text":"unauthorized access;","textPreview":"unauthorized access;","textChars":20,"textLines":1,"bbox":[190,484,930,92]}
+{"kind":"shape","id":"sh/p8zu9gri","slide":11,"bbox":[74,597,1048,2]}
+{"kind":"notes","id":"nt/qskmw5","slide":11,"text":"Before release, demonstrate:\n\n- malformed request;\n- unsupported question;\n- unauthorized access;\n- prompt injection;\n- provider timeout;\n- invalid model output;\n- tool denial;\n- budget exhaustion;\n- health-check failure;\n- rollback to previous artifact.\n\nCreate a runbook describing alerts, diagnosis, mitigation, rollback, owners, and cleanup.\n\n[Worked Example]\nNew corpus index reduces groundedness below threshold.\n\nRollback:\n\n1. stop routing to new index version;\n2. restore previous version alias;\n3. verify health and test cases;\n4. record incident and failed changes;\n5. correct ingestion before another release.\n\n[Visual Brief]\nA release pipeline points to versioned artifacts, canary checks, and a rollback arrow to the prior version.\n\n[Instructor Notes]\nRequire rollback evidence, not only a written claim that rollback is possible.\n\n[Notebook Connection]\nThe final notebook workflow is packaged with versioned model, corpus, prompt, and graph artifacts.\n\n[Sources]\n- https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html\n- https://www.nist.gov/itl/ai-risk-management-framework\n[/Sources]"}
+{"kind":"slide","id":"sl/jqfowr","slide":12,"title":"M18 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/ze1k3u1s","slide":12,"text":"M18 / L01","textPreview":"M18 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/0falwzid","slide":12,"text":"Start with a Testable User Need","textPreview":"Start with a Testable User Need","textChars":31,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/lgj254jy","slide":12,"text":"DS ACADEMY   12","textPreview":"DS ACADEMY   12","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/m1s3y903","slide":12,"text":"GUIDED LAB","textPreview":"GUIDED LAB","textChars":10,"textLines":1,"bbox":[64,92,220,24]}
+{"kind":"textbox","id":"sh/n2147e1o","slide":12,"text":"Capstone Deliverable: Evidence before Presentation","textPreview":"Capstone Deliverable: Evidence before Presentation","textChars":50,"textLines":1,"bbox":[64,154,1100,154]}
+{"kind":"textbox","id":"sh/83al0ji9","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,410,62,28]}
+{"kind":"shape","id":"sh/94jm9oju","slide":12,"bbox":[64,462,214,5]}
+{"kind":"textbox","id":"sh/25o3m5kz","slide":12,"text":"problem statement and acceptance criteria","textPreview":"problem statement and acceptance criteria","textChars":41,"textLines":1,"bbox":[64,500,220,52]}
+{"kind":"textbox","id":"sh/36xkva1k","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[354,410,62,28]}
+{"kind":"shape","id":"sh/fadc3y1o","slide":12,"bbox":[354,462,214,5]}
+{"kind":"textbox","id":"sh/u94vut03","slide":12,"text":"architecture and data-flow diagrams","textPreview":"architecture and data-flow diagrams","textChars":35,"textLines":1,"bbox":[354,500,220,52]}
+{"kind":"textbox","id":"sh/hcvu58ju","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[644,410,62,28]}
+{"kind":"shape","id":"sh/gbmdw3i9","slide":12,"bbox":[644,462,214,5]}
+{"kind":"textbox","id":"sh/76tcze1s","slide":12,"text":"threat model and cost estimate","textPreview":"threat model and cost estimate","textChars":30,"textLines":1,"bbox":[644,500,220,52]}
+{"kind":"textbox","id":"sh/65kbqtk7","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[934,410,62,28]}
+{"kind":"shape","id":"sh/t8bu1ojy","slide":12,"bbox":[934,462,214,5]}
+{"kind":"textbox","id":"sh/s72dsjid","slide":12,"text":"versioned source, configuration, and environment","textPreview":"versioned source, configuration, and environment","textChars":48,"textLines":1,"bbox":[934,500,220,52]}
+{"kind":"notes","id":"nt/jqfowr","slide":12,"text":"Submit:\n\n1. problem statement and acceptance criteria;\n2. architecture and data-flow diagrams;\n3. threat model and cost estimate;\n4. versioned source, configuration, and environment;\n5. model and retrieval selection report;\n6. API and workflow contracts;\n7. evaluation dataset and results;\n8. failure-analysis report;\n9. deployment and health evidence;\n10. traces, monitoring, and budget alerts;\n11. runbook and rollback proof;\n12. limitations and responsible-use statement.\n\nDemonstrate failure paths before the polished success path.\n\n[Worked Example]\nFinal demonstration:\n\n1. denied cross-tenant request;\n2. unsupported question;\n3. malformed output caught by validation;\n4. provider timeout and controlled response;\n5. grounded answer with verified citations;\n6. rollback to previous artifact.\n\n[Visual Brief]\nA final evidence board connects requirements to implementation, tests, deployment, operations, rollback, and presentation.\n\n[Instructor Notes]\nGrade the evidence chain and failure handling more heavily than interface polish.\n\n[Notebook Connection]\nUse one selected agentic capstone notebook as a starting pattern and document every modernization or replacement.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp\n- https://docs.langchain.com/oss/python/langgraph/overview\n[/Sources]"}

@@ -1,0 +1,347 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/v9xa3g",
+    "id": "v9xa3g",
+    "slide": 1,
+    "layoutId": "a9dd1651-341e-4769-a6e3-4a8bc34549c4",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "5ead976b-ae4c-4fff-b460-c1ff743e6ea0",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#0E263E",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "a9dd1651-341e-4769-a6e3-4a8bc34549c4",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "5ead976b-ae4c-4fff-b460-c1ff743e6ea0",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "5ead976b-ae4c-4fff-b460-c1ff743e6ea0",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i1snuhg3",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A8C8",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/kba90jex",
+      "id": "2",
+      "bbox": [
+        724,
+        0,
+        556,
+        720
+      ],
+      "alt": "Data science workflow from raw data to a deployed decision system",
+      "contentType": "image/png",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "63b5c353-6c96-477b-a2c6-caf527172a19",
+        "contentType": "image/png",
+        "byteLength": 1660213
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k3a5wry9",
+      "id": "3",
+      "bbox": [
+        692,
+        0,
+        32,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A8C8",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/761or6hk",
+      "id": "4",
+      "bbox": [
+        70,
+        70,
+        430,
+        26
+      ],
+      "geometry": "rect",
+      "text": "MODULE 13  /  LESSON 01",
+      "textPreview": "MODULE 13  /  LESSON 01",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#00A8C8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MODULE 13  /  LESSON 01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MODULE 13  /  LESSON 01",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#00A8C8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MODULE 13  /  LESSON 01",
+              "fontSize": 13,
+              "color": "#00A8C8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/65sny1gz",
+      "id": "5",
+      "bbox": [
+        70,
+        148,
+        548,
+        250
+      ],
+      "geometry": "rect",
+      "text": "A Prompt Is the Complete Model Input",
+      "textPreview": "A Prompt Is the Complete Model Input",
+      "resolvedFontSize": 52,
+      "resolvedTextStyle": {
+        "fontSize": 52,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A Prompt Is the"
+          },
+          {
+            "index": 2,
+            "text": "Complete Model"
+          },
+          {
+            "index": 3,
+            "text": "Input"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A Prompt Is the Complete Model Input",
+          "resolvedTextStyle": {
+            "fontSize": 52,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A Prompt Is the Complete Model Input",
+              "fontSize": 52,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t836twzq",
+      "id": "6",
+      "bbox": [
+        70,
+        430,
+        96,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#F06B5F",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s7a50ry5",
+      "id": "7",
+      "bbox": [
+        70,
+        472,
+        530,
+        102
+      ],
+      "geometry": "rect",
+      "text": "A prompt is all information supplied to the model for one generation.",
+      "textPreview": "A prompt is all information supplied to the model for one generation.",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#D5E2EC",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A prompt is all information supplied to the model"
+          },
+          {
+            "index": 2,
+            "text": "for one generation."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A prompt is all information supplied to the model for one generation.",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#D5E2EC"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A prompt is all information supplied to the model for one generation.",
+              "fontSize": 22,
+              "color": "#D5E2EC"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/u1cbqtwz",
+      "id": "8",
+      "bbox": [
+        70,
+        620,
+        182,
+        52
+      ],
+      "alt": "DS Academy",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "c4b3e5be-4752-4e67-86f7-d61e96d91ce8",
+        "contentType": "image/png",
+        "byteLength": 11564
+      }
+    }
+  ],
+  "composeRuns": []
+}

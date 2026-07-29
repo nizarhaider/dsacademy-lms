@@ -29,6 +29,10 @@ jobs:
         working-directory: frontend
         run: yarn install --frozen-lockfile
 
+      - name: Check js-yaml security floor
+        working-directory: .
+        run: node scripts/check-js-yaml-security.mjs
+
       - name: Run vitest
         working-directory: frontend
         run: yarn test --run

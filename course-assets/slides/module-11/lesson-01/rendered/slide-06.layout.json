@@ -1,0 +1,823 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/s9vm1p",
+    "id": "s9vm1p",
+    "slide": 6,
+    "layoutId": "65da4ffe-6cb5-46a4-abd5-f016582dd48f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "2c941983-e237-411e-b036-4dfdc73157fe",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#EEF4F7",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "65da4ffe-6cb5-46a4-abd5-f016582dd48f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "2c941983-e237-411e-b036-4dfdc73157fe",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "2c941983-e237-411e-b036-4dfdc73157fe",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a1or69sf",
+      "id": "1",
+      "bbox": [
+        54,
+        28,
+        110,
+        22
+      ],
+      "geometry": "rect",
+      "text": "M11 / L01",
+      "textPreview": "M11 / L01",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "M11 / L01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "M11 / L01",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "M11 / L01",
+              "fontSize": 11,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xozahor6",
+      "id": "2",
+      "bbox": [
+        176,
+        28,
+        650,
+        22
+      ],
+      "geometry": "rect",
+      "text": "Serving Turns a Fitted Model into a Service",
+      "textPreview": "Serving Turns a Fitted Model into a Service",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#607086",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Serving Turns a Fitted Model into a Service"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Serving Turns a Fitted Model into a Service",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#607086"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Serving Turns a Fitted Model into a Service",
+              "fontSize": 11,
+              "color": "#607086"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w3q98jal",
+      "id": "3",
+      "bbox": [
+        1002,
+        28,
+        224,
+        22
+      ],
+      "geometry": "rect",
+      "text": "DS ACADEMY   06",
+      "textPreview": "DS ACADEMY   06",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#607086",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DS ACADEMY   06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DS ACADEMY   06",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#607086",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DS ACADEMY   06",
+              "fontSize": 11,
+              "color": "#607086",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nyxsbuto",
+      "id": "4",
+      "bbox": [
+        62,
+        78,
+        560,
+        22
+      ],
+      "geometry": "rect",
+      "text": "RUN IT AND INSPECT THE RESULT",
+      "textPreview": "RUN IT AND INSPECT THE RESULT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RUN IT AND INSPECT THE RESULT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RUN IT AND INSPECT THE RESULT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RUN IT AND INSPECT THE RESULT",
+              "fontSize": 12,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mxor29sj",
+      "id": "5",
+      "bbox": [
+        62,
+        108,
+        1110,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Docker Packages the Application Environment",
+      "textPreview": "Docker Packages the Application Environment",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "fontSize": 38,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Docker Packages the Application Environment"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Docker Packages the Application Environment",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Docker Packages the Application Environment",
+              "fontSize": 38,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/90fad4bu",
+      "id": "6",
+      "bbox": [
+        54,
+        170,
+        684,
+        408
+      ],
+      "geometry": "rect",
+      "fillColor": "#0B1220",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/oz694za9",
+      "id": "7",
+      "bbox": [
+        54,
+        170,
+        684,
+        32
+      ],
+      "geometry": "rect",
+      "fillColor": "#243244",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zuds7uts",
+      "id": "8",
+      "bbox": [
+        72,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#F06B5F",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/et4ryps7",
+      "id": "9",
+      "bbox": [
+        96,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#F2C94C",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/03udcbml",
+      "id": "10",
+      "bbox": [
+        120,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#A8D95B",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/143elgn6",
+      "id": "11",
+      "bbox": [
+        76,
+        220,
+        642,
+        336
+      ],
+      "geometry": "rect",
+      "text": "FROM python:3.12-slim\nWORKDIR /app\nCOPY requirements.txt .\nRUN pip install --no-cache-dir -r requirements.txt\nCOPY . .\nCMD [\"fastapi\", \"run\", \"app.py\", \"--port\", \"8000\"]",
+      "textPreview": "FROM python:3.12-slim | WORKDIR /app | COPY requirements.txt . | RUN pip install --no-cache-dir -r requirements.txt | COPY . . | CMD [\"fa...",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#E8F1F7",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "FROM python:3.12-slim"
+          },
+          {
+            "index": 2,
+            "text": "WORKDIR /app"
+          },
+          {
+            "index": 3,
+            "text": "COPY requirements.txt ."
+          },
+          {
+            "index": 4,
+            "text": "RUN pip install --no-cache-dir -r requirements.txt"
+          },
+          {
+            "index": 5,
+            "text": "COPY . ."
+          },
+          {
+            "index": 6,
+            "text": "CMD [\"fastapi\", \"run\", \"app.py\", \"--port\", \"8000\"]"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "FROM python:3.12-slim",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "FROM python:3.12-slim",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "WORKDIR /app",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WORKDIR /app",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "COPY requirements.txt .",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "COPY requirements.txt .",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "RUN pip install --no-cache-dir -r requirements.txt",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RUN pip install --no-cache-dir -r requirements.txt",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "COPY . .",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "COPY . .",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "CMD [\"fastapi\", \"run\", \"app.py\", \"--port\", \"8000\"]",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CMD [\"fastapi\", \"run\", \"app.py\", \"--port\", \"8000\"]",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1cval4f",
+      "id": "12",
+      "bbox": [
+        770,
+        170,
+        454,
+        408
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#CAD6DF",
+      "lineWidth": 1
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f2lwjq50",
+      "id": "13",
+      "bbox": [
+        796,
+        194,
+        120,
+        22
+      ],
+      "geometry": "rect",
+      "text": "OUTPUT",
+      "textPreview": "OUTPUT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "OUTPUT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "OUTPUT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "OUTPUT",
+              "fontSize": 12,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/szud8bm9",
+      "id": "14",
+      "bbox": [
+        796,
+        234,
+        398,
+        312
+      ],
+      "geometry": "rect",
+      "text": "One reproducible image that starts the API on port 8000.",
+      "textPreview": "One reproducible image that starts the API on port 8000.",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "One reproducible image that starts the API on port 8000."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "One reproducible image that starts the API on port 8000.",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#0B1220"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "One reproducible image that starts the API on port 8000.",
+              "fontSize": 14,
+              "color": "#0B1220"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t03ehgnu",
+      "id": "15",
+      "bbox": [
+        54,
+        602,
+        1170,
+        62
+      ],
+      "geometry": "rect",
+      "fillColor": "#DFF5FA",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6xsv614j",
+      "id": "16",
+      "bbox": [
+        76,
+        612,
+        1128,
+        44
+      ],
+      "geometry": "rect",
+      "text": "The host port 8000 forwards to the container service port.",
+      "textPreview": "The host port 8000 forwards to the container service port.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The host port 8000 forwards to the container service port."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The host port 8000 forwards to the container service port.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The host port 8000 forwards to the container service port.",
+              "fontSize": 20,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

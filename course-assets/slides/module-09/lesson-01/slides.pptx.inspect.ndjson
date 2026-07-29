@@ -1,0 +1,243 @@
+{"kind":"deck","id":"pr/u781y2","name":"Deck"}
+{"kind":"layout","layoutId":"7b130f5c-3382-43aa-8e10-f9a9d61ce9dd","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"b6356f09-812b-4131-95b2-d06c842348f3","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/8yhwqv","slide":1,"title":"MODULE 09  /  LESSON 01","textShapes":3}
+{"kind":"shape","id":"sh/dsry9o7a","slide":1,"bbox":[0,0,1280,12]}
+{"kind":"shape","id":"sh/rqpg7ep4","slide":1,"bbox":[692,0,32,720]}
+{"kind":"textbox","id":"sh/0vihk361","slide":1,"text":"MODULE 09  /  LESSON 01","textPreview":"MODULE 09  /  LESSON 01","textChars":23,"textLines":1,"bbox":[70,70,430,26]}
+{"kind":"textbox","id":"sh/1wrydo7m","slide":1,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[70,148,548,250]}
+{"kind":"shape","id":"sh/et0zitov","slide":1,"bbox":[70,430,96,6]}
+{"kind":"textbox","id":"sh/zu9gbypg","slide":1,"text":"A PyTorch tensor is a shaped numerical data structure used for inputs, targets, model parameters, and intermediate results.","textPreview":"A PyTorch tensor is a shaped numerical data structure used for inputs, targets, model parameters, and intermediate results.","textChars":123,"textLines":1,"bbox":[70,472,530,102]}
+{"kind":"image","id":"im/r29gzyx0","slide":1,"name":"","alt":"Data science workflow from raw data to a deployed decision system","bbox":[724,0,556,720]}
+{"kind":"image","id":"im/hwrytozy","slide":1,"name":"","alt":"DS Academy","bbox":[70,620,182,52]}
+{"kind":"notes","id":"nt/8yhwqv","slide":1,"text":"A PyTorch **tensor** is a shaped numerical data structure used for inputs, targets, model parameters, and intermediate results.\n\nLike a NumPy array, a tensor has:\n\n- `shape`: length of each axis;\n- `dtype`: stored numerical type;\n- `device`: CPU, GPU, or another accelerator;\n- values selected by indexing.\n\nPyTorch tensors can record operations for automatic gradient calculation.\n\n[Worked Example]\nA batch contains `4` students and `3` features per student.\n\nInput shape: `(4, 3)`  \nIf the model predicts one value per student, output shape: `(4, 1)`.\n\n[Visual Brief]\nA NumPy-style grid gains shape, dtype, device, and gradient-history labels to become a tensor.\n\n[Instructor Notes]\nHave learners predict every shape. Explain that exact device output depends on where the tensor was created.\n\n[Notebook Connection]\nThe PyTorch notebook starts with tensor creation, operations, and device movement.\n\n[Sources]\n- https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html\n- https://github.com/curiousily/AI-Bootcamp/blob/master/02.real-world-pytorch.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/ejt80d","slide":2,"title":"M09 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/ni1obits","slide":2,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/oju543ad","slide":2,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/9k36d8by","slide":2,"text":"DS ACADEMY   02","textPreview":"DS ACADEMY   02","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/alcn6dsj","slide":2,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/bmlofit4","slide":2,"text":"One Neuron Is a Weighted Sum and Activation","textPreview":"One Neuron Is a Weighted Sum and Activation","textChars":43,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/w7u58na9","slide":2,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/x8361sbu","slide":2,"text":"A neuron calculates: z = w1x1 + w2x2 + ... + wnxn + b then applies an activation function:","textPreview":"A neuron calculates: z = w1x1 + w2x2 + ... + wnxn + b then applies an activation function:","textChars":90,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/qp8nutsz","slide":2,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/rqho3etk","slide":2,"text":"xi: input feature","textPreview":"xi: input feature","textChars":17,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/32xwze9g","slide":2,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/21ov69sv","slide":2,"text":"wi: learned weight","textPreview":"wi: learned weight","textChars":18,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/p4ze1orm","slide":2,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/43qd8ja1","slide":2,"text":"b: learned bias","textPreview":"b: learned bias","textChars":15,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/fexcve9k","slide":2,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/udov29sz","slide":2,"text":"z: pre-activation weighted sum","textPreview":"z: pre-activation weighted sum","textChars":30,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/h0fux4rq","slide":2,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/gz6d4ja5","slide":2,"text":"g: activation function","textPreview":"g: activation function","textChars":22,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/7adcru98","slide":2,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/694vypsn","slide":2,"text":"a: neuron output","textPreview":"a: neuron output","textChars":16,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/ejt80d","slide":2,"text":"A **neuron** calculates:\n\n`z = w1x1 + w2x2 + ... + wnxn + b`\n\nthen applies an **activation function**:\n\n`a = g(z)`\n\n- `xi`: input feature\n- `wi`: learned weight\n- `b`: learned bias\n- `z`: pre-activation weighted sum\n- `g`: activation function\n- `a`: neuron output\n\nThe bias has the same role as a regression intercept.\n\n[Worked Example]\n`x=[2,3]`, `w=[0.4,-0.1]`, `b=0.2`\n\n`z = 2(0.4) + 3(-0.1) + 0.2`  \n`= 0.8 - 0.3 + 0.2 = 0.7`\n\nIf `g` is ReLU, output remains `0.7`.\n\n[Visual Brief]\nTwo feature-weight pairs merge into a sum with bias, then pass through an activation block.\n\n[Instructor Notes]\nConnect each term to Week 5's dot product and Week 7's linear equation.\n\n[Notebook Connection]\nPyTorch `nn.Linear` performs the weighted sum and bias for a complete layer.\n\n[Sources]\n- https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html\n- https://d2l.ai/chapter_multilayer-perceptrons/mlp.html\n[/Sources]"}
+{"kind":"slide","id":"sl/wwf05z","slide":3,"title":"M09 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/rudonadw","slide":3,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/svmpgfuh","slide":3,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/twv6pkvm","slide":3,"text":"DS ACADEMY   03","textPreview":"DS ACADEMY   03","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/ex47i5c7","slide":3,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/fydorads","slide":3,"text":"Layers Transform Batches with Matrix Multiplication","textPreview":"Layers Transform Batches with Matrix Multiplication","textChars":51,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/gz6pkfud","slide":3,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/10f6tkvy","slide":3,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/21o7mpcj","slide":3,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/32xovud4","slide":3,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/vupovqdc","slide":3,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/u9g7mlwr","slide":3,"text":"layer = torch.nn.Linear(3, 5)\nx = torch.randn(4, 3)\nz = layer(x)\nprint(z.shape)","textPreview":"layer = torch.nn.Linear(3, 5) | x = torch.randn(4, 3) | z = layer(x) | print(z.shape)","textChars":79,"textLines":4,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/hw76xgvi","slide":3,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/gvypobex","slide":3,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/765or6d0","slide":3,"text":"torch.Size([4, 5])","textPreview":"torch.Size([4, 5])","textChars":18,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/65w7i1wv","slide":3,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/t876tgv6","slide":3,"text":"Four observations each receive five transformed features.","textPreview":"Four observations each receive five transformed features.","textChars":57,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/wwf05z","slide":3,"text":"A **layer** contains several neurons that receive the same input vector.\n\nFor a batch:\n\n`Z = XWᵀ + b`\n\nIf:\n\n- `X` shape is `(batch, input_features)`;\n- `W` shape is `(output_features, input_features)`;\n- then `Z` shape is `(batch, output_features)`.\n\nEach output column comes from one neuron's weights.\n\n[Worked Example]\nBatch `X`: `(4, 3)`  \nLayer: `3` inputs to `5` outputs  \nWeight `W`: `(5, 3)`  \nOutput `Z`: `(4, 5)`\n\nFour observations each receive five transformed features.\n\n[Visual Brief]\nA `(4,3)` batch matrix connects to a 3-to-5 layer and becomes a `(4,5)` output matrix.\n\n[Instructor Notes]\nAsk what every dimension means. Explain that `nn.Linear(3,5)` refers to features, not batch size.\n\n[Notebook Connection]\nThe model section constructs layers whose dimensions must match dataset tensors.\n\n[Sources]\n- https://docs.pytorch.org/docs/stable/generated/torch.nn.Linear.html\n- https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html\n[/Sources]"}
+{"kind":"slide","id":"sl/1b1b4t","slide":4,"title":"M09 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/mh4vq947","slide":4,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/94vul4ny","slide":4,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/8jmdszmd","slide":4,"text":"DS ACADEMY   04","textPreview":"DS ACADEMY   04","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/zetcfu5w","slide":4,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/ydkvmpob","slide":4,"text":"Activations Let Networks Learn Nonlinear Patterns","textPreview":"Activations Let Networks Learn Nonlinear Patterns","textChars":49,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/lgvuh4nm","slide":4,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/kfmdoz61","slide":4,"text":"An activation function transforms each pre-activation value.","textPreview":"An activation function transforms each pre-activation value.","textChars":60,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/jaxwry50","slide":4,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/i9ovyt4f","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/czep0na1","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/d0nq9srm","slide":4,"text":"ReLU(z) = max(0, z)","textPreview":"ReLU(z) = max(0, z)","textChars":19,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/qdw7ydsb","slide":4,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/by587i9g","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/obupw3a5","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/pc3q58rq","slide":4,"text":"Without nonlinear activations, several linear layers collapse into one linear transformation.","textPreview":"Without nonlinear activations, several linear layers collapse into one linear transformation.","textChars":93,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/29c7udsz","slide":4,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/3alo3i9k","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/g7ups3at","slide":4,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/183618re","slide":4,"text":"Nonlinearity lets the network represent curved and piecewise relationships.","textPreview":"Nonlinearity lets the network represent curved and piecewise relationships.","textChars":75,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/h4v6p4ji","slide":4,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/g3m5wz2x","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/v2d4nulc","slide":4,"text":"Input values [-2, 0.5, 3] ReLU: max(0,-2)=0 max(0,0.5)=0.5 max(0,3)=3 Output [0, 0.5, 3].","textPreview":"Input values [-2, 0.5, 3] ReLU: max(0,-2)=0 max(0,0.5)=0.5 max(0,3)=3 Output [0, 0.5, 3].","textChars":89,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/1b1b4t","slide":4,"text":"An **activation function** transforms each pre-activation value.\n\nReLU:\n\n`ReLU(z) = max(0, z)`\n\nWithout nonlinear activations, several linear layers collapse into one linear transformation. Nonlinearity lets the network represent curved and piecewise relationships.\n\nCommon output activations depend on the task. PyTorch loss functions often expect raw logits, so do not add sigmoid or softmax blindly.\n\n[Worked Example]\nInput values `[-2, 0.5, 3]`\n\nReLU:\n\n`max(0,-2)=0`  \n`max(0,0.5)=0.5`  \n`max(0,3)=3`\n\nOutput `[0, 0.5, 3]`.\n\n[Visual Brief]\nA ReLU graph is paired with three input arrows and their transformed outputs.\n\n[Instructor Notes]\nAvoid surveying many activations. Focus on the role of nonlinearity and the loss-output contract.\n\n[Notebook Connection]\nLearners should identify every activation and the shape it preserves.\n\n[Sources]\n- https://docs.pytorch.org/docs/stable/generated/torch.nn.ReLU.html\n- https://d2l.ai/chapter_multilayer-perceptrons/mlp.html#activation-functions\n[/Sources]"}
+{"kind":"slide","id":"sl/sdeknj","slide":5,"title":"M09 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/f698vahw","slide":5,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/0ripofih","slide":5,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/1srqxkz2","slide":5,"text":"DS ACADEMY   05","textPreview":"DS ACADEMY   05","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/q1g7i50f","slide":5,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/r2porah0","slide":5,"text":"A Forward Pass Produces Predictions","textPreview":"A Forward Pass Produces Predictions","textChars":35,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/s3ipkvil","slide":5,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/d4r6t0zq","slide":5,"text":"A forward pass sends input tensors through layers and activations to produce predictions. Example network: X -> Linear(3,5) -> ReLU -> Linear(5,1) -> output","textPreview":"A forward pass sends input tensors through layers and activations to produce predictions. Example network: X -> Linear(3,5) -> ReLU -> Li...","textChars":156,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/axk7up0j","slide":5,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/byt83uh4","slide":5,"text":"A forward pass sends input tensors through layers and activations to produce predictions.","textPreview":"A forward pass sends input tensors through layers and activations to produce predictions.","textChars":89,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/fit0vy5k","slide":5,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/ehkjmt4z","slide":5,"text":"X -> Linear(3,5) -> ReLU -> Linear(5,1) -> output","textPreview":"X -> Linear(3,5) -> ReLU -> Linear(5,1) -> output","textChars":49,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/14bix8na","slide":5,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/g321o3mp","slide":5,"text":"The output of one stage becomes the input to the next.","textPreview":"The output of one stage becomes the input to the next.","textChars":54,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/36dkzi5g","slide":5,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/254jqd4v","slide":5,"text":"Shapes must align at every boundary.","textPreview":"Shapes must align at every boundary.","textChars":36,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/p8v21snm","slide":5,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/o7m1snm1","slide":5,"text":"The final output may be a regression prediction, a binary logit, or one logit per class.","textPreview":"The final output may be a regression prediction, a binary logit, or one logit per class.","textChars":88,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/badk3i5s","slide":5,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/q94jud47","slide":5,"text":"After first linear layer: (4,5) After ReLU: (4,5) After output layer: (4,1)","textPreview":"After first linear layer: (4,5) After ReLU: (4,5) After output layer: (4,1)","textChars":75,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/sdeknj","slide":5,"text":"A **forward pass** sends input tensors through layers and activations to produce predictions.\n\nExample network:\n\n`X -> Linear(3,5) -> ReLU -> Linear(5,1) -> output`\n\nThe output of one stage becomes the input to the next. Shapes must align at every boundary.\n\nThe final output may be a regression prediction, a binary logit, or one logit per class.\n\n[Worked Example]\nBatch shape `(4,3)`\n\nAfter first linear layer: `(4,5)`  \nAfter ReLU: `(4,5)`  \nAfter output layer: `(4,1)`\n\nThere is one raw output per observation.\n\n[Visual Brief]\nA left-to-right network pipeline labels each layer and tensor shape.\n\n[Instructor Notes]\nTrace shape changes before discussing learning. The forward pass alone does not update parameters.\n\n[Notebook Connection]\nThe notebook's model call executes `forward()` and returns a tensor for the loss function.\n\n[Sources]\n- https://docs.pytorch.org/docs/stable/generated/torch.nn.Sequential.html\n- https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html\n[/Sources]"}
+{"kind":"slide","id":"sl/7u9no6","slide":6,"title":"M09 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/c3yhcfqt","slide":6,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/b2pg3apo","slide":6,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/ahgza583","slide":6,"text":"DS ACADEMY   06","textPreview":"DS ACADEMY   06","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/pg7y1k7i","slide":6,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/ofyh8fqx","slide":6,"text":"The Loss Must Match the Task and Output","textPreview":"The Loss Must Match the Task and Output","textChars":39,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/3e5gzapc","slide":6,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/2dwz658r","slide":6,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/9crid47m","slide":6,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/8bihkz61","slide":6,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/adwjexo3","slide":6,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/ve5k72po","slide":6,"text":"loss_fn = torch.nn.MSELoss()\nprediction = torch.tensor([2.0, 4.0])\ntarget = torch.tensor([3.0, 5.0])\nprint(loss_fn(prediction, target))","textPreview":"loss_fn = torch.nn.MSELoss() | prediction = torch.tensor([2.0, 4.0]) | target = torch.tensor([3.0, 5.0]) | print(loss_fn(prediction, targ...","textChars":135,"textLines":4,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/wfe1g769","slide":6,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/xgn29c7u","slide":6,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/mpcjaxo7","slide":6,"text":"tensor(1.)","textPreview":"tensor(1.)","textChars":10,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/nq5k32ps","slide":6,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/8be1cn6d","slide":6,"text":"Residuals [1,1] Squared residuals [1,1] MSE (1+1)/2 = 1","textPreview":"Residuals [1,1] Squared residuals [1,1] MSE (1+1)/2 = 1","textChars":55,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/7u9no6","slide":6,"text":"A **loss function** compares model outputs with targets and returns a value training will reduce.\n\n- Regression: mean squared error can compare numerical predictions and targets.\n- Binary classification: `BCEWithLogitsLoss` combines sigmoid and binary cross-entropy safely.\n- Multiclass classification: `CrossEntropyLoss` expects one raw logit per class and integer class labels.\n\nUsing the wrong target shape, target type, or extra activation can produce errors or incorrect learning.\n\n[Worked Example]\nRegression predictions `[2,4]`, targets `[3,5]`\n\nResiduals `[1,1]`  \nSquared residuals `[1,1]`  \nMSE `(1+1)/2 = 1`\n\n[Visual Brief]\nThree task lanes map model output, target format, and matching loss.\n\n[Instructor Notes]\nExplain logits as raw scores. Keep probability conversion for evaluation separate from loss input.\n\n[Notebook Connection]\nLearners must explain why the notebook's chosen loss matches its prediction task.\n\n[Sources]\n- https://docs.pytorch.org/docs/stable/nn.html#loss-functions\n- https://docs.pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html\n[/Sources]"}
+{"kind":"slide","id":"sl/hsuzzz","slide":7,"title":"M09 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/8bq5grat","slide":7,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/nah4nm98","slide":7,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/m983ehsn","slide":7,"text":"DS ACADEMY   07","textPreview":"DS ACADEMY   07","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/x0jmtwra","slide":7,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/wza5krqp","slide":7,"text":"Backpropagation Computes Gradients","textPreview":"Backpropagation Computes Gradients","textChars":34,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/vy14rm9k","slide":7,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/adsnih8z","slide":7,"text":"PyTorch autograd records tensor operations in a computational graph. During backpropagation, the chain rule moves backward from loss and calculates: ∂loss / ∂parameter","textPreview":"PyTorch autograd records tensor operations in a computational graph. During backpropagation, the chain rule moves backward from loss and ...","textChars":167,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/54jmxgrm","slide":7,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/k3a5obq1","slide":7,"text":"PyTorch autograd records tensor operations in a computational graph.","textPreview":"PyTorch autograd records tensor operations in a computational graph.","textChars":68,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/mxgbatwf","slide":7,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/7ypsjyd0","slide":7,"text":"During backpropagation, the chain rule moves backward from loss and calculates:","textPreview":"During backpropagation, the chain rule moves backward from loss and calculates:","textChars":79,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/8jytc3ul","slide":7,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/9k7ul8v6","slide":7,"text":"∂loss / ∂parameter","textPreview":"∂loss / ∂parameter","textChars":18,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/ulgbedcr","slide":7,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/vmpc7idc","slide":7,"text":"for every trainable parameter.","textPreview":"for every trainable parameter.","textChars":30,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/wnytgnux","slide":7,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/horu9sv2","slide":7,"text":"Calling loss.backward() computes gradients.","textPreview":"Calling loss.backward() computes gradients.","textChars":43,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/apwb29wn","slide":7,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/bq5sbeds","slide":7,"text":"It does not update the weights.","textPreview":"It does not update the weights.","textChars":31,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/hsuzzz","slide":7,"text":"PyTorch **autograd** records tensor operations in a computational graph.\n\nDuring **backpropagation**, the chain rule moves backward from loss and calculates:\n\n`∂loss / ∂parameter`\n\nfor every trainable parameter.\n\nCalling `loss.backward()` computes gradients. It does not update the weights. Gradients are stored in each parameter's `.grad`.\n\n[Worked Example]\n`prediction = wx`, target `y`, squared loss `(y - wx)^2`.\n\nIf `x=2`, `w=1`, `y=5`:\n\nPrediction `2`; residual `3`; loss `9`.  \nDerivative with respect to `w`: `-2x(y-wx) = -12`.\n\nIncreasing `w` should reduce loss.\n\n[Visual Brief]\nA forward graph calculates prediction and loss; a backward arrow carries gradients to `w`.\n\n[Instructor Notes]\nSeparate gradient computation from parameter update. Explain that gradients accumulate unless cleared.\n\n[Notebook Connection]\nThe training loop calls `backward()` after calculating loss.\n\n[Sources]\n- https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html\n- https://docs.pytorch.org/tutorials/beginner/introyt/autogradyt_tutorial.html\n[/Sources]"}
+{"kind":"slide","id":"sl/5ifyn5","slide":8,"title":"M09 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/g7exgru1","slide":8,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/v65g7mdw","slide":8,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/u5wfe1cb","slide":8,"text":"DS ACADEMY   08","textPreview":"DS ACADEMY   08","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/t4ny5wvq","slide":8,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/83uxcru5","slide":8,"text":"The Optimizer Applies the Gradients","textPreview":"The Optimizer Applies the Gradients","textChars":35,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/7ilg3mdk","slide":8,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/6hcfahcz","slide":8,"text":"optimizer.zerograd() clears old gradients;","textPreview":"optimizer.zerograd() clears old gradients;","textChars":42,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/lg3y1cve","slide":8,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/kfux87u9","slide":8,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/i18f6p4z","slide":8,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/j21wza54","slide":8,"text":"prediction = model(x) runs the forward pass;","textPreview":"prediction = model(x) runs the forward pass;","textChars":44,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/43ax8fmp","slide":8,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/54je1kna","slide":8,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/ud8f254n","slide":8,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/vehwva58","slide":8,"text":"loss.backward() computes new gradients;","textPreview":"loss.backward() computes new gradients;","textChars":39,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/wfqx4fmt","slide":8,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/h0zexkne","slide":8,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/m9ofy54r","slide":8,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/7ahwrq5c","slide":8,"text":"optimizer.step() updates parameters.","textPreview":"optimizer.step() updates parameters.","textChars":36,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/bedcz6l4","slide":8,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/ad4bq1kj","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/xgvu1w3u","slide":8,"text":"Current weight 1.0, gradient -12, learning rate 0.1: wnew = 1.0 - 0.1(-12) = 2.2 For the example on Slide 7, this moves the prediction from 2 toward target 5.","textPreview":"Current weight 1.0, gradient -12, learning rate 0.1: wnew = 1.0 - 0.1(-12) = 2.2 For the example on Slide 7, this moves the prediction fr...","textChars":158,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/5ifyn5","slide":8,"text":"For each training batch:\n\n1. `optimizer.zero_grad()` clears old gradients;\n2. `prediction = model(x)` runs the forward pass;\n3. `loss.backward()` computes new gradients;\n4. `optimizer.step()` updates parameters.\n\nThe **optimizer** implements the update rule. Stochastic gradient descent and Adam are common choices. The **learning rate** controls update size.\n\n[Worked Example]\nCurrent weight `1.0`, gradient `-12`, learning rate `0.1`:\n\n`w_new = 1.0 - 0.1(-12)`  \n`= 2.2`\n\nFor the example on Slide 7, this moves the prediction from `2` toward target `5`.\n\n[Visual Brief]\nA four-step loop labels clear, forward, backward, and update, with parameter state before and after.\n\n[Instructor Notes]\nAsk what breaks if `zero_grad()` is omitted. Do not teach Adam internals in this lesson.\n\n[Notebook Connection]\nThis sequence is the core of the notebook training section.\n\n[Sources]\n- https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html\n- https://docs.pytorch.org/docs/stable/optim.html\n[/Sources]"}
+{"kind":"slide","id":"sl/xrbwwh","slide":9,"title":"M09 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/onils3ad","slide":9,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/nm9kjy9s","slide":9,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/ml03qds7","slide":9,"text":"DS ACADEMY   09","textPreview":"DS ACADEMY   09","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/xsb2psru","slide":9,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/wr2lwna9","slide":9,"text":"Batches, Epochs, and Learning Rate Control Training","textPreview":"Batches, Epochs, and Learning Rate Control Training","textChars":51,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/bqtkni9o","slide":9,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/ap03uds3","slide":9,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/dw72dorq","slide":9,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/cvy1kja5","slide":9,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/e5wnmhs7","slide":9,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/f6p4fm9s","slide":9,"text":"import math\n\nupdates = math.ceil(240 / 32) * 5\nprint(updates)","textPreview":"import math |  | updates = math.ceil(240 / 32) * 5 | print(updates)","textChars":61,"textLines":4,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/07y5orax","slide":9,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/187mhwri","slide":9,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/2tgnq1s3","slide":9,"text":"40","textPreview":"40","textChars":2,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/nup4j69o","slide":9,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/ovy5sba9","slide":9,"text":"For 5 epochs: 8 x 5 = 40 updates.","textPreview":"For 5 epochs: 8 x 5 = 40 updates.","textChars":33,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/xrbwwh","slide":9,"text":"A **batch** is a subset of training observations used for one gradient update.\n\nAn **epoch** is one complete pass through the training dataset.\n\nIf there are `1,000` rows and batch size is `100`, one epoch contains `10` batches and usually `10` optimizer updates.\n\nSmaller batches use less memory and produce noisier gradient estimates. Larger batches use more memory. More epochs do not guarantee better generalization.\n\n[Worked Example]\nDataset size `240`, batch size `32`.\n\nSeven full batches contain `224` rows, plus one final batch of `16`.  \nUpdates per epoch: `ceil(240/32) = 8`.\n\nFor `5` epochs: `8 x 5 = 40` updates.\n\n[Visual Brief]\nA dataset bar splits into batches, which group into one epoch; several epochs appear on a training timeline.\n\n[Instructor Notes]\nDistinguish an epoch from an update. Connect learning rate to update size, not number of passes.\n\n[Notebook Connection]\nLearners should calculate expected batches and explain logged loss frequency.\n\n[Sources]\n- https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html\n- https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html\n[/Sources]"}
+{"kind":"slide","id":"sl/dfb6b8","slide":10,"title":"M09 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/adkf6tsb","slide":10,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/xgvyhob2","slide":10,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/cfmx83ah","slide":10,"text":"DS ACADEMY   10","textPreview":"DS ACADEMY   10","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/natgbet0","slide":10,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/29kf29sf","slide":10,"text":"Training and Evaluation Modes Behave Differently","textPreview":"Training and Evaluation Modes Behave Differently","textChars":48,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/pcbydobq","slide":10,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/ob2x4jal","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/76xgnit4","slide":10,"text":"model.eval()","textPreview":"model.eval()","textChars":12,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/654zedsj","slide":10,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/kj2l0je9","slide":10,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/lkb2tofu","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/yhk3y9w3","slide":10,"text":"enter torch.inferencemode()","textPreview":"enter torch.inferencemode()","textChars":27,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/zitkrexo","slide":10,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/cfilwzed","slide":10,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/xgb2p4fy","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/at0ju9w7","slide":10,"text":"move batch to the model device","textPreview":"move batch to the model device","textChars":30,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/bu9knexs","slide":10,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/ori1sze1","slide":10,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/psr2l4fm","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/p8jip07a","slide":10,"text":"calculate predictions and metrics","textPreview":"calculate predictions and metrics","textChars":33,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/4nahgvq5","slide":10,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/dfb6b8","slide":10,"text":"`model.train()` enables training-time behaviour.  \n`model.eval()` enables evaluation-time behaviour for layers such as dropout and batch normalization.\n\nDuring evaluation, use `torch.inference_mode()` or `torch.no_grad()` to avoid storing gradients.\n\nThe model and all input tensors must be on compatible devices. Moving only the model or only the data causes a device mismatch.\n\n[Worked Example]\nCorrect evaluation sequence:\n\n1. `model.eval()`\n2. enter `torch.inference_mode()`\n3. move batch to the model device\n4. calculate predictions and metrics\n5. do not call optimizer methods\n\n[Visual Brief]\nTraining and evaluation lanes show mode, gradient tracking, parameter update, and data-device rules.\n\n[Instructor Notes]\nExplain that `eval()` does not disable gradients by itself and inference mode does not set evaluation behaviour by itself.\n\n[Notebook Connection]\nThe notebook evaluation section must use both correct model mode and no-gradient execution.\n\n[Sources]\n- https://docs.pytorch.org/docs/stable/generated/torch.nn.Module.html#torch.nn.Module.eval\n- https://docs.pytorch.org/docs/stable/generated/torch.autograd.grad_mode.inference_mode.html\n[/Sources]"}
+{"kind":"slide","id":"sl/urkr8s","slide":11,"title":"M09 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/nahgbml0","slide":11,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/obqhkr2l","slide":11,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/9czydw36","slide":11,"text":"DS ACADEMY   11","textPreview":"DS ACADEMY   11","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/ax8zmhkr","slide":11,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/byhgfmlw","slide":11,"text":"A Complete Training Loop Produces Evidence","textPreview":"A Complete Training Loop Produces Evidence","textChars":42,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/wzqhor2h","slide":11,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/x0jyhwj2","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/y1szq1kn","slide":11,"text":"input and target shapes;","textPreview":"input and target shapes;","textChars":24,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/j21gj618","slide":11,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/vq1wru50","slide":11,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/apsvipof","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/xsjet4nq","slide":11,"text":"forward output shape;","textPreview":"forward output shape;","textChars":21,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/wraxkz65","slide":11,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/nm1wnu5o","slide":11,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/mlsvepo3","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/9ojep4nu","slide":11,"text":"loss value;","textPreview":"loss value;","textChars":11,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/8nadgz69","slide":11,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/7ilwze5s","slide":11,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/6hcfq9on","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/2dgzid8v","slide":11,"text":"gradient calculation;","textPreview":"gradient calculation;","textChars":21,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/3ep0rip0","slide":11,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/urkr8s","slide":11,"text":"A training loop should expose:\n\n- input and target shapes;\n- forward output shape;\n- loss value;\n- gradient calculation;\n- parameter update;\n- training and validation metrics by epoch;\n- random seed and device;\n- saved best model based on validation evidence.\n\nTraining loss alone does not establish generalization. Validation must run without updates.\n\n[Worked Example]\nIf training loss falls from `1.2` to `0.1` while validation loss falls to `0.4` then rises to `0.9`, later epochs may be overfitting.\n\nThe preferred checkpoint is near the lowest validation loss, not automatically the final epoch.\n\n[Visual Brief]\nAn epoch chart shows training and validation loss diverging after the best checkpoint.\n\n[Instructor Notes]\nTrace one batch line by line before showing the full loop. Require validation outside the update loop.\n\n[Notebook Connection]\nThis maps directly to the real-world PyTorch notebook's model, training, and evaluation sections.\n\n[Sources]\n- https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html\n- https://github.com/curiousily/AI-Bootcamp/blob/master/02.real-world-pytorch.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/6a1frc","slide":12,"title":"M09 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/hs7et4vq","slide":12,"text":"M09 / L01","textPreview":"M09 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/u5gvipwz","slide":12,"text":"Tensors Store Model Data and Parameters","textPreview":"Tensors Store Model Data and Parameters","textChars":39,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/v6pwrudk","slide":12,"text":"DS ACADEMY   12","textPreview":"DS ACADEMY   12","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/83ydgfe9","slide":12,"text":"GUIDED LAB","textPreview":"GUIDED LAB","textChars":10,"textLines":1,"bbox":[64,92,220,24]}
+{"kind":"textbox","id":"sh/947epkvu","slide":12,"text":"Guided Lab: Trace One Batch End to End","textPreview":"Guided Lab: Trace One Batch End to End","textChars":38,"textLines":1,"bbox":[64,154,1100,154]}
+{"kind":"textbox","id":"sh/m1wvepw3","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,410,62,28]}
+{"kind":"shape","id":"sh/725cnuxo","slide":12,"bbox":[64,462,214,5]}
+{"kind":"textbox","id":"sh/szidsjed","slide":12,"text":"input and target tensor shapes","textPreview":"input and target tensor shapes","textChars":30,"textLines":1,"bbox":[64,500,220,52]}
+{"kind":"textbox","id":"sh/t0re1ovy","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[354,410,62,28]}
+{"kind":"shape","id":"sh/50rydsry","slide":12,"bbox":[354,462,214,5]}
+{"kind":"textbox","id":"sh/4zix4nqd","slide":12,"text":"device and dtype","textPreview":"device and dtype","textChars":16,"textLines":1,"bbox":[354,500,220,52]}
+{"kind":"textbox","id":"sh/3y9gbi9s","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[644,410,62,28]}
+{"kind":"shape","id":"sh/ix0f2x87","slide":12,"bbox":[644,462,214,5]}
+{"kind":"textbox","id":"sh/hwre9srm","slide":12,"text":"every layer's input and output shape","textPreview":"every layer's input and output shape","textChars":36,"textLines":1,"bbox":[644,500,220,52]}
+{"kind":"textbox","id":"sh/gvix0nq1","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[934,410,62,28]}
+{"kind":"shape","id":"sh/vupw7i9w","slide":12,"bbox":[934,462,214,5]}
+{"kind":"textbox","id":"sh/utgfyd8b","slide":12,"text":"weighted sum and activation for one simple neuron","textPreview":"weighted sum and activation for one simple neuron","textChars":49,"textLines":1,"bbox":[934,500,220,52]}
+{"kind":"notes","id":"nt/6a1frc","slide":12,"text":"Build a small network and document:\n\n1. input and target tensor shapes;\n2. device and dtype;\n3. every layer's input and output shape;\n4. weighted sum and activation for one simple neuron;\n5. matching task and loss;\n6. one forward loss value;\n7. one parameter gradient after `backward()`;\n8. one parameter value before and after `step()`;\n9. batch count and epoch count;\n10. validation in evaluation and inference modes.\n\n[Worked Example]\nFor `240` rows, batch `32`, and `5` epochs:\n\n`8` batches per epoch and `40` updates. A validation pass performs `0` updates.\n\n[Visual Brief]\nA trace sheet follows one batch from data loader through forward pass, loss, gradients, update, and validation.\n\n[Instructor Notes]\nRequire learners to inspect one parameter rather than claiming “the model learned” from loss output alone.\n\n[Notebook Connection]\nComplete `02.real-world-pytorch.ipynb`, predicting shapes and state changes before each section.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/02.real-world-pytorch.ipynb\n- https://docs.pytorch.org/tutorials/beginner/basics/\n[/Sources]"}

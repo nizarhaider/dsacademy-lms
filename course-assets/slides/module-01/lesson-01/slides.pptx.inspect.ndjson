@@ -1,0 +1,213 @@
+{"kind":"deck","id":"pr/9i2q8j","name":"Deck"}
+{"kind":"layout","layoutId":"5ba3f34d-33cd-4ea4-a0fc-ad0202276e0f","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"1d9fcf13-416a-48a3-9897-22064906002e","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/4tbt2n","slide":1,"title":"MODULE 01  /  LESSON 01","textShapes":3}
+{"kind":"shape","id":"sh/wzax4bet","slide":1,"bbox":[0,0,1280,12]}
+{"kind":"shape","id":"sh/axsf21wn","slide":1,"bbox":[692,0,32,720]}
+{"kind":"textbox","id":"sh/l43ehgva","slide":1,"text":"MODULE 01  /  LESSON 01","textPreview":"MODULE 01  /  LESSON 01","textChars":23,"textLines":1,"bbox":[70,70,430,26]}
+{"kind":"textbox","id":"sh/k3ux8bep","slide":1,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[70,148,548,250]}
+{"kind":"shape","id":"sh/j2lwfqd4","slide":1,"bbox":[70,430,96,6]}
+{"kind":"textbox","id":"sh/y1sf6lwj","slide":1,"text":"Learn how a computer follows explicit instructions and write a first Python program.","textPreview":"Learn how a computer follows explicit instructions and write a first Python program.","textChars":84,"textLines":1,"bbox":[70,472,530,102]}
+{"kind":"image","id":"im/adof29on","slide":1,"name":"","alt":"Data science workflow from raw data to a deployed decision system","bbox":[724,0,556,720]}
+{"kind":"image","id":"im/snqxc361","slide":1,"name":"","alt":"DS Academy","bbox":[70,620,182,52]}
+{"kind":"notes","id":"nt/4tbt2n","slide":1,"text":"Computational Thinking and Python Basics. Learn how a computer follows explicit instructions and write a first Python program.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/pd5kr6","slide":2,"title":"M01 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/25cje9cj","slide":2,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/ps32povu","slide":2,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/oru1gjup","slide":2,"text":"DS ACADEMY   02","textPreview":"DS ACADEMY   02","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/bulkryd0","slide":2,"text":"WHY THIS MATTERS","textPreview":"WHY THIS MATTERS","textChars":16,"textLines":1,"bbox":[64,94,300,25]}
+{"kind":"shape","id":"sh/qtcjitcf","slide":2,"bbox":[64,146,110,6]}
+{"kind":"textbox","id":"sh/dwn2t8v6","slide":2,"text":"Start from what you already know","textPreview":"Start from what you already know","textChars":32,"textLines":1,"bbox":[64,178,1020,72]}
+{"kind":"textbox","id":"sh/cve1k3ul","slide":2,"text":"No prior coding knowledge","textPreview":"No prior coding knowledge","textChars":25,"textLines":1,"bbox":[64,274,1020,62]}
+{"kind":"textbox","id":"sh/zy5kvydc","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,374,56,30]}
+{"kind":"textbox","id":"sh/yxwjmdcr","slide":2,"text":"Explain algorithms in plain language.","textPreview":"Explain algorithms in plain language.","textChars":37,"textLines":1,"bbox":[144,368,900,52]}
+{"kind":"textbox","id":"sh/ozmd0jyh","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[66,446,56,30]}
+{"kind":"textbox","id":"sh/p0futozm","slide":2,"text":"Use variables in a small worked example.","textPreview":"Use variables in a small worked example.","textChars":40,"textLines":1,"bbox":[144,440,900,52]}
+{"kind":"textbox","id":"sh/2x4vytgb","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[66,518,56,30]}
+{"kind":"textbox","id":"sh/3ydcryhw","slide":2,"text":"Complete the guided lab and verify syntax errors.","textPreview":"Complete the guided lab and verify syntax errors.","textChars":49,"textLines":1,"bbox":[144,512,900,52]}
+{"kind":"shape","id":"sh/c36d43yd","slide":2,"bbox":[1146,128,64,476]}
+{"kind":"shape","id":"sh/d4fux8zy","slide":2,"bbox":[1166,220,24,210]}
+{"kind":"notes","id":"nt/pd5kr6","slide":2,"text":"The required starting point is no prior coding knowledge. By the end, you will explain algorithms in plain language.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/p28nvi","slide":3,"title":"M01 / L01","textShapes":10}
+{"kind":"textbox","id":"sh/xsny14r2","slide":3,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/apwzqp8b","slide":3,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/bq5gzu9w","slide":3,"text":"DS ACADEMY   03","textPreview":"DS ACADEMY   03","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/kvyhwjqd","slide":3,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/lw7y5ory","slide":3,"text":"The vocabulary of this topic","textPreview":"The vocabulary of this topic","textChars":28,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/ytwzu98n","slide":3,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/jupg3e9s","slide":3,"text":"Learn how a computer follows explicit instructions and write a first Python program.","textPreview":"Learn how a computer follows explicit instructions and write a first Python program.","textChars":84,"textLines":1,"bbox":[64,282,1110,80]}
+{"kind":"shape","id":"sh/8jyh0jqp","slide":3,"bbox":[64,382,540,102]}
+{"kind":"textbox","id":"sh/tk7i9ora","slide":3,"text":"algorithms: An algorithm is a finite, ordered set of unambiguous steps that transforms an input into an output.","textPreview":"algorithms: An algorithm is a finite, ordered set of unambiguous steps that transforms an input into an output.","textChars":111,"textLines":1,"bbox":[84,395,500,78]}
+{"kind":"shape","id":"sh/xojyt4ba","slide":3,"bbox":[638,382,540,102]}
+{"kind":"textbox","id":"sh/wnah0zap","slide":3,"text":"variables: A variable is a name bound to a value so a program can reuse or replace that value.","textPreview":"variables: A variable is a name bound to a value so a program can reuse or replace that value.","textChars":94,"textLines":1,"bbox":[658,395,500,78]}
+{"kind":"shape","id":"sh/vm1grut4","slide":3,"bbox":[64,504,540,102]}
+{"kind":"textbox","id":"sh/alsfypsj","slide":3,"text":"expressions: An expression combines values, variables, and operators to calculate a new value.","textPreview":"expressions: An expression combines values, variables, and operators to calculate a new value.","textChars":94,"textLines":1,"bbox":[84,517,500,78]}
+{"kind":"shape","id":"sh/5s3yx4b6","slide":3,"bbox":[638,504,540,102]}
+{"kind":"textbox","id":"sh/kruh4zal","slide":3,"text":"syntax errors: A syntax error means Python cannot parse the written instructions according to its grammar.","textPreview":"syntax errors: A syntax error means Python cannot parse the written instructions according to its grammar.","textChars":106,"textLines":1,"bbox":[658,517,500,78]}
+{"kind":"notes","id":"nt/p28nvi","slide":3,"text":"Define the language before using it: algorithms, variables, expressions, syntax errors.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/espzz5","slide":4,"title":"M01 / L01","textShapes":17}
+{"kind":"textbox","id":"sh/7mtobq9c","slide":4,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/8n254vax","slide":4,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/tob6d0ri","slide":4,"text":"DS ACADEMY   04","textPreview":"DS ACADEMY   04","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/upkn65s3","slide":4,"text":"FOUR CONNECTED IDEAS","textPreview":"FOUR CONNECTED IDEAS","textChars":20,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/vqtofa9o","slide":4,"text":"How the concept works","textPreview":"How the concept works","textChars":21,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/gr258fat","slide":4,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,232,70,30]}
+{"kind":"shape","id":"sh/hsb6h0re","slide":4,"bbox":[64,282,220,5]}
+{"kind":"textbox","id":"sh/atgnu1sj","slide":4,"text":"algorithms","textPreview":"algorithms","textChars":10,"textLines":1,"bbox":[64,312,230,126]}
+{"kind":"textbox","id":"sh/bup43694","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[296,324,42,52]}
+{"kind":"textbox","id":"sh/buhszuhk","slide":4,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[360,232,70,30]}
+{"kind":"shape","id":"sh/at8b690z","slide":4,"bbox":[360,282,220,5]}
+{"kind":"textbox","id":"sh/xwza14zq","slide":4,"text":"variables","textPreview":"variables","textChars":9,"textLines":1,"bbox":[360,312,230,126]}
+{"kind":"textbox","id":"sh/cvqt8zi5","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[592,324,42,52]}
+{"kind":"textbox","id":"sh/n6xsvuho","slide":4,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[656,232,70,30]}
+{"kind":"shape","id":"sh/25or2p03","slide":4,"bbox":[656,282,220,5]}
+{"kind":"textbox","id":"sh/p8fax4ze","slide":4,"text":"expressions","textPreview":"expressions","textChars":11,"textLines":1,"bbox":[656,312,230,126]}
+{"kind":"textbox","id":"sh/o76t4zit","slide":4,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[888,324,42,52]}
+{"kind":"textbox","id":"sh/f2xsra1c","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[952,232,70,30]}
+{"kind":"shape","id":"sh/e14ryp0r","slide":4,"bbox":[952,282,220,5]}
+{"kind":"textbox","id":"sh/ix4ba5kz","slide":4,"text":"syntax errors","textPreview":"syntax errors","textChars":13,"textLines":1,"bbox":[952,312,230,126]}
+{"kind":"textbox","id":"sh/3ydc3al4","slide":4,"text":"An input is stored in variables, transformed by expressions, and displayed as output.","textPreview":"An input is stored in variables, transformed by expressions, and displayed as output.","textChars":85,"textLines":1,"bbox":[64,540,1100,58]}
+{"kind":"notes","id":"nt/espzz5","slide":4,"text":"An input is stored in variables, transformed by expressions, and displayed as output.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/83z2gy","slide":5,"title":"M01 / L01","textShapes":8}
+{"kind":"textbox","id":"sh/psbm983y","slide":5,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/2pknyd4n","slide":5,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/3qt47ils","slide":5,"text":"DS ACADEMY   05","textPreview":"DS ACADEMY   05","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/gni5w3mh","slide":5,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/1orm5832","slide":5,"text":"Read every part of the mechanism","textPreview":"Read every part of the mechanism","textChars":32,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/ul0nut4b","slide":5,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/fm943ylw","slide":5,"text":"An input is stored in variables, transformed by expressions, and displayed as output.","textPreview":"An input is stored in variables, transformed by expressions, and displayed as output.","textChars":85,"textLines":1,"bbox":[64,282,1110,80]}
+{"kind":"shape","id":"sh/0jm587ml","slide":5,"bbox":[64,382,540,102]}
+{"kind":"textbox","id":"sh/lkv6hs36","slide":5,"text":"variable: A named reference to a value.","textPreview":"variable: A named reference to a value.","textChars":39,"textLines":1,"bbox":[84,395,500,78]}
+{"kind":"shape","id":"sh/tkfyx83m","slide":5,"bbox":[638,382,540,102]}
+{"kind":"textbox","id":"sh/sjmxo3m1","slide":5,"text":"expression: Values and operators that produce a result.","textPreview":"expression: Values and operators that produce a result.","textChars":55,"textLines":1,"bbox":[658,395,500,78]}
+{"kind":"notes","id":"nt/83z2gy","slide":5,"text":"Every symbol or component has a job. variable: A named reference to a value. expression: Values and operators that produce a result.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/ks8vku","slide":6,"title":"M01 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/i9czel8b","slide":6,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/5cni9g72","slide":6,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/4behgbqh","slide":6,"text":"DS ACADEMY   06","textPreview":"DS ACADEMY   06","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/re50bqp8","slide":6,"text":"WORKED EXAMPLE","textPreview":"WORKED EXAMPLE","textChars":14,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/qdwzil8n","slide":6,"text":"Worked example by hand","textPreview":"Worked example by hand","textChars":22,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/dgnid07y","slide":6,"text":"Store a course price of 8000 and a 10% discount; calculate and print 7200.","textPreview":"Store a course price of 8000 and a 10% discount; calculate and print 7200.","textChars":74,"textLines":1,"bbox":[66,180,1090,128]}
+{"kind":"textbox","id":"sh/sfehkvqt","slide":6,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,400,70,36]}
+{"kind":"shape","id":"sh/f2p0fap4","slide":6,"bbox":[66,454,316,5]}
+{"kind":"textbox","id":"sh/ehgjm58j","slide":6,"text":"Known values","textPreview":"Known values","textChars":12,"textLines":1,"bbox":[66,488,320,72]}
+{"kind":"textbox","id":"sh/kvet43ut","slide":6,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[450,400,70,36]}
+{"kind":"shape","id":"sh/lgnad8ve","slide":6,"bbox":[450,454,316,5]}
+{"kind":"textbox","id":"sh/ytwb2tcn","slide":6,"text":"Apply the mechanism","textPreview":"Apply the mechanism","textChars":19,"textLines":1,"bbox":[450,488,320,72]}
+{"kind":"textbox","id":"sh/ju5sbyd8","slide":6,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[834,400,70,36]}
+{"kind":"shape","id":"sh/8jyt8nup","slide":6,"bbox":[834,454,316,5]}
+{"kind":"textbox","id":"sh/tk7uhsva","slide":6,"text":"Interpret the result","textPreview":"Interpret the result","textChars":20,"textLines":1,"bbox":[834,488,320,72]}
+{"kind":"notes","id":"nt/ks8vku","slide":6,"text":"Work through the values before running code. Store a course price of 8000 and a 10% discount; calculate and print 7200.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/rfr2vz","slide":7,"title":"M01 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/epoj21kr","slide":7,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/1szidg3i","slide":7,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/0r614b2x","slide":7,"text":"DS ACADEMY   07","textPreview":"DS ACADEMY   07","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/rmx076lg","slide":7,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/q1ozy1kv","slide":7,"text":"Map the concept to Python","textPreview":"Map the concept to Python","textChars":25,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/dofi9g36","slide":7,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/cn610b21","slide":7,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/3yd03ml4","slide":7,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/2x4zuh4j","slide":7,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/4falora1","slide":7,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/5g3mxwbm","slide":7,"text":"price = 8000\ndiscount_rate = 0.10\nfinal_price = price - price * discount_rate\nprint(final_price)","textPreview":"price = 8000 | discount_rate = 0.10 | final_price = price - price * discount_rate | print(final_price)","textChars":96,"textLines":4,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/ids3mhsv","slide":7,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/je14vmtg","slide":7,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/wbalk7ap","slide":7,"text":"7200.0","textPreview":"7200.0","textChars":6,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/hcjmtcba","slide":7,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/ups3ihsz","slide":7,"text":"Each line corresponds to a concept already explained.","textPreview":"Each line corresponds to a concept already explained.","textChars":53,"textLines":1,"bbox":[76,618,1128,34]}
+{"kind":"notes","id":"nt/rfr2vz","slide":7,"text":"Connect the hand-worked mechanism to Python. The observed output is 7200.0\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/8f6huk","slide":8,"title":"M01 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/qhoryhwz","slide":8,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/dkzatwva","slide":8,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/sjq90re5","slide":8,"text":"DS ACADEMY   08","textPreview":"DS ACADEMY   08","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/zmhsvmdg","slide":8,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/el8r2hwv","slide":8,"text":"Build the complete mental model","textPreview":"Build the complete mental model","textChars":31,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/18zaxwvm","slide":8,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/0nqt4re1","slide":8,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/vqdsj2xc","slide":8,"text":"An algorithm must terminate and produce the same result for the same stated inputs.","textPreview":"An algorithm must terminate and produce the same result for the same stated inputs.","textChars":83,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/up4rqxwr","slide":8,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/8re5o3e5","slide":8,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/9snmx8fq","slide":8,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/mpcnmdwz","slide":8,"text":"`=` assigns a value; `==` asks whether two values are equal.","textPreview":"`=` assigns a value; `==` asks whether two values are equal.","textChars":60,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/7q54vixk","slide":8,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/wfe5sne1","slide":8,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/hgnm1sfm","slide":8,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/utwnqdwb","slide":8,"text":"Python evaluates `*` before `+`; parentheses make intended order explicit.","textPreview":"Python evaluates `*` before `+`; parentheses make intended order explicit.","textChars":74,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/ve54zixw","slide":8,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/cjulgjex","slide":8,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/xk3mpofi","slide":8,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/t4buxg3a","slide":8,"text":"Read an error from its final line, then inspect the reported file and line number.","textPreview":"Read an error from its final line, then inspect the reported file and line number.","textChars":82,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/s32t4v2p","slide":8,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/8f6huk","slide":8,"text":"An algorithm must terminate and produce the same result for the same stated inputs. `=` assigns a value; `==` asks whether two values are equal. Python evaluates `*` before `+`; parentheses make intended order explicit. Read an error from its final line, then inspect the reported file and line number.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/ayd47l","slide":9,"title":"M01 / L01","textShapes":17}
+{"kind":"textbox","id":"sh/psfq9cza","slide":9,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/2po7yx0z","slide":9,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/3qx872h4","slide":9,"text":"DS ACADEMY   09","textPreview":"DS ACADEMY   09","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/cvqp47i1","slide":9,"text":"FOUR CONNECTED IDEAS","textPreview":"FOUR CONNECTED IDEAS","textChars":20,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/dgzqdczm","slide":9,"text":"Notebook readiness map","textPreview":"Notebook readiness map","textChars":22,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/qt872h0v","slide":9,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,232,70,30]}
+{"kind":"shape","id":"sh/ruh8b2hg","slide":9,"bbox":[64,282,220,5]}
+{"kind":"textbox","id":"sh/0jq98rix","slide":9,"text":"algorithms","textPreview":"algorithms","textChars":10,"textLines":1,"bbox":[64,312,230,126]}
+{"kind":"textbox","id":"sh/1kjqhwzi","slide":9,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[296,324,42,52]}
+{"kind":"textbox","id":"sh/t8byxkb2","slide":9,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[360,232,70,30]}
+{"kind":"shape","id":"sh/s72h4fah","slide":9,"bbox":[360,282,220,5]}
+{"kind":"textbox","id":"sh/r6tgvatw","slide":9,"text":"variables","textPreview":"variables","textChars":9,"textLines":1,"bbox":[360,312,230,126]}
+{"kind":"textbox","id":"sh/65kz25sr","slide":9,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[592,324,42,52]}
+{"kind":"textbox","id":"sh/1cvy1kbe","slide":9,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[656,232,70,30]}
+{"kind":"shape","id":"sh/gbmh8fat","slide":9,"bbox":[656,282,220,5]}
+{"kind":"textbox","id":"sh/fadgzut8","slide":9,"text":"expressions","textPreview":"expressions","textChars":11,"textLines":1,"bbox":[656,312,230,126]}
+{"kind":"textbox","id":"sh/e9kz6psn","slide":9,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[888,324,42,52]}
+{"kind":"textbox","id":"sh/xgryp0bu","slide":9,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[952,232,70,30]}
+{"kind":"shape","id":"sh/wfihwva9","slide":9,"bbox":[952,282,220,5]}
+{"kind":"textbox","id":"sh/ozmhcvi5","slide":9,"text":"syntax errors","textPreview":"syntax errors","textChars":13,"textLines":1,"bbox":[952,312,230,126]}
+{"kind":"textbox","id":"sh/9kvyl0jq","slide":9,"text":"Use the concepts from this lesson to read and complete https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb.","textPreview":"Use the concepts from this lesson to read and complete https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai....","textChars":143,"textLines":1,"bbox":[64,540,1100,58]}
+{"kind":"notes","id":"nt/ayd47l","slide":9,"text":"Use the concepts from this lesson to read and complete https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb. Predict what each section does before executing it.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/f7rvux","slide":10,"title":"M01 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/kb6x076t","slide":10,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/zadgr258","slide":10,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/y94fyxon","slide":10,"text":"DS ACADEMY   10","textPreview":"DS ACADEMY   10","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/90fyxcna","slide":10,"text":"RISK REVIEW","textPreview":"RISK REVIEW","textChars":11,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/8z6x476p","slide":10,"text":"Common beginner mistakes","textPreview":"Common beginner mistakes","textChars":24,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/7yxgv254","slide":10,"bbox":[0,0,16,720]}
+{"kind":"textbox","id":"sh/mxof2xoj","slide":10,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[74,196,78,42]}
+{"kind":"textbox","id":"sh/h4zy1cn6","slide":10,"text":"Reading `=` as mathematical equality instead of assignment.","textPreview":"Reading `=` as mathematical equality instead of assignment.","textChars":59,"textLines":1,"bbox":[190,188,930,92]}
+{"kind":"shape","id":"sh/w3qh8r61","slide":10,"bbox":[74,301,1048,2]}
+{"kind":"textbox","id":"sh/uh8jm18r","slide":10,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[74,344,78,42]}
+{"kind":"textbox","id":"sh/fihkv6pc","slide":10,"text":"Treating an error message as a failure rather than diagnostic evidence.","textPreview":"Treating an error message as a failure rather than diagnostic evidence.","textChars":71,"textLines":1,"bbox":[190,336,930,92]}
+{"kind":"shape","id":"sh/gjq1orqx","slide":10,"bbox":[74,449,1048,2]}
+{"kind":"notes","id":"nt/f7rvux","slide":10,"text":"Reading `=` as mathematical equality instead of assignment. Treating an error message as a failure rather than diagnostic evidence.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/2zuglw","slide":11,"title":"M01 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/9k72xgru","slide":11,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/mhw3m183","slide":11,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/ni5kv69o","slide":11,"text":"DS ACADEMY   11","textPreview":"DS ACADEMY   11","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/wnylsbql","slide":11,"text":"GUIDED LAB","textPreview":"GUIDED LAB","textChars":10,"textLines":1,"bbox":[64,92,220,24]}
+{"kind":"textbox","id":"sh/xo721grq","slide":11,"text":"Write a program that converts study minutes into hours and remaining minutes.","textPreview":"Write a program that converts study minutes into hours and remaining minutes.","textChars":77,"textLines":1,"bbox":[64,154,1100,154]}
+{"kind":"textbox","id":"sh/alg3ql8f","slide":11,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,410,62,28]}
+{"kind":"shape","id":"sh/vmpkzq90","slide":11,"bbox":[64,462,214,5]}
+{"kind":"textbox","id":"sh/krilwvqh","slide":11,"text":"Predict","textPreview":"Predict","textChars":7,"textLines":1,"bbox":[64,500,220,52]}
+{"kind":"textbox","id":"sh/5cr250r2","slide":11,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[354,410,62,28]}
+{"kind":"shape","id":"sh/d03a1cnm","slide":11,"bbox":[354,462,214,5]}
+{"kind":"textbox","id":"sh/szu9s7mh","slide":11,"text":"Run","textPreview":"Run","textChars":3,"textLines":1,"bbox":[354,500,220,52]}
+{"kind":"textbox","id":"sh/rylszm5w","slide":11,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[644,410,62,28]}
+{"kind":"shape","id":"sh/qdcrqh4b","slide":11,"bbox":[644,462,214,5]}
+{"kind":"textbox","id":"sh/14na5w3y","slide":11,"text":"Inspect","textPreview":"Inspect","textChars":7,"textLines":1,"bbox":[644,500,220,52]}
+{"kind":"textbox","id":"sh/03utwrmd","slide":11,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[934,410,62,28]}
+{"kind":"shape","id":"sh/f2ls3mls","slide":11,"bbox":[934,462,214,5]}
+{"kind":"textbox","id":"sh/e1cbuh47","slide":11,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[934,500,220,52]}
+{"kind":"notes","id":"nt/2zuglw","slide":11,"text":"Predict, run, inspect, and explain. Write a program that converts study minutes into hours and remaining minutes.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}
+{"kind":"slide","id":"sl/46sprd","slide":12,"title":"M01 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/fyxkfato","slide":12,"text":"M01 / L01","textPreview":"M01 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/gzql8fu9","slide":12,"text":"Computational Thinking and Python Basics","textPreview":"Computational Thinking and Python Basics","textChars":40,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/hkzmhkbu","slide":12,"text":"DS ACADEMY   12","textPreview":"DS ACADEMY   12","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/6to325c7","slide":12,"text":"SESSION SYNTHESIS","textPreview":"SESSION SYNTHESIS","textChars":17,"textLines":1,"bbox":[64,88,300,25]}
+{"kind":"textbox","id":"sh/7uxkbads","slide":12,"text":"Keep the system, not isolated definitions.","textPreview":"Keep the system, not isolated definitions.","textChars":42,"textLines":1,"bbox":[64,136,1040,72]}
+{"kind":"textbox","id":"sh/sv6l4fud","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,266,60,30]}
+{"kind":"textbox","id":"sh/twf2dkby","slide":12,"text":"Explain algorithms in plain language.","textPreview":"Explain algorithms in plain language.","textChars":37,"textLines":1,"bbox":[148,261,520,58]}
+{"kind":"textbox","id":"sh/qp83epcb","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[66,352,60,30]}
+{"kind":"textbox","id":"sh/bq14nutw","slide":12,"text":"Use variables in a small worked example.","textPreview":"Use variables in a small worked example.","textChars":40,"textLines":1,"bbox":[148,347,520,58]}
+{"kind":"textbox","id":"sh/zy1ojap4","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[66,438,60,30]}
+{"kind":"textbox","id":"sh/yxs7a5oj","slide":12,"text":"Complete the guided lab and verify syntax errors.","textPreview":"Complete the guided lab and verify syntax errors.","textChars":49,"textLines":1,"bbox":[148,433,520,58]}
+{"kind":"textbox","id":"sh/l036lk7a","slide":12,"text":"NEXT EVIDENCE","textPreview":"NEXT EVIDENCE","textChars":13,"textLines":1,"bbox":[760,286,250,24]}
+{"kind":"textbox","id":"sh/kzapcf6p","slide":12,"text":"A runnable Python file with named inputs, a calculation, output, and comments explaining each line.","textPreview":"A runnable Python file with named inputs, a calculation, output, and comments explaining each line.","textChars":99,"textLines":1,"bbox":[760,336,430,178]}
+{"kind":"image","id":"im/8z2dc7i1","slide":12,"name":"","alt":"DS Academy","bbox":[1010,620,180,48]}
+{"kind":"notes","id":"nt/46sprd","slide":12,"text":"Retain the connection between algorithms, variables, expressions, syntax errors. Verification evidence: Change the inputs, predict the output first, and confirm Python produces the predicted value.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://docs.python.org/3/\n[/Sources]"}

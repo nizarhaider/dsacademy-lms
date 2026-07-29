@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "test-local": "cypress open --e2e --browser chrome",
+    "security:js-yaml": "node scripts/check-js-yaml-security.mjs",
     "postinstall": "cd frontend && yarn install --check-files",
     "dev": "cd frontend && yarn dev",
     "build": "cd frontend && yarn build"

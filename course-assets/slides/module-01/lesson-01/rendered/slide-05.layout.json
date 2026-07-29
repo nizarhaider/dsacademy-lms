@@ -1,0 +1,14 @@
+{
+  "schema": "dsacademy.approved-render/v1",
+  "slide": {
+    "slide": 5,
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "source": "ppt-master/week-01-python-basics_20260728_234118",
+  "elements": []
+}

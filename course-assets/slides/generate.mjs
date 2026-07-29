@@ -159,14 +159,18 @@ function addSlideTitle(slide, title, inverse = false, eyebrow = "") {
     slide,
     title,
     { left: 62, top: eyebrow ? 108 : 80, width: 1110, height: 62 },
-    { fontSize: 38, bold: true, color: inverse ? C.white : C.ink },
+    {
+      fontSize: title.length > 58 ? 32 : title.length > 44 ? 35 : 38,
+      bold: true,
+      color: inverse ? C.white : C.ink,
+    },
   );
 }
 
 function addNotesFor(slide, item, context, pageNumber) {
   setNotes(
     slide,
-    item.narration,
+    item.notes || item.narration,
     context.weekNumber,
     context.sessionNumber,
     pageNumber,
@@ -197,7 +201,11 @@ async function buildCover(presentation, item, context, pageNumber, assets) {
     slide,
     item.title,
     { left: 70, top: 148, width: 548, height: 250 },
-    { fontSize: 52, bold: true, color: C.white },
+    {
+      fontSize: item.title.length > 48 ? 44 : item.title.length > 36 ? 48 : 52,
+      bold: true,
+      color: C.white,
+    },
   );
   addRule(slide, 70, 430, 96, C.coral, 6);
   addText(
@@ -348,24 +356,35 @@ function buildConcept(presentation, item, context, pageNumber) {
   addText(
     slide,
     item.body,
-    { left: 64, top: 282, width: 1110, height: 80 },
-    { fontSize: 21, color: inverse ? "#D6E2EB" : C.graphite },
+    { left: 64, top: 278, width: 1110, height: 96 },
+    {
+      fontSize: item.body.length > 250 ? 17 : item.body.length > 180 ? 19 : 21,
+      color: inverse ? "#D6E2EB" : C.graphite,
+    },
   );
+  const itemCount = (item.items || []).length;
+  const columns = itemCount > 4 ? 3 : 2;
+  const columnWidth = columns === 3 ? 368 : 574;
+  const cardWidth = columns === 3 ? 344 : 540;
   (item.items || []).forEach((detail, itemIndex) => {
-    const column = itemIndex % 2;
-    const row = Math.floor(itemIndex / 2);
-    const left = 64 + column * 574;
-    const top = 382 + row * 122;
+    const column = itemIndex % columns;
+    const row = Math.floor(itemIndex / columns);
+    const left = 64 + column * columnWidth;
+    const top = 390 + row * 116;
     addRect(
       slide,
-      { left, top, width: 540, height: 102 },
+      { left, top, width: cardWidth, height: 96 },
       inverse ? "#183B59" : C.mist,
     );
     addText(
       slide,
       detail,
-      { left: left + 20, top: top + 13, width: 500, height: 78 },
-      { fontSize: 16, bold: true, color: inverse ? C.white : C.ink },
+      { left: left + 18, top: top + 10, width: cardWidth - 36, height: 76 },
+      {
+        fontSize: detail.length > 125 ? 12 : detail.length > 90 ? 13 : 15,
+        bold: true,
+        color: inverse ? C.white : C.ink,
+      },
     );
   });
   addNotesFor(slide, item, context, pageNumber);
@@ -417,8 +436,12 @@ function buildProcess(presentation, item, context, pageNumber) {
     addText(
       slide,
       concept,
-      { left, top: 300, width: 230, height: 68 },
-      { fontSize: 20, bold: true, color: C.white },
+      { left, top: 294, width: 230, height: 88 },
+      {
+        fontSize: concept.length > 90 ? 15 : concept.length > 60 ? 17 : 20,
+        bold: true,
+        color: C.white,
+      },
     );
     addRule(slide, left, 394, 230, index === 3 ? C.coral : "#46627B", 4);
     addText(
@@ -431,8 +454,11 @@ function buildProcess(presentation, item, context, pageNumber) {
   addText(
     slide,
     item.body,
-    { left: 62, top: 560, width: 1110, height: 55 },
-    { fontSize: 20, color: "#D1DEE8" },
+    { left: 62, top: 544, width: 1110, height: 84 },
+    {
+      fontSize: item.body.length > 210 ? 16 : item.body.length > 150 ? 18 : 20,
+      color: "#D1DEE8",
+    },
   );
   addNotesFor(slide, item, context, pageNumber);
 }
@@ -541,8 +567,12 @@ function buildCodeOutput(presentation, item, context, pageNumber) {
   addText(
     slide,
     item.takeaway,
-    { left: 76, top: 618, width: 1128, height: 34 },
-    { fontSize: 20, bold: true, color: C.ink },
+    { left: 76, top: 612, width: 1128, height: 44 },
+    {
+      fontSize: item.takeaway.length > 150 ? 15 : item.takeaway.length > 105 ? 17 : 20,
+      bold: true,
+      color: C.ink,
+    },
   );
   addNotesFor(slide, item, context, pageNumber);
 }
@@ -780,7 +810,11 @@ function buildLab(presentation, item, context, pageNumber) {
     slide,
     item.body,
     { left: 64, top: 154, width: 1100, height: 154 },
-    { fontSize: 37, bold: true, color: C.white },
+    {
+      fontSize: item.body.length > 58 ? 31 : item.body.length > 42 ? 34 : 37,
+      bold: true,
+      color: C.white,
+    },
   );
   item.items.forEach((label, index) => {
     const left = 64 + index * 290;
@@ -795,7 +829,11 @@ function buildLab(presentation, item, context, pageNumber) {
       slide,
       label,
       { left, top: 500, width: 220, height: 52 },
-      { fontSize: 26, bold: true, color: C.white },
+      {
+        fontSize: label.length > 52 ? 17 : label.length > 38 ? 19 : label.length > 24 ? 22 : 25,
+        bold: true,
+        color: C.white,
+      },
     );
   });
   addNotesFor(slide, item, context, pageNumber);

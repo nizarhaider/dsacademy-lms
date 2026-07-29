@@ -162,14 +162,14 @@ LESSONS = [
 		"No prior coding knowledge",
 		"An input is stored in variables, transformed by expressions, and displayed as output.",
 		{"variable": "A named reference to a value.", "expression": "Values and operators that produce a result."},
-		"Store a course price of 8000 and a 10% discount; calculate and print 7200.",
+		"Store a rectangle length of 5 and width of 3; multiply them and print an area of 15.",
 		"""
-price = 8000
-discount_rate = 0.10
-final_price = price - price * discount_rate
-print(final_price)
+length = 5
+width = 3
+area = length * width
+print("Area:", area)
 """,
-		"7200.0",
+		"Area: 15",
 		"Write a program that converts study minutes into hours and remaining minutes.",
 		"A runnable Python file with named inputs, a calculation, output, and comments explaining each line.",
 		notebook("01.python-essentials-for-ai"),

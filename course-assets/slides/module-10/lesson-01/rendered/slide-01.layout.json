@@ -1,0 +1,343 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/1k0aho",
+    "id": "1k0aho",
+    "slide": 1,
+    "layoutId": "d8e25204-6384-46e9-b639-88d07627f767",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "25fac199-a388-47af-aec0-1d3aaf00df17",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#0E263E",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "d8e25204-6384-46e9-b639-88d07627f767",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "25fac199-a388-47af-aec0-1d3aaf00df17",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "25fac199-a388-47af-aec0-1d3aaf00df17",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4jyhgz6t",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        12
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A8C8",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/m1wji1gn",
+      "id": "2",
+      "bbox": [
+        724,
+        0,
+        556,
+        720
+      ],
+      "alt": "Data science workflow from raw data to a deployed decision system",
+      "contentType": "image/png",
+      "imageFit": "cover",
+      "asset": {
+        "assetId": "a2bb14ce-4704-42d8-be62-d41a80142521",
+        "contentType": "image/png",
+        "byteLength": 1660213
+      }
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2hgzepon",
+      "id": "3",
+      "bbox": [
+        692,
+        0,
+        32,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A8C8",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hg7il4n2",
+      "id": "4",
+      "bbox": [
+        70,
+        70,
+        430,
+        26
+      ],
+      "geometry": "rect",
+      "text": "MODULE 10  /  LESSON 01",
+      "textPreview": "MODULE 10  /  LESSON 01",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#00A8C8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MODULE 10  /  LESSON 01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MODULE 10  /  LESSON 01",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#00A8C8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MODULE 10  /  LESSON 01",
+              "fontSize": 13,
+              "color": "#00A8C8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfyhcz6h",
+      "id": "5",
+      "bbox": [
+        70,
+        148,
+        548,
+        250
+      ],
+      "geometry": "rect",
+      "text": "Preprocessing Is Part of the Model",
+      "textPreview": "Preprocessing Is Part of the Model",
+      "resolvedFontSize": 52,
+      "resolvedTextStyle": {
+        "fontSize": 52,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Preprocessing Is"
+          },
+          {
+            "index": 2,
+            "text": "Part of the Model"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Preprocessing Is Part of the Model",
+          "resolvedTextStyle": {
+            "fontSize": 52,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Preprocessing Is Part of the Model",
+              "fontSize": 52,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fep0ju5w",
+      "id": "6",
+      "bbox": [
+        70,
+        430,
+        96,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#F06B5F",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udwzapor",
+      "id": "7",
+      "bbox": [
+        70,
+        472,
+        530,
+        102
+      ],
+      "geometry": "rect",
+      "text": "Raw tables often need preprocessing before a model can use them:",
+      "textPreview": "Raw tables often need preprocessing before a model can use them:",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#D5E2EC",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Raw tables often need preprocessing before a"
+          },
+          {
+            "index": 2,
+            "text": "model can use them:"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Raw tables often need preprocessing before a model can use them:",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#D5E2EC"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Raw tables often need preprocessing before a model can use them:",
+              "fontSize": 22,
+              "color": "#D5E2EC"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/cvu1cryl",
+      "id": "8",
+      "bbox": [
+        70,
+        620,
+        182,
+        52
+      ],
+      "alt": "DS Academy",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "78d15fb9-8dd2-47b7-b9d7-73fe59611fcd",
+        "contentType": "image/png",
+        "byteLength": 11564
+      }
+    }
+  ],
+  "composeRuns": []
+}

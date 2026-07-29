@@ -1,0 +1,233 @@
+{"kind":"deck","id":"pr/q30msk","name":"Deck"}
+{"kind":"layout","layoutId":"35d6b536-a847-46c1-a7e1-6599e7234209","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"de8e0729-1123-496d-af37-b1a3a0b200ad","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/pb6ss2","slide":1,"title":"MODULE 03  /  LESSON 01","textShapes":3}
+{"kind":"shape","id":"sh/u1cj6psb","slide":1,"bbox":[0,0,1280,12]}
+{"kind":"shape","id":"sh/wnu18zah","slide":1,"bbox":[692,0,32,720]}
+{"kind":"textbox","id":"sh/7y1kba9k","slide":1,"text":"MODULE 03  /  LESSON 01","textPreview":"MODULE 03  /  LESSON 01","textChars":23,"textLines":1,"bbox":[70,70,430,26]}
+{"kind":"textbox","id":"sh/mxsj25sf","slide":1,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[70,148,548,250]}
+{"kind":"shape","id":"sh/90j2dkrq","slide":1,"bbox":[70,430,96,6]}
+{"kind":"textbox","id":"sh/8za14fa5","slide":1,"text":"A dataset is an organized collection of observations.","textPreview":"A dataset is an organized collection of observations.","textChars":53,"textLines":1,"bbox":[70,472,530,102]}
+{"kind":"image","id":"im/87et872p","slide":1,"name":"","alt":"Data science workflow from raw data to a deployed decision system","bbox":[724,0,556,720]}
+{"kind":"image","id":"im/axcbydkb","slide":1,"name":"","alt":"DS Academy","bbox":[70,620,182,52]}
+{"kind":"notes","id":"nt/pb6ss2","slide":1,"text":"A **dataset** is an organized collection of observations.\n\n- A **row** represents one observation.\n- A **column** represents one measured property.\n- The **row grain** states exactly what one row represents.\n\nExample: in a class-results dataset, one row could represent one student. Columns could contain the student's name, course, score, and attendance.\n\nThe row grain must remain consistent. If some rows represent students and others represent entire classes, calculations such as averages no longer have a clear meaning.\n\n[Worked Example]\n| student | course | score |\n|---|---|---:|\n| Asha | Python | 72 |\n| Ben | Python | 84 |\n| Chen | AI | 91 |\n\nThere are `3` observations and `3` variables. The row grain is **one student's result in one course**.\n\n[Visual Brief]\nA small table with one row highlighted as an observation and one column highlighted as a variable. A label below states the row grain.\n\n[Instructor Notes]\nAsk what one row represents before discussing Pandas. Show how an unclear grain produces misleading totals.\n\n[Notebook Connection]\nThe notebook creates arrays and DataFrames. Learners must identify observations and variables before using those objects.\n\n[Sources]\n- https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/176bz4","slide":2,"title":"M03 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/cz29cb6t","slide":2,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/byt8j6p8","slide":2,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/axkra1on","slide":2,"text":"DS ACADEMY   02","textPreview":"DS ACADEMY   02","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/pwrqhw72","slide":2,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/obi98r6h","slide":2,"text":"NumPy Arrays Store Shaped Numerical Data","textPreview":"NumPy Arrays Store Shaped Numerical Data","textChars":40,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/na98f6pw","slide":2,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/290r61ob","slide":2,"text":"A NumPy array is a collection of values arranged along one or more axes. Array values normally share one data type. For a two-dimensional array, shape (2, 3) means 2 rows and 3 columns. Its size is 2 x 3 = 6.","textPreview":"A NumPy array is a collection of values arranged along one or more axes. Array values normally share one data type. For a two-dimensional...","textChars":208,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/18rqdw7q","slide":2,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/07i94r6l","slide":2,"text":"ndim: number of axes","textPreview":"ndim: number of axes","textChars":20,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/ad4bi1kf","slide":2,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/vedcr610","slide":2,"text":"shape: length of each axis","textPreview":"shape: length of each axis","textChars":26,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/wf6tkb25","slide":2,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/xgfutgjq","slide":2,"text":"size: total number of values","textPreview":"size: total number of values","textChars":28,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/m94be1k3","slide":2,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/nadcnm1o","slide":2,"text":"dtype: type used to store the values","textPreview":"dtype: type used to store the values","textChars":36,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/8bmtgr29","slide":2,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/9cvupwju","slide":2,"text":"Axes: 2","textPreview":"Axes: 2","textChars":7,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/elkbahk7","slide":2,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/zmtcjm1s","slide":2,"text":"Shape: (2, 3)","textPreview":"Shape: (2, 3)","textChars":13,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/176bz4","slide":2,"text":"A NumPy **array** is a collection of values arranged along one or more axes. Array values normally share one **data type**.\n\n- `ndim`: number of axes\n- `shape`: length of each axis\n- `size`: total number of values\n- `dtype`: type used to store the values\n\nFor a two-dimensional array, shape `(2, 3)` means `2` rows and `3` columns. Its size is `2 x 3 = 6`.\n\n[Worked Example]\n```text\n[[72, 80, 75],\n [84, 79, 88]]\n```\n\n1. Axes: `2`\n2. Shape: `(2, 3)`\n3. Size: `6`\n4. If all values are whole numbers, the data type is an integer type.\n\n[Visual Brief]\nA 2-by-3 number grid with braces marking axis 0 as rows and axis 1 as columns. The shape `(2, 3)` appears beside it.\n\n[Instructor Notes]\nHave learners count rows and columns before revealing the shape. Explain that shape errors are often more important than syntax errors in numerical code.\n\n[Notebook Connection]\nThis prepares learners to inspect tensor and array shapes instead of treating them as unexplained output.\n\n[Sources]\n- https://numpy.org/doc/stable/user/quickstart.html\n- https://numpy.org/doc/stable/user/absolute_beginners.html\n[/Sources]"}
+{"kind":"slide","id":"sl/3swm3n","slide":3,"title":"M03 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/zi1ova1c","slide":3,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/0ja5of2x","slide":3,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/lkj6xkji","slide":3,"text":"DS ACADEMY   03","textPreview":"DS ACADEMY   03","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/m5snq5k3","slide":3,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/n6loza18","slide":3,"text":"Indexing Selects Values from an Array","textPreview":"Indexing Selects Values from an Array","textChars":37,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/87upsf2t","slide":3,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/98361kje","slide":3,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/a9c7upkz","slide":3,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/valo3u1k","slide":3,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/3ah4j6hk","slide":3,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/2983qlgz","slide":3,"text":"print(scores[1, 2])\nprint(scores[:, 1])","textPreview":"print(scores[1, 2]) | print(scores[:, 1])","textChars":39,"textLines":2,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/pczmlgza","slide":3,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/4bq5sby5","slide":3,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/v6x4f6h8","slide":3,"text":"88\n[80 79]","textPreview":"88 | [80 79]","textChars":10,"textLines":2,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/u5o3m1gn","slide":3,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/h8zmhgze","slide":3,"text":"scores[1, 2] gives 88. scores[:, 1] gives [80, 79].","textPreview":"scores[1, 2] gives 88. scores[:, 1] gives [80, 79].","textChars":51,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/3swm3n","slide":3,"text":"An **index** identifies a position. NumPy starts counting at zero.\n\nFor a two-dimensional array, use `[row, column]`:\n\n```python\nscores[1, 2]\n```\n\nThis means row index `1` and column index `2`. A colon means “take all positions along this axis.”\n\n- `scores[0, :]`: every column from the first row\n- `scores[:, 1]`: every row from the second column\n- `scores[0:2, 1:3]`: a rectangular slice\n\n[Worked Example]\nUsing:\n\n```text\n[[72, 80, 75],\n [84, 79, 88]]\n```\n\n`scores[1, 2]` gives `88`.  \n`scores[:, 1]` gives `[80, 79]`.\n\n[Visual Brief]\nThe grid from Slide 2 appears with row and column indexes. One cell and then one complete column are highlighted.\n\n[Instructor Notes]\nRead every selection aloud as “row, column.” Ask learners to predict the shape of a selection before running it.\n\n[Notebook Connection]\nNotebook operations select feature columns and individual values using the same positional idea.\n\n[Sources]\n- https://numpy.org/doc/stable/user/basics.indexing.html\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/n5pz5w","slide":4,"title":"M03 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/zydgn6tg","slide":4,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/0jmhwba1","slide":4,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/1kvypgbm","slide":4,"text":"DS ACADEMY   04","textPreview":"DS ACADEMY   04","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/qtkfq1sz","slide":4,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/rutgjmtk","slide":4,"text":"Vectorized Operations Work on Whole Arrays","textPreview":"Vectorized Operations Work on Whole Arrays","textChars":42,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/cvmhsrap","slide":4,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/dwvylwba","slide":4,"text":"A vectorized operation applies one operation to an entire array.","textPreview":"A vectorized operation applies one operation to an entire array.","textChars":64,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/2pkfmhsn","slide":4,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/3qtgfmt8","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/rapc3m94","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/q9gvuh8j","slide":4,"text":"adds 5 to every score.","textPreview":"adds 5 to every score.","textChars":22,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/dc7u5cra","slide":4,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/cbydwrqp","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/zepc7m90","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/edgvyh8v","slide":4,"text":"NumPy performs the repeated numerical work in optimized array code.","textPreview":"NumPy performs the repeated numerical work in optimized array code.","textChars":67,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/10ru9wr6","slide":4,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/0zyd0rql","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/fi5cv29w","slide":4,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/uhwbmx8b","slide":4,"text":"Broadcasting is NumPy's rule for combining arrays with compatible shapes.","textPreview":"Broadcasting is NumPy's rule for combining arrays with compatible shapes.","textChars":73,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/ixkfu5sz","slide":4,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/jytg3atk","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/kzmxwva5","slide":4,"text":"Original: [72, 84, 91] Adjustment: + 5 Result: [77, 89, 96] The same addition is applied to all three positions.","textPreview":"Original: [72, 84, 91] Adjustment: + 5 Result: [77, 89, 96] The same addition is applied to all three positions.","textChars":112,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/n5pz5w","slide":4,"text":"A **vectorized operation** applies one operation to an entire array.\n\n```python\nscores + 5\n```\n\nadds `5` to every score. NumPy performs the repeated numerical work in optimized array code.\n\n**Broadcasting** is NumPy's rule for combining arrays with compatible shapes. A single number can be expanded conceptually to match every element. Compatible dimensions are equal, or one of them is `1`.\n\nVectorization makes the intended calculation visible and reduces manual loop code.\n\n[Worked Example]\nOriginal: `[72, 84, 91]`  \nAdjustment: `+ 5`  \nResult: `[77, 89, 96]`\n\nThe same addition is applied to all three positions.\n\n[Visual Brief]\nThree values flow through one `+ 5` operation into three adjusted values. A smaller warning shows incompatible shapes `(2, 3)` and `(2,)`.\n\n[Instructor Notes]\nContrast this with a `for` loop from Week 2. Keep broadcasting to scalar and row-vector examples.\n\n[Notebook Connection]\nThe notebook uses array arithmetic and aggregations that operate over complete collections.\n\n[Sources]\n- https://numpy.org/doc/stable/user/basics.broadcasting.html\n- https://numpy.org/doc/stable/user/quickstart.html\n[/Sources]"}
+{"kind":"slide","id":"sl/hy831p","slide":5,"title":"M03 / L01","textShapes":10}
+{"kind":"textbox","id":"sh/rmlwbix4","slide":5,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/snud4ny9","slide":5,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/do3edsfu","slide":5,"text":"DS ACADEMY   05","textPreview":"DS ACADEMY   05","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/epcv6xgf","slide":5,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/fqlwf2x0","slide":5,"text":"Series and DataFrames Add Labels","textPreview":"Series and DataFrames Add Labels","textChars":32,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/0bud87yl","slide":5,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/1cnehcf6","slide":5,"text":"A Pandas Series is a one-dimensional labelled collection. A DataFrame is a two-dimensional labelled table. Labels make data easier to interpret:","textPreview":"A Pandas Series is a one-dimensional labelled collection. A DataFrame is a two-dimensional labelled table. Labels make data easier to int...","textChars":144,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/2dwvaxgr","slide":5,"bbox":[64,390,540,96]}
+{"kind":"textbox","id":"sh/ne5wj2xw","slide":5,"text":"row labels form the index;","textPreview":"row labels form the index;","textChars":26,"textLines":1,"bbox":[82,400,504,76]}
+{"kind":"shape","id":"sh/bih8vupg","slide":5,"bbox":[638,390,540,96]}
+{"kind":"textbox","id":"sh/ah872p8v","slide":5,"text":"column labels identify variables;","textPreview":"column labels identify variables;","textChars":33,"textLines":1,"bbox":[656,400,504,76]}
+{"kind":"shape","id":"sh/xkzqx47m","slide":5,"bbox":[64,506,540,96]}
+{"kind":"textbox","id":"sh/cjqp4zq1","slide":5,"text":"each column has a data type;","textPreview":"each column has a data type;","textChars":28,"textLines":1,"bbox":[82,516,504,76]}
+{"kind":"shape","id":"sh/nuh8rapk","slide":5,"bbox":[638,506,540,96]}
+{"kind":"textbox","id":"sh/2t87y58z","slide":5,"text":"different columns may use different types.","textPreview":"different columns may use different types.","textChars":42,"textLines":1,"bbox":[656,516,504,76]}
+{"kind":"notes","id":"nt/hy831p","slide":5,"text":"A Pandas **Series** is a one-dimensional labelled collection. A **DataFrame** is a two-dimensional labelled table.\n\nLabels make data easier to interpret:\n\n- row labels form the **index**;\n- column labels identify variables;\n- each column has a data type;\n- different columns may use different types.\n\nNumPy is strongest for shaped numerical arrays. Pandas is designed for labelled tabular data that may contain numbers, text, dates, booleans, and missing values.\n\n[Worked Example]\nThe dictionary:\n\n```python\n{\"student\": [\"Asha\", \"Ben\"], \"score\": [72, 84]}\n```\n\nbecomes a DataFrame with two rows and two named columns. Its shape is `(2, 2)`.\n\n[Visual Brief]\nA NumPy grid receives row and column labels and becomes a DataFrame. Column type badges show text and integer.\n\n[Instructor Notes]\nEmphasize that a DataFrame is not a spreadsheet file; it is a Python object in memory.\n\n[Notebook Connection]\nLearners can now read DataFrame construction and understand why named columns are useful.\n\n[Sources]\n- https://pandas.pydata.org/docs/user_guide/dsintro.html\n- https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html\n[/Sources]"}
+{"kind":"slide","id":"sl/513wmb","slide":6,"title":"M03 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/beh8jyd8","slide":6,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/cfqpc3ut","slide":6,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/dgzql8ve","slide":6,"text":"DS ACADEMY   06","textPreview":"DS ACADEMY   06","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/29o769cr","slide":6,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/3ax8fedc","slide":6,"text":"Load Data, Then Inspect Before Transforming","textPreview":"Load Data, Then Inspect Before Transforming","textChars":43,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/ob6p8juh","slide":6,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/pcfqhov2","slide":6,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/e54729wf","slide":6,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/f6x8bed0","slide":6,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/3mh0jitc","slide":6,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/il8jqdsr","slide":6,"text":"df = pd.read_csv(\"results.csv\")\nprint(df.shape)\nprint(df.dtypes)\nprint(df.isna().sum())","textPreview":"df = pd.read_csv(\"results.csv\") | print(df.shape) | print(df.dtypes) | print(df.isna().sum())","textChars":87,"textLines":4,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/5ozilsbi","slide":6,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/4nq1snax","slide":6,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/rqh0n29o","slide":6,"text":"(120, 4)\nstudent       object\ncourse        object\nscore        float64\nattendance     int64","textPreview":"(120, 4) | student       object | course        object | score        float64 | attendance     int64","textChars":92,"textLines":5,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/qp8juxs3","slide":6,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/dsjipcre","slide":6,"text":"If df.shape is (120, 4), the table has 120 rows and 4 columns. This does not prove that all rows are valid; it only states the current shape.","textPreview":"If df.shape is (120, 4), the table has 120 rows and 4 columns. This does not prove that all rows are valid; it only states the current sh...","textChars":141,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/513wmb","slide":6,"text":"A **CSV** file stores table rows as comma-separated text. **JSON** represents nested objects, arrays, strings, numbers, booleans, and null values.\n\nLoading creates a DataFrame:\n\n```python\ndf = pd.read_csv(\"results.csv\")\n```\n\nBefore changing the data, inspect:\n\n1. `df.shape` for row and column counts;\n2. `df.head()` for example rows;\n3. `df.columns` for variable names;\n4. `df.dtypes` for stored types;\n5. `df.isna().sum()` for missing values.\n\n[Worked Example]\nIf `df.shape` is `(120, 4)`, the table has `120` rows and `4` columns. This does not prove that all rows are valid; it only states the current shape.\n\n[Visual Brief]\nA file icon flows into a DataFrame, followed by five inspection checkpoints.\n\n[Instructor Notes]\nExplain that `object` commonly stores text. Do not promise exact output for an unknown file; the example output describes one sample dataset.\n\n[Notebook Connection]\nThis inspection routine should be used before every notebook transformation.\n\n[Sources]\n- https://pandas.pydata.org/docs/user_guide/io.html\n- https://pandas.pydata.org/docs/user_guide/basics.html\n[/Sources]"}
+{"kind":"slide","id":"sl/mkb79e","slide":7,"title":"M03 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/donm94n6","slide":7,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/q1w3epof","slide":7,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/rm547u50","slide":7,"text":"DS ACADEMY   07","textPreview":"DS ACADEMY   07","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/0relkz6h","slide":7,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/1s7md4n2","slide":7,"text":"Select, Filter, and Sort Rows Deliberately","textPreview":"Select, Filter, and Sort Rows Deliberately","textChars":42,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/epw3ipor","slide":7,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/zq54bu5w","slide":7,"text":"Selection chooses columns or rows. Filtering keeps rows that satisfy a condition. Sorting changes row order without changing the values. The comparison creates a boolean mask: one True or False value per row. Pandas keeps rows where the mask is True. Use .loc[rows, columns] when selecting by labels:","textPreview":"Selection chooses columns or rows. Filtering keeps rows that satisfy a condition. Sorting changes row order without changing the values. ...","textChars":300,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/gvul8f6d","slide":7,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/hw321k7y","slide":7,"text":"Selection chooses columns or rows.","textPreview":"Selection chooses columns or rows.","textChars":34,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/x0vudw3u","slide":7,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/wzmt4r2p","slide":7,"text":"Filtering keeps rows that satisfy a condition.","textPreview":"Filtering keeps rows that satisfy a condition.","textChars":46,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/bydcbml4","slide":7,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/ax4b2hkj","slide":7,"text":"Sorting changes row order without changing the values.","textPreview":"Sorting changes row order without changing the values.","textChars":54,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/l4fuhw36","slide":7,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/k36t8r2l","slide":7,"text":"The comparison creates a boolean mask: one True or False value per row.","textPreview":"The comparison creates a boolean mask: one True or False value per row.","textChars":71,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/j2xcfml0","slide":7,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/y14b6hkf","slide":7,"text":"Pandas keeps rows where the mask is True.","textPreview":"Pandas keeps rows where the mask is True.","textChars":41,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/tsfu5g32","slide":7,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/8r6tcb2h","slide":7,"text":"Use .loc[rows, columns] when selecting by labels:","textPreview":"Use .loc[rows, columns] when selecting by labels:","textChars":49,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/mkb79e","slide":7,"text":"**Selection** chooses columns or rows. **Filtering** keeps rows that satisfy a condition. **Sorting** changes row order without changing the values.\n\n```python\npassed = df[df[\"score\"] >= 50]\n```\n\nThe comparison creates a **boolean mask**: one `True` or `False` value per row. Pandas keeps rows where the mask is `True`.\n\nUse `.loc[rows, columns]` when selecting by labels:\n\n```python\npassed = df.loc[df[\"score\"] >= 50, [\"student\", \"score\"]]\n```\n\n[Worked Example]\nScores `[42, 68, 91]` produce mask `[False, True, True]`. Filtering keeps `[68, 91]`. Sorting descending produces `[91, 68]`.\n\n[Visual Brief]\nThree table rows align with a three-value boolean mask; false rows fade while true rows move into the filtered table.\n\n[Instructor Notes]\nTrace the mask before showing the filtered result. Distinguish row selection from changing values.\n\n[Notebook Connection]\nThe notebook uses masks to isolate relevant observations before analysis.\n\n[Sources]\n- https://pandas.pydata.org/docs/user_guide/indexing.html\n- https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html\n[/Sources]"}
+{"kind":"slide","id":"sl/lhmigq","slide":8,"title":"M03 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/svu907ih","slide":8,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/7als721w","slide":8,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/69sryh0b","slide":8,"text":"DS ACADEMY   08","textPreview":"DS ACADEMY   08","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/h03adwjy","slide":8,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/gzut4rid","slide":8,"text":"Missing Values Need an Explicit Policy","textPreview":"Missing Values Need an Explicit Policy","textChars":38,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/fylsbm18","slide":8,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/uxcb2h0n","slide":8,"text":"the student did not take the test;","textPreview":"the student did not take the test;","textChars":34,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/p4nahwja","slide":8,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/43et8rip","slide":8,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/elczq9cv","slide":8,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/f65gjutg","slide":8,"text":"the score was not recorded;","textPreview":"the score was not recorded;","textChars":27,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/g7ehsza1","slide":8,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/18nyl4bm","slide":8,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/29wzu9s7","slide":8,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/3a50nets","slide":8,"text":"the file was parsed incorrectly; or","textPreview":"the file was parsed incorrectly; or","textChars":35,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/obehwjad","slide":8,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/pcnipoby","slide":8,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/idszi5c3","slide":8,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/je1gbat8","slide":8,"text":"the value was removed by a rule.","textPreview":"the value was removed by a rule.","textChars":32,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/nihwj690","slide":8,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/mh8valsv","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/9kzelgr6","slide":8,"text":"Scores: [72, missing, 84] The policy changes the conclusion.","textPreview":"Scores: [72, missing, 84] The policy changes the conclusion.","textChars":60,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/lhmigq","slide":8,"text":"A **missing value** records that an observation is absent or unknown. Pandas commonly displays it as `NaN` or `NA`.\n\nMissing does not automatically mean zero. A missing score could mean:\n\n- the student did not take the test;\n- the score was not recorded;\n- the file was parsed incorrectly; or\n- the value was removed by a rule.\n\nPossible actions are to retain, collect again, exclude, or **impute** a replacement. The correct choice depends on why the value is missing and how the result will be used.\n\n[Worked Example]\nScores: `[72, missing, 84]`\n\n- Filling with `0` gives mean `(72 + 0 + 84) / 3 = 52`.\n- Ignoring the missing value gives mean `(72 + 84) / 2 = 78`.\n\nThe policy changes the conclusion.\n\n[Visual Brief]\nOne missing cell branches into retain, investigate, impute, and exclude paths. Each path includes a “document why” label.\n\n[Instructor Notes]\nAsk why the value is missing before discussing methods such as `fillna()` or `dropna()`.\n\n[Notebook Connection]\nLearners must inspect and explain missing-value handling before producing summaries.\n\n[Sources]\n- https://pandas.pydata.org/docs/user_guide/missing_data.html\n- https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.isna.html\n[/Sources]"}
+{"kind":"slide","id":"sl/gfs6nu","slide":9,"title":"M03 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/xkj2lcz2","slide":9,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/ahs3qxgb","slide":9,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/vi1kj2hw","slide":9,"text":"DS ACADEMY   09","textPreview":"DS ACADEMY   09","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/k7alwryt","slide":9,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/5832pczy","slide":9,"text":"Grouping Answers Questions About Categories","textPreview":"Grouping Answers Questions About Categories","textChars":43,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/i5s3uhgn","slide":9,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/j61knmh8","slide":9,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/0bq1kny9","slide":9,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/1cz2dszu","slide":9,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/5gfq1gzy","slide":9,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/4f6p8byd","slide":9,"text":"means = df.groupby(\"course\")[\"score\"].mean()\nprint(means)","textPreview":"means = df.groupby(\"course\")[\"score\"].mean() | print(means)","textChars":57,"textLines":2,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/jex8z6hs","slide":9,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/ido761g7","slide":9,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/tkzq5gzu","slide":9,"text":"course\nAI        91.0\nPython    78.0","textPreview":"course | AI        91.0 | Python    78.0","textChars":36,"textLines":3,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/sjqpcby9","slide":9,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/rih836ho","slide":9,"text":"Python mean: (72 + 84) / 2 = 78 AI mean: 91 / 1 = 91","textPreview":"Python mean: (72 + 84) / 2 = 78 AI mean: 91 / 1 = 91","textChars":52,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/gfs6nu","slide":9,"text":"**Grouping** divides rows into categories. An **aggregation** reduces each group to a summary such as count, sum, mean, minimum, or maximum.\n\nThe GroupBy process is:\n\n1. **Split** rows by a key such as `course`.\n2. **Apply** a calculation such as mean score.\n3. **Combine** one result for each group.\n\n[Worked Example]\n| course | score |\n|---|---:|\n| Python | 72 |\n| Python | 84 |\n| AI | 91 |\n\nPython mean: `(72 + 84) / 2 = 78`  \nAI mean: `91 / 1 = 91`\n\n[Visual Brief]\nRows split into two coloured course groups, each passes through a mean calculation, and two results are recombined.\n\n[Instructor Notes]\nCalculate both means by hand. Point out that group size should be reported because a mean from one row is less stable than a mean from many rows.\n\n[Notebook Connection]\nThe notebook uses grouping to turn detailed rows into interpretable summaries.\n\n[Sources]\n- https://pandas.pydata.org/docs/user_guide/groupby.html\n- https://pandas.pydata.org/docs/reference/groupby.html\n[/Sources]"}
+{"kind":"slide","id":"sl/dvpt74","slide":10,"title":"M03 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/xsfmh4zu","slide":10,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/apo36pg3","slide":10,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/vqx4fuho","slide":10,"text":"DS ACADEMY   10","textPreview":"DS ACADEMY   10","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/8nml4fyx","slide":10,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/9ovmdkzi","slide":10,"text":"A Complete Table Analysis Has Visible Steps","textPreview":"A Complete Table Analysis Has Visible Steps","textChars":43,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/ml4325g7","slide":10,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/nmd4bahc","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/sjq5gjyh","slide":10,"text":"load the source;","textPreview":"load the source;","textChars":16,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/tkzmpof2","slide":10,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/lwfa5ojq","slide":10,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/0bm9wj25","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/zads3e10","slide":10,"text":"inspect shape, columns, types, and missingness;","textPreview":"inspect shape, columns, types, and missingness;","textChars":47,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/y94rutkf","slide":10,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/d8vq1oju","slide":10,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/c7m9sj29","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/b6d8zelo","slide":10,"text":"state the row filter;","textPreview":"state the row filter;","textChars":21,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/q54rq9k3","slide":10,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/x4zad8jy","slide":10,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/w369432d","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/g7et0rap","slide":10,"text":"group at the intended level;","textPreview":"group at the intended level;","textChars":28,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/h87u9cra","slide":10,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/dvpt74","slide":10,"text":"A reliable analysis should make each transformation inspectable:\n\n1. load the source;\n2. inspect shape, columns, types, and missingness;\n3. state the row filter;\n4. group at the intended level;\n5. calculate a named summary;\n6. verify at least one result by hand.\n\nMethod chains are useful only when learners can explain what each method receives and returns.\n\n[Worked Example]\nQuestion: “What is the average valid score per course?”\n\n- Valid means score is present and between `0` and `100`.\n- Group key is `course`.\n- Summary is mean score plus number of rows.\n\n[Visual Brief]\nA six-stage pipeline with a small table snapshot after the filter and after the aggregation.\n\n[Instructor Notes]\nAsk learners to label every line as input, selection, grouping, or aggregation.\n\n[Notebook Connection]\nThis is the reasoning pattern learners should apply to the Pandas section of the notebook.\n\n[Sources]\n- https://pandas.pydata.org/docs/getting_started/intro_tutorials/\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/7ub1cq","slide":11,"title":"M03 / L01","textShapes":11}
+{"kind":"textbox","id":"sh/toze98ne","slide":11,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/6l8veto3","slide":11,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/7mhc7y5o","slide":11,"text":"DS ACADEMY   11","textPreview":"DS ACADEMY   11","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/kjqdc36x","slide":11,"text":"RISK REVIEW","textPreview":"RISK REVIEW","textChars":11,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/5kzu5oni","slide":11,"text":"Common Mistakes Change the Meaning","textPreview":"Common Mistakes Change the Meaning","textChars":34,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/ih8vator","slide":11,"bbox":[0,0,16,720]}
+{"kind":"textbox","id":"sh/jihc3y5c","slide":11,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[74,196,78,42]}
+{"kind":"textbox","id":"sh/wf6d8j61","slide":11,"text":"reading shape (3, 4) as four rows and three columns;","textPreview":"reading shape (3, 4) as four rows and three columns;","textChars":52,"textLines":1,"bbox":[190,188,930,92]}
+{"kind":"shape","id":"sh/xgfu1onm","slide":11,"bbox":[74,301,1048,2]}
+{"kind":"textbox","id":"sh/5obul8zu","slide":11,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[74,344,78,42]}
+{"kind":"textbox","id":"sh/4n2ts3i9","slide":11,"text":"confusing a column label with a row position;","textPreview":"confusing a column label with a row position;","textChars":45,"textLines":1,"bbox":[190,336,930,92]}
+{"kind":"shape","id":"sh/3m9cjy1o","slide":11,"bbox":[74,449,1048,2]}
+{"kind":"textbox","id":"sh/il0bqt03","slide":11,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[74,492,78,42]}
+{"kind":"textbox","id":"sh/hkruh8ji","slide":11,"text":"filtering with a mask of the wrong length;","textPreview":"filtering with a mask of the wrong length;","textChars":42,"textLines":1,"bbox":[190,484,930,92]}
+{"kind":"shape","id":"sh/gjito3id","slide":11,"bbox":[74,597,1048,2]}
+{"kind":"notes","id":"nt/7ub1cq","slide":11,"text":"Common mistakes:\n\n- reading shape `(3, 4)` as four rows and three columns;\n- confusing a column label with a row position;\n- filtering with a mask of the wrong length;\n- calculating along the wrong axis;\n- treating missing values as zero without justification;\n- grouping before checking the row grain;\n- reporting a mean without reporting the group count.\n\nData code can run successfully and still answer the wrong question. Verification requires checking shapes, sample rows, counts, and one result by hand.\n\n[Worked Example]\nFor a `(2, 3)` array, `scores.mean(axis=0)` produces one mean for each of `3` columns. `scores.mean(axis=1)` produces one mean for each of `2` rows.\n\n[Visual Brief]\nTwo arrows traverse the same matrix: axis 0 moves down rows and axis 1 moves across columns, producing outputs of different lengths.\n\n[Instructor Notes]\nUse prediction before execution. The goal is to reason from shapes rather than memorize axis numbers.\n\n[Notebook Connection]\nThe notebook-readiness check is to predict output shapes and row counts before running each operation.\n\n[Sources]\n- https://numpy.org/doc/stable/user/quickstart.html\n- https://pandas.pydata.org/docs/user_guide/indexing.html\n[/Sources]"}
+{"kind":"slide","id":"sl/uofl2c","slide":12,"title":"M03 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/pojm54nq","slide":12,"text":"M03 / L01","textPreview":"M03 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/2ls3apof","slide":12,"text":"A Dataset Is a Collection of Observations","textPreview":"A Dataset Is a Collection of Observations","textChars":41,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/3m143u50","slide":12,"text":"DS ACADEMY   12","textPreview":"DS ACADEMY   12","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/gjal8f69","slide":12,"text":"GUIDED LAB","textPreview":"GUIDED LAB","textChars":10,"textLines":1,"bbox":[64,92,220,24]}
+{"kind":"textbox","id":"sh/hkj21knu","slide":12,"text":"Guided Lab: Explain a Small Dataset","textPreview":"Guided Lab: Explain a Small Dataset","textChars":35,"textLines":1,"bbox":[64,154,1100,154]}
+{"kind":"textbox","id":"sh/uhs36po3","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,410,62,28]}
+{"kind":"shape","id":"sh/fi1kzu5o","slide":12,"bbox":[64,462,214,5]}
+{"kind":"textbox","id":"sh/0fulkj6d","slide":12,"text":"State what one row represents","textPreview":"State what one row represents","textChars":29,"textLines":1,"bbox":[64,500,220,52]}
+{"kind":"textbox","id":"sh/lgnmdony","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[354,410,62,28]}
+{"kind":"shape","id":"sh/pk3ix83u","slide":12,"bbox":[354,462,214,5]}
+{"kind":"textbox","id":"sh/ojuh43mp","slide":12,"text":"Report shape, columns, and data types","textPreview":"Report shape, columns, and data types","textChars":37,"textLines":1,"bbox":[354,500,220,52]}
+{"kind":"textbox","id":"sh/3il0vyl4","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[644,410,62,28]}
+{"kind":"shape","id":"sh/2hcz2t4j","slide":12,"bbox":[644,462,214,5]}
+{"kind":"textbox","id":"sh/1g3yto3y","slide":12,"text":"Count missing values","textPreview":"Count missing values","textChars":20,"textLines":1,"bbox":[644,500,220,52]}
+{"kind":"textbox","id":"sh/gfuh0jmd","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[934,410,62,28]}
+{"kind":"shape","id":"sh/fe1gryls","slide":12,"bbox":[934,462,214,5]}
+{"kind":"textbox","id":"sh/edszyt47","slide":12,"text":"Keep scores from 0 to 100","textPreview":"Keep scores from 0 to 100","textChars":25,"textLines":1,"bbox":[934,500,220,52]}
+{"kind":"notes","id":"nt/uofl2c","slide":12,"text":"Use a small CSV containing students, courses, scores, and attendance.\n\nComplete these steps:\n\n1. State what one row represents.\n2. Report shape, columns, and data types.\n3. Count missing values.\n4. Keep scores from `0` to `100`.\n5. Calculate count and mean score per course.\n6. Verify one group mean by hand.\n7. Explain one limitation of the dataset.\n\nYou are ready for Week 4 when you can explain every row-selection and aggregation step without relying only on the final output.\n\n[Worked Example]\nFor Python scores `72` and `84`, the independent check is:\n\n`(72 + 84) / 2 = 78`\n\nThe DataFrame result should also be `78.0`.\n\n[Visual Brief]\nA checklist connects “row grain” to “inspect,” “filter,” “group,” “verify,” and “explain.”\n\n[Instructor Notes]\nRequire predictions before execution and short explanations after each output. Do not accept a notebook containing only code and final tables.\n\n[Notebook Connection]\nContinue into the NumPy and Pandas sections of `01.python-essentials-for-ai.ipynb`.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/01.python-essentials-for-ai.ipynb\n- https://pandas.pydata.org/docs/getting_started/\n[/Sources]"}

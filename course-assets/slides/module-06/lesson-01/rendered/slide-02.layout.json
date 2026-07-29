@@ -1,0 +1,611 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/hi6dwc",
+    "id": "hi6dwc",
+    "slide": 2,
+    "layoutId": "64931449-3030-4198-833a-768e1354ee14",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "ca81cc38-1948-469d-9177-9a5dbcbeaf69",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "64931449-3030-4198-833a-768e1354ee14",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "ca81cc38-1948-469d-9177-9a5dbcbeaf69",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "ca81cc38-1948-469d-9177-9a5dbcbeaf69",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n2tw3e5k",
+      "id": "1",
+      "bbox": [
+        54,
+        28,
+        110,
+        22
+      ],
+      "geometry": "rect",
+      "text": "M06 / L01",
+      "textPreview": "M06 / L01",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "M06 / L01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "M06 / L01",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "M06 / L01",
+              "fontSize": 11,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o32dczm5",
+      "id": "2",
+      "bbox": [
+        176,
+        28,
+        650,
+        22
+      ],
+      "geometry": "rect",
+      "text": "Machine Learning Learns a Mapping from Examples",
+      "textPreview": "Machine Learning Learns a Mapping from Examples",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#607086",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Machine Learning Learns a Mapping from Examples"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Machine Learning Learns a Mapping from Examples",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#607086"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Machine Learning Learns a Mapping from Examples",
+              "fontSize": 11,
+              "color": "#607086"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p4be54nq",
+      "id": "3",
+      "bbox": [
+        1002,
+        28,
+        224,
+        22
+      ],
+      "geometry": "rect",
+      "text": "DS ACADEMY   02",
+      "textPreview": "DS ACADEMY   02",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#607086",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DS ACADEMY   02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DS ACADEMY   02",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#607086",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DS ACADEMY   02",
+              "fontSize": 11,
+              "color": "#607086",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed0v6p43",
+      "id": "4",
+      "bbox": [
+        64,
+        100,
+        220,
+        24
+      ],
+      "geometry": "rect",
+      "text": "CORE CONCEPT",
+      "textPreview": "CORE CONCEPT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CORE CONCEPT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CORE CONCEPT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CORE CONCEPT",
+              "fontSize": 12,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fetwzu5o",
+      "id": "5",
+      "bbox": [
+        64,
+        150,
+        1080,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Supervised and Unsupervised Learning Use Different Evidence",
+      "textPreview": "Supervised and Unsupervised Learning Use Different Evidence",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Supervised and Unsupervised Learning Use Different"
+          },
+          {
+            "index": 2,
+            "text": "Evidence"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Supervised and Unsupervised Learning Use Different Evidence",
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Supervised and Unsupervised Learning Use Different Evidence",
+              "fontSize": 40,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0f2d8zm9",
+      "id": "6",
+      "bbox": [
+        64,
+        246,
+        112,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A8C8",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1gbe14ne",
+      "id": "7",
+      "bbox": [
+        64,
+        278,
+        1110,
+        96
+      ],
+      "geometry": "rect",
+      "text": "Supervised learning uses examples with known targets. The model compares predictions with targets and learns from the error. Unsupervised learning uses data without supplied targets. It searches for structure such as groups, lower-dimensional representations, or unusual observations.",
+      "textPreview": "Supervised learning uses examples with known targets. The model compares predictions with targets and learns from the error. Unsupervised...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#243244",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Supervised learning uses examples with known targets. The model compares predictions with targets and learns from the error. Unsupervised"
+          },
+          {
+            "index": 2,
+            "text": "learning uses data without supplied targets. It searches for structure such as groups, lower-dimensional representations, or unusual"
+          },
+          {
+            "index": 3,
+            "text": "observations."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Supervised learning uses examples with known targets. The model compares predictions with targets and learns from the error. Unsupervised learning uses data without supplied targets. It searches for structure such as groups, lower-dimensional representations, or unusual observations.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#243244"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Supervised learning uses examples with known targets. The model compares predictions with targets and learns from the error. Unsupervised learning uses data without supplied targets. It searches for structure such as groups, lower-dimensional representations, or unusual observations.",
+              "fontSize": 17,
+              "color": "#243244"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y94fit47",
+      "id": "8",
+      "bbox": [
+        64,
+        390,
+        540,
+        96
+      ],
+      "geometry": "rect",
+      "fillColor": "#EEF4F7",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zadwby5s",
+      "id": "9",
+      "bbox": [
+        82,
+        400,
+        504,
+        76
+      ],
+      "geometry": "rect",
+      "text": "predicting willcancel is supervised;",
+      "textPreview": "predicting willcancel is supervised;",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "predicting willcancel is supervised;"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "predicting willcancel is supervised;",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "predicting willcancel is supervised;",
+              "fontSize": 15,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ze9gvyp4",
+      "id": "10",
+      "bbox": [
+        638,
+        390,
+        540,
+        96
+      ],
+      "geometry": "rect",
+      "fillColor": "#EEF4F7",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ed0z2t8j",
+      "id": "11",
+      "bbox": [
+        656,
+        400,
+        504,
+        76
+      ],
+      "geometry": "rect",
+      "text": "grouping customers by similar behaviour without a group label is unsupervised.",
+      "textPreview": "grouping customers by similar behaviour without a group label is unsupervised.",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "grouping customers by similar behaviour without a group label is"
+          },
+          {
+            "index": 2,
+            "text": "unsupervised."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "grouping customers by similar behaviour without a group label is unsupervised.",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "grouping customers by similar behaviour without a group label is unsupervised.",
+              "fontSize": 15,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

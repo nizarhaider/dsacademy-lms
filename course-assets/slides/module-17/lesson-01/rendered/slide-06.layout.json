@@ -1,0 +1,764 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/gktgxg",
+    "id": "gktgxg",
+    "slide": 6,
+    "layoutId": "3aa1b09b-5f57-4383-a61a-e44c6d9c65e4",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "c5f91086-6dc1-491b-bf07-cba7d4a83c4d",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#EEF4F7",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "3aa1b09b-5f57-4383-a61a-e44c6d9c65e4",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "c5f91086-6dc1-491b-bf07-cba7d4a83c4d",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "c5f91086-6dc1-491b-bf07-cba7d4a83c4d",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8jyh4n69",
+      "id": "1",
+      "bbox": [
+        54,
+        28,
+        110,
+        22
+      ],
+      "geometry": "rect",
+      "text": "M17 / L01",
+      "textPreview": "M17 / L01",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "M17 / L01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "M17 / L01",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "M17 / L01",
+              "fontSize": 11,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7ip0vi5o",
+      "id": "2",
+      "bbox": [
+        176,
+        28,
+        650,
+        22
+      ],
+      "geometry": "rect",
+      "text": "Use a Workflow When the Steps Are Known",
+      "textPreview": "Use a Workflow When the Steps Are Known",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#607086",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Use a Workflow When the Steps Are Known"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Use a Workflow When the Steps Are Known",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#607086"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Use a Workflow When the Steps Are Known",
+              "fontSize": 11,
+              "color": "#607086"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mhgz2xo3",
+      "id": "3",
+      "bbox": [
+        1002,
+        28,
+        224,
+        22
+      ],
+      "geometry": "rect",
+      "text": "DS ACADEMY   06",
+      "textPreview": "DS ACADEMY   06",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#607086",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DS ACADEMY   06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DS ACADEMY   06",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#607086",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DS ACADEMY   06",
+              "fontSize": 11,
+              "color": "#607086",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hori1cnq",
+      "id": "4",
+      "bbox": [
+        62,
+        78,
+        560,
+        22
+      ],
+      "geometry": "rect",
+      "text": "RUN IT AND INSPECT THE RESULT",
+      "textPreview": "RUN IT AND INSPECT THE RESULT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RUN IT AND INSPECT THE RESULT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RUN IT AND INSPECT THE RESULT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RUN IT AND INSPECT THE RESULT",
+              "fontSize": 12,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wni18765",
+      "id": "5",
+      "bbox": [
+        62,
+        108,
+        1110,
+        62
+      ],
+      "geometry": "rect",
+      "text": "The Agent Loop Is Action, Observation, and Decision",
+      "textPreview": "The Agent Loop Is Action, Observation, and Decision",
+      "resolvedFontSize": 35,
+      "resolvedTextStyle": {
+        "fontSize": 35,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The Agent Loop Is Action, Observation, and Decision"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The Agent Loop Is Action, Observation, and Decision",
+          "resolvedTextStyle": {
+            "fontSize": 35,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The Agent Loop Is Action, Observation, and Decision",
+              "fontSize": 35,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vm90z250",
+      "id": "6",
+      "bbox": [
+        54,
+        170,
+        684,
+        408
+      ],
+      "geometry": "rect",
+      "fillColor": "#0B1220",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ul0z6xof",
+      "id": "7",
+      "bbox": [
+        54,
+        170,
+        684,
+        32
+      ],
+      "geometry": "rect",
+      "fillColor": "#243244",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5cbi5cn2",
+      "id": "8",
+      "bbox": [
+        72,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#F06B5F",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4bi1c76h",
+      "id": "9",
+      "bbox": [
+        96,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#F2C94C",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/69kzi5cf",
+      "id": "10",
+      "bbox": [
+        120,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#A8D95B",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7atgrat0",
+      "id": "11",
+      "bbox": [
+        76,
+        220,
+        642,
+        336
+      ],
+      "geometry": "rect",
+      "text": "def should_continue(state):\n    last = state[\"messages\"][-1]\n    return \"tools\" if last.tool_calls else END",
+      "textPreview": "def should_continue(state): |     last = state[\"messages\"][-1] |     return \"tools\" if last.tool_calls else END",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#E8F1F7",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "def should_continue(state):"
+          },
+          {
+            "index": 2,
+            "text": "    last = state[\"messages\"][-1]"
+          },
+          {
+            "index": 3,
+            "text": "    return \"tools\" if last.tool_calls else END"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "def should_continue(state):",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "def should_continue(state):",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "    last = state[\"messages\"][-1]",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    last = state[\"messages\"][-1]",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "    return \"tools\" if last.tool_calls else END",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "    return \"tools\" if last.tool_calls else END",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sb2hkful",
+      "id": "12",
+      "bbox": [
+        770,
+        170,
+        454,
+        408
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#CAD6DF",
+      "lineWidth": 1
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tcbytkbq",
+      "id": "13",
+      "bbox": [
+        796,
+        194,
+        120,
+        22
+      ],
+      "geometry": "rect",
+      "text": "OUTPUT",
+      "textPreview": "OUTPUT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "OUTPUT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "OUTPUT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "OUTPUT",
+              "fontSize": 12,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ud4zmpcb",
+      "id": "14",
+      "bbox": [
+        796,
+        234,
+        398,
+        312
+      ],
+      "geometry": "rect",
+      "text": "The graph routes to tools only when the latest model output proposes a call.",
+      "textPreview": "The graph routes to tools only when the latest model output proposes a call.",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The graph routes to tools only when the latest model output"
+          },
+          {
+            "index": 2,
+            "text": "proposes a call."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The graph routes to tools only when the latest model output proposes a call.",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#0B1220"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The graph routes to tools only when the latest model output proposes a call.",
+              "fontSize": 14,
+              "color": "#0B1220"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fedgvutw",
+      "id": "15",
+      "bbox": [
+        54,
+        602,
+        1170,
+        62
+      ],
+      "geometry": "rect",
+      "fillColor": "#DFF5FA",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gfmhozuh",
+      "id": "16",
+      "bbox": [
+        76,
+        612,
+        1128,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Total tool calls 2, model decisions 3.",
+      "textPreview": "Total tool calls 2, model decisions 3.",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Total tool calls 2, model decisions 3."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Total tool calls 2, model decisions 3.",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Total tool calls 2, model decisions 3.",
+              "fontSize": 20,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,865 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/513wmb",
+    "id": "513wmb",
+    "slide": 6,
+    "layoutId": "de8e0729-1123-496d-af37-b1a3a0b200ad",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "35d6b536-a847-46c1-a7e1-6599e7234209",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#EEF4F7",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "de8e0729-1123-496d-af37-b1a3a0b200ad",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "35d6b536-a847-46c1-a7e1-6599e7234209",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "35d6b536-a847-46c1-a7e1-6599e7234209",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/beh8jyd8",
+      "id": "1",
+      "bbox": [
+        54,
+        28,
+        110,
+        22
+      ],
+      "geometry": "rect",
+      "text": "M03 / L01",
+      "textPreview": "M03 / L01",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "M03 / L01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "M03 / L01",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "M03 / L01",
+              "fontSize": 11,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cfqpc3ut",
+      "id": "2",
+      "bbox": [
+        176,
+        28,
+        650,
+        22
+      ],
+      "geometry": "rect",
+      "text": "A Dataset Is a Collection of Observations",
+      "textPreview": "A Dataset Is a Collection of Observations",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#607086",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A Dataset Is a Collection of Observations"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A Dataset Is a Collection of Observations",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#607086"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A Dataset Is a Collection of Observations",
+              "fontSize": 11,
+              "color": "#607086"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dgzql8ve",
+      "id": "3",
+      "bbox": [
+        1002,
+        28,
+        224,
+        22
+      ],
+      "geometry": "rect",
+      "text": "DS ACADEMY   06",
+      "textPreview": "DS ACADEMY   06",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#607086",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DS ACADEMY   06"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DS ACADEMY   06",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#607086",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DS ACADEMY   06",
+              "fontSize": 11,
+              "color": "#607086",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/29o769cr",
+      "id": "4",
+      "bbox": [
+        62,
+        78,
+        560,
+        22
+      ],
+      "geometry": "rect",
+      "text": "RUN IT AND INSPECT THE RESULT",
+      "textPreview": "RUN IT AND INSPECT THE RESULT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RUN IT AND INSPECT THE RESULT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RUN IT AND INSPECT THE RESULT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RUN IT AND INSPECT THE RESULT",
+              "fontSize": 12,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ax8fedc",
+      "id": "5",
+      "bbox": [
+        62,
+        108,
+        1110,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Load Data, Then Inspect Before Transforming",
+      "textPreview": "Load Data, Then Inspect Before Transforming",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "fontSize": 38,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Load Data, Then Inspect Before Transforming"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Load Data, Then Inspect Before Transforming",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Load Data, Then Inspect Before Transforming",
+              "fontSize": 38,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ob6p8juh",
+      "id": "6",
+      "bbox": [
+        54,
+        170,
+        684,
+        408
+      ],
+      "geometry": "rect",
+      "fillColor": "#0B1220",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pcfqhov2",
+      "id": "7",
+      "bbox": [
+        54,
+        170,
+        684,
+        32
+      ],
+      "geometry": "rect",
+      "fillColor": "#243244",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e54729wf",
+      "id": "8",
+      "bbox": [
+        72,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#F06B5F",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f6x8bed0",
+      "id": "9",
+      "bbox": [
+        96,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#F2C94C",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3mh0jitc",
+      "id": "10",
+      "bbox": [
+        120,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#A8D95B",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/il8jqdsr",
+      "id": "11",
+      "bbox": [
+        76,
+        220,
+        642,
+        336
+      ],
+      "geometry": "rect",
+      "text": "df = pd.read_csv(\"results.csv\")\nprint(df.shape)\nprint(df.dtypes)\nprint(df.isna().sum())",
+      "textPreview": "df = pd.read_csv(\"results.csv\") | print(df.shape) | print(df.dtypes) | print(df.isna().sum())",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#E8F1F7",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "df = pd.read_csv(\"results.csv\")"
+          },
+          {
+            "index": 2,
+            "text": "print(df.shape)"
+          },
+          {
+            "index": 3,
+            "text": "print(df.dtypes)"
+          },
+          {
+            "index": 4,
+            "text": "print(df.isna().sum())"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "df = pd.read_csv(\"results.csv\")",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "df = pd.read_csv(\"results.csv\")",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "print(df.shape)",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "print(df.shape)",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "print(df.dtypes)",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "print(df.dtypes)",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "print(df.isna().sum())",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "print(df.isna().sum())",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5ozilsbi",
+      "id": "12",
+      "bbox": [
+        770,
+        170,
+        454,
+        408
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#CAD6DF",
+      "lineWidth": 1
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4nq1snax",
+      "id": "13",
+      "bbox": [
+        796,
+        194,
+        120,
+        22
+      ],
+      "geometry": "rect",
+      "text": "OUTPUT",
+      "textPreview": "OUTPUT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "OUTPUT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "OUTPUT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "OUTPUT",
+              "fontSize": 12,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rqh0n29o",
+      "id": "14",
+      "bbox": [
+        796,
+        234,
+        398,
+        312
+      ],
+      "geometry": "rect",
+      "text": "(120, 4)\nstudent       object\ncourse        object\nscore        float64\nattendance     int64",
+      "textPreview": "(120, 4) | student       object | course        object | score        float64 | attendance     int64",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "(120, 4)"
+          },
+          {
+            "index": 2,
+            "text": "student       object"
+          },
+          {
+            "index": 3,
+            "text": "course        object"
+          },
+          {
+            "index": 4,
+            "text": "score        float64"
+          },
+          {
+            "index": 5,
+            "text": "attendance     int64"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "(120, 4)",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#0B1220"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "(120, 4)",
+              "fontSize": 14,
+              "color": "#0B1220"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "student       object",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#0B1220"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "student       object",
+              "fontSize": 14,
+              "color": "#0B1220"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "course        object",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#0B1220"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "course        object",
+              "fontSize": 14,
+              "color": "#0B1220"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "score        float64",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#0B1220"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "score        float64",
+              "fontSize": 14,
+              "color": "#0B1220"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "attendance     int64",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#0B1220"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "attendance     int64",
+              "fontSize": 14,
+              "color": "#0B1220"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qp8juxs3",
+      "id": "15",
+      "bbox": [
+        54,
+        602,
+        1170,
+        62
+      ],
+      "geometry": "rect",
+      "fillColor": "#DFF5FA",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dsjipcre",
+      "id": "16",
+      "bbox": [
+        76,
+        612,
+        1128,
+        44
+      ],
+      "geometry": "rect",
+      "text": "If df.shape is (120, 4), the table has 120 rows and 4 columns. This does not prove that all rows are valid; it only states the current shape.",
+      "textPreview": "If df.shape is (120, 4), the table has 120 rows and 4 columns. This does not prove that all rows are valid; it only states the current sh...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "If df.shape is (120, 4), the table has 120 rows and 4 columns. This does not prove that all rows are valid; it only states the current shape."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "If df.shape is (120, 4), the table has 120 rows and 4 columns. This does not prove that all rows are valid; it only states the current shape.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "If df.shape is (120, 4), the table has 120 rows and 4 columns. This does not prove that all rows are valid; it only states the current shape.",
+              "fontSize": 17,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

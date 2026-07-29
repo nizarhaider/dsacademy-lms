@@ -1,0 +1,935 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/cvokik",
+    "id": "cvokik",
+    "slide": 7,
+    "layoutId": "535985b0-17b7-4a30-a04d-bf68913f36a3",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "6eb57bb6-e826-417e-872e-391c464a523a",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#0E263E",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "535985b0-17b7-4a30-a04d-bf68913f36a3",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "6eb57bb6-e826-417e-872e-391c464a523a",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "6eb57bb6-e826-417e-872e-391c464a523a",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3atkne10",
+      "id": "1",
+      "bbox": [
+        54,
+        28,
+        110,
+        22
+      ],
+      "geometry": "rect",
+      "text": "M08 / L01",
+      "textPreview": "M08 / L01",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#00A8C8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "M08 / L01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "M08 / L01",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#00A8C8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "M08 / L01",
+              "fontSize": 11,
+              "color": "#00A8C8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ob2lgjil",
+      "id": "2",
+      "bbox": [
+        176,
+        28,
+        650,
+        22
+      ],
+      "geometry": "rect",
+      "text": "Classification Predicts Categories or Their Probabilities",
+      "textPreview": "Classification Predicts Categories or Their Probabilities",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#B7CAD9",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Classification Predicts Categories or Their Probabilities"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Classification Predicts Categories or Their Probabilities",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#B7CAD9"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Classification Predicts Categories or Their Probabilities",
+              "fontSize": 11,
+              "color": "#B7CAD9"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pcb2poj6",
+      "id": "3",
+      "bbox": [
+        1002,
+        28,
+        224,
+        22
+      ],
+      "geometry": "rect",
+      "text": "DS ACADEMY   07",
+      "textPreview": "DS ACADEMY   07",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#B7CAD9",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DS ACADEMY   07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DS ACADEMY   07",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#B7CAD9",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DS ACADEMY   07",
+              "fontSize": 11,
+              "color": "#B7CAD9",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/el0ja90j",
+      "id": "4",
+      "bbox": [
+        64,
+        100,
+        220,
+        24
+      ],
+      "geometry": "rect",
+      "text": "CORE CONCEPT",
+      "textPreview": "CORE CONCEPT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#00A8C8",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "CORE CONCEPT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "CORE CONCEPT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#00A8C8",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "CORE CONCEPT",
+              "fontSize": 12,
+              "color": "#00A8C8",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f69kje14",
+      "id": "5",
+      "bbox": [
+        64,
+        150,
+        1080,
+        72
+      ],
+      "geometry": "rect",
+      "text": "F1 Balances Precision and Recall",
+      "textPreview": "F1 Balances Precision and Recall",
+      "resolvedFontSize": 40,
+      "resolvedTextStyle": {
+        "fontSize": 40,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "F1 Balances Precision and Recall"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "F1 Balances Precision and Recall",
+          "resolvedTextStyle": {
+            "fontSize": 40,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "F1 Balances Precision and Recall",
+              "fontSize": 40,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g721cjip",
+      "id": "6",
+      "bbox": [
+        64,
+        246,
+        112,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#00A8C8",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/18b2loju",
+      "id": "7",
+      "bbox": [
+        64,
+        278,
+        1110,
+        96
+      ],
+      "geometry": "rect",
+      "text": "The F1 score is the harmonic mean of precision and recall: F1 = 2 x (precision x recall) / (precision + recall) F1 is high only when both precision and recall are high. It ignores true negatives, so it should be chosen because positive-class detection matters, not simply because it is popular.",
+      "textPreview": "The F1 score is the harmonic mean of precision and recall: F1 = 2 x (precision x recall) / (precision + recall) F1 is high only when both...",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#D6E2EB",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The F1 score is the harmonic mean of precision and recall: F1 = 2 x (precision x recall) / (precision + recall) F1 is high only when both precision"
+          },
+          {
+            "index": 2,
+            "text": "and recall are high. It ignores true negatives, so it should be chosen because positive-class detection matters, not simply because it is popular."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The F1 score is the harmonic mean of precision and recall: F1 = 2 x (precision x recall) / (precision + recall) F1 is high only when both precision and recall are high. It ignores true negatives, so it should be chosen because positive-class detection matters, not simply because it is popular.",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#D6E2EB"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The F1 score is the harmonic mean of precision and recall: F1 = 2 x (precision x recall) / (precision + recall) F1 is high only when both precision and recall are high. It ignores true negatives, so it should be chosen because positive-class detection matters, not simply because it is popular.",
+              "fontSize": 17,
+              "color": "#D6E2EB"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6h0j6p07",
+      "id": "8",
+      "bbox": [
+        64,
+        390,
+        344,
+        96
+      ],
+      "geometry": "rect",
+      "fillColor": "#183B59",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7i9kfu1s",
+      "id": "9",
+      "bbox": [
+        82,
+        400,
+        308,
+        76
+      ],
+      "geometry": "rect",
+      "text": "The F1 score is the harmonic mean of precision and recall:",
+      "textPreview": "The F1 score is the harmonic mean of precision and recall:",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The F1 score is the harmonic mean of"
+          },
+          {
+            "index": 2,
+            "text": "precision and recall:"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The F1 score is the harmonic mean of precision and recall:",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The F1 score is the harmonic mean of precision and recall:",
+              "fontSize": 15,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/76pgnup4",
+      "id": "10",
+      "bbox": [
+        432,
+        390,
+        344,
+        96
+      ],
+      "geometry": "rect",
+      "fillColor": "#183B59",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m5gfup8j",
+      "id": "11",
+      "bbox": [
+        450,
+        400,
+        308,
+        76
+      ],
+      "geometry": "rect",
+      "text": "F1 = 2 x (precision x recall) / (precision + recall)",
+      "textPreview": "F1 = 2 x (precision x recall) / (precision + recall)",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "F1 = 2 x (precision x recall) / (precision +"
+          },
+          {
+            "index": 2,
+            "text": "recall)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "F1 = 2 x (precision x recall) / (precision + recall)",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "F1 = 2 x (precision x recall) / (precision + recall)",
+              "fontSize": 15,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/98ryp47a",
+      "id": "12",
+      "bbox": [
+        800,
+        390,
+        344,
+        96
+      ],
+      "geometry": "rect",
+      "fillColor": "#183B59",
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/87yhwzqp",
+      "id": "13",
+      "bbox": [
+        818,
+        400,
+        308,
+        76
+      ],
+      "geometry": "rect",
+      "text": "F1 is high only when both precision and recall are high.",
+      "textPreview": "F1 is high only when both precision and recall are high.",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "F1 is high only when both precision and"
+          },
+          {
+            "index": 2,
+            "text": "recall are high."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "F1 is high only when both precision and recall are high.",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "F1 is high only when both precision and recall are high.",
+              "fontSize": 15,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/va9grep0",
+      "id": "14",
+      "bbox": [
+        64,
+        506,
+        344,
+        96
+      ],
+      "geometry": "rect",
+      "fillColor": "#183B59",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u90zy98v",
+      "id": "15",
+      "bbox": [
+        82,
+        516,
+        308,
+        76
+      ],
+      "geometry": "rect",
+      "text": "It ignores true negatives, so it should be chosen because positive-class detection matters, not simply because it is popular.",
+      "textPreview": "It ignores true negatives, so it should be chosen because positive-class detection matters, not simply because it is popular.",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "It ignores true negatives, so it should be"
+          },
+          {
+            "index": 2,
+            "text": "chosen because positive-class detection"
+          },
+          {
+            "index": 3,
+            "text": "matters, not simply because it is popular."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "It ignores true negatives, so it should be chosen because positive-class detection matters, not simply because it is popular.",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "It ignores true negatives, so it should be chosen because positive-class detection matters, not simply because it is popular.",
+              "fontSize": 13,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwryto76",
+      "id": "16",
+      "bbox": [
+        432,
+        506,
+        344,
+        96
+      ],
+      "geometry": "rect",
+      "fillColor": "#183B59",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wvih0jql",
+      "id": "17",
+      "bbox": [
+        450,
+        516,
+        308,
+        76
+      ],
+      "geometry": "rect",
+      "text": "For multiclass data, macro, micro, and weighted averaging answer different questions.",
+      "textPreview": "For multiclass data, macro, micro, and weighted averaging answer different questions.",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "For multiclass data, macro, micro, and"
+          },
+          {
+            "index": 2,
+            "text": "weighted averaging answer different"
+          },
+          {
+            "index": 3,
+            "text": "questions."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "For multiclass data, macro, micro, and weighted averaging answer different questions.",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "For multiclass data, macro, micro, and weighted averaging answer different questions.",
+              "fontSize": 15,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/be5gfapw",
+      "id": "18",
+      "bbox": [
+        800,
+        506,
+        344,
+        96
+      ],
+      "geometry": "rect",
+      "fillColor": "#183B59",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/adwfm58b",
+      "id": "19",
+      "bbox": [
+        818,
+        516,
+        308,
+        76
+      ],
+      "geometry": "rect",
+      "text": "Precision 0.80, recall 0.667",
+      "textPreview": "Precision 0.80, recall 0.667",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Precision 0.80, recall 0.667"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Precision 0.80, recall 0.667",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#FFFFFF",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Precision 0.80, recall 0.667",
+              "fontSize": 15,
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

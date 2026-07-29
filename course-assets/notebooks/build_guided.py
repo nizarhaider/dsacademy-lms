@@ -1,16 +1,18 @@
-"""Build beginner-facing notebook guides from the approved curriculum."""
+"""Build beginner-facing notebook guides from the reviewed slide Markdown."""
 
 import json
+import re
 import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO))
 
-from lms.dsacademy.curriculum import WEEKS
+from lms.dsacademy.markdown_decks import load_markdown_slides
 
 ROOT = Path(__file__).resolve().parent
 OUTPUT = ROOT / "guided"
+WEEK_COUNT = 18
 
 
 def markdown(source):
@@ -27,139 +29,129 @@ def code(source):
 	}
 
 
-def build_notebook(week_number, week):
-	lesson = week["sessions"][0]
-	concepts = "\n".join(f"- **{item}**" for item in lesson["concepts"])
-	outcomes = "\n".join(f"- {item}" for item in lesson["outcomes"])
-	terms = "\n".join(
-		f"- `{name}`: {meaning}"
-		for name, meaning in lesson["mechanism_terms"].items()
+def fenced_blocks(section):
+	return re.findall(r"```([^\n]*)\n(.*?)```", section, flags=re.DOTALL)
+
+
+def source_urls(section):
+	return re.findall(r"\[[^\]]+\]\((https?://[^)]+)\)", section)
+
+
+def build_notebook(week_number):
+	slides = load_markdown_slides(week_number)
+	title = slides[0]["title"]
+	outline = "\n".join(
+		f"{item['number']}. {item['title']}" for item in slides
 	)
-	mistakes = "\n".join(f"- {item}" for item in lesson["common_mistakes"])
-	deepening = "\n".join(f"{index}. {item}" for index, item in enumerate(lesson["deepening"], 1))
+	all_sources = []
+	for item in slides:
+		for url in source_urls(item["sections"]["Sources"]):
+			if url not in all_sources:
+				all_sources.append(url)
+
 	cells = [
 		markdown(
-			f"""# Week {week_number:02d}: {lesson["title"]}
+			f"""# Week {week_number:02d}: {title}
 
-This guided notebook assumes **{lesson["prerequisites"]}**.
+This notebook follows the reviewed Week {week_number} presentation. Read each concept and calculate the worked example before running its code.
 
-## Learning outcomes
+## Lesson map
 
-{outcomes}
+{outline}
+
+Use the same reasoning loop throughout: **predict, run, inspect, explain**.
 """
-		),
-		markdown(
-			f"""## Concepts before code
+		)
+	]
 
-{concepts}
+	for item in slides:
+		sections = item["sections"]
+		cells.append(
+			markdown(
+				f"""## {item["number"]}. {item["title"]}
 
-### Core mechanism
+{sections["Learner-facing content"]}
 
-{lesson["mechanism"]}
+### Work it out first
 
-### Terms and symbols
+{sections["Worked example"]}
 
-{terms}
+### Notebook bridge
+
+{sections["Notebook connection"]}
 """
-		),
-		markdown(
-			f"""## Worked example: predict first
+			)
+		)
+		blocks = fenced_blocks(sections["Code example"])
+		if blocks:
+			cells.append(
+				markdown(
+					"""Before running the next cell:
 
-{lesson["worked_example"]}
-
-Before running the next cell:
-
-1. Write the expected output.
-2. Identify the input values.
-3. Identify the transformation.
-4. Explain what the result means.
+1. Identify every input value.
+2. Predict the result or shape.
+3. Run the cell.
+4. Explain any difference between your prediction and the output.
 """
-		),
-		code(lesson["example"]["code"]),
-		markdown(
-			f"""### Check the evidence
-
-Expected reference output:
+				)
+			)
+			cells.append(code(blocks[0][1]))
+			if len(blocks) > 1:
+				cells.append(
+					markdown(
+						f"""Expected output:
 
 ```text
-{lesson["example"]["output"]}
+{blocks[1][1].strip()}
 ```
-
-Verification requirement:
-
-{lesson["example"]["verify"]}
-
-Do not continue until you can explain why the output has this value or shape.
 """
-		),
-		markdown(
-			f"""## Build the complete mental model
+					)
+				)
 
-{deepening}
+	lab = slides[-1]["sections"]
+	cells.extend(
+		[
+			markdown(
+				f"""## Guided lab
 
-## Common mistakes
+{lab["Learner-facing content"]}
 
-{mistakes}
+### Reference result
+
+{lab["Worked example"]}
 """
-		),
-		markdown(
-			f"""## Guided lab
-
-{lesson["lab"]}
-
-Work in this order:
-
-1. **Predict** what the next operation should do.
-2. **Run** the smallest relevant section.
-3. **Inspect** values, shapes, metrics, or traces.
-4. **Explain** the observed result in plain language.
-"""
-		),
-		code(
-			f"""# Guided lab workspace: Week {week_number:02d}
+			),
+			code(
+				f"""# Guided lab workspace: Week {week_number:02d}
 # Add only the imports needed for the current step.
 
 # TODO 1: Prepare the smallest valid input.
 
-# TODO 2: Apply the concept taught in the slides.
+# TODO 2: Apply the concept taught in this lesson.
 
-# TODO 3: Print or display inspectable intermediate evidence.
+# TODO 3: Display inspectable intermediate evidence.
 
-# TODO 4: Check the result against the lesson's verification requirement.
+# TODO 4: Compare the result with a hand calculation or stated requirement.
 """
-		),
-		markdown(
-			f"""## Continue into the source notebook
+			),
+			markdown(
+				"""## Weekly deliverable
 
-Source notebook:
+Submit the completed guided lab with:
 
-<{lesson["source_material"]}>
-
-Before running each source section, label it as one of:
-
-- input or data preparation
-- transformation or model operation
-- evaluation or verification
-- persistence or deployment
-
-If a source cell uses an unfamiliar API, first identify the concept it implements.
+- your prediction before execution;
+- intermediate values, shapes, metrics, or traces;
+- one failed assumption and its correction;
+- a plain-English explanation of the result;
+- the source notebook section you are now ready to complete.
 """
-		),
-		markdown(
-			f"""## Weekly deliverable
-
-{lesson["deliverable"]}
-
-Include:
-
-- your prediction before execution
-- the observed evidence
-- one mistake or failed assumption
-- the correction
-- a plain-language explanation of the final result
-"""
-		),
-	]
+			),
+			markdown(
+				"## Sources and source notebooks\n\n"
+				+ "\n".join(f"- <{url}>" for url in all_sources)
+			),
+		]
+	)
 	return {
 		"cells": cells,
 		"metadata": {
@@ -171,8 +163,9 @@ Include:
 			"language_info": {"name": "python", "version": "3.12"},
 			"dsacademy": {
 				"week": week_number,
-				"source_material": lesson["source_material"],
-				"curriculum": "beginner-ai-18-week-v1",
+				"content_source": f"course-assets/slide-content/week-{week_number:02d}.md",
+				"source_material": all_sources,
+				"curriculum": "beginner-ai-18-week-v2",
 			},
 		},
 		"nbformat": 4,
@@ -183,11 +176,11 @@ Include:
 def main():
 	OUTPUT.mkdir(parents=True, exist_ok=True)
 	expected = set()
-	for week_number, week in enumerate(WEEKS, 1):
+	for week_number in range(1, WEEK_COUNT + 1):
 		path = OUTPUT / f"week-{week_number:02d}.ipynb"
 		expected.add(path)
 		path.write_text(
-			json.dumps(build_notebook(week_number, week), indent=2, ensure_ascii=False)
+			json.dumps(build_notebook(week_number), indent=2, ensure_ascii=False)
 			+ "\n",
 			encoding="utf-8",
 		)

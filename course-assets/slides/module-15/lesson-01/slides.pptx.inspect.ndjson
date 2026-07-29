@@ -1,0 +1,233 @@
+{"kind":"deck","id":"pr/q31apy","name":"Deck"}
+{"kind":"layout","layoutId":"90450ea7-0862-4b62-a0c7-ccb802d80d1e","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"3f6c5838-1f61-4ea4-ba2e-2d626463bade","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/4nezpd","slide":1,"title":"MODULE 15  /  LESSON 01","textShapes":3}
+{"kind":"shape","id":"sh/14rm58ba","slide":1,"bbox":[0,0,1280,12]}
+{"kind":"shape","id":"sh/f2943ytk","slide":1,"bbox":[692,0,32,720]}
+{"kind":"textbox","id":"sh/o72l0na1","slide":1,"text":"MODULE 15  /  LESSON 01","textPreview":"MODULE 15  /  LESSON 01","textChars":23,"textLines":1,"bbox":[70,70,430,26]}
+{"kind":"textbox","id":"sh/p8bm9sbm","slide":1,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[70,148,548,250]}
+{"kind":"shape","id":"sh/2503ydsv","slide":1,"bbox":[70,430,96,6]}
+{"kind":"textbox","id":"sh/n6947itg","slide":1,"text":"Retrieval-augmented generation (RAG) finds relevant evidence and includes it in the model context before generation.","textPreview":"Retrieval-augmented generation (RAG) finds relevant evidence and includes it in the model context before generation.","textChars":116,"textLines":1,"bbox":[70,472,530,102]}
+{"kind":"image","id":"im/7e50je5c","slide":1,"name":"","alt":"Data science workflow from raw data to a deployed decision system","bbox":[724,0,556,720]}
+{"kind":"image","id":"im/p8rit8na","slide":1,"name":"","alt":"DS Academy","bbox":[70,620,182,52]}
+{"kind":"notes","id":"nt/4nezpd","slide":1,"text":"**Retrieval-augmented generation (RAG)** finds relevant evidence and includes it in the model context before generation.\n\nThe two main phases are:\n\n- **ingestion:** parse, clean, chunk, embed, and index documents;\n- **query:** retrieve chunks, assemble context, generate, validate, and cite.\n\nRAG can use current or private documents without changing model weights. It does not guarantee that retrieval found the right evidence or that generation used it faithfully.\n\n[Worked Example]\nQuestion: `What is the refund period?`\n\nRetriever returns a policy chunk stating `Refund requests are accepted within 14 days.` The model answers `14 days` and cites the source section.\n\nWithout supporting text, the system should return insufficient evidence.\n\n[Visual Brief]\nSeparate ingestion and query pipelines meet at a vector index; citations point back to source documents.\n\n[Instructor Notes]\nAsk which failure belongs to retrieval and which belongs to generation.\n\n[Notebook Connection]\nThe from-scratch notebook builds each RAG stage explicitly before using a framework.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/17.rag-from-scratch.ipynb\n- https://github.com/curiousily/AI-Bootcamp/blob/master/06.build-rag.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/6xir11","slide":2,"title":"M15 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/nidgnmto","slide":2,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/oj6hg7at","slide":2,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/9kfipcre","slide":2,"text":"DS ACADEMY   02","textPreview":"DS ACADEMY   02","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/alozihsz","slide":2,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/bmx0rm9k","slide":2,"text":"Parsing Recovers Content from Source Files","textPreview":"Parsing Recovers Content from Source Files","textChars":42,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/wn6hkra5","slide":2,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/xofitwrq","slide":2,"text":"Document parsing converts a source format into structured text and metadata. A parser may need to recover:","textPreview":"Document parsing converts a source format into structured text and metadata. A parser may need to recover:","textChars":106,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/y9ozm1sb","slide":2,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/jax0v69g","slide":2,"text":"headings and paragraphs;","textPreview":"headings and paragraphs;","textChars":24,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/7qxgjut0","slide":2,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/6pozqpsf","slide":2,"text":"tables;","textPreview":"tables;","textChars":7,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/tcfyl4b6","slide":2,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/sr6hszal","slide":2,"text":"page numbers;","textPreview":"page numbers;","textChars":13,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/jmdgfut4","slide":2,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/yl4fmpsj","slide":2,"text":"lists and reading order;","textPreview":"lists and reading order;","textChars":24,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/lofyh4bu","slide":2,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/knmhoza9","slide":2,"text":"captions;","textPreview":"captions;","textChars":9,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/3ihgret8","slide":2,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/2h8zy9sn","slide":2,"text":"document identifiers.","textPreview":"document identifiers.","textChars":21,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/6xir11","slide":2,"text":"**Document parsing** converts a source format into structured text and metadata.\n\nA parser may need to recover:\n\n- headings and paragraphs;\n- tables;\n- page numbers;\n- lists and reading order;\n- captions;\n- document identifiers.\n\nPDF is designed for visual layout, so extracted text may have broken order, missing tables, or repeated headers. Ingestion must inspect output rather than assuming successful file opening means correct extraction.\n\n[Worked Example]\nTwo-column PDF text may be extracted across columns:\n\n`left line 1, right line 1, left line 2...`\n\nThe words exist, but reading order is corrupted. A retrieval result from that text may be misleading.\n\n[Visual Brief]\nA PDF page with headings, columns, and table becomes structured blocks; one broken extraction path is highlighted.\n\n[Instructor Notes]\nRequire visual comparison between several extracted pages and the original file.\n\n[Notebook Connection]\nThe advanced RAG notebook begins with document parsing before embeddings.\n\n[Sources]\n- https://docs.langchain.com/oss/python/integrations/document_loaders\n- https://github.com/curiousily/AI-Bootcamp/blob/master/07.advanced-rag-with-llama-3-in-langchain.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/0nxd2q","slide":3,"title":"M15 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/judw3mxk","slide":3,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/kv6xwre5","slide":3,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/5wfe5wfq","slide":3,"text":"DS ACADEMY   03","textPreview":"DS ACADEMY   03","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/6hofy1wb","slide":3,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/7ixg76xw","slide":3,"text":"Cleaning Must Preserve Provenance","textPreview":"Cleaning Must Preserve Provenance","textChars":33,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/sj6x0beh","slide":3,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/tkfy9wf2","slide":3,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/mlkfmxw7","slide":3,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/nmtwv2xc","slide":3,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/fyhsb6dw","slide":3,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/uxor21cb","slide":3,"text":"chunk.metadata = {\n    \"source_id\": \"policy-2026-v3\",\n    \"page\": 7,\n    \"section\": \"Refunds\",\n}","textPreview":"chunk.metadata = { |     \"source_id\": \"policy-2026-v3\", |     \"page\": 7, |     \"section\": \"Refunds\", | }","textChars":96,"textLines":5,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/h0zadgv2","slide":3,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/gzq94buh","slide":3,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/7axs76d0","slide":3,"text":"Each future retrieval result can identify its exact source location.","textPreview":"Each future retrieval result can identify its exact source location.","textChars":68,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/69ory1cf","slide":3,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/twfa9wvq","slide":3,"text":"Removing exact repeated headers is reasonable. Removing every line containing Policy may delete real content. Record the cleaning rule and compare before/after counts.","textPreview":"Removing exact repeated headers is reasonable. Removing every line containing Policy may delete real content. Record the cleaning rule an...","textChars":167,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/0nxd2q","slide":3,"text":"**Cleaning** removes extraction noise or normalizes representation without changing meaning.\n\n**Provenance** records where every block came from:\n\n- source ID and version;\n- page;\n- section heading;\n- stable URL or file path;\n- ingestion time;\n- access-control metadata.\n\nKeep raw extracted text or a reference to it. If cleaning changes content, the transformation should be reproducible and inspectable.\n\n[Worked Example]\nRepeated header `DS Academy Policy 2026` appears on every page.\n\nRemoving exact repeated headers is reasonable. Removing every line containing `Policy` may delete real content. Record the cleaning rule and compare before/after counts.\n\n[Visual Brief]\nA cleaned text block remains linked by an unbroken provenance chain to source, page, section, and version.\n\n[Instructor Notes]\nExplain that citations cannot be reconstructed reliably if provenance was discarded during ingestion.\n\n[Notebook Connection]\nLearners add metadata before chunk storage, not after answering.\n\n[Sources]\n- https://python.langchain.com/docs/concepts/documents/\n- https://www.w3.org/TR/prov-overview/\n[/Sources]"}
+{"kind":"slide","id":"sl/y2x32h","slide":4,"title":"M15 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/6lkvix47","slide":4,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/t8vetsny","slide":4,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/sn2dk7md","slide":4,"text":"DS ACADEMY   04","textPreview":"DS ACADEMY   04","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/jitcni5g","slide":4,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/ihkved4b","slide":4,"text":"Chunking Defines the Unit of Retrieval","textPreview":"Chunking Defines the Unit of Retrieval","textChars":38,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/5kbupsnm","slide":4,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/kj2dgnm1","slide":4,"text":"whether a complete idea stays together;","textPreview":"whether a complete idea stays together;","textChars":39,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/3edwzml0","slide":4,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/2d4vqh4f","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/0by90vmd","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/1c7atgny","slide":4,"text":"embedding specificity;","textPreview":"embedding specificity;","textChars":22,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/e9gryl47","slide":4,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/fapsrq5s","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/s7e9wbmh","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/d8napgn2","slide":4,"text":"retrieval recall;","textPreview":"retrieval recall;","textChars":17,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/6lwru14b","slide":4,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/r65sn65w","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/4je9sbm5","slide":4,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/5knalwnq","slide":4,"text":"prompt size;","textPreview":"prompt size;","textChars":12,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/lovy98bi","slide":4,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/k3mh03ux","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/z2dg7ytc","slide":4,"text":"A 900-token section becomes: The second keeps boundary context but may retrieve repeated statements.","textPreview":"A 900-token section becomes: The second keeps boundary context but may retrieve repeated statements.","textChars":100,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/y2x32h","slide":4,"text":"A **chunk** is one retrievable evidence unit.\n\nChunking choices affect:\n\n- whether a complete idea stays together;\n- embedding specificity;\n- retrieval recall;\n- prompt size;\n- citation precision.\n\n**Overlap** repeats boundary text in adjacent chunks. It can preserve context but increases storage and duplicate retrieval.\n\nPrefer document structure such as headings and paragraphs before fixed character cuts.\n\n[Worked Example]\nA 900-token section becomes:\n\n- three chunks of 300 tokens with no overlap; or\n- four chunks near 300 tokens with 50-token overlap.\n\nThe second keeps boundary context but may retrieve repeated statements.\n\n[Visual Brief]\nOne section splits at paragraph boundaries; overlapping spans are shaded and duplicate context is marked.\n\n[Instructor Notes]\nDescribe sizes as experiment settings, not universal recommendations.\n\n[Notebook Connection]\nLearners compare two chunking strategies on the same retrieval questions.\n\n[Sources]\n- https://docs.langchain.com/oss/python/integrations/splitters\n- https://github.com/curiousily/AI-Bootcamp/blob/master/17.rag-from-scratch.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/edh1z8","slide":5,"title":"M15 / L01","textShapes":11}
+{"kind":"textbox","id":"sh/6ps3idor","slide":5,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/tsj2ds7i","slide":5,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/sralkn6x","slide":5,"text":"DS ACADEMY   05","textPreview":"DS ACADEMY   05","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/jmhk7ypg","slide":5,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/il83edov","slide":5,"text":"Embeddings Place Chunks and Queries in One Vector Space","textPreview":"Embeddings Place Chunks and Queries in One Vector Space","textChars":55,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/5oz29876","slide":5,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/4nqlg361","slide":5,"text":"An embedding model maps text into a fixed-length vector. For vector retrieval: Changing embedding model usually requires rebuilding the stored index.","textPreview":"An embedding model maps text into a fixed-length vector. For vector retrieval: Changing embedding model usually requires rebuilding the s...","textChars":149,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/vihk3yp4","slide":5,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/ux8jatoj","slide":5,"text":"embed every document chunk;","textPreview":"embed every document chunk;","textChars":27,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/s3apsv2l","slide":5,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/d4j6l0j6","slide":5,"text":"store chunk vector plus text and metadata;","textPreview":"store chunk vector plus text and metadata;","textChars":42,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/q1snqlkv","slide":5,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/r21ojq1g","slide":5,"text":"embed the user query with the same compatible model;","textPreview":"embed the user query with the same compatible model;","textChars":52,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/4zq5ob2p","slide":5,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/50j6hgja","slide":5,"text":"compare the query vector with chunk vectors;","textPreview":"compare the query vector with chunk vectors;","textChars":44,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/ix8nmlkj","slide":5,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/3yhofq14","slide":5,"text":"return the highest-ranked allowed chunks.","textPreview":"return the highest-ranked allowed chunks.","textChars":41,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"notes","id":"nt/edh1z8","slide":5,"text":"An **embedding model** maps text into a fixed-length vector.\n\nFor vector retrieval:\n\n1. embed every document chunk;\n2. store chunk vector plus text and metadata;\n3. embed the user query with the same compatible model;\n4. compare the query vector with chunk vectors;\n5. return the highest-ranked allowed chunks.\n\nChanging embedding model usually requires rebuilding the stored index.\n\n[Worked Example]\nThree chunks become 768-dimensional vectors. The query also becomes a 768-dimensional vector.\n\nThe shapes match, allowing similarity comparison. A 384-dimensional query from another model cannot be compared directly.\n\n[Visual Brief]\nChunks and query enter the same embedding model and appear as points in one vector space.\n\n[Instructor Notes]\nExplain that “semantic” similarity reflects model training and may fail on identifiers, numbers, or domain language.\n\n[Notebook Connection]\nBoth RAG notebooks create document and query embeddings before search.\n\n[Sources]\n- https://docs.langchain.com/oss/python/integrations/text_embedding\n- https://github.com/curiousily/AI-Bootcamp/blob/master/06.build-rag.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/mqv1xa","slide":6,"title":"M15 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/epszqtov","slide":6,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/1sjilo7m","slide":6,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/grahsj61","slide":6,"text":"DS ACADEMY   06","textPreview":"DS ACADEMY   06","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/rm1gfepk","slide":6,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/6l8zm9oz","slide":6,"text":"Cosine Similarity Compares Vector Direction","textPreview":"Cosine Similarity Compares Vector Direction","textChars":43,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/tojyho7a","slide":6,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/snahoj65","slide":6,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/bil0ripo","slide":6,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/qhczydo3","slide":6,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/4rudgvqd","slide":6,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/5c3up0ry","slide":6,"text":"import numpy as np\n\na = np.array([1.0, 0.0])\nb = np.array([1.0, 1.0])\nsimilarity = a @ b / (np.linalg.norm(a) * np.linalg.norm(b))\nprint(round(similarity, 3))","textPreview":"import numpy as np |  | a = np.array([1.0, 0.0]) | b = np.array([1.0, 1.0]) | similarity = a @ b / (np.linalg.norm(a) * np.linalg.norm(b)...","textChars":158,"textLines":6,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/ipsvel87","slide":6,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/3qlcnq9s","slide":6,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/gnadcbqh","slide":6,"text":"0.707","textPreview":"0.707","textChars":5,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/hojulgr2","slide":6,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/ulsva18b","slide":6,"text":"Dot product = 1 ||a|| = 1 ||b|| = sqrt(2) Cosine = 1/sqrt(2) ≈ 0.707","textPreview":"Dot product = 1 ||a|| = 1 ||b|| = sqrt(2) Cosine = 1/sqrt(2) ≈ 0.707","textChars":68,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/mqv1xa","slide":6,"text":"Cosine similarity:\n\n`cos(a,b) = (a · b) / (||a|| ||b||)`\n\n- `a · b`: dot product\n- `||a||`: length of vector `a`\n- denominator normalizes vector magnitudes\n- result is commonly between `-1` and `1`\n\nHigher cosine similarity means vector directions are more aligned. Whether higher means more relevant must be tested for the task.\n\n[Worked Example]\n`a=[1,0]`, `b=[1,1]`\n\nDot product `= 1`  \n`||a|| = 1`  \n`||b|| = sqrt(2)`  \nCosine `= 1/sqrt(2) ≈ 0.707`\n\n[Visual Brief]\nTwo arrows form a 45-degree angle; dot product, lengths, and cosine calculation appear beside them.\n\n[Instructor Notes]\nExplain that database APIs may return distance rather than similarity, so score direction must be checked.\n\n[Notebook Connection]\nThe from-scratch notebook calculates similarity before relying on a vector database.\n\n[Sources]\n- https://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.cosine_similarity.html\n- https://github.com/curiousily/AI-Bootcamp/blob/master/17.rag-from-scratch.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/dar622","slide":7,"title":"M15 / L01","textShapes":11}
+{"kind":"textbox","id":"sh/f6p0ru98","slide":7,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/g7y1kzat","slide":7,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/187it4re","slide":7,"text":"DS ACADEMY   07","textPreview":"DS ACADEMY   07","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/61wjepsr","slide":7,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/r2p0nutc","slide":7,"text":"A Vector Store Connects Vectors to Evidence","textPreview":"A Vector Store Connects Vectors to Evidence","textChars":43,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/s3y1gzax","slide":7,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/t47ip4ri","slide":7,"text":"A vector store keeps: An exact search compares all vectors. Approximate indexes trade some recall for lower latency at scale. Apply authorization filters before or during retrieval. Filtering after retrieval can leak whether protected documents exist and waste candidate slots.","textPreview":"A vector store keeps: An exact search compares all vectors. Approximate indexes trade some recall for lower latency at scale. Apply autho...","textChars":277,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/qx0jqtsv","slide":7,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/by9kzy9g","slide":7,"text":"embedding vector;","textPreview":"embedding vector;","textChars":17,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/7u5wzud8","slide":7,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/mtwvqpcn","slide":7,"text":"chunk text or reference;","textPreview":"chunk text or reference;","textChars":24,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/9wne14ve","slide":7,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/8vexszut","slide":7,"text":"source metadata;","textPreview":"source metadata;","textChars":16,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/vypw3etk","slide":7,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/uxgfu9cz","slide":7,"text":"access metadata;","textPreview":"access metadata;","textChars":16,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/hk7e54ba","slide":7,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/wzyxwjup","slide":7,"text":"stable chunk ID.","textPreview":"stable chunk ID.","textChars":16,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"notes","id":"nt/dar622","slide":7,"text":"A **vector store** keeps:\n\n- embedding vector;\n- chunk text or reference;\n- source metadata;\n- access metadata;\n- stable chunk ID.\n\nAn exact search compares all vectors. Approximate indexes trade some recall for lower latency at scale.\n\nApply authorization filters before or during retrieval. Filtering after retrieval can leak whether protected documents exist and waste candidate slots.\n\n[Worked Example]\nUser belongs to tenant `A`.\n\nSearch condition:\n\n`tenant_id = A AND document_status = published`\n\nOnly vectors satisfying both conditions may compete for top-k ranking.\n\n[Visual Brief]\nAn index contains multiple tenants; an authorization filter creates a permitted subset before ranking.\n\n[Instructor Notes]\nTreat access control as a retrieval requirement, not a prompt instruction.\n\n[Notebook Connection]\nLearners store text and metadata together and test a denied cross-tenant query.\n\n[Sources]\n- https://docs.langchain.com/oss/python/integrations/vectorstores\n- https://github.com/pgvector/pgvector\n[/Sources]"}
+{"kind":"slide","id":"sl/5uokif","slide":8,"title":"M15 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/jqps7qdk","slide":8,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/kri9gvep","slide":8,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/lsra90va","slide":8,"text":"DS ACADEMY   08","textPreview":"DS ACADEMY   08","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/6t0ri5wv","slide":8,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/7u9sbadg","slide":8,"text":"Retrieval Selects Top-k Evidence","textPreview":"Retrieval Selects Top-k Evidence","textChars":32,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/8fi9kfe1","slide":8,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/tgradkvm","slide":8,"text":"query;","textPreview":"query;","textChars":6,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/uh0rmpw7","slide":8,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/vi9sfads","slide":8,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/je1k7214","slide":8,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/ydsjyx0j","slide":8,"text":"returned text;","textPreview":"returned text;","textChars":14,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/lgj29cju","slide":8,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/kfa107i9","slide":8,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/bqhk3i1s","slide":8,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/ap8jud07","slide":8,"text":"scores and score direction;","textPreview":"scores and score direction;","textChars":27,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/xcj25sjy","slide":8,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/wra1wnid","slide":8,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/fmlkfm1w","slide":8,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/ulc36h0r","slide":8,"text":"source diversity;","textPreview":"source diversity;","textChars":17,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/q1wnelkz","slide":8,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/r2p47ql4","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/c3y5gv2p","slide":8,"text":"Relevant policy appears at rank 4. With k=3, it is missed. With k=5, it is included alongside two irrelevant chunks. The choice must be evaluated across a query dataset, not one example.","textPreview":"Relevant policy appears at rank 4. With k=3, it is missed. With k=5, it is included alongside two irrelevant chunks. The choice must be e...","textChars":186,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/5uokif","slide":8,"text":"A **retriever** turns a question into an ordered list of chunks.\n\n`top-k` is the maximum number returned.\n\nLarger `k` may improve coverage but adds irrelevant or duplicated context. Smaller `k` is focused but may miss necessary evidence.\n\nInspect:\n\n- query;\n- returned text;\n- scores and score direction;\n- source diversity;\n- metadata filters;\n- whether the answer requires multiple chunks.\n\n[Worked Example]\nRelevant policy appears at rank `4`.\n\nWith `k=3`, it is missed.  \nWith `k=5`, it is included alongside two irrelevant chunks.\n\nThe choice must be evaluated across a query dataset, not one example.\n\n[Visual Brief]\nA ranked result list shows relevant, irrelevant, and duplicate chunks under different k cutoffs.\n\n[Instructor Notes]\nRequire learners to evaluate retrieval before reading the generated answer.\n\n[Notebook Connection]\nThe notebook's nearest-neighbour results become an explicit retrieval report.\n\n[Sources]\n- https://python.langchain.com/docs/concepts/retrievers/\n- https://github.com/curiousily/AI-Bootcamp/blob/master/17.rag-from-scratch.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/3prxew","slide":9,"title":"M15 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/d0j6x4zu","slide":9,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/qds72903","slide":9,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/re1ovuho","slide":9,"text":"DS ACADEMY   09","textPreview":"DS ACADEMY   09","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/4bap0zix","slide":9,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/pcj6t4zi","slide":9,"text":"Context Assembly Builds the Evidence Packet","textPreview":"Context Assembly Builds the Evidence Packet","textChars":43,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/298nyp07","slide":9,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/3a1oruhc","slide":9,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/g7q5wfi1","slide":9,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/h8z6pkzm","slide":9,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/hcfmt8by","slide":9,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/gb6l03ud","slide":9,"text":"context = \"\\n\\n\".join(\n    f\"[{doc.metadata['source_id']} p.{doc.metadata['page']}]\\n{doc.page_content}\"\n    for doc in selected_docs\n)","textPreview":"context = \"\\n\\n\".join( |     f\"[{doc.metadata['source_id']} p.{doc.metadata['page']}]\\n{doc.page_content}\" |     for doc in selected_docs...","textChars":135,"textLines":4,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/vax4ryts","slide":9,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/u9o3ytc7","slide":9,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/t8fmpobm","slide":9,"text":"A labelled context packet whose citations can map back to retrieved documents.","textPreview":"A labelled context packet whose citations can map back to retrieved documents.","textChars":78,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/8n6lwjuh","slide":9,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/7mx4netw","slide":9,"text":"After deduplication, four chunks consume 2,500. The assembler selects the highest-value set under 2,000 while retaining at least one chunk from each required source.","textPreview":"After deduplication, four chunks consume 2,500. The assembler selects the highest-value set under 2,000 while retaining at least one chun...","textChars":165,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/3prxew","slide":9,"text":"**Context assembly** converts retrieved chunks into a model-ready evidence packet.\n\nIt should:\n\n- remove duplicates;\n- preserve source IDs and locations;\n- order chunks deliberately;\n- separate evidence from instructions;\n- trim to the token budget;\n- include only authorized content;\n- avoid splitting a citation from its text.\n\nThe model should be told that retrieved content is untrusted evidence, not new instructions.\n\n[Worked Example]\nFive chunks consume `3,200` tokens, but evidence budget is `2,000`.\n\nAfter deduplication, four chunks consume `2,500`. The assembler selects the highest-value set under `2,000` while retaining at least one chunk from each required source.\n\n[Visual Brief]\nRanked chunks pass through deduplicate, authorize, budget, label, and order stages.\n\n[Instructor Notes]\nExplain why simply joining all top-k text can overweight duplicates and exceed context limits.\n\n[Notebook Connection]\nLearners build context explicitly before the generation call.\n\n[Sources]\n- https://docs.langchain.com/oss/python/langchain/rag\n- https://github.com/curiousily/AI-Bootcamp/blob/master/06.build-rag.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/hjw5uc","slide":10,"title":"M15 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/cjalcry9","slide":10,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/by1k3mho","slide":10,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/axs3ahg3","slide":10,"text":"DS ACADEMY   10","textPreview":"DS ACADEMY   10","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/pwj21czi","slide":10,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/oval87yx","slide":10,"text":"Grounded Answers Need Verifiable Citations","textPreview":"Grounded Answers Need Verifiable Citations","textChars":42,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/nu1kz2hc","slide":10,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/2tsj6h0r","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/tsn2dgzm","slide":10,"text":"cited source was retrieved;","textPreview":"cited source was retrieved;","textChars":27,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/8rulkbyh","slide":10,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/upkjm5cr","slide":10,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/fqt0fadc","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/gr21ofux","slide":10,"text":"cited passage supports the nearby claim;","textPreview":"cited passage supports the nearby claim;","textChars":40,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/hcbihkb2","slide":10,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/6l0ji5cf","slide":10,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/7m90bqd0","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/sni1kvul","slide":10,"text":"no unsupported claims were added;","textPreview":"no unsupported claims were added;","textChars":33,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/torid0v6","slide":10,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/qh4jupcz","slide":10,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/ridknutk","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/nm5gfmtw","slide":10,"text":"quotation and numbers match;","textPreview":"quotation and numbers match;","textChars":28,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/m1wfmhsb","slide":10,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/hjw5uc","slide":10,"text":"An answer is **grounded** when its factual claims are supported by the supplied evidence.\n\nA **citation** identifies the exact source and location supporting a claim.\n\nValidation should check:\n\n- cited source was retrieved;\n- cited passage supports the nearby claim;\n- no unsupported claims were added;\n- quotation and numbers match;\n- insufficient evidence produces refusal or qualification.\n\nA citation string generated by the model is not proof by itself.\n\n[Worked Example]\nEvidence: `[policy-v3 p.7] Refund requests are accepted within 14 days.`\n\nSupported answer: `Refund requests are accepted within 14 days [policy-v3 p.7].`\n\nUnsupported addition: `A full refund is guaranteed.` The passage does not support that claim.\n\n[Visual Brief]\nEach answer claim connects to a supporting passage. One unsupported claim has no connection and is rejected.\n\n[Instructor Notes]\nCitation existence and citation support are separate checks.\n\n[Notebook Connection]\nLearners add stable chunk IDs to the answer schema and verify them.\n\n[Sources]\n- https://docs.langchain.com/langsmith/evaluate-rag-tutorial\n- https://github.com/curiousily/AI-Bootcamp/blob/master/06.build-rag.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/basmfm","slide":11,"title":"M15 / L01","textShapes":11}
+{"kind":"textbox","id":"sh/2p0re94v","slide":11,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/psba94nm","slide":11,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/or2tgzm1","slide":11,"text":"DS ACADEMY   11","textPreview":"DS ACADEMY   11","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/f29s3u5k","slide":11,"text":"RISK REVIEW","textPreview":"RISK REVIEW","textChars":11,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/e10rap4z","slide":11,"text":"A RAG Failure Has an Owning Stage","textPreview":"A RAG Failure Has an Owning Stage","textChars":33,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/14ra54na","slide":11,"bbox":[0,0,16,720]}
+{"kind":"textbox","id":"sh/g3i9czm5","slide":11,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[74,196,78,42]}
+{"kind":"textbox","id":"sh/rypsza58","slide":11,"text":"parsing lost text;","textPreview":"parsing lost text;","textChars":18,"textLines":1,"bbox":[190,188,930,92]}
+{"kind":"shape","id":"sh/6xgr6p4n","slide":11,"bbox":[74,301,1048,2]}
+{"kind":"textbox","id":"sh/gne50vul","slide":11,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[74,344,78,42]}
+{"kind":"textbox","id":"sh/hon6t0b6","slide":11,"text":"cleaning changed meaning;","textPreview":"cleaning changed meaning;","textChars":25,"textLines":1,"bbox":[190,336,930,92]}
+{"kind":"shape","id":"sh/u1wnylcv","slide":11,"bbox":[74,449,1048,2]}
+{"kind":"textbox","id":"sh/fm5orqt0","slide":11,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[74,492,78,42]}
+{"kind":"textbox","id":"sh/sze5wvup","slide":11,"text":"chunk boundary split evidence;","textPreview":"chunk boundary split evidence;","textChars":30,"textLines":1,"bbox":[190,484,930,92]}
+{"kind":"shape","id":"sh/t0n6p0ba","slide":11,"bbox":[74,597,1048,2]}
+{"kind":"notes","id":"nt/basmfm","slide":11,"text":"Common failure boundaries:\n\n- parsing lost text;\n- cleaning changed meaning;\n- chunk boundary split evidence;\n- embedding failed on domain terms;\n- filter excluded the source;\n- top-k missed the relevant chunk;\n- context assembly removed or duplicated evidence;\n- generator ignored evidence;\n- citation did not support the claim.\n\nFix the owning stage. Prompt changes cannot restore text that ingestion lost.\n\n[Worked Example]\nAnswer misses the refund period.\n\nDiagnosis:\n\n1. source PDF contains `14 days`;\n2. parsed text contains it;\n3. chunk index contains it;\n4. retriever ranks it `12`;\n5. top-k is `5`.\n\nOwning failure is retrieval ranking, not generation.\n\n[Visual Brief]\nThe RAG pipeline has diagnostic checkpoints; a failure marker sits at retrieval rank.\n\n[Instructor Notes]\nAsk learners to prove every upstream stage before changing the model prompt.\n\n[Notebook Connection]\nThe lab records intermediate artifacts for each query.\n\n[Sources]\n- https://docs.langchain.com/langsmith/evaluation-concepts\n- https://docs.langchain.com/langsmith/evaluate-rag-tutorial\n[/Sources]"}
+{"kind":"slide","id":"sl/20gpjb","slide":12,"title":"M15 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/1obyxkny","slide":12,"text":"M15 / L01","textPreview":"M15 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/e10zm547","slide":12,"text":"RAG Supplies Evidence at Request Time","textPreview":"RAG Supplies Evidence at Request Time","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/z2tgva5s","slide":12,"text":"DS ACADEMY   12","textPreview":"DS ACADEMY   12","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/or2hsfm9","slide":12,"text":"GUIDED LAB","textPreview":"GUIDED LAB","textChars":10,"textLines":1,"bbox":[64,92,220,24]}
+{"kind":"textbox","id":"sh/9sbi1knu","slide":12,"text":"Guided Lab: Build RAG from Scratch","textPreview":"Guided Lab: Build RAG from Scratch","textChars":34,"textLines":1,"bbox":[64,154,1100,154]}
+{"kind":"textbox","id":"sh/mpkzqp4j","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,410,62,28]}
+{"kind":"shape","id":"sh/nqtgzu5o","slide":12,"bbox":[64,462,214,5]}
+{"kind":"textbox","id":"sh/4vihgv65","slide":12,"text":"parse and visually verify source pages","textPreview":"parse and visually verify source pages","textChars":38,"textLines":1,"bbox":[64,500,220,52]}
+{"kind":"textbox","id":"sh/5wryp0nq","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[354,410,62,28]}
+{"kind":"shape","id":"sh/tg3i9czu","slide":12,"bbox":[354,462,214,5]}
+{"kind":"textbox","id":"sh/sfuhg7i9","slide":12,"text":"preserve source, page, section, and access metadata","textPreview":"preserve source, page, section, and access metadata","textChars":51,"textLines":1,"bbox":[354,500,220,52]}
+{"kind":"textbox","id":"sh/rel072ho","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[644,410,62,28]}
+{"kind":"shape","id":"sh/6dczex03","slide":12,"bbox":[644,462,214,5]}
+{"kind":"textbox","id":"sh/1knidczq","slide":12,"text":"compare two chunking strategies","textPreview":"compare two chunking strategies","textChars":31,"textLines":1,"bbox":[644,500,220,52]}
+{"kind":"textbox","id":"sh/gjehk7i5","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[934,410,62,28]}
+{"kind":"shape","id":"sh/fi50bmhk","slide":12,"bbox":[934,462,214,5]}
+{"kind":"textbox","id":"sh/ehczih0z","slide":12,"text":"embed chunks and queries with one model","textPreview":"embed chunks and queries with one model","textChars":39,"textLines":1,"bbox":[934,500,220,52]}
+{"kind":"notes","id":"nt/20gpjb","slide":12,"text":"Build a small policy assistant:\n\n1. parse and visually verify source pages;\n2. preserve source, page, section, and access metadata;\n3. compare two chunking strategies;\n4. embed chunks and queries with one model;\n5. calculate one cosine similarity by hand;\n6. store vectors and metadata;\n7. retrieve authorized top-k chunks;\n8. inspect ranks before generation;\n9. assemble deduplicated labelled context;\n10. return structured answer and citation IDs;\n11. verify citation support;\n12. refuse an unsupported question.\n\n[Worked Example]\nRequired test:\n\nQuestion whose answer exists, question requiring two chunks, exact identifier query, unsupported question, and unauthorized-document query.\n\nEach failure must identify its owning stage.\n\n[Visual Brief]\nAn end-to-end lab checklist spans source verification through citation support and refusal.\n\n[Instructor Notes]\nRequire retrieval inspection before judging answer quality. Do not hide the mechanism behind a framework-only call.\n\n[Notebook Connection]\nComplete `17.rag-from-scratch.ipynb` and `06.build-rag.ipynb`.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/17.rag-from-scratch.ipynb\n- https://github.com/curiousily/AI-Bootcamp/blob/master/06.build-rag.ipynb\n[/Sources]"}

@@ -1,0 +1,235 @@
+{"kind":"deck","id":"pr/sxtth7","name":"Deck"}
+{"kind":"layout","layoutId":"b75873a5-d31a-4617-b203-d89a503fd20f","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"ac91618d-4cf9-42d3-89dc-6935ec135eda","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/cq9txk","slide":1,"title":"MODULE 16  /  LESSON 01","textShapes":3}
+{"kind":"shape","id":"sh/ydw3e543","slide":1,"bbox":[0,0,1280,12]}
+{"kind":"shape","id":"sh/kfelgfm9","slide":1,"bbox":[692,0,32,720]}
+{"kind":"textbox","id":"sh/bq5kjq5s","slide":1,"text":"MODULE 16  /  LESSON 01","textPreview":"MODULE 16  /  LESSON 01","textChars":23,"textLines":1,"bbox":[70,70,430,26]}
+{"kind":"textbox","id":"sh/apc3ql47","slide":1,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[70,148,548,250]}
+{"kind":"shape","id":"sh/xsn2l0ni","slide":1,"bbox":[70,430,96,6]}
+{"kind":"textbox","id":"sh/wrelcvmx","slide":1,"text":"Evaluate at four boundaries:","textPreview":"Evaluate at four boundaries:","textChars":28,"textLines":1,"bbox":[70,472,530,102]}
+{"kind":"image","id":"im/cnaporml","slide":1,"name":"","alt":"Data science workflow from raw data to a deployed decision system","bbox":[724,0,556,720]}
+{"kind":"image","id":"im/mtc7u143","slide":1,"name":"","alt":"DS Academy","bbox":[70,620,182,52]}
+{"kind":"notes","id":"nt/cq9txk","slide":1,"text":"Evaluate at four boundaries:\n\n1. **ingestion:** was source content recovered correctly?\n2. **retrieval:** were relevant authorized chunks returned?\n3. **context assembly:** was useful evidence preserved within budget?\n4. **generation:** is the answer relevant, grounded, and correctly cited?\n\nEnd-to-end correctness matters, but component metrics explain what to fix.\n\n[Worked Example]\nThe answer is wrong because the required chunk ranked `8` and top-k was `5`.\n\nGeneration cannot use evidence it never received. The retrieval stage owns this failure even if the final answer is the visible symptom.\n\n[Visual Brief]\nThe RAG pipeline is divided into four independently scored sections.\n\n[Instructor Notes]\nAsk learners to identify the earliest stage where the expected evidence disappears.\n\n[Notebook Connection]\nThe advanced RAG and evaluation notebooks provide candidate retrieval and generation experiments.\n\n[Sources]\n- https://docs.langchain.com/langsmith/evaluate-rag-tutorial\n- https://github.com/curiousily/AI-Bootcamp/blob/master/12.llm-evaluation.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/123roa","slide":2,"title":"M16 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/gn6twfqx","slide":2,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/fmdc3apc","slide":2,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/el4bu58r","slide":2,"text":"DS ACADEMY   02","textPreview":"DS ACADEMY   02","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/psfu9k7e","slide":2,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/or6t0zqt","slide":2,"text":"An Evaluation Dataset Represents Real Questions","textPreview":"An Evaluation Dataset Represents Real Questions","textChars":47,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/nqxc7up8","slide":2,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/2pobyp8n","slide":2,"text":"A RAG evaluation example should record: Include normal, rare, multi-chunk, exact-term, paraphrase, unsupported, and access-control cases.","textPreview":"A RAG evaluation example should record: Include normal, rare, multi-chunk, exact-term, paraphrase, unsupported, and access-control cases.","textChars":137,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/5wvax07a","slide":2,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/4v2tovqp","slide":2,"text":"question;","textPreview":"question;","textChars":9,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/atczm10r","slide":2,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/vul0v61c","slide":2,"text":"user or tenant context;","textPreview":"user or tenant context;","textChars":23,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/wvu1obix","slide":2,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/xwnixwj2","slide":2,"text":"expected relevant chunk IDs;","textPreview":"expected relevant chunk IDs;","textChars":28,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/ixwjq10n","slide":2,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/jy50z6h8","slide":2,"text":"reference answer or required facts when available;","textPreview":"reference answer or required facts when available;","textChars":50,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/kze1sbit","slide":2,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/50ni1gze","slide":2,"text":"unsupported or denied expectation;","textPreview":"unsupported or denied expectation;","textChars":34,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/61wjul0z","slide":2,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/72503qhk","slide":2,"text":"importance and category;","textPreview":"importance and category;","textChars":24,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/123roa","slide":2,"text":"A RAG evaluation example should record:\n\n- question;\n- user or tenant context;\n- expected relevant chunk IDs;\n- reference answer or required facts when available;\n- unsupported or denied expectation;\n- importance and category;\n- notes about ambiguity.\n\nInclude normal, rare, multi-chunk, exact-term, paraphrase, unsupported, and access-control cases.\n\n[Worked Example]\nQuestion: `How long do I have to request a refund?`\n\nExpected chunk: `policy-v3-refunds-p7`  \nRequired fact: `14 days`  \nAllowed outcome: supported answer with that citation  \nDenied outcome: any answer using another tenant's policy\n\n[Visual Brief]\nAn evaluation dataset table includes categories, expected evidence, facts, and access context.\n\n[Instructor Notes]\nBegin with manually reviewed cases. Production logs can suggest new cases only after privacy review.\n\n[Notebook Connection]\nLearners construct a small fixed dataset before tuning retrieval parameters.\n\n[Sources]\n- https://docs.langchain.com/langsmith/evaluation-concepts\n- https://docs.langchain.com/langsmith/evaluate-rag-tutorial\n[/Sources]"}
+{"kind":"slide","id":"sl/xanrfe","slide":3,"title":"M16 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/c3ah8zy1","slide":3,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/b210zuhg","slide":3,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/a1sz69gb","slide":3,"text":"DS ACADEMY   03","textPreview":"DS ACADEMY   03","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/p0jix4zq","slide":3,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/ofah4zi5","slide":3,"text":"Retrieval Precision and Recall Measure Different Goals","textPreview":"Retrieval Precision and Recall Measure Different Goals","textChars":54,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/ne10vuhk","slide":3,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/2dsz2p0z","slide":3,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/9wni9ozu","slide":3,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/8be1gjy9","slide":3,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/elc3ytsv","slide":3,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/zmlk7ytg","slide":3,"text":"expected = {\"A\", \"B\", \"C\"}\nretrieved = [\"A\", \"B\", \"X\", \"Y\"]\nhits = expected.intersection(retrieved)\nprint(len(hits)/len(retrieved), len(hits)/len(expected))","textPreview":"expected = {\"A\", \"B\", \"C\"} | retrieved = [\"A\", \"B\", \"X\", \"Y\"] | hits = expected.intersection(retrieved) | print(len(hits)/len(retrieved),...","textChars":156,"textLines":4,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/0nul03a1","slide":3,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/1o3m98bm","slide":3,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/qhs3utsz","slide":3,"text":"0.5 0.6666666666666666","textPreview":"0.5 0.6666666666666666","textChars":22,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/ri1k3yt4","slide":3,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/cjalw3ap","slide":3,"text":"Precision = 2/4 = 0.50 Recall = 2/3 = 0.667","textPreview":"Precision = 2/4 = 0.50 Recall = 2/3 = 0.667","textChars":43,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/xanrfe","slide":3,"text":"For one query:\n\n`retrieval precision = relevant retrieved / retrieved`\n\n`retrieval recall = relevant retrieved / all relevant`\n\nPrecision asks how focused the results are. Recall asks how much required evidence was found.\n\nThe definition of relevant must come from labelled evidence, not from the retriever's own score.\n\n[Worked Example]\nExpected relevant chunks `{A,B,C}`.  \nRetrieved chunks `{A,B,X,Y}`.\n\nRelevant retrieved: `{A,B}` count `2`\n\nPrecision `= 2/4 = 0.50`  \nRecall `= 2/3 = 0.667`\n\n[Visual Brief]\nTwo overlapping sets show expected and retrieved chunks; equations use the intersection.\n\n[Instructor Notes]\nExplain that some questions require several chunks while others require only one.\n\n[Notebook Connection]\nLearners calculate precision and recall at several k values.\n\n[Sources]\n- https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-unranked-retrieval-sets-1.html\n- https://docs.langchain.com/langsmith/evaluate-rag-tutorial\n[/Sources]"}
+{"kind":"slide","id":"sl/ugara2","slide":4,"title":"M16 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/ixczexkz","slide":4,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/503ipcjq","slide":4,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/4zu1g725","slide":4,"text":"DS ACADEMY   04","textPreview":"DS ACADEMY   04","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/vu10j21o","slide":4,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/utszaxk3","slide":4,"text":"Top-k and Filters Change the Candidate Set","textPreview":"Top-k and Filters Change the Candidate Set","textChars":42,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/hw3ilsju","slide":4,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/wvuhc729","slide":4,"text":"tenant or user access;","textPreview":"tenant or user access;","textChars":22,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/fq50vm1s","slide":4,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/epwjmh07","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/k3ih47m9","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/l4rydc3u","slide":4,"text":"document type;","textPreview":"document type;","textChars":14,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/y1gz2h43","slide":4,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/j2pgb2lo","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/wzyh07md","slide":4,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/x07y9c3y","slide":4,"text":"publication status;","textPreview":"publication status;","textChars":19,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/axgzyx47","slide":4,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/bypg72ls","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/ovexwnm1","slide":4,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/9w7y5s3m","slide":4,"text":"date;","textPreview":"date;","textChars":5,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/pgf6dkre","slide":4,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/4f65kzat","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/3exobu98","slide":4,"text":"At k=3: precision 0.67, recall 0.50 At k=8: precision 0.38, recall 1.00 Higher k recovers all evidence but adds more irrelevant chunks. Reranking or better queries may improve the tradeoff.","textPreview":"At k=3: precision 0.67, recall 0.50 At k=8: precision 0.38, recall 1.00 Higher k recovers all evidence but adds more irrelevant chunks. R...","textChars":189,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/ugara2","slide":4,"text":"`k` controls how many results enter the next stage.\n\nMetadata filters can restrict:\n\n- tenant or user access;\n- document type;\n- publication status;\n- date;\n- product or region.\n\nEvaluate security filters as hard requirements. Tune relevance filters and k on the evaluation dataset, measuring quality, latency, token use, and duplicate rate.\n\n[Worked Example]\nAt `k=3`: precision `0.67`, recall `0.50`  \nAt `k=8`: precision `0.38`, recall `1.00`\n\nHigher k recovers all evidence but adds more irrelevant chunks. Reranking or better queries may improve the tradeoff.\n\n[Visual Brief]\nPrecision, recall, latency, and context tokens change across k values; access filtering remains fixed.\n\n[Instructor Notes]\nNever tune security boundaries for higher recall.\n\n[Notebook Connection]\nLearners run a small top-k experiment before changing models.\n\n[Sources]\n- https://python.langchain.com/docs/concepts/retrievers/\n- https://docs.langchain.com/langsmith/evaluation-concepts\n[/Sources]"}
+{"kind":"slide","id":"sl/7ebbe8","slide":5,"title":"M16 / L01","textShapes":11}
+{"kind":"textbox","id":"sh/54rmp83q","slide":5,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/i103etkz","slide":5,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/j294nylk","slide":5,"text":"DS ACADEMY   05","textPreview":"DS ACADEMY   05","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/wzilcj29","slide":5,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/h0r2lo3e","slide":5,"text":"Query Rewriting Can Improve Retrieval","textPreview":"Query Rewriting Can Improve Retrieval","textChars":37,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/uxg3atk3","slide":5,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/vypkjylo","slide":5,"text":"A query rewrite transforms a user's question into a search query. Possible methods: Rewriting can improve recall but may change intent. Preserve the original question and record every rewritten query.","textPreview":"A query rewrite transforms a user's question into a search query. Possible methods: Rewriting can improve recall but may change intent. P...","textChars":200,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/gv2lon2d","slide":5,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/1wbmhs3y","slide":5,"text":"resolve conversation references;","textPreview":"resolve conversation references;","textChars":32,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/lszqxcfy","slide":5,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/krqpo7ed","slide":5,"text":"expand abbreviations;","textPreview":"expand abbreviations;","textChars":21,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/jqh8v2xs","slide":5,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/ypo7mxw7","slide":5,"text":"generate alternate wording;","textPreview":"generate alternate wording;","textChars":27,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/xofqtsfm","slide":5,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/wn6pk7e1","slide":5,"text":"split a multi-part question;","textPreview":"split a multi-part question;","textChars":28,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/bmx8r2xw","slide":5,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/a1o7ixwb","slide":5,"text":"add domain identifiers.","textPreview":"add domain identifiers.","textChars":23,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"notes","id":"nt/7ebbe8","slide":5,"text":"A **query rewrite** transforms a user's question into a search query.\n\nPossible methods:\n\n- resolve conversation references;\n- expand abbreviations;\n- generate alternate wording;\n- split a multi-part question;\n- add domain identifiers.\n\nRewriting can improve recall but may change intent. Preserve the original question and record every rewritten query.\n\n[Worked Example]\nConversation:\n\nUser: `What is the refund period?`  \nLater: `Does it apply to annual plans?`\n\nStandalone rewrite:\n\n`Does the 14-day refund period apply to annual plans?`\n\nThe rewrite should be checked against conversation state, not invented from unrelated context.\n\n[Visual Brief]\nOriginal question and history enter a rewrite step; original and rewritten queries remain visible in the trace.\n\n[Instructor Notes]\nEvaluate whether rewrites preserve intent, not only whether retrieval scores rise.\n\n[Notebook Connection]\nAdvanced RAG experiments can compare original and rewritten query retrieval.\n\n[Sources]\n- https://python.langchain.com/docs/tutorials/rag/#query-analysis\n- https://github.com/curiousily/AI-Bootcamp/blob/master/07.advanced-rag-with-llama-3-in-langchain.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/bxd2jj","slide":6,"title":"M16 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/mpsve1sr","slide":6,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/9s3upgr2","slide":6,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/8radgbah","slide":6,"text":"DS ACADEMY   06","textPreview":"DS ACADEMY   06","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/zm1cj690","slide":6,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/ylsva1sf","slide":6,"text":"Hybrid Search Combines Exact and Semantic Retrieval","textPreview":"Hybrid Search Combines Exact and Semantic Retrieval","textChars":51,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/lojulwr6","slide":6,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/knadcral","slide":6,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/bihcfm94","slide":6,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/ah8b6hsj","slide":6,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/8fu5c361","slide":6,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/tgnml876","slide":6,"text":"def rrf_score(ranks, c=60):\n    return sum(1 / (c + rank) for rank in ranks)","textPreview":"def rrf_score(ranks, c=60): |     return sum(1 / (c + rank) for rank in ranks)","textChars":76,"textLines":2,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/6dc3atov","slide":6,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/7el4jypg","slide":6,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/kbul83qp","slide":6,"text":"A fusion score based on rank positions rather than incompatible raw scores.","textPreview":"A fusion score based on rank positions rather than incompatible raw scores.","textChars":75,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/lc3mho7a","slide":6,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/y9c36t8j","slide":6,"text":"Documents found by both methods gain combined evidence.","textPreview":"Documents found by both methods gain combined evidence.","textChars":55,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/bxd2jj","slide":6,"text":"Lexical search such as **BM25** is strong for exact terms, names, codes, and rare words.\n\nVector search is strong for semantic similarity and paraphrases.\n\n**Hybrid search** combines candidate lists from both systems.\n\nRaw lexical and vector scores have different meanings. **Reciprocal rank fusion (RRF)** combines ranks:\n\n`RRF(d) = Σ 1 / (c + rank_i(d))`\n\n[Worked Example]\nDocument A ranks `1` lexical and `4` vector.  \nWith `c=60`:\n\n`1/61 + 1/64 ≈ 0.01639 + 0.01563 = 0.03202`\n\nDocuments found by both methods gain combined evidence.\n\n[Visual Brief]\nLexical and vector ranked lists merge through RRF into one fused order.\n\n[Instructor Notes]\nDo not claim hybrid always wins. Evaluate it on exact-term and paraphrase subsets.\n\n[Notebook Connection]\nLearners add a lexical candidate list before reranking.\n\n[Sources]\n- https://www.elastic.co/docs/reference/elasticsearch/rest-apis/reciprocal-rank-fusion\n- https://nlp.stanford.edu/IR-book/html/htmledition/okapi-bm25-a-non-binary-model-1.html\n[/Sources]"}
+{"kind":"slide","id":"sl/03sbte","slide":7,"title":"M16 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/fmpkrapg","slide":7,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/0nyl0vq1","slide":7,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/1o72t07m","slide":7,"text":"DS ACADEMY   07","textPreview":"DS ACADEMY   07","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/2pg3258r","slide":7,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/nq9kvapc","slide":7,"text":"Reranking Applies a Stronger Model to Fewer Candidates","textPreview":"Reranking Applies a Stronger Model to Fewer Candidates","textChars":54,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/oril4fqx","slide":7,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/pcr2xk7i","slide":7,"text":"A reranker scores query-document pairs using a model more expensive than first-stage retrieval. Pipeline: Reranking can improve ordering but adds latency and cost. It cannot recover a relevant chunk missing from the candidate set.","textPreview":"A reranker scores query-document pairs using a model more expensive than first-stage retrieval. Pipeline: Reranking can improve ordering ...","textChars":230,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/ad036p83","slide":7,"bbox":[64,390,540,96]}
+{"kind":"textbox","id":"sh/be94zupo","slide":7,"text":"retrieve a broader candidate set quickly;","textPreview":"retrieve a broader candidate set quickly;","textChars":41,"textLines":1,"bbox":[82,400,504,76]}
+{"kind":"shape","id":"sh/bih43ypc","slide":7,"bbox":[638,390,540,96]}
+{"kind":"textbox","id":"sh/ah83utor","slide":7,"text":"rerank those candidates;","textPreview":"rerank those candidates;","textChars":24,"textLines":1,"bbox":[656,400,504,76]}
+{"kind":"shape","id":"sh/xkzm587i","slide":7,"bbox":[64,506,540,96]}
+{"kind":"textbox","id":"sh/cjqlw36x","slide":7,"text":"keep the best few for context.","textPreview":"keep the best few for context.","textChars":30,"textLines":1,"bbox":[82,516,504,76]}
+{"kind":"notes","id":"nt/03sbte","slide":7,"text":"A **reranker** scores query-document pairs using a model more expensive than first-stage retrieval.\n\nPipeline:\n\n1. retrieve a broader candidate set quickly;\n2. rerank those candidates;\n3. keep the best few for context.\n\nReranking can improve ordering but adds latency and cost. It cannot recover a relevant chunk missing from the candidate set.\n\n[Worked Example]\nVector search retrieves `20` candidates. Relevant chunk ranks `11`.  \nReranker moves it to rank `2`.  \nFinal context keeps top `5`, so the evidence is now included.\n\nIf the chunk was not in the first `20`, reranking could not help.\n\n[Visual Brief]\nA wide candidate funnel narrows through a reranker into a focused context set.\n\n[Instructor Notes]\nMeasure first-stage recall before blaming reranking.\n\n[Notebook Connection]\nThe advanced RAG notebook includes a reranking stage before question answering.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/07.advanced-rag-with-llama-3-in-langchain.ipynb\n- https://www.sbert.net/examples/cross_encoder/applications/README.html\n[/Sources]"}
+{"kind":"slide","id":"sl/lp9xmv","slide":8,"title":"M16 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/4vmtwbi1","slide":8,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/3udsn61g","slide":8,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/2t4bu10v","slide":8,"text":"DS ACADEMY   08","textPreview":"DS ACADEMY   08","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/hsvalwja","slide":8,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/grm9sri5","slide":8,"text":"Answer Quality Has Several Dimensions","textPreview":"Answer Quality Has Several Dimensions","textChars":37,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/vqtsjm1k","slide":8,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/upkrqh0z","slide":8,"text":"Correctness: agreement with a reference answer or verified facts","textPreview":"Correctness: agreement with a reference answer or verified facts","textChars":64,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/tobahwje","slide":8,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/8n29orit","slide":8,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/u9w721kj","slide":8,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/vap8vml4","slide":8,"text":"Relevance: whether the response addresses the question","textPreview":"Relevance: whether the response addresses the question","textChars":54,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/gbyp4r2p","slide":8,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/hc7qxw3a","slide":8,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/65w7yhkn","slide":8,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/7658rml8","slide":8,"text":"Groundedness: whether claims are supported by supplied context","textPreview":"Groundedness: whether claims are supported by supplied context","textChars":62,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/87ep0r2t","slide":8,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/t8nqtw3y","slide":8,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/yhc7uhkb","slide":8,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/jil8n2lw","slide":8,"text":"Citation correctness: whether cited passages support nearby claims","textPreview":"Citation correctness: whether cited passages support nearby claims","textChars":66,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/nm14vy1o","slide":8,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/2lsn2d03","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/pojmx8ju","slide":8,"text":"Question asks refund period and exclusions. Answer gives 14 days with support but omits annual-plan exclusions. It may be grounded and partly correct, but incomplete.","textPreview":"Question asks refund period and exclusions. Answer gives 14 days with support but omits annual-plan exclusions. It may be grounded and pa...","textChars":166,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/lp9xmv","slide":8,"text":"- **Correctness:** agreement with a reference answer or verified facts\n- **Relevance:** whether the response addresses the question\n- **Groundedness:** whether claims are supported by supplied context\n- **Citation correctness:** whether cited passages support nearby claims\n- **Completeness:** whether required answer parts are present\n\nAn answer can be relevant but incorrect, correct by chance but ungrounded, or grounded but incomplete.\n\n[Worked Example]\nQuestion asks refund period and exclusions.\n\nAnswer gives `14 days` with support but omits annual-plan exclusions.\n\nIt may be grounded and partly correct, but incomplete.\n\n[Visual Brief]\nOne answer receives four independent gauges rather than one overall quality label.\n\n[Instructor Notes]\nRequire a rubric for each dimension and examples of pass/fail boundaries.\n\n[Notebook Connection]\nThe evaluation notebook builds metrics and a report across several answer dimensions.\n\n[Sources]\n- https://docs.langchain.com/langsmith/evaluate-rag-tutorial\n- https://github.com/curiousily/AI-Bootcamp/blob/master/12.llm-evaluation.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/ezhnvm","slide":9,"title":"M16 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/ytoj61w7","slide":9,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/lwfi1gfi","slide":9,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/kv618bed","slide":9,"text":"DS ACADEMY   09","textPreview":"DS ACADEMY   09","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/7yx036xo","slide":9,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/mxoja1w3","slide":9,"text":"Model Judges Need Human Calibration","textPreview":"Model Judges Need Human Calibration","textChars":35,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/90z25gfu","slide":9,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/8zq1cbe9","slide":9,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/v2hk7qx0","slide":9,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/u18jelwf","slide":9,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/4zqt8zux","slide":9,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/50jah4vi","slide":9,"text":"agreement = sum(j == h for j, h in zip(judge_labels, human_labels))\nprint(agreement / len(human_labels))","textPreview":"agreement = sum(j == h for j, h in zip(judge_labels, human_labels)) | print(agreement / len(human_labels))","textChars":104,"textLines":2,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/ix8b6pcr","slide":9,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/3yhsfudc","slide":9,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/s3atcju9","slide":9,"text":"0.84","textPreview":"0.84","textChars":4,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/d4julove","slide":9,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/q1sba9c3","slide":9,"text":"The 8 disagreements should be grouped by cause before trusting the judge at scale.","textPreview":"The 8 disagreements should be grouped by cause before trusting the judge at scale.","textChars":82,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/ezhnvm","slide":9,"text":"An **LLM judge** applies a rubric to an input, response, evidence, or reference answer.\n\nBenefits:\n\n- scalable evaluation of nuanced language;\n- structured explanations;\n- faster experiment comparison.\n\nRisks:\n\n- bias toward style or length;\n- sensitivity to prompt and order;\n- inconsistent scoring;\n- shared errors with the evaluated model;\n- cost and privacy concerns.\n\nCalibrate judges against human-labelled examples and inspect disagreements.\n\n[Worked Example]\nOn `50` examples, judge and human agree on `42`.\n\nAgreement rate:\n\n`42 / 50 = 0.84`\n\nThe `8` disagreements should be grouped by cause before trusting the judge at scale.\n\n[Visual Brief]\nHuman and judge labels form an agreement matrix; disagreement examples feed rubric revision.\n\n[Instructor Notes]\nDo not treat model-judge scores as objective ground truth.\n\n[Notebook Connection]\nThe evaluation notebook's critic model is compared with a manual rubric.\n\n[Sources]\n- https://docs.langchain.com/langsmith/evaluation-concepts\n- https://github.com/curiousily/AI-Bootcamp/blob/master/12.llm-evaluation.ipynb\n[/Sources]"}
+{"kind":"slide","id":"sl/ivxjp0","slide":10,"title":"M16 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/9wrm58va","slide":10,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/mtgnutwj","slide":10,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/7u943yd4","slide":10,"text":"DS ACADEMY   10","textPreview":"DS ACADEMY   10","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/wzi50nel","slide":10,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/h0rm9sv6","slide":10,"text":"Failure Analysis Produces the Next Experiment","textPreview":"Failure Analysis Produces the Next Experiment","textChars":45,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/ux0nydwf","slide":10,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/vy947id0","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/4n254nux","slide":10,"text":"source and parsing status;","textPreview":"source and parsing status;","textChars":26,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/5obmdsvi","slide":10,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/twfitor6","slide":10,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/8v61k3al","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/7ud0ry90","slide":10,"text":"expected and retrieved chunks;","textPreview":"expected and retrieved chunks;","textChars":30,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/6t4jitsf","slide":10,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/h0fix8r2","slide":10,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/gz61o3ah","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/vyx0vy9c","slide":10,"text":"ranks and filters;","textPreview":"ranks and filters;","textChars":18,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/uxojmtsr","slide":10,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/x4vil4ry","slide":10,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/c32hcjad","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/o761sji9","slide":10,"text":"rewrite;","textPreview":"rewrite;","textChars":8,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/p8fi1ozu","slide":10,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/ivxjp0","slide":10,"text":"For each failed query, record:\n\n- source and parsing status;\n- expected and retrieved chunks;\n- ranks and filters;\n- rewrite;\n- context after assembly;\n- answer and citations;\n- metric and rubric failures;\n- owning stage;\n- proposed change.\n\nGroup failures such as exact-term miss, multi-chunk miss, duplicate context, unauthorized retrieval, unsupported claim, or incorrect citation.\n\n[Worked Example]\nTen failed queries:\n\n- 4 exact product codes missed by vector search;\n- 3 relevant chunks ranked below k;\n- 2 unsupported answers;\n- 1 incorrect citation.\n\nFirst experiment: add lexical retrieval for product-code cases, not rewrite every prompt.\n\n[Visual Brief]\nIndividual failures cluster into categories, which map to targeted experiments.\n\n[Instructor Notes]\nRequire one change at a time so experiment effects remain attributable.\n\n[Notebook Connection]\nLearners build a failure report from evaluation traces.\n\n[Sources]\n- https://docs.langchain.com/langsmith/evaluation-concepts\n- https://www.nist.gov/itl/ai-risk-management-framework\n[/Sources]"}
+{"kind":"slide","id":"sl/5jyqkw","slide":11,"title":"M16 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/b2tcju9o","slide":11,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/w32dsza9","slide":11,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/x4bul4ru","slide":11,"text":"DS ACADEMY   11","textPreview":"DS ACADEMY   11","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/mx0vmps7","slide":11,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/ny9cfu9c","slide":11,"text":"An Experiment Report Includes Quality, Latency, and Cost","textPreview":"An Experiment Report Includes Quality, Latency, and Cost","textChars":56,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/oz2dozax","slide":11,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/90buhkri","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/e90bi5sv","slide":11,"text":"corpus and ingestion version;","textPreview":"corpus and ingestion version;","textChars":29,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/za9cba9g","slide":11,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/rydc7a14","slide":11,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/qxkve50j","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/dkvu9kja","slide":11,"text":"embedding model and index settings;","textPreview":"embedding model and index settings;","textChars":35,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/cjmdgfip","slide":11,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/zmdcbu10","slide":11,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/el4vip0v","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/1ovudkj6","slide":11,"text":"retriever, filters, k, rewrite, and reranker;","textPreview":"retriever, filters, k, rewrite, and reranker;","textChars":45,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/0nmdkfil","slide":11,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/vq9czq1w","slide":11,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/up0b6lkb","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/ixs7uxob","slide":11,"text":"prompt and generation model;","textPreview":"prompt and generation model;","textChars":28,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/jy1o32pw","slide":11,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/5jyqkw","slide":11,"text":"Record for each RAG version:\n\n- corpus and ingestion version;\n- embedding model and index settings;\n- retriever, filters, k, rewrite, and reranker;\n- prompt and generation model;\n- evaluation dataset version;\n- component and end-to-end metrics;\n- latency percentiles;\n- input and output tokens;\n- estimated cost;\n- security failures;\n- known limitations.\n\nDo not release solely because one average improves.\n\n[Worked Example]\nVersion B improves retrieval recall from `0.72` to `0.84`, but p95 latency rises from `1.2s` to `4.8s`.\n\nIf acceptance requires p95 under `2s`, Version B does not pass despite quality improvement.\n\n[Visual Brief]\nA comparison table has quality, latency, cost, and security columns with explicit pass thresholds.\n\n[Instructor Notes]\nSeparate hard constraints from optimization goals.\n\n[Notebook Connection]\nLearners produce one baseline and two controlled RAG experiment reports.\n\n[Sources]\n- https://docs.langchain.com/langsmith/evaluation\n- https://docs.langchain.com/langsmith/observability\n[/Sources]"}
+{"kind":"slide","id":"sl/0m60o4","slide":12,"title":"M16 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/gzaxc7at","slide":12,"text":"M16 / L01","textPreview":"M16 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/vy1g32t8","slide":12,"text":"Evaluate RAG as Separate Components","textPreview":"Evaluate RAG as Separate Components","textChars":35,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/uxsfaxsn","slide":12,"text":"DS ACADEMY   12","textPreview":"DS ACADEMY   12","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/twjy1sb2","slide":12,"text":"GUIDED LAB","textPreview":"GUIDED LAB","textChars":10,"textLines":1,"bbox":[64,92,220,24]}
+{"kind":"textbox","id":"sh/8bax87ah","slide":12,"text":"Guided Lab: Improve RAG with Evidence","textPreview":"Guided Lab: Improve RAG with Evidence","textChars":37,"textLines":1,"bbox":[64,154,1100,154]}
+{"kind":"textbox","id":"sh/7a1gz2tw","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,410,62,28]}
+{"kind":"shape","id":"sh/698f6xsb","slide":12,"bbox":[64,462,214,5]}
+{"kind":"textbox","id":"sh/l8zexsb6","slide":12,"text":"label expected chunk IDs and required facts","textPreview":"label expected chunk IDs and required facts","textChars":43,"textLines":1,"bbox":[64,500,220,52]}
+{"kind":"textbox","id":"sh/k7qx4nal","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[354,410,62,28]}
+{"kind":"shape","id":"sh/m9kved07","slide":12,"bbox":[354,462,214,5]}
+{"kind":"textbox","id":"sh/7utc7ihs","slide":12,"text":"calculate retrieval precision and recall","textPreview":"calculate retrieval precision and recall","textChars":40,"textLines":1,"bbox":[354,500,220,52]}
+{"kind":"textbox","id":"sh/8v2dgnix","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[644,410,62,28]}
+{"kind":"shape","id":"sh/9wvu98zi","slide":12,"bbox":[644,462,214,5]}
+{"kind":"textbox","id":"sh/y5kvat0v","slide":12,"text":"compare at least three k values","textPreview":"compare at least three k values","textChars":31,"textLines":1,"bbox":[644,500,220,52]}
+{"kind":"textbox","id":"sh/z6tc3yhg","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[934,410,62,28]}
+{"kind":"shape","id":"sh/k72dc3i1","slide":12,"bbox":[934,462,214,5]}
+{"kind":"textbox","id":"sh/l8bu58zm","slide":12,"text":"test metadata filters","textPreview":"test metadata filters","textChars":21,"textLines":1,"bbox":[934,500,220,52]}
+{"kind":"notes","id":"nt/0m60o4","slide":12,"text":"Create at least `20` reviewed queries and:\n\n1. label expected chunk IDs and required facts;\n2. calculate retrieval precision and recall;\n3. compare at least three k values;\n4. test metadata filters;\n5. compare original and rewritten queries;\n6. add lexical retrieval and rank fusion;\n7. rerank a fixed candidate set;\n8. score correctness, relevance, groundedness, and citations;\n9. calibrate one model judge with human labels;\n10. classify every failure by owning stage;\n11. compare latency, tokens, and cost;\n12. choose a release candidate against explicit thresholds.\n\n[Worked Example]\nDo not accept “Version B feels better.” Report:\n\n`recall +0.12`, `groundedness unchanged`, `p95 +3.6s`, `cost +40%`, and the decision based on requirements.\n\n[Visual Brief]\nAn evaluation loop moves from dataset to component metrics, failure analysis, experiment, and release decision.\n\n[Instructor Notes]\nLock the evaluation dataset before comparing versions and retain failed examples.\n\n[Notebook Connection]\nComplete `07.advanced-rag-with-llama-3-in-langchain.ipynb` and `12.llm-evaluation.ipynb`.\n\n[Sources]\n- https://github.com/curiousily/AI-Bootcamp/blob/master/07.advanced-rag-with-llama-3-in-langchain.ipynb\n- https://github.com/curiousily/AI-Bootcamp/blob/master/12.llm-evaluation.ipynb\n[/Sources]"}

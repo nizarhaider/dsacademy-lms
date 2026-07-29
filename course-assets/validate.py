@@ -4,10 +4,16 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 import zipfile
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO))
+
+from lms.dsacademy.curriculum import WEEKS
+from lms.dsacademy.deck_content import build_slide_outline
+
 AUDIO_ROOT = REPO / "course-assets" / "audio"
 SLIDES_ROOT = REPO / "course-assets" / "slides"
 PUBLIC_ROOT = REPO / "lms" / "public" / "course-media"
@@ -51,7 +57,7 @@ def validate_audio(path):
 	duration = float(data["format"]["duration"])
 	require(audio["sample_rate"] == "24000", f"{path}: expected 24 kHz audio")
 	require(audio["channels"] == 1, f"{path}: expected mono audio")
-	require(10 <= duration <= 120, f"{path}: implausible {duration:.2f}s duration")
+	require(120 <= duration <= 900, f"{path}: implausible {duration:.2f}s duration")
 	quality = subprocess.run(
 		[
 			"ffmpeg",
@@ -92,18 +98,41 @@ def validate_video(path, audio_duration):
 def main():
 	manifest_path = AUDIO_ROOT / "manifest.json"
 	manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+	require(manifest["model"] == "k2-fsa/OmniVoice", "expected base OmniVoice model")
+	require(manifest["voice_mode"] == "base-model-auto", "expected automatic base voice")
+	require(
+		manifest["generation_call"] == "model.generate(text=text, num_step=16)",
+		"voice generation must not include a style or reference prompt",
+	)
+	require(manifest["diffusion_steps"] == 16, "expected documented fast inference")
+	require(manifest["languages"] == ["en"], "only English narration should be published")
 	items = {
-		(item["week"], item["session"], item["language"]): item
+		(item["module"], item["lesson"], item["language"]): item
 		for item in manifest["items"]
 	}
-	require(len(items) == 48, f"manifest has {len(items)} items, expected 48")
+	expected_lessons = sum(len(module["sessions"]) for module in WEEKS)
+	require(
+		len(items) == expected_lessons,
+		f"manifest has {len(items)} items, expected {expected_lessons}",
+	)
 
-	for week in range(1, 13):
-		for session in range(1, 3):
-			relative = Path(f"week-{week:02d}", f"session-{session:02d}")
+	for week, module in enumerate(WEEKS, start=1):
+		for session in range(1, len(module["sessions"]) + 1):
+			session_data = module["sessions"][session - 1]
+			slide_count = len(
+				build_slide_outline(week, session, module, session_data)
+			)
+			require(
+				10 <= slide_count <= 12,
+				f"module {week}, lesson {session}: expected 10–12 slides",
+			)
+			relative = Path(f"module-{week:02d}", f"lesson-{session:02d}")
 			source = SLIDES_ROOT / relative
 			public = PUBLIC_ROOT / relative
-			require(len(list((source / "rendered").glob("slide-*.png"))) == 7, f"{relative}: slides")
+			require(
+				len(list((source / "rendered").glob("slide-*.png"))) == slide_count,
+				f"{relative}: expected {slide_count} slide renders",
+			)
 			pptx = public / "slides.pptx"
 			pdf = public / "slides.pdf"
 			require(pptx.stat().st_size > 0, f"{relative}: missing PowerPoint")
@@ -117,34 +146,46 @@ def main():
 					for name in archive.namelist()
 					if name.startswith("ppt/notesSlides/notesSlide") and name.endswith(".xml")
 				]
-				require(len(notes) == 7, f"{pptx}: expected seven speaker-note pages")
+				require(
+					len(notes) == slide_count,
+					f"{pptx}: expected {slide_count} speaker-note pages",
+				)
 				require(
 					b"[Sources]" in b"".join(archive.read(name) for name in notes),
 					f"{pptx}: missing source notes",
 				)
 			page_count = len(re.findall(rb"/Type\s*/Page(?!s)\b", pdf.read_bytes()))
-			require(page_count == 7, f"{pdf}: expected seven pages, found {page_count}")
+			require(
+				page_count == slide_count,
+				f"{pdf}: expected {slide_count} pages, found {page_count}",
+			)
 
-			for language in ("en", "si"):
-				key = (week, session, language)
-				item = items[key]
-				wav = REPO / item["wav"]
-				mp3 = REPO / item["mp3"]
-				video = public / f"lesson-{language}.mp4"
-				for path in (wav, mp3, video):
-					require(path.stat().st_size > 0, f"missing {path}")
-				require(sha256(wav) == item["wav_sha256"], f"{wav}: checksum")
-				require(sha256(mp3) == item["mp3_sha256"], f"{mp3}: checksum")
-				require(item["sample_rate"] == 24000, f"{wav}: manifest sample rate")
-				require(len(item["text"]) > 80, f"{mp3}: missing narration text")
-				audio_duration = validate_audio(mp3)
-				require(
-					abs(audio_duration - item["duration_seconds"]) <= 0.2,
-					f"{mp3}: manifest duration mismatch",
-				)
-				validate_video(video, audio_duration)
+			key = (week, session, "en")
+			item = items[key]
+			mp3 = REPO / item["mp3"]
+			video = public / "lesson-en.mp4"
+			for path in (mp3, video):
+				require(path.stat().st_size > 0, f"missing {path}")
+			require(not (public / "narration-si.mp3").exists(), f"{relative}: Sinhala audio")
+			require(not (public / "lesson-si.mp4").exists(), f"{relative}: Sinhala video")
+			require(sha256(mp3) == item["mp3_sha256"], f"{mp3}: checksum")
+			require(item["sample_rate"] == 24000, f"{mp3}: manifest sample rate")
+			require(item["slide_count"] == slide_count, f"{mp3}: slide count")
+			require(
+				len(item["slide_weights"]) == slide_count,
+				f"{mp3}: timing weights",
+			)
+			require(len(item["text"]) > 1500, f"{mp3}: narration is too short")
+			audio_duration = validate_audio(mp3)
+			require(
+				abs(audio_duration - item["duration_seconds"]) <= 0.2,
+				f"{mp3}: manifest duration mismatch",
+			)
+			validate_video(video, audio_duration)
 
-	print("Validated 24 sessions, 48 narrations, 48 videos, and 24 slide decks.")
+	print(
+		f"Validated {expected_lessons} English narrations, videos, and 10–12-slide decks."
+	)
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-"""Assemble narrated lesson videos from verified slide renders."""
+"""Assemble English lesson videos from approved slide renders and base-model audio."""
 
 import argparse
 import json
@@ -10,13 +10,13 @@ REPO = Path(__file__).resolve().parents[2]
 SLIDES_ROOT = REPO / "course-assets" / "slides"
 AUDIO_ROOT = REPO / "lms" / "public" / "course-media"
 OUTPUT_ROOT = AUDIO_ROOT
-WEIGHTS = [0.15, 0.13, 0.18, 0.14, 0.15, 0.13, 0.12]
+TIMING_ROOT = REPO / "course-assets" / "audio"
 
 
 def parse_args():
 	parser = argparse.ArgumentParser()
-	parser.add_argument("--week", type=int)
-	parser.add_argument("--session", type=int)
+	parser.add_argument("--module", "--week", dest="week", type=int)
+	parser.add_argument("--lesson", "--session", dest="session", type=int)
 	parser.add_argument("--force", action="store_true")
 	return parser.parse_args()
 
@@ -40,9 +40,22 @@ def duration_seconds(audio_path):
 	return float(json.loads(result.stdout)["format"]["duration"])
 
 
-def build_video(slide_paths, audio_path, output_path):
+def load_slide_weights():
+	weights = {}
+	for timing_path in TIMING_ROOT.glob("module-*/lesson-*/timing-en.json"):
+		week = int(timing_path.parents[1].name.split("-")[1])
+		session = int(timing_path.parent.name.split("-")[1])
+		item = json.loads(timing_path.read_text(encoding="utf-8"))
+		if not 10 <= len(item["slide_weights"]) <= 12:
+			raise RuntimeError(f"Invalid timing metadata: {timing_path}")
+		weights[(week, session)] = item["slide_weights"]
+	return weights
+
+
+def build_video(slide_paths, audio_path, output_path, weights):
 	duration = duration_seconds(audio_path)
-	scene_durations = [duration * weight for weight in WEIGHTS]
+	total_weight = sum(weights)
+	scene_durations = [duration * weight / total_weight for weight in weights]
 	output_path.parent.mkdir(parents=True, exist_ok=True)
 
 	with tempfile.NamedTemporaryFile(
@@ -82,18 +95,21 @@ def build_video(slide_paths, audio_path, output_path):
 				"pad=1280:720:(ow-iw)/2:(oh-ih)/2:color=white,"
 				"format=yuv420p",
 				"-r",
-				"30",
+				"10",
 				"-c:v",
 				"libx264",
 				"-preset",
 				"medium",
 				"-crf",
-				"21",
+				"24",
+				"-tune",
+				"stillimage",
 				"-c:a",
 				"aac",
 				"-b:a",
 				"128k",
-				"-shortest",
+				"-t",
+				f"{duration:.3f}",
 				"-movflags",
 				"+faststart",
 				str(temporary_output),
@@ -108,31 +124,41 @@ def build_video(slide_paths, audio_path, output_path):
 
 def main():
 	args = parse_args()
+	weights_by_session = load_slide_weights()
 	count = 0
-	for week_dir in sorted(SLIDES_ROOT.glob("week-*")):
+	for week_dir in sorted(SLIDES_ROOT.glob("module-*")):
 		week_number = int(week_dir.name.split("-")[1])
 		if args.week and week_number != args.week:
 			continue
-		for session_dir in sorted(week_dir.glob("session-*")):
+		for session_dir in sorted(week_dir.glob("lesson-*")):
 			session_number = int(session_dir.name.split("-")[1])
 			if args.session and session_number != args.session:
 				continue
 			slides = sorted((session_dir / "rendered").glob("slide-*.png"))
-			if len(slides) != 7:
-				raise RuntimeError(f"Expected seven slide renders in {session_dir}")
+			if not 10 <= len(slides) <= 12:
+				raise RuntimeError(
+					f"Expected 10–12 slide renders in {session_dir}; found {len(slides)}"
+				)
 
 			relative = Path(week_dir.name, session_dir.name)
-			for language in ("en", "si"):
-				audio = AUDIO_ROOT / relative / f"narration-{language}.mp3"
-				if not audio.exists():
-					continue
-				output = OUTPUT_ROOT / relative / f"lesson-{language}.mp4"
-				if output.exists() and not args.force:
-					print(f"skip {output.relative_to(REPO)}")
-					continue
-				build_video(slides, audio, output)
-				count += 1
-				print(f"generated {output.relative_to(REPO)}")
+			audio = AUDIO_ROOT / relative / "narration-en.mp3"
+			if not audio.exists():
+				raise RuntimeError(f"Missing English narration: {audio}")
+			output = OUTPUT_ROOT / relative / "lesson-en.mp4"
+			if output.exists() and not args.force:
+				print(f"skip {output.relative_to(REPO)}")
+				continue
+			key = (week_number, session_number)
+			if key not in weights_by_session:
+				raise RuntimeError(f"Missing slide timing metadata for {key}")
+			if len(weights_by_session[key]) != len(slides):
+				raise RuntimeError(
+					f"Slide/timing count mismatch for {key}: "
+					f"{len(slides)} renders and {len(weights_by_session[key])} weights"
+				)
+			build_video(slides, audio, output, weights_by_session[key])
+			count += 1
+			print(f"generated {output.relative_to(REPO)}")
 	print(f"Generated {count} videos.")
 
 

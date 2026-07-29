@@ -850,7 +850,7 @@ def _concept_definition(concept):
 	)
 
 
-def build_slide_outline(week_number, session_number, week_data, session_data):
+def _build_legacy_slide_outline(week_number, session_number, week_data, session_data):
 	"""Return the approved 12-slide concept-first beginner lesson."""
 	title = session_data["title"]
 	concepts = session_data["concepts"]
@@ -968,3 +968,10 @@ def build_slide_outline(week_number, session_number, week_data, session_data):
 		slide["sources"] = sources
 	assert 10 <= len(slides) <= 12
 	return slides
+
+
+def build_slide_outline(week_number, session_number, week_data, session_data):
+	"""Return the reviewed Markdown-first beginner lesson."""
+	from lms.dsacademy.markdown_decks import build_markdown_slide_outline
+
+	return build_markdown_slide_outline(week_number)

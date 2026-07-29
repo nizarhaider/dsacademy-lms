@@ -64,8 +64,8 @@ From a checkout of this repository:
 bash deploy/oci/verify.sh
 ```
 
-The verifier checks the public API, LMS pages, course image, English and Sinhala
-audio, and English and Sinhala video.
+The verifier checks the public API, LMS pages, course image, English audio, and
+English video.
 
 ## Backup
 

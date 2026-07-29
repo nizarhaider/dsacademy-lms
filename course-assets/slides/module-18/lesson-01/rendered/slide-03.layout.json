@@ -1,0 +1,764 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/h5gfa5",
+    "id": "h5gfa5",
+    "slide": 3,
+    "layoutId": "34fe63a6-ab33-4b7e-a50a-739f310f278b",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "920a860a-187c-4b10-ba59-6eebe9ab4e6e",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#EEF4F7",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "34fe63a6-ab33-4b7e-a50a-739f310f278b",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "920a860a-187c-4b10-ba59-6eebe9ab4e6e",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "920a860a-187c-4b10-ba59-6eebe9ab4e6e",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q1c7294n",
+      "id": "1",
+      "bbox": [
+        54,
+        28,
+        110,
+        22
+      ],
+      "geometry": "rect",
+      "text": "M18 / L01",
+      "textPreview": "M18 / L01",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "M18 / L01"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "M18 / L01",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "M18 / L01",
+              "fontSize": 11,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d4nqxo3y",
+      "id": "2",
+      "bbox": [
+        176,
+        28,
+        650,
+        22
+      ],
+      "geometry": "rect",
+      "text": "Start with a Testable User Need",
+      "textPreview": "Start with a Testable User Need",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#607086",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Start with a Testable User Need"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Start with a Testable User Need",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#607086"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Start with a Testable User Need",
+              "fontSize": 11,
+              "color": "#607086"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c3ep4jmt",
+      "id": "3",
+      "bbox": [
+        1002,
+        28,
+        224,
+        22
+      ],
+      "geometry": "rect",
+      "text": "DS ACADEMY   03",
+      "textPreview": "DS ACADEMY   03",
+      "resolvedFontSize": 11,
+      "resolvedTextStyle": {
+        "fontSize": 11,
+        "typeface": "+mn-lt",
+        "color": "#607086",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DS ACADEMY   03"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DS ACADEMY   03",
+          "resolvedTextStyle": {
+            "fontSize": 11,
+            "color": "#607086",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DS ACADEMY   03",
+              "fontSize": 11,
+              "color": "#607086",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3elorelw",
+      "id": "4",
+      "bbox": [
+        62,
+        78,
+        560,
+        22
+      ],
+      "geometry": "rect",
+      "text": "RUN IT AND INSPECT THE RESULT",
+      "textPreview": "RUN IT AND INSPECT THE RESULT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RUN IT AND INSPECT THE RESULT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RUN IT AND INSPECT THE RESULT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RUN IT AND INSPECT THE RESULT",
+              "fontSize": 12,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2dc7y94b",
+      "id": "5",
+      "bbox": [
+        62,
+        108,
+        1110,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Data Flow Reveals Trust Boundaries",
+      "textPreview": "Data Flow Reveals Trust Boundaries",
+      "resolvedFontSize": 38,
+      "resolvedTextStyle": {
+        "fontSize": 38,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Data Flow Reveals Trust Boundaries"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Data Flow Reveals Trust Boundaries",
+          "resolvedTextStyle": {
+            "fontSize": 38,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Data Flow Reveals Trust Boundaries",
+              "fontSize": 38,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p036to32",
+      "id": "6",
+      "bbox": [
+        54,
+        170,
+        684,
+        408
+      ],
+      "geometry": "rect",
+      "fillColor": "#0B1220",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ofup0jmh",
+      "id": "7",
+      "bbox": [
+        54,
+        170,
+        684,
+        32
+      ],
+      "geometry": "rect",
+      "fillColor": "#243244",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nap83ylg",
+      "id": "8",
+      "bbox": [
+        72,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#F06B5F",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m9g7at4v",
+      "id": "9",
+      "bbox": [
+        96,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#F2C94C",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8j2hcvml",
+      "id": "10",
+      "bbox": [
+        120,
+        180,
+        11,
+        11
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#A8D95B",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9kbyl0n6",
+      "id": "11",
+      "bbox": [
+        76,
+        220,
+        642,
+        336
+      ],
+      "geometry": "rect",
+      "text": "[User] --untrusted question--> [API validation]\n[Retriever] --authorized chunks--> [Model]\n[Model] --untrusted draft--> [Output validation]",
+      "textPreview": "[User] --untrusted question--> [API validation] | [Retriever] --authorized chunks--> [Model] | [Model] --untrusted draft--> [Output valid...",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#E8F1F7",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "[User] --untrusted question--> [API validation]"
+          },
+          {
+            "index": 2,
+            "text": "[Retriever] --authorized chunks--> [Model]"
+          },
+          {
+            "index": 3,
+            "text": "[Model] --untrusted draft--> [Output validation]"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "[User] --untrusted question--> [API validation]",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "[User] --untrusted question--> [API validation]",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "[Retriever] --authorized chunks--> [Model]",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "[Retriever] --authorized chunks--> [Model]",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "[Model] --untrusted draft--> [Output validation]",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#E8F1F7"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "[Model] --untrusted draft--> [Output validation]",
+              "fontSize": 15,
+              "color": "#E8F1F7"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mxkzal4v",
+      "id": "12",
+      "bbox": [
+        770,
+        170,
+        454,
+        408
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#CAD6DF",
+      "lineWidth": 1
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7itgjq5g",
+      "id": "13",
+      "bbox": [
+        796,
+        194,
+        120,
+        22
+      ],
+      "geometry": "rect",
+      "text": "OUTPUT",
+      "textPreview": "OUTPUT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#176BDB",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "OUTPUT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "OUTPUT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#176BDB",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "OUTPUT",
+              "fontSize": 12,
+              "color": "#176BDB",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kvih8bmp",
+      "id": "14",
+      "bbox": [
+        796,
+        234,
+        398,
+        312
+      ],
+      "geometry": "rect",
+      "text": "Every boundary has an owner and required check.",
+      "textPreview": "Every boundary has an owner and required check.",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Every boundary has an owner and required check."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Every boundary has an owner and required check.",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#0B1220"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Every boundary has an owner and required check.",
+              "fontSize": 14,
+              "color": "#0B1220"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lwryhgna",
+      "id": "15",
+      "bbox": [
+        54,
+        602,
+        1170,
+        62
+      ],
+      "geometry": "rect",
+      "fillColor": "#DFF5FA",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yt0z6l4j",
+      "id": "16",
+      "bbox": [
+        76,
+        612,
+        1128,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Policy documents are approved internally, but their extracted text may contain parser errors. User question is untrusted. Model output is untrusted. Final response is released only after schema, citation, and authorization checks.",
+      "textPreview": "Policy documents are approved internally, but their extracted text may contain parser errors. User question is untrusted. Model output is...",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#0B1220",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Policy documents are approved internally, but their extracted text may contain parser errors. User question is untrusted. Model output is untrusted. Final"
+          },
+          {
+            "index": 2,
+            "text": "response is released only after schema, citation, and authorization checks."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Policy documents are approved internally, but their extracted text may contain parser errors. User question is untrusted. Model output is untrusted. Final response is released only after schema, citation, and authorization checks.",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#0B1220",
+            "bold": true
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Policy documents are approved internally, but their extracted text may contain parser errors. User question is untrusted. Model output is untrusted. Final response is released only after schema, citation, and authorization checks.",
+              "fontSize": 15,
+              "color": "#0B1220",
+              "bold": true
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

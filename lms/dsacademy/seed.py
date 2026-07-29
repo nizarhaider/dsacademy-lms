@@ -8,11 +8,12 @@ from frappe.utils import nowdate
 from frappe.utils.file_manager import save_file
 
 from lms.dsacademy.curriculum import COURSE, WEEKS
+from lms.dsacademy.markdown_decks import load_markdown_slides
 from lms.lms.doctype.lms_course.lms_course import update_course_statistics
 
 ASSET_URL = "/assets/lms"
 MEDIA_ROOT = Path(frappe.get_app_path("lms", "public", "course-media"))
-MEDIA_VERSION = "20260728-beginner-ai-18-week-v1"
+MEDIA_VERSION = "20260729-beginner-ai-18-week-v2"
 LEGACY_COURSE_TITLES = (
 	"End-to-End Data Science & AI",
 	"Production AI Engineering Bootcamp",
@@ -29,6 +30,7 @@ def seed_all():
 	course = upsert_course(instructor)
 
 	chapter_names = []
+	all_lesson_names = []
 	for week_number, week_data in enumerate(WEEKS, start=1):
 		chapter = upsert_chapter(course, week_number, week_data)
 		chapter_names.append(chapter.name)
@@ -46,12 +48,14 @@ def seed_all():
 			course, chapter, week_number, week_data
 		)
 		lesson_names.append(assessment.name)
+		all_lesson_names.extend(lesson_names)
 		chapter.set("lessons", [{"lesson": name} for name in lesson_names])
 		chapter.save(ignore_permissions=True)
 
 	course.reload()
 	course.set("chapters", [{"chapter": name} for name in chapter_names])
 	course.save(ignore_permissions=True)
+	remove_stale_course_content(course.name, chapter_names, all_lesson_names)
 
 	update_course_statistics()
 	frappe.db.commit()
@@ -62,6 +66,32 @@ def seed_all():
 		"quizzes": len(WEEKS),
 		"assignments": len(WEEKS),
 	}
+
+
+def remove_stale_course_content(course, chapter_names, lesson_names):
+	"""Delete only superseded chapter and lesson records owned by this course."""
+	for lesson in frappe.get_all(
+		"Course Lesson",
+		{"course": course, "name": ["not in", lesson_names]},
+		pluck="name",
+	):
+		frappe.delete_doc(
+			"Course Lesson",
+			lesson,
+			force=True,
+			ignore_permissions=True,
+		)
+	for chapter in frappe.get_all(
+		"Course Chapter",
+		{"course": course, "name": ["not in", chapter_names]},
+		pluck="name",
+	):
+		frappe.delete_doc(
+			"Course Chapter",
+			chapter,
+			force=True,
+			ignore_permissions=True,
+		)
 
 
 def configure_system():
@@ -409,28 +439,42 @@ def upsert_assignment(course, week_number, week_data):
 
 def render_lesson_body(week_number, session_number, session_data):
 	slug = f"module-{week_number:02d}/lesson-{session_number:02d}"
+	slides = load_markdown_slides(week_number)
+	introduction = slides[0]["sections"]["Learner-facing content"]
+	concept_sequence = [
+		item["title"]
+		for item in slides[1:-1]
+	]
+	lab = slides[-1]["sections"]
+	source_urls = []
+	for item in slides:
+		for url in _markdown_urls(item["sections"]["Sources"]):
+			if url not in source_urls:
+				source_urls.append(url)
 	lines = [
 		f"# {session_data['title']}",
 		"",
-		"## Learning outcomes",
+		introduction,
 		"",
-		*[f"- {item}" for item in session_data["outcomes"]],
+		"## Concept sequence",
 		"",
-		"## Core concepts",
-		"",
-		", ".join(session_data["concepts"]).capitalize() + ".",
+		*[f"{index}. {title}" for index, title in enumerate(concept_sequence, 1)],
 		"",
 		"## Guided lab",
 		"",
-		session_data["lab"],
+		lab["Learner-facing content"],
 		"",
-		"## Portfolio deliverable",
+		"## Worked reference",
 		"",
-		session_data["deliverable"],
+		lab["Worked example"],
 		"",
-		"## Narrated explanation",
+		"## Source notebook bridge",
 		"",
-		session_data["narration_en"],
+		lab["Notebook connection"],
+		"",
+		"## Sources",
+		"",
+		*[f"- {url}" for url in source_urls],
 	]
 
 	for label, relative_path, macro in [
@@ -464,6 +508,12 @@ def render_lesson_body(week_number, session_number, session_data):
 			]
 		)
 	return "\n".join(lines)
+
+
+def _markdown_urls(markdown):
+	import re
+
+	return re.findall(r"\[[^\]]+\]\((https?://[^)]+)\)", markdown)
 
 
 def append_once(parent, table_field, link_field, value):

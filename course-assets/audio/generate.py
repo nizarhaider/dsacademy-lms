@@ -1,11 +1,16 @@
-"""Generate deterministic English and Sinhala narration with local OmniVoice."""
+"""Generate deterministic English narration with the base OmniVoice model."""
 
 import argparse
 import hashlib
 import json
 import os
 import subprocess
+import sys
+import tempfile
 from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(REPO))
 
 import numpy as np
 import soundfile as sf
@@ -13,56 +18,63 @@ import torch
 from huggingface_hub import snapshot_download
 
 from lms.dsacademy.curriculum import WEEKS
+from lms.dsacademy.deck_content import build_slide_outline
 from omnivoice import OmniVoice
 
-REPO = Path(__file__).resolve().parents[2]
 SOURCE_ROOT = REPO / "course-assets" / "audio"
 PUBLIC_ROOT = REPO / "lms" / "public" / "course-media"
-MODEL_ID = "2broke2code/serendib-omnivoice-finetuned-v2"
-MODEL_REVISION = "v2.0.0"
-REFERENCE_TEXT = (
-	"ඔබතුමාගේ ගිය මාසේ බිල් එක ටිකක් වැඩිවෙලා තියෙන්නේ Sir ගත්ත "
-	"international call charges නිසා. Sirට ඕනෙ නම් මට පුළුවන් ඒකේ "
-	"detailed report එකක් ඔබතුමාගේ registered email එකට එවන්න."
-)
+MODEL_ID = "k2-fsa/OmniVoice"
+MODEL_REVISION = "c5fdb5ccb189668d56333f77ba2629f4cd7535f4"
+NUM_STEPS = 16
 
 
 def parse_args():
 	parser = argparse.ArgumentParser()
-	parser.add_argument("--week", type=int)
-	parser.add_argument("--session", type=int)
+	parser.add_argument("--module", "--week", dest="week", type=int)
+	parser.add_argument("--week-from", type=int)
+	parser.add_argument("--week-to", type=int)
+	parser.add_argument("--lesson", "--session", dest="session", type=int)
 	parser.add_argument("--force", action="store_true")
-	parser.add_argument("--steps", type=int, default=16)
-	parser.add_argument("--speed", type=float, default=1.05)
-	return parser.parse_args()
+	args = parser.parse_args()
+	if args.week and (args.week_from or args.week_to):
+		parser.error("--week cannot be combined with --week-from or --week-to")
+	if args.week_from and args.week_to and args.week_from > args.week_to:
+		parser.error("--week-from cannot be greater than --week-to")
+	return args
 
 
 def resolve_model():
 	override = os.environ.get("DSACADEMY_OMNIVOICE_MODEL")
 	if override:
 		return Path(override).expanduser().resolve()
+	offline = os.environ.get("HF_HUB_OFFLINE") == "1"
 	return Path(
 		snapshot_download(
 			MODEL_ID,
 			revision=MODEL_REVISION,
-			local_files_only=True,
+			local_files_only=offline,
 		)
 	)
 
 
-def narration_text(session_data, language):
-	if language == "en":
-		return (
-			f"Welcome to {session_data['title']}. "
-			f"{session_data['narration_en']} "
-			f"Your guided lab is to {session_data['lab'][0].lower() + session_data['lab'][1:]} "
-			f"The portfolio evidence for this session is {session_data['deliverable'][0].lower() + session_data['deliverable'][1:]}"
+def slide_outline(week_number, session_number, week_data, session_data):
+	return build_slide_outline(
+		week_number,
+		session_number,
+		week_data,
+		session_data,
+	)
+
+
+def narration_text(week_number, session_number, week_data, session_data):
+	return "\n\n".join(
+		slide["narration"]
+		for slide in slide_outline(
+			week_number,
+			session_number,
+			week_data,
+			session_data,
 		)
-	return (
-		f"{session_data['title']}. "
-		f"{session_data['narration_si']} "
-		f"Guided lab එක: {session_data['lab']} "
-		f"Portfolio deliverable එක: {session_data['deliverable']}"
 	)
 
 
@@ -99,92 +111,133 @@ def transcode_mp3(wav_path, mp3_path):
 	)
 
 
-def generate_session(model, session_data, week_number, session_number, args):
+def audio_duration(path):
+	result = subprocess.run(
+		[
+			"ffprobe",
+			"-v",
+			"error",
+			"-show_entries",
+			"format=duration",
+			"-of",
+			"default=noprint_wrappers=1:nokey=1",
+			str(path),
+		],
+		check=True,
+		capture_output=True,
+		text=True,
+	)
+	return float(result.stdout.strip())
+
+
+def generate_session(model, week_data, session_data, week_number, session_number, args):
 	relative = Path(
-		f"week-{week_number:02d}",
-		f"session-{session_number:02d}",
+		f"module-{week_number:02d}",
+		f"lesson-{session_number:02d}",
 	)
-	languages = []
-	texts = []
-	results = []
-	for language in ("en", "si"):
-		wav_path = SOURCE_ROOT / relative / f"narration-{language}.wav"
-		mp3_path = PUBLIC_ROOT / relative / f"narration-{language}.mp3"
-		text = narration_text(session_data, language)
-		if mp3_path.exists() and wav_path.exists() and not args.force:
-			print(f"skip {relative}/narration-{language}.mp3", flush=True)
-			results.append(metadata_for(mp3_path, wav_path, language, text))
-		else:
-			languages.append(language)
-			texts.append(text)
-
-	if not languages:
-		return results
-
-	seed = 20260727 + week_number * 100 + session_number * 10
-	np.random.seed(seed)
-	torch.manual_seed(seed)
-	audios = model.generate(
-		text=texts,
-		language=languages,
-		ref_audio=[str(model._dsacademy_reference_audio)] * len(languages),
-		ref_text=[REFERENCE_TEXT] * len(languages),
-		num_step=args.steps,
-		speed=[args.speed] * len(languages),
+	timing_path = SOURCE_ROOT / relative / "timing-en.json"
+	mp3_path = PUBLIC_ROOT / relative / "narration-en.mp3"
+	slides = slide_outline(
+		week_number,
+		session_number,
+		week_data,
+		session_data,
 	)
+	text = "\n\n".join(slide["narration"] for slide in slides)
+	if (
+		mp3_path.exists()
+		and timing_path.exists()
+		and not args.force
+	):
+		print(f"skip {relative}/narration-en.mp3", flush=True)
+		weights = json.loads(timing_path.read_text(encoding="utf-8"))["slide_weights"]
+		return metadata_for(mp3_path, text, weights)
 
-	for language, text, waveform in zip(languages, texts, audios):
-		wav_path = SOURCE_ROOT / relative / f"narration-{language}.wav"
-		mp3_path = PUBLIC_ROOT / relative / f"narration-{language}.mp3"
-		wav_path.parent.mkdir(parents=True, exist_ok=True)
+	waveforms = []
+	sample_counts = []
+	silence = np.zeros(round(model.sampling_rate * 0.35), dtype=np.float32)
+	for slide_index, slide in enumerate(slides, start=1):
+		np.random.seed(20260727)
+		torch.manual_seed(20260727)
+		# Base-model auto voice: no reference audio, style prompt, or fine-tuning.
+		waveform = model.generate(
+			text=slide["narration"],
+			num_step=NUM_STEPS,
+		)[0]
 		if hasattr(waveform, "detach"):
 			waveform = waveform.detach().cpu().numpy()
+		waveform = np.asarray(waveform, dtype=np.float32).reshape(-1)
+		waveforms.append(waveform)
+		sample_count = len(waveform)
+		if slide_index < len(slides):
+			waveforms.append(silence)
+			sample_count += len(silence)
+		sample_counts.append(sample_count)
+		print(
+			f"generated {relative} slide {slide_index:02d}/{len(slides)}",
+			flush=True,
+		)
+
+	waveform = np.concatenate(waveforms)
+	total_samples = sum(sample_counts)
+	weights = [round(count / total_samples, 8) for count in sample_counts]
+	timing_path.parent.mkdir(parents=True, exist_ok=True)
+	timing_path.write_text(
+		json.dumps({"slide_weights": weights}, indent=2),
+		encoding="utf-8",
+	)
+	with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as temporary:
+		wav_path = Path(temporary.name)
+	try:
 		sf.write(wav_path, waveform, model.sampling_rate)
 		transcode_mp3(wav_path, mp3_path)
-		print(f"generated {relative}/narration-{language}.mp3", flush=True)
-		results.append(metadata_for(mp3_path, wav_path, language, text))
-	return results
+	finally:
+		wav_path.unlink(missing_ok=True)
+	print(f"generated {relative}/narration-en.mp3", flush=True)
+	return metadata_for(mp3_path, text, weights)
 
 
-def metadata_for(mp3_path, wav_path, language, text):
-	info = sf.info(wav_path)
+def metadata_for(mp3_path, text, weights):
 	return {
-		"language": language,
+		"language": "en",
+		"voice_mode": "base-model-auto",
 		"text": text,
-		"duration_seconds": round(info.duration, 3),
-		"sample_rate": info.samplerate,
-		"wav_sha256": file_sha256(wav_path),
+		"duration_seconds": round(audio_duration(mp3_path), 3),
+		"sample_rate": 24000,
+		"slide_count": len(weights),
+		"slide_weights": weights,
 		"mp3_sha256": file_sha256(mp3_path),
-		"wav": str(wav_path.relative_to(REPO)),
 		"mp3": str(mp3_path.relative_to(REPO)),
 	}
 
 
 def needs_generation(week_number, session_number, args):
 	relative = Path(
-		f"week-{week_number:02d}",
-		f"session-{session_number:02d}",
+		f"module-{week_number:02d}",
+		f"lesson-{session_number:02d}",
 	)
-	if args.force:
-		return True
-	return any(
-		not (SOURCE_ROOT / relative / f"narration-{language}.wav").exists()
-		or not (PUBLIC_ROOT / relative / f"narration-{language}.mp3").exists()
-		for language in ("en", "si")
+	return (
+		args.force
+		or not (SOURCE_ROOT / relative / "timing-en.json").exists()
+		or not (PUBLIC_ROOT / relative / "narration-en.mp3").exists()
 	)
 
 
 def load_model():
 	model_path = resolve_model()
-	reference_audio = model_path / "samples" / "reference_033.wav"
-	model = OmniVoice.from_pretrained(
+	device = (
+		"cuda"
+		if torch.cuda.is_available()
+		else "mps"
+		if torch.backends.mps.is_available()
+		else "cpu"
+	)
+	return OmniVoice.from_pretrained(
 		str(model_path),
-		device_map="mps",
-		dtype=torch.float16,
+		device_map=device,
+		dtype=torch.float16 if device != "cpu" else torch.float32,
 		load_asr=False,
 	)
-	model._dsacademy_reference_audio = reference_audio
-	return model
 
 
 def collect_manifest_items():
@@ -192,22 +245,26 @@ def collect_manifest_items():
 	for week_index, week_data in enumerate(WEEKS, start=1):
 		for session_index, session_data in enumerate(week_data["sessions"], start=1):
 			relative = Path(
-				f"week-{week_index:02d}",
-				f"session-{session_index:02d}",
+				f"module-{week_index:02d}",
+				f"lesson-{session_index:02d}",
 			)
-			for language in ("en", "si"):
-				wav_path = SOURCE_ROOT / relative / f"narration-{language}.wav"
-				mp3_path = PUBLIC_ROOT / relative / f"narration-{language}.mp3"
-				if not wav_path.exists() or not mp3_path.exists():
-					continue
-				item = metadata_for(
-					mp3_path,
-					wav_path,
-					language,
-					narration_text(session_data, language),
-				)
-				item.update({"week": week_index, "session": session_index})
-				items.append(item)
+			timing_path = SOURCE_ROOT / relative / "timing-en.json"
+			mp3_path = PUBLIC_ROOT / relative / "narration-en.mp3"
+			if not mp3_path.exists() or not timing_path.exists():
+				continue
+			weights = json.loads(timing_path.read_text(encoding="utf-8"))["slide_weights"]
+			item = metadata_for(
+				mp3_path,
+				narration_text(
+					week_index,
+					session_index,
+					week_data,
+					session_data,
+				),
+				weights,
+			)
+			item.update({"module": week_index, "lesson": session_index})
+			items.append(item)
 	return items
 
 
@@ -215,17 +272,20 @@ def main():
 	args = parse_args()
 	os.environ.setdefault("HF_HUB_OFFLINE", "1")
 	model = None
+	device = os.environ.get("DSACADEMY_GENERATION_DEVICE") or (
+		"cuda"
+		if torch.cuda.is_available()
+		else "mps"
+		if torch.backends.mps.is_available()
+		else "cpu"
+	)
 
-	manifest = {
-		"model": MODEL_ID,
-		"revision": MODEL_REVISION,
-		"device": "mps",
-		"steps": args.steps,
-		"speed": args.speed,
-		"items": [],
-	}
 	for week_index, week_data in enumerate(WEEKS, start=1):
 		if args.week and week_index != args.week:
+			continue
+		if args.week_from and week_index < args.week_from:
+			continue
+		if args.week_to and week_index > args.week_to:
 			continue
 		for session_index, session_data in enumerate(week_data["sessions"], start=1):
 			if args.session and session_index != args.session:
@@ -234,6 +294,7 @@ def main():
 				model = load_model()
 			generate_session(
 				model,
+				week_data,
 				session_data,
 				week_index,
 				session_index,
@@ -242,11 +303,21 @@ def main():
 			if torch.backends.mps.is_available():
 				torch.mps.empty_cache()
 
-	manifest["items"] = collect_manifest_items()
+	manifest = {
+		"model": MODEL_ID,
+		"revision": MODEL_REVISION,
+			"voice_mode": "base-model-auto",
+			"generation_call": "model.generate(text=text, num_step=16)",
+			"generation_unit": "one automatic-voice call per slide",
+			"diffusion_steps": NUM_STEPS,
+			"device": device,
+		"languages": ["en"],
+		"items": collect_manifest_items(),
+	}
 	SOURCE_ROOT.mkdir(parents=True, exist_ok=True)
 	manifest_path = SOURCE_ROOT / "manifest.json"
 	manifest_path.write_text(
-		json.dumps(manifest, ensure_ascii=False, indent=2),
+		json.dumps(manifest, ensure_ascii=True, indent=2),
 		encoding="utf-8",
 	)
 	print(f"Wrote {manifest_path}", flush=True)

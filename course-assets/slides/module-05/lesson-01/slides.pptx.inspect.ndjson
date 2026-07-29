@@ -1,0 +1,229 @@
+{"kind":"deck","id":"pr/pgoqdx","name":"Deck"}
+{"kind":"layout","layoutId":"98317fa4-d7d9-47e2-a631-34461a4d1867","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"0ccc8d56-4ac6-48b0-9d72-c5d77bc26a52","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/a27nrc","slide":1,"title":"MODULE 05  /  LESSON 01","textShapes":3}
+{"kind":"shape","id":"sh/don2h4be","slide":1,"bbox":[0,0,1280,12]}
+{"kind":"shape","id":"sh/bm50fut8","slide":1,"bbox":[692,0,32,720]}
+{"kind":"textbox","id":"sh/0ry1czup","slide":1,"text":"MODULE 05  /  LESSON 01","textPreview":"MODULE 05  /  LESSON 01","textChars":23,"textLines":1,"bbox":[70,70,430,26]}
+{"kind":"textbox","id":"sh/lc72l4ba","slide":1,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[70,148,548,250]}
+{"kind":"shape","id":"sh/ypwja9cz","slide":1,"bbox":[70,430,96,6]}
+{"kind":"textbox","id":"sh/zqpkjut4","slide":1,"text":"A mathematical function is a rule that maps each allowed input to one output.","textPreview":"A mathematical function is a rule that maps each allowed input to one output.","textChars":77,"textLines":1,"bbox":[70,472,530,102]}
+{"kind":"image","id":"im/zahgr61g","slide":1,"name":"","alt":"Data science workflow from raw data to a deployed decision system","bbox":[724,0,556,720]}
+{"kind":"image","id":"im/x43i10ju","slide":1,"name":"","alt":"DS Academy","bbox":[70,620,182,52]}
+{"kind":"notes","id":"nt/a27nrc","slide":1,"text":"A mathematical **function** is a rule that maps each allowed input to one output.\n\n`y = f(x)`\n\n- `x` is the input.\n- `f` is the rule.\n- `y` is the output.\n\nFor `f(x) = 2x + 1`, the coefficient `2` controls how quickly output changes and the intercept `1` is the output when `x = 0`.\n\nMachine-learning models are functions whose parameters are estimated from data.\n\n[Worked Example]\nFor `f(x) = 2x + 1` and `x = 3`:\n\n1. Multiply: `2 x 3 = 6`\n2. Add intercept: `6 + 1 = 7`\n3. Therefore `f(3) = 7`\n\n[Visual Brief]\nAn input `3` passes through a box labelled `multiply by 2, then add 1` and becomes `7`. A line graph marks `(0,1)` and `(3,7)`.\n\n[Instructor Notes]\nConnect this to Python functions but distinguish a mathematical mapping from Python syntax.\n\n[Notebook Connection]\nLater model equations use the same input-rule-output structure with learned parameters.\n\n[Sources]\n- https://mml-book.github.io/\n- https://openstax.org/books/college-algebra-2e/pages/3-1-functions-and-function-notation\n[/Sources]"}
+{"kind":"slide","id":"sl/8t0r6f","slide":2,"title":"M05 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/4bm1w365","slide":2,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/3adk3ypk","slide":2,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/i94jutoz","slide":2,"text":"DS ACADEMY   02","textPreview":"DS ACADEMY   02","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/d0f2987m","slide":2,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/szm10n61","slide":2,"text":"Slope Measures Change","textPreview":"Slope Measures Change","textChars":21,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/rydk7ipw","slide":2,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/qx4jydob","slide":2,"text":"The slope of a straight line measures output change per unit of input change. slope = change in y / change in x = Δy / Δx A positive slope rises, a negative slope falls, and zero slope is horizontal. Slope has units: if x is hours and y is kilometres, slope is kilometres per hour.","textPreview":"The slope of a straight line measures output change per unit of input change. slope = change in y / change in x = Δy / Δx A positive slop...","textChars":281,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/14f2ds7y","slide":2,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/03614n6d","slide":2,"text":"The slope of a straight line measures output change per unit of input change.","textPreview":"The slope of a straight line measures output change per unit of input change.","textChars":77,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/2x8bid0b","slide":2,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/nyhcri1w","slide":2,"text":"slope = change in y / change in x = Δy / Δx","textPreview":"slope = change in y / change in x = Δy / Δx","textChars":43,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/ozatknih","slide":2,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/p0jutsj2","slide":2,"text":"A positive slope rises, a negative slope falls, and zero slope is horizontal.","textPreview":"A positive slope rises, a negative slope falls, and zero slope is horizontal.","textChars":77,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/a1sbmx0n","slide":2,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/b21cvi18","slide":2,"text":"Slope has units: if x is hours and y is kilometres, slope is kilometres per hour.","textPreview":"Slope has units: if x is hours and y is kilometres, slope is kilometres per hour.","textChars":81,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/c3atonid","slide":2,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/x4juxsjy","slide":2,"text":"Two points are (1, 3) and (4, 9).","textPreview":"Two points are (1, 3) and (4, 9).","textChars":33,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/65obat03","slide":2,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/r6xsjy1o","slide":2,"text":"Δy = 9 - 3 = 6 Δx = 4 - 1 = 3 slope = 6 / 3 = 2","textPreview":"Δy = 9 - 3 = 6 Δx = 4 - 1 = 3 slope = 6 / 3 = 2","textChars":47,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/8t0r6f","slide":2,"text":"The **slope** of a straight line measures output change per unit of input change.\n\n`slope = change in y / change in x = Δy / Δx`\n\nA positive slope rises, a negative slope falls, and zero slope is horizontal. Slope has units: if `x` is hours and `y` is kilometres, slope is kilometres per hour.\n\n[Worked Example]\nTwo points are `(1, 3)` and `(4, 9)`.\n\n`Δy = 9 - 3 = 6`  \n`Δx = 4 - 1 = 3`  \n`slope = 6 / 3 = 2`\n\nFor every one-unit increase in `x`, `y` increases by `2`.\n\n[Visual Brief]\nA coordinate plane shows the two points and a right triangle labelled `run = 3`, `rise = 6`, and slope `2`.\n\n[Instructor Notes]\nAlways state units and direction. Explain that division by zero occurs for a vertical line.\n\n[Notebook Connection]\nSlope becomes a coefficient in Week 7 and local slope becomes a derivative later this week.\n\n[Sources]\n- https://openstax.org/books/college-algebra-2e/pages/2-1-linear-functions\n- https://mml-book.github.io/book/mml-book.pdf\n[/Sources]"}
+{"kind":"slide","id":"sl/wukykd","slide":3,"title":"M05 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/jqlw76l0","slide":3,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/krudgb2l","slide":3,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/5s3e9g36","slide":3,"text":"DS ACADEMY   03","textPreview":"DS ACADEMY   03","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/6tcvilkr","slide":3,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/7ulwbqlc","slide":3,"text":"Vectors Represent Several Features Together","textPreview":"Vectors Represent Several Features Together","textChars":43,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/svexkv2x","slide":3,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/twned03i","slide":3,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/uhwfm5k3","slide":3,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/fi5wfql8","slide":3,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/zuxkn6tg","slide":3,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/yt43e1cv","slide":3,"text":"import numpy as np\n\na = np.array([2, 4])\nb = np.array([1, 3])\nprint(a + b)","textPreview":"import numpy as np |  | a = np.array([2, 4]) | b = np.array([1, 3]) | print(a + b)","textChars":74,"textLines":5,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/lwf2pgb6","slide":3,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/kv6lgbul","slide":3,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/bqdkjmt4","slide":3,"text":"[3 7]","textPreview":"[3 7]","textChars":5,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/a54jahcj","slide":3,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/xsv2lwba","slide":3,"text":"2[3, 7] = [6, 14]","textPreview":"2[3, 7] = [6, 14]","textChars":17,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/wukykd","slide":3,"text":"A **vector** is an ordered list of numbers.\n\n`x = [x1, x2, ..., xn]`\n\nIn machine learning, one vector can represent one observation. Each position has a fixed meaning.\n\nExample:\n\n`x = [5, 3, 8]`\n\ncould mean `5` study hours, `3` assignments, and `8` hours of sleep. Reordering values without reordering their meanings creates incorrect data.\n\n[Worked Example]\nAdd vectors position by position:\n\n`[2, 4] + [1, 3] = [2+1, 4+3] = [3, 7]`\n\nMultiply by a scalar:\n\n`2[3, 7] = [6, 14]`\n\n[Visual Brief]\nA student record becomes a three-position vector with feature names aligned above each position.\n\n[Instructor Notes]\nStress order and units. Avoid introducing abstract vector spaces; the goal is model-ready representation.\n\n[Notebook Connection]\nNumPy arrays and PyTorch tensors later store batches of feature vectors.\n\n[Sources]\n- https://mml-book.github.io/book/mml-book.pdf\n- https://numpy.org/doc/stable/reference/arrays.html\n[/Sources]"}
+{"kind":"slide","id":"sl/3503ia","slide":4,"title":"M05 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/nuxs7u9w","slide":4,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/ov690fah","slide":4,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/9wfa9kr2","slide":4,"text":"DS ACADEMY   04","textPreview":"DS ACADEMY   04","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/axor2psn","slide":4,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/byxsbu9s","slide":4,"text":"Matrices Stack Observations into Rows","textPreview":"Matrices Stack Observations into Rows","textChars":37,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/wzq94zad","slide":4,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/x0zad4ry","slide":4,"text":"one row per observation;","textPreview":"one row per observation;","textChars":24,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/y18r69sj","slide":4,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/jmhsfe94","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/zu50za10","slide":4,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/ytwzq5kf","slide":4,"text":"one column per feature.","textPreview":"one column per feature.","textChars":23,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/lw7i1kj6","slide":4,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/0vehsf2l","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/bq5gvql4","slide":4,"text":"X has shape (3, 2): three students, two features. w has shape (2, 1): one weight for each feature. X @ w has shape (3, 1): one result for each student.","textPreview":"X has shape (3, 2): three students, two features. w has shape (2, 1): one weight for each feature. X @ w has shape (3, 1): one result for...","textChars":151,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/3503ia","slide":4,"text":"A **matrix** is a rectangular grid of numbers. A dataset matrix commonly uses:\n\n- one row per observation;\n- one column per feature.\n\n`X` with shape `(m, n)` contains `m` observations and `n` features.\n\nMatrix multiplication is valid when inner dimensions match:\n\n`(m, n) @ (n, p) -> (m, p)`\n\nThe shared `n` means both operands refer to the same number of features.\n\n[Worked Example]\n`X` has shape `(3, 2)`: three students, two features.  \n`w` has shape `(2, 1)`: one weight for each feature.\n\n`X @ w` has shape `(3, 1)`: one result for each student.\n\n[Visual Brief]\nShape blocks `(3,2)` and `(2,1)` align at the shared `2`; the result block is `(3,1)`.\n\n[Instructor Notes]\nCheck shapes before values. Have learners say what every dimension represents.\n\n[Notebook Connection]\nThis prepares learners for matrix-shaped batches and weight matrices in neural networks.\n\n[Sources]\n- https://mml-book.github.io/book/mml-book.pdf\n- https://numpy.org/doc/stable/reference/generated/numpy.matmul.html\n[/Sources]"}
+{"kind":"slide","id":"sl/kn6far","slide":5,"title":"M05 / L01","textShapes":12}
+{"kind":"textbox","id":"sh/cza90zqt","slide":5,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/ry18rupo","slide":5,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/qxs7y983","slide":5,"text":"DS ACADEMY   05","textPreview":"DS ACADEMY   05","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/5wjqp4ri","slide":5,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/4vapwzqx","slide":5,"text":"A Dot Product Produces a Weighted Sum","textPreview":"A Dot Product Produces a Weighted Sum","textChars":37,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/3u18nu9c","slide":5,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/it87up8r","slide":5,"text":"The dot product multiplies matching vector positions and adds the products: x · w = x1w1 + x2w2 + ... + xnwn In a model, x contains feature values and w contains one weight for each feature. A larger positive weight increases the result when its feature increases; a negative weight decreases it.","textPreview":"The dot product multiplies matching vector positions and adds the products: x · w = x1w1 + x2w2 + ... + xnwn In a model, x contains featu...","textChars":296,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/h8zqlkr6","slide":5,"bbox":[64,390,344,96]}
+{"kind":"textbox","id":"sh/g7qpsfq1","slide":5,"text":"The dot product multiplies matching vector positions and adds the products:","textPreview":"The dot product multiplies matching vector positions and adds the products:","textChars":75,"textLines":1,"bbox":[82,400,308,76]}
+{"kind":"shape","id":"sh/6xgb69cn","slide":5,"bbox":[432,390,344,96]}
+{"kind":"textbox","id":"sh/rypcfed8","slide":5,"text":"x · w = x1w1 + x2w2 + ...","textPreview":"x · w = x1w1 + x2w2 + ...","textChars":25,"textLines":1,"bbox":[450,400,308,76]}
+{"kind":"shape","id":"sh/szit8jut","slide":5,"bbox":[800,390,344,96]}
+{"kind":"textbox","id":"sh/t0ruh4vy","slide":5,"text":"In a model, x contains feature values and w contains one weight for each feature.","textPreview":"In a model, x contains feature values and w contains one weight for each feature.","textChars":81,"textLines":1,"bbox":[818,400,308,76]}
+{"kind":"shape","id":"sh/itgb2pcb","slide":5,"bbox":[64,506,344,96]}
+{"kind":"textbox","id":"sh/jupsbudw","slide":5,"text":"A larger positive weight increases the result when its feature increases;","textPreview":"A larger positive weight increases the result when its feature increases;","textChars":73,"textLines":1,"bbox":[82,516,308,76]}
+{"kind":"shape","id":"sh/4vyt4zuh","slide":5,"bbox":[432,506,344,96]}
+{"kind":"textbox","id":"sh/5w7ad4v2","slide":5,"text":"a negative weight decreases it.","textPreview":"a negative weight decreases it.","textChars":31,"textLines":1,"bbox":[450,516,308,76]}
+{"kind":"shape","id":"sh/u5wbypwf","slide":5,"bbox":[800,506,344,96]}
+{"kind":"textbox","id":"sh/vq5s7ud0","slide":5,"text":"x = [2, 3] and w = [0.4, -0.1]","textPreview":"x = [2, 3] and w = [0.4, -0.1]","textChars":30,"textLines":1,"bbox":[818,516,308,76]}
+{"kind":"notes","id":"nt/kn6far","slide":5,"text":"The **dot product** multiplies matching vector positions and adds the products:\n\n`x · w = x1w1 + x2w2 + ... + xnwn`\n\nIn a model, `x` contains feature values and `w` contains one weight for each feature. A larger positive weight increases the result when its feature increases; a negative weight decreases it.\n\n[Worked Example]\n`x = [2, 3]` and `w = [0.4, -0.1]`\n\n`x · w = (2 x 0.4) + (3 x -0.1)`  \n`= 0.8 - 0.3`  \n`= 0.5`\n\nWith intercept `b = 0.2`, prediction is `0.5 + 0.2 = 0.7`.\n\n[Visual Brief]\nMatching feature and weight pairs are multiplied, then arrows merge into a sum and intercept.\n\n[Instructor Notes]\nWork every multiplication separately. Explain that the dot product is one number, not another same-length vector.\n\n[Notebook Connection]\nWeek 7 linear regression and Week 9 neurons both use weighted sums.\n\n[Sources]\n- https://mml-book.github.io/book/mml-book.pdf\n- https://numpy.org/doc/stable/reference/generated/numpy.dot.html\n[/Sources]"}
+{"kind":"slide","id":"sl/6mrfn7","slide":6,"title":"M05 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/cjuhobut","slide":6,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/rilgvqt8","slide":6,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/qhczmlc3","slide":6,"text":"DS ACADEMY   06","textPreview":"DS ACADEMY   06","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/loni10bq","slide":6,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/0nuhsvu5","slide":6,"text":"Variance Measures Squared Distance from the Mean","textPreview":"Variance Measures Squared Distance from the Mean","textChars":48,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/zml0zqtk","slide":6,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/ylczqlcz","slide":6,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/hsjypwb6","slide":6,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/grahwrul","slide":6,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/itgzul8f","slide":6,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/jupgnqp0","slide":6,"text":"values = np.array([2, 4, 6])\nprint(values.var(), values.std())","textPreview":"values = np.array([2, 4, 6]) | print(values.var(), values.std())","textChars":62,"textLines":2,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/kvyhgvql","slide":6,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/5grip076","slide":6,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/6h0zil8b","slide":6,"text":"2.6666666666666665 1.632993161855452","textPreview":"2.6666666666666665 1.632993161855452","textChars":36,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/7i90rqpw","slide":6,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/sjihkvqh","slide":6,"text":"Deviations: [-2, 0, 2] Squared: [4, 0, 4] Variance: 8 / 3 = 2.67 Standard deviation: sqrt(2.67) = 1.63","textPreview":"Deviations: [-2, 0, 2] Squared: [4, 0, 4] Variance: 8 / 3 = 2.67 Standard deviation: sqrt(2.67) = 1.63","textChars":102,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/6mrfn7","slide":6,"text":"For values `x1 ... xn` with mean `μ`, population variance is:\n\n`variance = Σ(xi - μ)^2 / n`\n\n- `xi`: one value\n- `μ`: mean\n- `xi - μ`: deviation from the mean\n- squaring makes deviations non-negative and emphasizes large distances\n- `Σ` means add all terms\n- dividing by `n` gives the average squared deviation\n\nStandard deviation is `sqrt(variance)` and returns to the original units.\n\n[Worked Example]\nFor `[2, 4, 6]`, mean is `4`.\n\nDeviations: `[-2, 0, 2]`  \nSquared: `[4, 0, 4]`  \nVariance: `8 / 3 = 2.67`  \nStandard deviation: `sqrt(2.67) = 1.63`\n\n[Visual Brief]\nA four-row calculation table shows value, deviation, squared deviation, and total.\n\n[Instructor Notes]\nLink squared deviation to squared prediction error but distinguish spread around the mean from model loss.\n\n[Notebook Connection]\nThe same subtract-square-average pattern appears in mean squared error.\n\n[Sources]\n- https://www.itl.nist.gov/div898/handbook/eda/section3/eda3561.htm\n- https://numpy.org/doc/stable/reference/generated/numpy.var.html\n[/Sources]"}
+{"kind":"slide","id":"sl/0snze7","slide":7,"title":"M05 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/lov2l4j2","slide":7,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/ylk3apkb","slide":7,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/zmtkju1w","slide":7,"text":"DS ACADEMY   07","textPreview":"DS ACADEMY   07","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/8rmlgj2t","slide":7,"text":"CORE CONCEPT","textPreview":"CORE CONCEPT","textChars":12,"textLines":1,"bbox":[64,100,220,24]}
+{"kind":"textbox","id":"sh/9sv2p4je","slide":7,"text":"Probability Represents Uncertainty","textPreview":"Probability Represents Uncertainty","textChars":34,"textLines":1,"bbox":[64,150,1080,72]}
+{"kind":"shape","id":"sh/mp43e9kn","slide":7,"bbox":[64,246,112,6]}
+{"kind":"textbox","id":"sh/7qdkne18","slide":7,"text":"A probability describes uncertainty about an event. 0 <= P(event) <= 1 For equally likely outcomes:","textPreview":"A probability describes uncertainty about an event. 0 <= P(event) <= 1 For equally likely outcomes:","textChars":99,"textLines":1,"bbox":[64,278,1110,96]}
+{"kind":"shape","id":"sh/wf6lkj2p","slide":7,"bbox":[64,390,540,96]}
+{"kind":"textbox","id":"sh/hgf2toja","slide":7,"text":"0 means impossible under the model.","textPreview":"0 means impossible under the model.","textChars":35,"textLines":1,"bbox":[82,400,504,76]}
+{"kind":"shape","id":"sh/14na5wni","slide":7,"bbox":[638,390,540,96]}
+{"kind":"textbox","id":"sh/03e9cr6x","slide":7,"text":"1 means certain under the model.","textPreview":"1 means certain under the model.","textChars":32,"textLines":1,"bbox":[656,400,504,76]}
+{"kind":"shape","id":"sh/f25s3mpc","slide":7,"bbox":[64,506,540,96]}
+{"kind":"textbox","id":"sh/e1wrahor","slide":7,"text":"0.25 means a 25% probability.","textPreview":"0.25 means a 25% probability.","textChars":29,"textLines":1,"bbox":[82,516,504,76]}
+{"kind":"notes","id":"nt/0snze7","slide":7,"text":"A **probability** describes uncertainty about an event.\n\n`0 <= P(event) <= 1`\n\n- `0` means impossible under the model.\n- `1` means certain under the model.\n- `0.25` means a 25% probability.\n\nFor equally likely outcomes:\n\n`P(event) = favourable outcomes / possible outcomes`\n\nObserved frequency can estimate probability, but an estimate depends on sample size and whether the data represents future cases.\n\n[Worked Example]\nA bag contains `3` blue and `1` red token.\n\nTotal outcomes: `4`  \nFavourable blue outcomes: `3`  \n`P(blue) = 3 / 4 = 0.75`\n\n[Visual Brief]\nFour equal token icons show three blue and one red, paired with fraction, decimal, and percentage representations.\n\n[Instructor Notes]\nState assumptions such as equal chance of drawing each token. Avoid presenting model probabilities as guaranteed frequencies for an individual.\n\n[Notebook Connection]\nClassification models later output class probabilities that are converted into decisions.\n\n[Sources]\n- https://openstax.org/books/introductory-statistics-2e/pages/3-introduction\n- https://scikit-learn.org/stable/modules/calibration.html\n[/Sources]"}
+{"kind":"slide","id":"sl/9u7g0v","slide":8,"title":"M05 / L01","textShapes":18}
+{"kind":"textbox","id":"sh/szqhcri5","slide":8,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/7yh03mhk","slide":8,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/6xozah0z","slide":8,"text":"DS ACADEMY   08","textPreview":"DS ACADEMY   08","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/5wfi1cze","slide":8,"text":"REASONING SEQUENCE","textPreview":"REASONING SEQUENCE","textChars":18,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/kb6h87it","slide":8,"text":"A Derivative Is Local Slope","textPreview":"A Derivative Is Local Slope","textChars":27,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"textbox","id":"sh/jax0fmh8","slide":8,"text":"Frame","textPreview":"Frame","textChars":5,"textLines":1,"bbox":[62,230,220,40]}
+{"kind":"textbox","id":"sh/i9oz6h03","slide":8,"text":"A derivative measures how quickly a function changes near one input.","textPreview":"A derivative measures how quickly a function changes near one input.","textChars":68,"textLines":1,"bbox":[62,294,230,88]}
+{"kind":"shape","id":"sh/x8fydczi","slide":8,"bbox":[62,394,230,4]}
+{"kind":"textbox","id":"sh/w76h47ix","slide":8,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,428,70,52]}
+{"kind":"textbox","id":"sh/ap0bm5sf","slide":8,"text":"Transform","textPreview":"Transform","textChars":9,"textLines":1,"bbox":[358,230,220,40]}
+{"kind":"textbox","id":"sh/bqtcvat0","slide":8,"text":"It is the slope of the tangent line at that point.","textPreview":"It is the slope of the tangent line at that point.","textChars":50,"textLines":1,"bbox":[358,294,230,88]}
+{"kind":"shape","id":"sh/cr2tofal","slide":8,"bbox":[358,394,230,4]}
+{"kind":"textbox","id":"sh/xsbux0b6","slide":8,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[358,428,70,52]}
+{"kind":"textbox","id":"sh/210bilsj","slide":8,"text":"Validate","textPreview":"Validate","textChars":8,"textLines":1,"bbox":[654,230,220,40]}
+{"kind":"textbox","id":"sh/nm9crqto","slide":8,"text":"For f(x) = x^2, the derivative is:","textPreview":"For f(x) = x^2, the derivative is:","textChars":34,"textLines":1,"bbox":[654,294,230,88]}
+{"kind":"shape","id":"sh/onitkva9","slide":8,"bbox":[654,394,230,4]}
+{"kind":"textbox","id":"sh/porut0bu","slide":8,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[654,428,70,52]}
+{"kind":"textbox","id":"sh/exgbels7","slide":8,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[950,230,220,40]}
+{"kind":"textbox","id":"sh/fypsnqts","slide":8,"text":"At x = 3, the local slope is 2 x 3 = 6.","textPreview":"At x = 3, the local slope is 2 x 3 = 6.","textChars":39,"textLines":1,"bbox":[950,294,230,88]}
+{"kind":"shape","id":"sh/j258vm9k","slide":8,"bbox":[950,394,230,4]}
+{"kind":"textbox","id":"sh/i1wrmh8z","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[950,428,70,52]}
+{"kind":"textbox","id":"sh/54nqxwrq","slide":8,"text":"Exact values: f(3) = 9 f(3.1) = 9.61 Actual change: 0.61 Derivative estimate: 6 x 0.1 = 0.6, which is close for a small step.","textPreview":"Exact values: f(3) = 9 f(3.1) = 9.61 Actual change: 0.61 Derivative estimate: 6 x 0.1 = 0.6, which is close for a small step.","textChars":125,"textLines":1,"bbox":[62,544,1110,84]}
+{"kind":"notes","id":"nt/9u7g0v","slide":8,"text":"A **derivative** measures how quickly a function changes near one input. It is the slope of the tangent line at that point.\n\nFor `f(x) = x^2`, the derivative is:\n\n`f'(x) = 2x`\n\nAt `x = 3`, the local slope is `2 x 3 = 6`. Near `x = 3`, a small increase of `0.1` in `x` changes `f(x)` by approximately `6 x 0.1 = 0.6`.\n\n[Worked Example]\nExact values:\n\n`f(3) = 9`  \n`f(3.1) = 9.61`  \nActual change: `0.61`\n\nDerivative estimate: `6 x 0.1 = 0.6`, which is close for a small step.\n\n[Visual Brief]\nA curve `y=x²` has a tangent line at `x=3`; a small horizontal step and corresponding vertical change are marked.\n\n[Instructor Notes]\nUse “local slope” consistently. Do not derive limits formally in this beginner lesson.\n\n[Notebook Connection]\nOptimization uses derivatives of loss with respect to model parameters.\n\n[Sources]\n- https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative\n- https://mml-book.github.io/book/mml-book.pdf\n[/Sources]"}
+{"kind":"slide","id":"sl/865km0","slide":9,"title":"M05 / L01","textShapes":9}
+{"kind":"textbox","id":"sh/f61or2h8","slide":9,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/g7ap07it","slide":9,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/h8j6tcze","slide":9,"text":"DS ACADEMY   09","textPreview":"DS ACADEMY   09","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/29s72h0z","slide":9,"text":"RUN IT AND INSPECT THE RESULT","textPreview":"RUN IT AND INSPECT THE RESULT","textChars":29,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/3alovmhk","slide":9,"text":"A Gradient Collects One Slope per Parameter","textPreview":"A Gradient Collects One Slope per Parameter","textChars":43,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/4bup4ri5","slide":9,"bbox":[54,170,684,408]}
+{"kind":"shape","id":"sh/pc36xwza","slide":9,"bbox":[54,170,684,32]}
+{"kind":"shape","id":"sh/qdc761gv","slide":9,"bbox":[72,180,11,11]}
+{"kind":"shape","id":"sh/rel8z6hg","slide":9,"bbox":[96,180,11,11]}
+{"kind":"shape","id":"sh/f2t8raxg","slide":9,"bbox":[120,180,11,11]}
+{"kind":"textbox","id":"sh/e1k7i5gv","slide":9,"text":"gradient = np.array([2.0, -3.0])\ndescent_direction = -gradient\nprint(descent_direction)","textPreview":"gradient = np.array([2.0, -3.0]) | descent_direction = -gradient | print(descent_direction)","textChars":87,"textLines":3,"bbox":[76,220,642,336]}
+{"kind":"shape","id":"sh/14bqtkfm","slide":9,"bbox":[770,170,454,408]}
+{"kind":"textbox","id":"sh/032pkfy1","slide":9,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[796,194,120,22]}
+{"kind":"textbox","id":"sh/ry98nqx4","slide":9,"text":"[-2.  3.]","textPreview":"[-2.  3.]","textChars":9,"textLines":1,"bbox":[796,234,398,312]}
+{"kind":"shape","id":"sh/qx07elgz","slide":9,"bbox":[54,602,1170,62]}
+{"kind":"textbox","id":"sh/d0bqp0fa","slide":9,"text":"The opposite direction is [-2, 3].","textPreview":"The opposite direction is [-2, 3].","textChars":34,"textLines":1,"bbox":[76,612,1128,44]}
+{"kind":"notes","id":"nt/865km0","slide":9,"text":"A **parameter** is a value a model adjusts during training. When loss depends on several parameters, the **gradient** collects one partial derivative for each parameter:\n\n`∇L = [∂L/∂w1, ∂L/∂w2, ...]`\n\n- `L`: loss\n- `wi`: one parameter\n- `∂L/∂wi`: local change in loss when only that parameter changes\n- `∇L`: direction of fastest local increase in loss\n\nMoving opposite the gradient reduces loss for a sufficiently small step.\n\n[Worked Example]\nIf `∇L = [2, -3]`:\n\n- increasing `w1` increases loss locally, so reduce `w1`;\n- increasing `w2` decreases loss locally, so increase `w2`.\n\nThe opposite direction is `[-2, 3]`.\n\n[Visual Brief]\nA contour map shows a point, a gradient arrow uphill, and a descent arrow in the opposite direction.\n\n[Instructor Notes]\nDo not say the gradient “points to the minimum.” It points uphill locally; its negative points downhill locally.\n\n[Notebook Connection]\nPyTorch later computes gradients automatically during backpropagation.\n\n[Sources]\n- https://mml-book.github.io/book/mml-book.pdf\n- https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html\n[/Sources]"}
+{"kind":"slide","id":"sl/19bjiv","slide":10,"title":"M05 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/tsbaxsb6","slide":10,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/6pkb2xcf","slide":10,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/7qtsvit0","slide":10,"text":"DS ACADEMY   10","textPreview":"DS ACADEMY   10","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/gfmt87ah","slide":10,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/hgva1cb2","slide":10,"text":"Loss Measures Prediction Error","textPreview":"Loss Measures Prediction Error","textChars":30,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/utkb6xcr","slide":10,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/vedsz2tc","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/4jmtc7at","slide":10,"text":"n: number of examples","textPreview":"n: number of examples","textChars":21,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/5kva5cbe","slide":10,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/t0je94ze","slide":10,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/szqxgjit","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/ryhw7eh8","slide":10,"text":"yi: actual target for example i","textPreview":"yi: actual target for example i","textChars":31,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/6x8fe90n","slide":10,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/1ojydozq","slide":10,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/gnaxkji5","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/f21gbehk","slide":10,"text":"ŷi: predicted target","textPreview":"ŷi: predicted target","textChars":20,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/e1sfi90z","slide":10,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/hsze1kz6","slide":10,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/wr6x8zil","slide":10,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/8nup4jut","slide":10,"text":"yi - ŷi: residual","textPreview":"yi - ŷi: residual","textChars":17,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/9o36dobe","slide":10,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/19bjiv","slide":10,"text":"A **loss function** converts prediction error into a number that training can reduce.\n\nMean squared error:\n\n`MSE = (1/n) Σ(yi - ŷi)^2`\n\n- `n`: number of examples\n- `yi`: actual target for example `i`\n- `ŷi`: predicted target\n- `yi - ŷi`: residual\n- squaring removes signs and emphasizes large errors\n- mean gives one summary across examples\n\nLower MSE means predictions are closer under this squared-error rule.\n\n[Worked Example]\nActual `[3, 5]`, predicted `[2, 7]`\n\nResiduals: `[1, -2]`  \nSquared residuals: `[1, 4]`  \n`MSE = (1 + 4) / 2 = 2.5`\n\n[Visual Brief]\nA table shows actual, predicted, residual, squared residual, sum, and mean.\n\n[Instructor Notes]\nExplain that choosing a loss expresses which errors receive more weight. MSE is not suitable for every problem.\n\n[Notebook Connection]\nLinear regression and neural networks train by minimizing a loss.\n\n[Sources]\n- https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html\n- https://mml-book.github.io/book/mml-book.pdf\n[/Sources]"}
+{"kind":"slide","id":"sl/tubekl","slide":11,"title":"M05 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/povads32","slide":11,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/2l4bid4r","slide":11,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/3mdsbilc","slide":11,"text":"DS ACADEMY   11","textPreview":"DS ACADEMY   11","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/cbmt8nmt","slide":11,"text":"QUALITY GATE","textPreview":"QUALITY GATE","textChars":12,"textLines":1,"bbox":[62,78,560,22]}
+{"kind":"textbox","id":"sh/dcfahs3e","slide":11,"text":"Gradient Descent Updates Parameters Step by Step","textPreview":"Gradient Descent Updates Parameters Step by Step","textChars":48,"textLines":1,"bbox":[62,108,1110,62]}
+{"kind":"shape","id":"sh/q94b6x4n","slide":11,"bbox":[72,185,34,34]}
+{"kind":"textbox","id":"sh/radsf2l8","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,183,32,30]}
+{"kind":"textbox","id":"sh/sf29c3mp","slide":11,"text":"wold: current parameter","textPreview":"wold: current parameter","textChars":23,"textLines":1,"bbox":[146,178,970,68]}
+{"kind":"shape","id":"sh/tgba583u","slide":11,"bbox":[146,258,970,2]}
+{"kind":"shape","id":"sh/9ojydwju","slide":11,"bbox":[72,297,34,34]}
+{"kind":"textbox","id":"sh/8nqhkr29","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,295,32,30]}
+{"kind":"textbox","id":"sh/7mhgbm1o","slide":11,"text":"∂L/∂w: current loss slope","textPreview":"∂L/∂w: current loss slope","textChars":25,"textLines":1,"bbox":[146,290,970,68]}
+{"kind":"shape","id":"sh/ml8zihkj","slide":11,"bbox":[146,370,970,2]}
+{"kind":"shape","id":"sh/hsjyhwj6","slide":11,"bbox":[72,409,34,34]}
+{"kind":"textbox","id":"sh/wrahob2l","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,407,32,30]}
+{"kind":"textbox","id":"sh/vq1gf610","slide":11,"text":"η (eta): learning rate","textPreview":"η (eta): learning rate","textChars":22,"textLines":1,"bbox":[146,402,970,68]}
+{"kind":"shape","id":"sh/upszm1kf","slide":11,"bbox":[146,482,970,2]}
+{"kind":"shape","id":"sh/5g3ilgj2","slide":11,"bbox":[72,521,34,34]}
+{"kind":"textbox","id":"sh/4fuhsbih","slide":11,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[73,519,32,30]}
+{"kind":"textbox","id":"sh/ob294ju5","slide":11,"text":"subtraction moves opposite the gradient","textPreview":"subtraction moves opposite the gradient","textChars":39,"textLines":1,"bbox":[146,514,970,68]}
+{"kind":"shape","id":"sh/pcbadova","slide":11,"bbox":[146,594,970,2]}
+{"kind":"notes","id":"nt/tubekl","slide":11,"text":"**Gradient descent** repeatedly adjusts parameters in the direction that locally reduces loss:\n\n`w_new = w_old - η ∂L/∂w`\n\n- `w_old`: current parameter\n- `∂L/∂w`: current loss slope\n- `η` (eta): learning rate\n- subtraction moves opposite the gradient\n- `w_new`: updated parameter\n\nA learning rate that is too large can overshoot; one that is too small can make progress slow.\n\n[Worked Example]\n`w_old = 0.5`, gradient `= 4`, learning rate `η = 0.1`\n\n`w_new = 0.5 - 0.1 x 4`  \n`= 0.5 - 0.4`  \n`= 0.1`\n\n[Visual Brief]\nA loss curve shows one step downhill. A side panel expands the update equation into values and intermediate steps.\n\n[Instructor Notes]\nExplain the small floating-point display difference. Emphasize that training recomputes the gradient after each update.\n\n[Notebook Connection]\nWeek 9's optimizer performs this update across many neural-network parameters.\n\n[Sources]\n- https://d2l.ai/chapter_optimization/gd.html\n- https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html\n[/Sources]"}
+{"kind":"slide","id":"sl/g6boby","slide":12,"title":"M05 / L01","textShapes":13}
+{"kind":"textbox","id":"sh/na9sb6t4","slide":12,"text":"M05 / L01","textPreview":"M05 / L01","textChars":9,"textLines":1,"bbox":[54,28,110,22]}
+{"kind":"textbox","id":"sh/8bi9kbu9","slide":12,"text":"A Function Maps an Input to an Output","textPreview":"A Function Maps an Input to an Output","textChars":37,"textLines":1,"bbox":[176,28,650,22]}
+{"kind":"textbox","id":"sh/9cradgbu","slide":12,"text":"DS ACADEMY   12","textPreview":"DS ACADEMY   12","textChars":15,"textLines":1,"bbox":[1002,28,224,22]}
+{"kind":"textbox","id":"sh/y5gre1c7","slide":12,"text":"GUIDED LAB","textPreview":"GUIDED LAB","textChars":10,"textLines":1,"bbox":[64,92,220,24]}
+{"kind":"textbox","id":"sh/z6ps76ts","slide":12,"text":"Guided Lab: Match Hand Calculations to NumPy","textPreview":"Guided Lab: Match Hand Calculations to NumPy","textChars":44,"textLines":1,"bbox":[64,154,1100,154]}
+{"kind":"textbox","id":"sh/07y9grud","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[64,410,62,28]}
+{"kind":"shape","id":"sh/l87a9wby","slide":12,"bbox":[64,462,214,5]}
+{"kind":"textbox","id":"sh/i1kbalcr","slide":12,"text":"vector shape and matrix shape","textPreview":"vector shape and matrix shape","textChars":29,"textLines":1,"bbox":[64,500,220,52]}
+{"kind":"textbox","id":"sh/j2tsjqtw","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[354,410,62,28]}
+{"kind":"shape","id":"sh/r6twzq10","slide":12,"bbox":[354,462,214,5]}
+{"kind":"textbox","id":"sh/q5kf6l0f","slide":12,"text":"one dot product","textPreview":"one dot product","textChars":15,"textLines":1,"bbox":[354,500,220,52]}
+{"kind":"textbox","id":"sh/d8ve10j6","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[644,410,62,28]}
+{"kind":"shape","id":"sh/c72x8vil","slide":12,"bbox":[644,462,214,5]}
+{"kind":"textbox","id":"sh/zadw3q1c","slide":12,"text":"one mean and population variance","textPreview":"one mean and population variance","textChars":32,"textLines":1,"bbox":[644,500,220,52]}
+{"kind":"textbox","id":"sh/e94fa50r","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[934,410,62,28]}
+{"kind":"shape","id":"sh/1cvy50j2","slide":12,"bbox":[934,462,214,5]}
+{"kind":"textbox","id":"sh/0bmxcvih","slide":12,"text":"one probability","textPreview":"one probability","textChars":15,"textLines":1,"bbox":[934,500,220,52]}
+{"kind":"notes","id":"nt/g6boby","slide":12,"text":"Complete and explain:\n\n1. vector shape and matrix shape;\n2. one dot product;\n3. one mean and population variance;\n4. one probability;\n5. one squared-error calculation;\n6. one gradient-descent update.\n\nFor every calculation, show intermediate values by hand and then confirm them with NumPy. A matching number is not enough; state what the number means and which units it uses.\n\n[Worked Example]\nFor `x=[2,3]`, `w=[0.4,-0.1]`, `b=0.2`, and target `1`:\n\nPrediction `= 0.7`  \nResidual `= 1 - 0.7 = 0.3`  \nSquared error `= 0.3² = 0.09`\n\n[Visual Brief]\nA readiness checklist connects shapes, weighted sum, residual, loss, gradient, and update.\n\n[Instructor Notes]\nRequire learners to predict each result before execution and explain floating-point approximations.\n\n[Notebook Connection]\nThese concepts prepare learners to read model equations and training loops in later notebooks.\n\n[Sources]\n- https://mml-book.github.io/\n- https://numpy.org/doc/stable/user/\n[/Sources]"}
