@@ -1,0 +1,41 @@
+{% extends "templates/web.html" %}
+
+{% block title %}{{ _("Secure payment") }}{% endblock %}
+
+{% block script %}
+<script defer>
+	document.getElementById("payhere-checkout").submit()
+</script>
+{% endblock %}
+
+{% block page_content %}
+<main class="payhere-redirect">
+	<h1>{{ _("Redirecting to PayHere") }}</h1>
+	<p>{{ _("Please wait while the secure checkout opens.") }}</p>
+	<form id="payhere-checkout" method="post" action="{{ checkout_url | e }}">
+		{% for name, value in payment_details.items() %}
+		<input type="hidden" name="{{ name | e }}" value="{{ value | e }}">
+		{% endfor %}
+		<noscript>
+			<button type="submit">{{ _("Continue to payment") }}</button>
+		</noscript>
+	</form>
+</main>
+{% endblock %}
+
+{% block style %}
+<style>
+	.payhere-redirect {
+		margin: 18vh auto 0;
+		max-width: 34rem;
+		padding: 0 1.5rem;
+		text-align: center;
+	}
+	.payhere-redirect h1 {
+		font-size: 1.5rem;
+	}
+	.web-footer {
+		display: none;
+	}
+</style>
+{% endblock %}

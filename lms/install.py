@@ -9,12 +9,19 @@ def after_install():
 	give_discussions_permission()
 	give_user_list_permission()
 	give_event_permission()
+	create_payhere_gateway()
 
 
 def after_sync():
 	create_lms_roles()
 	set_default_certificate_print_format()
 	give_lms_roles_to_admin()
+
+
+def create_payhere_gateway():
+	from lms.lms.doctype.payhere_settings.payhere_settings import ensure_payhere_gateway
+
+	ensure_payhere_gateway()
 
 
 def before_uninstall():

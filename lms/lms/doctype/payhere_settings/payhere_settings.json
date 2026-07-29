@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "creation": "2026-07-29 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "sandbox",
+  "credentials_section",
+  "merchant_id",
+  "merchant_secret"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "description": "Allow PayHere checkout after valid merchant credentials are saved.",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "default": "1",
+   "description": "Use PayHere's sandbox. Disable only after the production domain is approved.",
+   "fieldname": "sandbox",
+   "fieldtype": "Check",
+   "label": "Sandbox"
+  },
+  {
+   "fieldname": "credentials_section",
+   "fieldtype": "Section Break",
+   "label": "Merchant Credentials"
+  },
+  {
+   "description": "Merchant ID from the PayHere dashboard.",
+   "fieldname": "merchant_id",
+   "fieldtype": "Data",
+   "label": "Merchant ID"
+  },
+  {
+   "description": "Domain-specific Merchant Secret from the PayHere dashboard.",
+   "fieldname": "merchant_secret",
+   "fieldtype": "Password",
+   "label": "Merchant Secret"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-07-29 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "PayHere Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "read": 1,
+   "role": "System Manager",
+   "write": 1
+  },
+  {
+   "create": 1,
+   "read": 1,
+   "role": "Moderator",
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

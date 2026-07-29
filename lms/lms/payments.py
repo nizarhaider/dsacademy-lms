@@ -73,6 +73,11 @@ def get_payment_link(
 	# gateway and fails with an actionable message, so a misconfigured gateway
 	# doesn't leave an orphan Address / LMS Payment row behind.
 	controller = get_controller(payment_gateway) if total_amount > 0 else None
+	if controller:
+		if hasattr(controller, "validate_transaction_currency"):
+			controller.validate_transaction_currency(currency)
+		if hasattr(controller, "validate_checkout"):
+			controller.validate_checkout()
 
 	payment = record_payment(
 		address,

@@ -169,6 +169,42 @@ https://learn.dsacademy.lk/lms
 Deployments publish the `stable` GHCR image, update the existing Lightsail
 Compose services, run migrations, and apply the idempotent curriculum seed.
 
+## PayHere payments
+
+The LMS includes a PayHere hosted-checkout integration. Card details are entered
+on PayHere and are never collected by DS Academy. The server verifies the
+notification signature, merchant ID, amount, and currency before enrollment.
+
+PayHere is registered during migration but remains disabled by default. To test
+it:
+
+1. Create and approve a PayHere sandbox account.
+2. Add `learn.dsacademy.lk` as the application domain in PayHere.
+3. In LMS Settings, open **Payment Gateways > PayHere**.
+4. Keep **Sandbox** enabled, enter the sandbox Merchant ID and domain-specific
+   Merchant Secret, enable the gateway, and save.
+5. Set the LMS payment gateway to PayHere, then configure a test course price in
+   LKR.
+6. Complete a sandbox checkout and verify that the matching LMS Payment is
+   marked received and the learner is enrolled.
+
+The callback URL is generated automatically as:
+
+```text
+https://learn.dsacademy.lk/api/method/lms.lms.doctype.payhere_settings.payhere_settings.notify
+```
+
+Before accepting real payments, replace the sandbox credentials with live
+credentials, wait for PayHere to approve the production domain, disable
+**Sandbox**, and perform a low-value live transaction. Do not store the Merchant
+Secret in `.env`, source control, logs, or frontend code; save it only in the
+encrypted Password field.
+
+PayHere Lite has no monthly or setup fee, but transactions are not free. At the
+time of integration it charges 3.30% per payment and limits Lite accounts to LKR
+50,000 per payment and LKR 200,000 per month. Confirm current fees in PayHere
+before setting course prices.
+
 ## Security
 
 - Never commit `.env`, database passwords, administrator passwords, or API keys.
